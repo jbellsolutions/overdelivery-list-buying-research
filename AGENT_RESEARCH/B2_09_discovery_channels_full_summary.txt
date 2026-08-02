@@ -1,0 +1,64 @@
+## Research result
+
+I checked live first-party pages on **August 1, 2026**. These are discovery channels—not endorsements or guarantees of list quality. “Confidence” reflects confidence that the official source currently provides the stated access, not the reputation of every listed vendor.
+
+### Highest-value discovery infrastructure
+
+| Source | Official URL | Type | What access it provides | Access model | Confidence |
+|---|---|---|---|---|---|
+| **NextMark Media Finder** | [nextmark.com/media-planning](https://www.nextmark.com/media-planning/) | Directory / media-planning database | Searches addressable media inventory, including postal lists, telephone lists, package inserts, email lists, provider directory, inventory, rate cards, minimum buys, and current contacts. The page describes access to “inventory, rate cards, minimum buy in, up-to-date contacts.” | Free trial; paid platform | **High** |
+| **NextMark Lists / Media Operations** | [nextmark.com/media-operations/lists](https://www.nextmark.com/media-operations/lists/) | List-management/order infrastructure | Useful for identifying list-management workflows and potential list suppliers; the site explicitly includes list ordering and list operations. | Product/demo or account access | **Medium** |
+| **SRDS Direct Marketing List Source** | [srds.com/direct-marketing-lists](https://srds.com/direct-marketing-lists/) | Paid directory / database | Explicitly covers **65,000+ list-rental opportunities**, 230 consumer/B2B categories, email lists, enhanced lists, new lists, lists under new management, universe counts, selects, base rental prices, policies, and connections to list brokers, managers, owners, and compilers. | Subscription / sales inquiry | **High** |
+| **SRDS Media Planning Database** | [srds.com/media-buying-solutions](https://srds.com/media-buying-solutions/) | Media database | Access to advertising rates, media kits, demographics, contacts, and inventory from more than 125,000 media brands. Broader than list rental, but useful for finding publishers and niche media owners. | Paid database / inquiry | **High** |
+| **ANA Member Companies** | [ana.net/members/list](https://www.ana.net/members/list) | Trade association directory | Public member-company list; the ANA site also exposes Solutions Provider membership, committees, conferences, sponsorships, and events. Useful for identifying agencies, data providers, media companies, and potential introductions. | Public directory; deeper access via membership | **High** |
+| **DMAW Find a Supplier-Partner** | [dmaw.org](https://www.dmaw.org/) | Trade association / community / supplier directory | Direct Marketing Association of Washington offers corporate membership, networking, conferences, an event calendar, sponsorships, and a “Find a Supplier-Partner” route. Particularly relevant to nonprofit and direct-response practitioners. | Public site; membership/event access | **High** |
+| **MailCon Sponsors & Exhibitors** | [mailcon.com/sponsors-and-exhibitors](https://mailcon.com/sponsors-and-exhibitors/) | Email conference / exhibitor directory | Official page lists sponsors, exhibitors, thought leaders, and past attendees; it also provides sponsorship packages, floor-plan access, and a mobile app for connecting with attendees before the event. | Event registration; sponsor/exhibitor access | **High** |
+| **Affiliate Summit** | [affiliatesummit.com](https://www.affiliatesummit.com/) | Conference / practitioner community | Official site describes events connecting affiliates, advertisers, ecommerce sellers, content publishers, networks, and tech suppliers. It publishes attendee categories, exhibitor/sponsor opportunities, and partnership-building events. Useful for discovering email publishers, media buyers, lead generators, and performance partners. | Paid event; exhibitor/sponsor packages | **High** |
+| **LeadsCon Lead-to-Customer Conference** | [leadscon.com/event/lead-to-customer-conference-2026](https://www.leadscon.com/event/lead-to-customer-conference-2026/) | Lead-generation conference / community | Official event page says attendees connect with brands, agencies, technology platforms, and strategic partners across the lead-generation ecosystem. It provides buyer, vendor/supplier, sponsorship, and networking access. | Paid passes; vendor/sponsor access | **High** |
+| **Email Innovations World** | [emailinnovationsworld.com](https://emailinnovationsworld.com/) | Email conference / community | Conference for email-marketing practitioners and suppliers. Its partner page explicitly offers sponsorship, exhibitor, partner, lead-generation tools, a networking app, supplier help, and “great networking opportunities.” | Paid registration; exhibitor/sponsor access | **High for event access; Medium for 2026 currency** |
+| **Email Innovations World Partner Directory** | [emailinnovationsworld.com/partners](https://emailinnovationsworld.com/partners/) | Event partner/supplier directory | Displays official event partners and supplier descriptions, including email, data, identity, and audience vendors. This is a practical source list for candidate outreach, though the page currently emphasizes the 2025 event. | Public partner pages; commercial follow-up | **Medium** |
+| **Outcome Media / Worldata** | [outcomemedia.com](https://outcomemedia.com/) | Broker/referral source / list and data provider | The former Worldata URL currently redirects to Outcome Media. The live site presents customer-acquisition, email-production, data-services, and marketing-insights offerings. Appropriate as a broker/provider referral path, not an independent directory. | Sales inquiry | **Medium** |
+| **Exact Data** | [exactdata.com](https://www.exactdata.com/) | List owner/manager / provider | Official site exposes consumer and business mailing-list categories, email append, propensity lists, local lists, ready-made lists, telemarketing lists, and specialty audiences. Useful as a direct inventory source and as a benchmark for list-category availability. | Public catalog; quote/contact required | **High for catalog access** |
+| **ANA Events and Committees** | [ana.net/events](https://www.ana.net/events) | Trade association events/community | Current official events page includes national industry conferences, one-day conferences, webinars, galas, committees, sponsorship opportunities, and member meetings. Best used for relationship-building with marketers, agencies, data suppliers, and publishers rather than direct list ordering. | Registration; some member-only events | **High** |
+
+## How these map to Over Delivery principles
+
+### 1. Relationships
+
+Prioritize channels where buyers and suppliers can meet directly:
+
+- **MailCon** — especially useful for email-focused vendor, publisher, deliverability, and data relationships.
+- **Affiliate Summit** — broadest likely overlap with solo publishers, affiliates, email operators, networks, and performance media buyers.
+- **LeadsCon** — strongest for lead-generation and performance-media relationships.
+- **DMAW / ANA** — more structured association networking, committees, supplier introductions, and conferences.
+- **Email Innovations World** — smaller, more email-specialized event with explicit networking-app and lead-generation support.
+
+### 2. Testing
+
+Use **NextMark** and **SRDS** to create a source-testing universe rather than selecting one “best” list:
+
+- Filter by category, list type, universe size, selects, pricing, and management status.
+- Separate **email**, **postal**, **enhanced**, **high-value buyer**, and **new-under-management** sources.
+- Ask each owner/manager for small controlled tests, suppression handling, seed addresses, delivery method, and source-level reporting.
+- Track response by exact source, owner/manager, segment, creative, and drop date.
+
+### 3. Source intelligence
+
+Build a source map from:
+
+- **SRDS** for structured list metadata and owner/manager contacts.
+- **NextMark** for inventory, rate-card, and provider discovery.
+- **MailCon, Affiliate Summit, LeadsCon, and Email Innovations World** exhibitor/sponsor pages for current supplier names and relationship paths.
+- **ANA and DMAW member/supplier directories** for association-backed introductions.
+- **Outcome Media and Exact Data** as direct broker/provider paths, while keeping them distinct from independent directories.
+
+## Important caveats
+
+- I did **not** find a currently verifiable, publicly accessible “List Owners Association” directory under the commonly suggested domains; I therefore excluded it rather than inventing a current URL.
+- `listowners.com` currently resolves to a **HugeDomains domain-sale page**, so it should not be treated as an active list-owner directory.
+- `worldata.com` currently redirects to **Outcome Media**; use the current destination rather than the legacy Worldata URL.
+- The Email Innovations pages currently expose 2025 event/partner material even though the site remains live. Treat it as a relationship source and verify the next event date before relying on it operationally.
+- None of these pages independently proves list quality, consent quality, deliverability, exclusivity, or compliance. Those require owner-level diligence and controlled testing.
+
+**Files created or modified:** None.  
+**Issues encountered:** The browser research provider was unavailable/time-out prone, so I used direct first-party HTTP retrieval and verified live page content and redirects instead.

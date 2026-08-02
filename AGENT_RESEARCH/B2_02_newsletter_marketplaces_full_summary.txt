@@ -1,0 +1,75 @@
+## Research completed
+
+I reviewed public, current official pages and separated:
+
+- **Newsletter sponsorships:** an ad/native placement inside an editorial newsletter, usually sold by issue, slot, CPM/CPC, or campaign.
+- **Dedicated email / solo ads:** the buyer supplies the offer and a list owner sends a standalone email to its audience. This is generally higher-risk and less editorially integrated.
+- **Adjacent tools:** sponsor discovery databases or creator-deal platforms that may facilitate introductions but do not necessarily sell inventory directly.
+
+Research date: **August 1, 2026**.
+
+## Core newsletter sponsorship marketplaces and networks
+
+| Candidate | Format and current mechanics | Publisher / audience access | Pricing / minimums | Compliance and terms clues | Evidence and confidence |
+|---|---|---|---|---|---|
+| **Paved** | **Newsletter sponsorship marketplace/network.** Advertisers can scale native email sponsorships and PPC campaigns across multiple newsletters. Includes booking, payment, performance monitoring, and direct publisher relationships. | Official site claims **3,000+ premium newsletters** and audience/performance data for each newsletter. It names publishers including NBC, TechCrunch, Morning Brew, and Vice. Treat scale claims as marketing claims. | No public advertiser rate card or minimum found. | Claims “verified audience data,” brand safety, payment protection, and enterprise-grade data security. Review campaign-specific terms before buying. | [Paved homepage](https://www.paved.com/) — live page fetched successfully. **High confidence** on mechanics; medium on reach claims. |
+| **beehiiv Ad Network** | **Networked newsletter sponsorships.** Brands buy placements through beehiiv; publishers accept or reject sponsored-link offers. Payouts are based on verified clicks/opens. | Advertiser access to “thousands” of newsletters and millions of readers; publisher access is tied to beehiiv’s network. The page says the network is available on **all paid plans**. | No public advertiser CPM/CPC minimum. | Publishers can choose which ads to run; official FAQ includes delayed-send, ad-selection, verified-click, and non-guaranteed-payout questions. | [beehiiv Ad Network](https://www.beehiiv.com/ad-network) — live page explicitly describes SSP technology, sponsored links, publisher acceptance, and verified clicks/opens. **High confidence.** |
+| **LetterWell** | **Self-serve newsletter ad marketplace.** Buyers browse newsletters, filter inventory, and purchase predefined campaigns through “Instant Booking.” It also supports inquiry-based bookings. | Marketplace access to newsletter inventory with filters for region, location, language, and newsletter metrics. | Publishers set upfront prices. Exact marketplace rates are not exposed publicly in the reviewed pages. LetterWell says campaigns over **$500** may use its PPC “Native Ads” product. | Instant Booking uses escrow: funds are held until campaign conditions are satisfied. Site describes the marketplace as “secure” and “thoroughly vetted.” Verify subscriber-consent and refund terms per listing. | [Advertiser FAQs](https://letterwell.co/advertisers-faqs/) and [Publisher FAQs](https://letterwell.co/publishers-faqs/). Advertiser FAQ is dated **April 18, 2026**. **High confidence.** |
+| **Hecto** | **Newsletter ad marketplace.** Buyers and creators can buy, sell, and manage newsletter advertisements and sponsorships. Includes direct creator messaging, campaign submission, and checkout. | Audience access is through creator/newsletter listings; Hecto emphasizes multiple-newsletter campaign building and engaged email audiences. | Official pricing page states **£0/month**, no monthly fee, and a **5% Hecto fee**. Publisher/listing prices are shown before contacting creators. | Hecto says it does not expose creator contact details, supports direct platform messaging, and provides checkout. Its “quality control” claims should be validated at campaign level. | [Hecto homepage](https://www.hecto.io/) and [pricing](https://www.hecto.io/pricing). **High confidence.** |
+| **Passionfroot** | **Broader creator sponsorship / brand-deal marketplace**, including newsletter placements. Brands browse creators and campaigns, collaborate, and pay through the platform. | Official creator page shows newsletter/media inventory, including ByteByteGo Newsletter, and an example “Sponsored Ad” campaign. Brands can browse campaigns matching their profile and apply directly. | Public page says the platform is designed for every stage and offers free starting access, but no reliable public per-placement minimum was found. | Platform emphasizes contracts, invoicing, payment handling, and creator/brand workflows. It is broader than newsletter-only inventory, so verify the exact deliverable and audience source. | [Passionfroot creators](https://www.passionfroot.me/creators). The prior `/pricing` URL returned 404, so pricing is **not verified**. **Medium-high confidence.** |
+| **SponsorGap** | **Sponsor discovery plus inbound ad marketplace.** It identifies brands already sponsoring newsletters, provides sponsor contacts and outreach workflow, and lets publishers list open ad slots for inbound inquiries. | Access is primarily to sponsor intelligence, creator listings, and advertiser contacts—not necessarily guaranteed, pre-booked inventory. Homepage claims **25k+ sponsor deals** and thousands of newsletter creators; treat as marketing claims. | Public publisher subscriptions: **Starter $39/month**, **Growth $89/month**, **Enterprise $199/month**. | Official site links to Terms and Privacy. It offers verified contacts and campaign/outreach tools, but buyers should separately verify audience consent, inventory availability, and advertiser approval. | [SponsorGap homepage](https://sponsorgap.com/) and [pricing](https://sponsorgap.com/pricing). Pricing page was live and showed the three plans. **High confidence** for product/pricing; medium for database metrics. |
+| **KreatorStack** | **Early-stage newsletter sponsorship marketplace.** AI-assisted discovery, creator profiles, deal pipeline, pricing benchmarks, placement management, and sponsor outreach. | Official homepage says **30+ newsletters listed** and describes creator profiles and newsletter discovery. It currently presents as **private beta / early access**, not a mature booking network. | No public pricing. | Early-access status means inventory, verification, payment protection, and campaign terms are not yet clearly established publicly. | [KreatorStack](https://kreatorstack.com/). Live page says “Private beta” and “30+ newsletters already listed.” **Medium confidence**; viable to monitor, not yet a dependable buying channel. |
+| **LiveIntent** | **Managed email advertising and monetization network**, not a transparent self-serve marketplace. It sells people-based advertising across publisher email inventory and supports newsletter monetization. | Access is through LiveIntent’s publisher network and managed sales process. Public search results and company positioning identify both marketer and publisher solutions. | No public rate card or minimum found; likely sales-led. | Requires careful review of data-use, identity, privacy, and publisher-consent terms. The official site was behind Cloudflare during review, so current policy details could not be independently checked. | [LiveIntent](https://www.liveintent.com/), [marketer solutions](https://www.liveintent.com/marketer-solutions/), [support newsletter overview](https://support.liveintent.com/newsletter-overview/). **Medium confidence**: strong category fit, limited direct-page verification due blocking. |
+| **Jeeng** | **Publisher email monetization and personalization network.** Appears oriented toward automated email monetization, recommendation, and ad products rather than buyer-controlled newsletter-by-newsletter booking. | Publisher-led access to email audiences; likely managed or platform-integrated rather than an open marketplace. | No public pricing found. | Requires detailed review of publisher consent, personalization, data processing, ad standards, and advertiser eligibility. Official site was Cloudflare-blocked during review. | [Jeeng](https://www.jeeng.com/) and [company page](https://www.jeeng.com/company/). **Low-medium confidence** on current mechanics because official pages were inaccessible to automated retrieval. |
+
+## Dedicated-send / solo-ad options
+
+These should **not** be treated as equivalent to newsletter sponsorship. They generally sell clicks, leads, or a standalone email send from a list owner.
+
+| Candidate | Format and current mechanics | Publisher / audience access | Pricing / minimums | Compliance and terms clues | Evidence and confidence |
+|---|---|---|---|---|---|
+| **Udimi** | **Solo-ad marketplace.** Buyers purchase solo ads from individual list vendors; the vendor sends the buyer’s offer to its list. | Marketplace of list vendors, usually selected by niche, list characteristics, and vendor history. | Public pricing is vendor-specific; no reliable platform-wide minimum found. | A Cloudflare challenge prevented direct inspection of the current terms and vendor pages. Treat list quality, opt-in status, suppression handling, and refund rules as requiring direct verification. | [Udimi](https://udimi.com/), [buy solo ads](https://udimi.com/buy-solo-ads). Official search result identifies it as “Buy solo ads from the best solo ad vendors.” **Medium confidence** on existence/category; low on current commercial details. |
+| **TrafficForMe** | **Dedicated solo-email traffic provider**, not a multi-vendor marketplace. It matches an offer to one of its business-opportunity email lists and delivers clicks quickly. | Official page says it has access to approximately a dozen business-opportunity lists and matches offers to the list most likely to respond. | Public starting prices: **$59** Premium BizOp/MMO, **$75** VIP BizOp/MMO, and **$299** Health/Forex/Self-Growth. | Claims “quality guaranteed” and backed traffic, but the reviewed page does not establish list-consent provenance or legal permission for every vertical. Ask for list source, opt-in language, unsubscribe process, and traffic-quality definition. | [TrafficForMe](https://trafficforme.com/). Live page showed the list-matching mechanics and prices. **High confidence** for published offer; medium for compliance quality. |
+| **Solo Ads X** | **Solo-ad vendor directory / lead marketplace**, rather than a fully managed ad exchange. Buyers browse or contact email-traffic vendors; vendors can submit listings. | Directory access to listed solo-ad providers; it does not appear to guarantee a standardized audience, delivery, or escrow process. | No public platform-wide pricing found; vendor-specific. | Official page emphasizes “full transparency,” “predictable costs,” and vendor listings, but buyers must independently verify consent, fraud controls, unsubscribe handling, and refund terms. | [Solo Ads X](https://soloadsx.com/). Live page calls itself a directory of “email traffic providers,” offers vendor listings, and labels the product “solo ads aka email ads.” **High confidence** for directory mechanics; low-medium for quality/compliance. |
+| **Newsletter Sponsorship Brand Database** | **Sponsor-lead database, not an inventory marketplace.** It sells access to brand/founder/marketing contacts that publishers can pitch for sponsorships. It does not book a newsletter placement or send an email for the buyer. | Publisher gets sponsor contacts rather than audience access. The site advertises contacts for Shopify brands, startups, marketing executives, and investors. | Landing page advertises **$197 for 1M+ contacts** and claims a 70,000-opportunity database. These are vendor claims, not independently verified counts. | Highest compliance-risk item in this list: the reviewed page markets “active emails” but does not establish consent basis, lawful-purpose restrictions, suppression, or data provenance. Treat as lead-generation data, not permission to email. | [Newsletter Sponsorship database](https://newsletter-sponsorship.com/). Live page exposed the price and database claims. **High confidence** that it sells a contact database; low confidence in data quality and compliance. |
+
+## Practical classification
+
+### Best fits for buying newsletter placements
+
+1. **Paved** — strongest large-scale marketplace/network option.
+2. **beehiiv Ad Network** — strong native network integration, but advertiser pricing is sales/platform controlled.
+3. **LetterWell** — clearest self-serve marketplace and escrow mechanics.
+4. **Hecto** — transparent platform fee and creator-facing marketplace workflow.
+5. **Passionfroot** — useful where newsletter sponsorship is part of a broader creator/media campaign.
+
+### Best fits for discovering sponsors rather than directly buying inventory
+
+- **SponsorGap**
+- **KreatorStack**
+- **Newsletter Sponsorship Brand Database**
+
+### Dedicated-send / solo-ad category
+
+- **Udimi**
+- **TrafficForMe**
+- **Solo Ads X**
+
+These should be evaluated separately because the advertiser’s message may be sent as the entire email, often to a list whose consent, segmentation, and complaint history are less transparent than a mainstream newsletter sponsorship.
+
+## Main findings and caveats
+
+- The market is split between **premium newsletter sponsorship networks** and **small creator marketplaces**. The former are usually sales-led or platform-integrated; the latter expose more creator-level pricing and inventory.
+- **Public pricing is uncommon** for large networks. The clearest published pricing found was Hecto’s **5% fee**, SponsorGap’s **$39/$89/$199 monthly plans**, and TrafficForMe’s **$59/$75/$299 starting prices**.
+- Many “marketplaces” are actually **sponsor discovery or outreach products**, not guaranteed inventory exchanges.
+- Reach claims such as “thousands of newsletters,” “millions of readers,” and “25k+ deals” are labeled as **unverified marketing metrics** unless supported by independently inspectable data.
+- For any dedicated-send purchase, require documentation of: list acquisition and consent, unsubscribe handling, suppression against prior complaints, audience geography, historical delivery metrics, and refund/replacement rules.
+
+## Files
+
+- No files were created or modified.
+
+## Issues encountered
+
+- **Paved, LiveIntent, Jeeng, and Udimi** used Cloudflare or bot protection during direct browser retrieval. Paved’s public homepage was still retrievable via a normal HTTP request; LiveIntent, Jeeng, and Udimi were therefore assigned lower confidence for details that could not be checked directly.
+- **GoLetter** was reviewed but not included as a core candidate because its public material emphasizes newsletter growth/directory services and does not clearly demonstrate a current advertiser booking marketplace.

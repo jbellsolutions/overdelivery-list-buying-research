@@ -1,0 +1,88 @@
+## Research completed
+
+Verified live/current resources via official websites. No files were created or modified.
+
+### 1. Trade associations and industry bodies
+
+| Resource | URL | What it is useful for |
+|---|---|---|
+| **Association of National Advertisers (ANA)** | https://www.ana.net/ | The main U.S. successor to the old national DMA ecosystem. Offers marketer membership, committees, events, research, training, media/data/measurement resources, and member networking. Best for reaching brand-side marketers, agencies, data/analytics practitioners, and media decision-makers. Much content is member-only. |
+| **ANA events and conferences** | https://www.ana.net/events | Current events include the ANA Measurement & Analytics Conference, AI and Technology for Marketers Conference, email marketing workshops, programmatic transparency sessions, and local/chapter activities. Strong source for meeting senior marketers and media buyers. |
+| **DMA UK — Data & Marketing Association** | https://www.dma.org.uk/ | Active U.K. trade association with 700+ organizations and 27,000 marketers. Provides member discovery, councils, events, legal/compliance resources, training, benchmarking, research, and the DMA Code. Useful for reputable U.K./European data-driven marketing contacts and responsible-list-use guidance. |
+| **FEDMA — Federation of European Data and Marketing** | https://www.fedma.org/ | European umbrella body representing national data/marketing associations and major companies. Useful for finding country-level DMA associations, regulatory contacts, privacy/data-use guidance, policy papers, and European practitioner networks. |
+| **DMAW — Direct Marketing Association of Washington** | https://www.dmaw.org/ | Active U.S. direct-response association focused heavily on nonprofit fundraising. Offers commercial and nonprofit memberships, event calendar, speed networking, conferences, awards, sponsors, and member resources. Particularly useful for nonprofit list owners, fundraisers, agencies, and direct-response vendors. |
+| **NEMOA — National Etailing and Marketing Organization of America** | https://www.nemoa.org/ | Intimate multi-channel direct-marketing and catalog/ecommerce community. Its summits and “Inside Track” virtual discussions connect catalogers, ecommerce brands, mailing-list providers, agencies, data specialists, and technology vendors. Especially good for warm introductions rather than anonymous directory searching. |
+| **IAB — Interactive Advertising Bureau** | https://www.iab.com/ | Best for digital, programmatic, CTV, audio, podcast, video, identity, measurement, and ad-tech contacts. Has 700+ members, committees/councils, standards work, conferences, webinars, and professional training. Useful when “list inventory” includes digital audiences, publishers, media networks, or programmatic buyers. |
+
+**Important historical note:** The former U.S. Direct Marketing Association is no longer the primary standalone national body; ANA is the relevant current national organization. DMAW remains an active regional/specialty association.
+
+---
+
+### 2. Conferences and events
+
+| Resource | URL | Current usefulness |
+|---|---|---|
+| **ANA Events** | https://www.ana.net/events | High-value national conferences and member events for measurement, analytics, AI, email, programmatic, media, and brand marketing. Best for senior brand-side and agency contacts. |
+| **NEMOA Summits and Inside Track** | https://www.nemoa.org/ | Strong for catalog, ecommerce, print, customer acquisition, retention, direct mail, and multichannel practitioners. The organization explicitly positions its events as case-study and peer-connection forums rather than sales-pitch expos. |
+| **DMAW Event Calendar** | https://www.dmaw.org/ | Current listings include nonprofit marketing sessions, regional summits, speed networking, member meetups, and MAXI Awards. Useful for finding active direct-response practitioners and event sponsors. |
+| **DMA UK Events** | https://www.dma.org.uk/ | Current webinars, policy events, customer-engagement events, regional events, Next Gen meetups, and awards. Useful for U.K. practitioner discovery and responsible data marketing contacts. |
+| **IAB Conferences and Webinars** | https://www.iab.com/ | Current events span creator marketing, podcast, digital video, gaming, AI, measurement, and programmatic media. Useful for digital media buyers, publishers, ad-tech vendors, and audience/data providers. |
+| **MediaPost Events** | https://www.mediapost.com/ | Runs 30+ events, including Email Insider Summit, Data & Programmatic Insider Summit, Planning and Buying Insider Summit, Performance Marketing Insider Summit, and vertical-specific Brand Insider Summits. Strong for media buyers, publishers, agencies, and marketing executives. Many events are paid or application-based. |
+
+---
+
+### 3. List, media, and broker directories
+
+| Resource | URL | What can be found |
+|---|---|---|
+| **NextMark Mailing List Finder** | https://lists.nextmark.com/ | The strongest publicly discoverable list directory found. It supports searches by consumer/business market and postal/email/telephone channel. The site currently claims 60,000+ lists from 1,400+ vendors, with counts, pricing, popularity, source/freshness information, privacy-policy indicators, related lists, and categories such as B2B, healthcare, homeowners, catalog, email, package inserts, and international lists. No account is required for basic searching. |
+| **NextMark main site / media planning tools** | https://www.nextmark.com/ | Broader suite for media planning, media sales, list/insertion operations, provider directories, data cards, and MediaPulse alerts/newsletter. Useful for both buyers searching inventory and list owners seeking visibility. |
+| **SRDS** | https://srds.com/ | Long-running media planning and selling database with more than 125,000 media brands/properties and media contacts. Its direct-marketing database provides list-source details, selections/counts/rates, commissions, addressing, delivery schedules, restrictions, test arrangements, lettershop services, and update schedules. It explicitly does **not** rent lists; it is a discovery/evaluation database. Subscription/demo required for deeper access. |
+| **SRDS Direct Marketing Lists** | https://srds.com/direct-marketing-lists/ | Dedicated direct-marketing database landing page. Particularly useful for professional media buyers comparing list programs and compiling a vetted shortlist before contacting owners or brokers. |
+| **Melissa Mailing Lists & Sales Leads** | https://www.melissa.com/direct/mailing-lists-sales-leads | Active list/data marketplace with consumer, business, saturation/occupant, new homeowner, new mover, property-owner, specialty, and professional lists. Supports list building and downloads; useful for direct purchasing and testing audience definitions. |
+| **ListSource / CoreLogic → Araya migration** | https://www.listsource.com/homepage/index.html | Active property/homeowner list-builder covering homeowner, property, demographic, new-mover, foreclosure, insurance, mortgage, and real-estate segments. The site states that ListSource will retire on September 30, 2026 and move to **Property List on Araya**. Treat it as a transitional resource and confirm the current purchasing path before relying on it. |
+| **Data Axle USA / Salesgenie transition** | https://www.dataaxleusa.com/ | Established business and consumer list/data source. The current site announces that the Data Axle USA experience is moving to Salesgenie beginning January 3, 2026. Useful for B2B and consumer lists, email/direct-mail campaigns, industry and geography selects, and reseller discovery, but users should follow the new Salesgenie route. |
+| **Wiland** | https://wiland.com/ | Not a public list directory, but a major audience/data provider with consumer spend, intent, predictive audiences, custom personas, retail/travel/giving/fan signals, and activation across channels. Useful as a vetted enterprise list/audience owner to approach directly, especially for modeled acquisition audiences and nonprofit/retail use cases. |
+| **Epsilon** | https://www.epsilon.com/us | Enterprise data/identity and consumer-marketing provider. Offers consumer marketing data, identity resolution, digital media, loyalty, CDP, retail media, and audience activation. Useful for large-scale audience sourcing and media activation, not for browsing a public list catalog. |
+| **AmeriList** | https://www.amerilist.com/ | Search results identify it as an active sales-leads and mailing-list provider. Use as a direct broker/owner lead, but independently validate list provenance, consent, recency, rental terms, and suppression practices before recommending it. |
+
+**Best practical workflow:** Start with NextMark for inventory discovery, use SRDS for professional media-planning validation and data-card comparison, then contact the list owner/manager directly for current counts, pricing, usage rights, consent basis, suppression, and test arrangements.
+
+---
+
+### 4. Publications and information resources
+
+| Resource | URL | Use |
+|---|---|---|
+| **MediaPost** | https://www.mediapost.com/ | Active publication network covering Marketing Daily, MediaDailyNews, Performance Marketing Insider, email/media topics, research, and events. Useful for identifying active agencies, publishers, ad-tech companies, media buyers, event speakers, and current market terminology. |
+| **NextMark MediaPulse** | https://www.nextmark.com/ | Newsletter/alert product connected to the NextMark media database. Useful for new-list announcements, list-management updates, and discovering newly added media programs. |
+| **DMAW Direct Impact** | https://www.dmaw.org/ | DMAW’s member publication, currently described as a six-times-per-year magazine. Useful for nonprofit direct-response case studies, vendors, fundraisers, agencies, and practitioner names; access may be member-oriented. |
+| **ANA Insights / Knowledge Center** | https://www.ana.net/ | ANA’s research, case studies, reports, and industry updates. Useful for finding current media, analytics, measurement, email, and data-strategy leaders, although much of the content is member-exclusive. |
+| **DMA UK resources and research** | https://www.dma.org.uk/ | Includes benchmarking, legal/compliance material, customer-engagement reports, responsible marketing resources, training, and case studies. Strong for validating ethical data practices and finding U.K. practitioners. |
+
+---
+
+### 5. Practitioner networks and communities
+
+- **ANA committees and councils** — Available through https://www.ana.net/events and the ANA membership ecosystem. Best for brand-side leaders in media, data, analytics, email, measurement, AI, and programmatic.
+- **DMA UK councils and community** — https://www.dma.org.uk/ — Includes councils, regional groups, events, awards, and Next Gen meetups. Strong for U.K. practitioners and peer referrals.
+- **DMAW membership and events** — https://www.dmaw.org/ — Particularly valuable for nonprofit fundraisers, direct-response agencies, list managers, and service providers.
+- **NEMOA community** — https://www.nemoa.org/ — Good for catalog/ecommerce marketers, multichannel direct marketers, mailing-list companies, and technology providers in a smaller, more relationship-oriented setting.
+- **IAB committees and councils** — https://www.iab.com/ — Best for digital-media buyers, publishers, programmatic operators, identity/data vendors, and ad-tech practitioners.
+- **MediaPost Insider Summits** — https://www.mediapost.com/ — Useful for targeted peer groups in email, planning/buying, performance marketing, data/programmatic, retail, CPG, travel, healthcare, and other verticals.
+- **SRDS media-seller ecosystem** — https://srds.com/ — Not a social community, but a structured way to identify media properties, contacts, sellers, and data-card owners.
+
+---
+
+### Resources checked but not recommended as current primary sources
+
+- **ListPartners.com** — currently parked/for sale.
+- **ListManagementAssociation.org** — unavailable during verification.
+- **ResponseMagazine.com** — unavailable during verification.
+- **TargetMarketingMag.com** — blocked during verification; do not rely on it without independent confirmation.
+- **Mailinglist.com** — connection/privacy error during verification.
+- **ListIndustryAlliance.com** — unavailable during verification.
+- **TheListExchange.com** — unavailable during verification.
+- **ListCompany.com** — unavailable during verification.
+
+These should be treated as stale, inaccessible, or unverified rather than included as authoritative recommendations.

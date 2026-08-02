@@ -1,0 +1,76 @@
+## Solo-ad marketplace/provider research
+
+**Key distinction**
+
+- **Marketplace:** connects buyers with multiple list owners; platform usually handles payment, delivery tracking, ratings, and disputes.
+- **List owner / direct vendor:** owns or controls one or more email lists and sells placements directly; buyer must independently validate claims.
+- **Traffic broker / managed network:** accepts the offer and click order, then selects an underlying list—or rotates across lists—for the buyer. You may not know which list actually mailed the offer.
+
+| Provider | Model | Opt-in/list claims | Tracking & delivery controls | Refund / quality policy | Pricing model | Niches | Reputation signals | Risk flags |
+|---|---|---|---|---|---|---|---|---|
+| **Udimi** | **Marketplace/intermediary** connecting buyers to individual solo-ad sellers | Says sellers are ID-verified; sellers advertise niche-specific subscriber lists. Homepage defines solo ads as renting another person’s subscribers and says traffic is tracked through the platform. Claims 3,324 active marketing sellers, 324 health sellers, and 8,998 social sellers, but these numbers are self-reported and unusually dynamic. | Platform says it controls the order process, controls traffic delivery, processes payment, applies traffic filtering, and provides order tracking. Buyers can communicate directly with sellers. | Claims instant refunds if an order is not delivered in full and dispute mediation. Ratings are described as “undeletable” and blind. Exact delivery/refund terms were blocked by Cloudflare during retrieval, so the operational details should be confirmed before purchase. | Usually buyer purchases a specified number of clicks at seller-set CPC. Seller profiles and ratings determine price. | Marketing/MMO, health, social, personal development, and many sub-niches. | Homepage displays a **claimed Trustpilot score of 4.9/5** and verified testimonials. Trustpilot’s live page was Cloudflare-protected during retrieval; treat the homepage score as a platform claim, not independently verified here. | Ratings measure transaction experience and reported delivery, not necessarily sales quality or consent provenance. “ID-verified seller” does not prove first-party ownership of the list or valid consent for the buyer’s specific offer. Sellers can still use recycled, over-mailed, or brokered traffic. |
+| **10DollarSoloAds** | **Direct managed vendor / likely traffic broker** rather than an open seller marketplace | Claims prospects have expressed interest in the relevant niche/industry and says it “finds, qualifies, verifies, and delivers” prospects. It does not publicly identify the underlying list owners or provide a verifiable consent audit. | Provides a third-party tracking link showing click count, visitor IP addresses, and timestamps. Offers niche targeting and country/state/city geotargeting. | Terms: **15-day refund if the campaign has not started; once it starts, all sales are final.** No public performance guarantee was found. Terms also include broad “as-is” and liability disclaimers. | Public order page lists: **$10/monthly ad** for 1,000 prospects reached; **$10 weekly ad** for 1,500 new prospects weekly; **$20 deluxe ad** for 3,000 new prospects weekly. The page also advertises doubled prospect counts, so confirm whether promotional counts are temporary. | Hundreds of targeting categories; broad business/industry targeting and geographic targeting. | On-site testimonials only; the order page explicitly says individual results vary and testimonials are not typical. No strong independent review evidence was verified in this pass. | Very low advertised pricing makes “prospects reached” easy to confuse with verified unique human clicks, opt-ins, or qualified leads. The buyer does not appear to select a named list. Refund window is weak once delivery begins. |
+| **EasySoloAds** | **Direct managed vendor / broker-like service** | Claims ads are sent to “fresh lists of known buyers,” “verified prospects,” and “SPAM FREE”/legally compliant campaigns. It does not publish list-owner identities, consent records, list age, or a sample opt-in form. | Provides a tracking link for every campaign and says the third-party link gives a real-time view; says buyers may use their own tracking links. Offers niche, state, country, and language targeting. | Terms state: **all sales are final once the campaign starts.** No explicit delivery shortfall refund or conversion guarantee found. Terms contain broad service disclaimers. | **Bronze $27/month**: 1,000 new prospects weekly / 4,000 unique prospects monthly; **Silver $47/month**: 3,000 weekly / 12,000 monthly; **Gold $97/month**: 8,000 weekly / 32,000 monthly. Pages advertise double-promotion offers, so verify the actual contracted volume. | Work-from-home, business opportunities, internet marketing, MLM/network marketing, crypto, self-help, weight loss/fitness, dating, insurance, and others. | Site includes Trustpilot branding and testimonials, but a current independent score was not verified during retrieval. On-site testimonial disclaimers say results are not typical. | “Prospects reached” is not the same as clicks or opt-ins. Monthly subscription packaging can obscure how many actual sends occur and whether the same audience is repeatedly mailed. No visible named-list or consent documentation. |
+| **TrafficForMe (T4Me)** | **Traffic broker / managed network** | Says it has access to “a dozen business opportunity lists,” selects the list most likely to respond, and writes/sends the email for the buyer. Claims “permission-based email,” real-human clicks, and no bots. The buyer generally does not choose the underlying list. | Claims proprietary software filters fraudulent/bot clicks; gives a clean-CPC model. Delivery normally starts 12–48 hours after payment and completes in 2–5 days depending on package. | Public sales page says traffic is “fully backed” and quality guaranteed, but the exact enforceable refund/shortfall terms were not clear on the sales page. Trustpilot reviews report disputes over undelivered traffic and refunds. | Premium BizOp/MMO from **$59 / approximately $0.59 CPC**; VIP BizOp/MMO from **$75 / approximately $0.75 CPC**; Health, Forex, and Self-Growth from **$299 / approximately $0.90 CPC**. Country mix claims range from 85–100% to 95–100% Tier-1 countries depending on package. | BizOp/MMO, health, forex, self-growth; primarily USA, UK, Canada, Australia, and New Zealand. | Trustpilot page retrieved live: **2.0/5 from 11 reviews**, with all displayed reviews categorized as 1-star. Trustpilot states the profile is claimed, has no recent history of asking for reviews, and has not replied to negative reviews. Several reviewers allege non-delivery, poor support, duplicate/low-quality clicks, or difficulty obtaining refunds; the company disputes some reviews and says first-time orders may require identity verification. | **High-risk candidate.** Strong mismatch between sales-page claims and current independent review signal. “Clean CPC” and bot filtering are provider assertions; require a small test, first-party analytics, and written refund terms before spending materially. |
+| **SoloAdsX** | **Directory/community, not a true escrow marketplace** | Describes itself as a directory of “hand-picked” vendors with proven records. Its directory says vendors are verified/listed and includes niche filters and testimonials. | Advises buyers to contact vendors directly and ask for a real-time stats link. No platform-wide click validation, escrow, or standardized tracking was found. | No platform-wide refund or dispute policy found because the transaction occurs directly with the vendor. | Vendor-specific CPC and campaign terms; directory does not standardize prices. | Business opportunities, dating, health/fitness, internet marketing, MMO, MLM, personal development, work-from-home. | Claims hundreds of reviews and a large Facebook testimonial community. These are directory/community signals, not independent transaction-level verification. | **Directory risk:** listings and testimonials are not equivalent to platform underwriting. Confirm who owns the list, request recent campaign stats, pay with buyer protection, and obtain refund/delivery terms before paying. |
+| **My Lead Gen Secret** | **Lead-generation/list-owner network**, not a conventional solo-ad marketplace | Landing page explains that prospects can opt into receiving more information through a checkbox and calls the resulting leads “permission-based.” It offers downloadable leads or a done-for-you mailing system. This is a lead distribution model, not necessarily a one-time solo email to the owner’s list. | Page describes spreadsheet delivery or a built-in mailing system. No independent audit of the opt-in wording, source funnels, timestamps, suppression handling, or exclusivity was found. | Public page promotes a $30 setup fee plus $1/day for 30 days, paid upfront; no clear buyer refund framework or deliverability guarantee was located. | **$30 setup + $1/day for the first 30 days**, then $1/day to continue, according to the sales page. | Primarily internet marketing/MMO affiliate offers. | Sales page claims affiliates average $0.24 EPC and uses extensive testimonials, but these are seller claims. No independently verified consent or lead-quality audit was found. | A checkbox authorizing “more information” may not authorize every buyer’s unrelated offer. Verify exact disclosure language, whether consent is transferable, whether leads are exclusive/shared, age/geography, and whether the buyer is permitted to upload or mail them under applicable law and ESP rules. |
+
+### Status of “SoloAds.com”
+
+- `https://www.soloads.com/` could not establish a connection during live retrieval.
+- I found no reliable current policy, pricing, refund, or reputation material that would justify treating it as an active, vetted marketplace.
+- **Risk classification: avoid until independently confirmed.** Do not confuse the unavailable `soloads.com` domain with similarly named services such as SoloAdsX, 10DollarSoloAds, or EasySoloAds.
+
+## Practical buying mechanics
+
+1. **Start with a test order**, typically a small click package rather than a large monthly commitment.
+2. Require the vendor to state in writing:
+   - whether the vendor owns the list or brokers traffic;
+   - the exact niche, geography, and language;
+   - whether clicks are unique and human-filtered;
+   - minimum delivery volume and delivery window;
+   - what happens to undelivered or invalid clicks;
+   - refund/credit rules and the deadline for disputing delivery.
+3. Use your own tracking:
+   - dedicated landing page;
+   - UTM parameters and a unique campaign ID;
+   - first-party analytics;
+   - server-side click logs where possible;
+   - separate conversion tracking from vendor-reported clicks.
+4. Ask for **recent anonymized campaign evidence**, not just testimonials:
+   - delivered clicks versus claimed clicks;
+   - unique visitors;
+   - opt-in rate;
+   - bounce/engagement indicators;
+   - geography and timestamp distribution;
+   - repeat exposure or duplicate-lead rate.
+5. Treat “opt-in,” “permission-based,” “verified,” “fresh,” “real human,” and “clean traffic” as **unverified marketing claims unless backed by a consent explanation or audit trail**.
+6. Avoid paying off-platform when a marketplace offers escrow, dispute handling, and platform-tracked delivery. For direct vendors, use a payment method with buyer protection and preserve the written terms.
+7. Do not assume that a list subscriber’s consent to receive information from one publisher transfers automatically to a third-party advertiser. Confirm the disclosure, purpose, brand/category scope, and applicable email/ESP restrictions.
+
+## Strongest and weakest options from the evidence
+
+- **Best transaction-protection structure:** Udimi, because it is the only reviewed option clearly describing seller identity checks, platform-controlled payment, platform-controlled delivery, ratings, and dispute/refund handling. Its list-consent evidence still requires buyer diligence.
+- **Most transparent low-cost mechanics:** 10DollarSoloAds and EasySoloAds publish concrete packages, targeting, and third-party tracking claims, but their refund terms become restrictive once campaigns start and they do not identify underlying list owners.
+- **Highest risk:** TrafficForMe. Its sales page makes strong quality claims, while the live Trustpilot profile showed a 2.0/5 score, 11 reviews, no recent review-invitation history, and repeated complaints about delivery/support/refunds.
+- **Useful for vendor discovery only:** SoloAdsX. Treat it as a directory and lead-generation channel, not as an escrowed marketplace.
+- **Not a direct substitute for solo ads:** My Lead Gen Secret. It is closer to a permission-based lead/list distribution network and requires separate consent, exclusivity, and compliance verification.
+
+### Source URLs
+
+- Udimi: https://udimi.com/
+- Udimi policy links surfaced on homepage: https://udimi.com/terms-and-conditions, https://udimi.com/delivery-terms, https://udimi.com/privacy-policy
+- 10DollarSoloAds: https://www.10dollarsoloads.com/  
+  Pricing: https://www.10dollarsoloads.com/order/  
+  Terms/refund: https://www.10dollarsoloads.com/terms-of-service/
+- EasySoloAds: https://www.easysoloads.com/  
+  Pricing: https://www.easysoloads.com/pricing/  
+  Terms/refund: https://www.easysoloads.com/terms-of-service/
+- TrafficForMe: https://trafficforme.com/  
+  Independent review profile: https://www.trustpilot.com/review/trafficforme.com
+- SoloAdsX directory: https://soloadsx.com/  
+  Directory: https://soloadsx.com/directory/
+- My Lead Gen Secret: https://www.myleadgensecret.com/
+- Unavailable domain checked: https://www.soloads.com/
+
+**Issue encountered:** the rtrvr research service became unreachable during follow-up retrievals, and Udimi/Trustpilot policy pages triggered anti-bot protection. I completed the remaining source checks with live HTTP retrieval and have marked claims that could not be independently verified.

@@ -1,0 +1,769 @@
+    <!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <!-- Start VWO Async SmartCode -->
+        <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+        <script type='text/javascript' id='vwoCode'>
+            window._vwo_code ||
+            (function () {
+                var w=window,
+                    d=document;
+                var account_id=1188715,
+                    version=2.2,
+                    settings_tolerance=2000,
+                    hide_element='body',
+                    hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important';
+                /* DO NOT EDIT BELOW THIS LINE */
+                if(f=!1,v=d.querySelector('#vwoCode'),cc={},-1<d.URL.indexOf('__vwo_disable__')||w._vwo_code)return;try{var e=JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config'));cc=e&&'object'==typeof e?e:{}}catch(e){}function r(t){try{return decodeURIComponent(t)}catch(e){return t}}var s=function(){var e={combination:[],combinationChoose:[],split:[],exclude:[],uuid:null,consent:null,optOut:null},t=d.cookie||'';if(!t)return e;for(var n,i,o=/(?:^|;\s*)(?:(_vis_opt_exp_(\d+)_combi=([^;]*))|(_vis_opt_exp_(\d+)_combi_choose=([^;]*))|(_vis_opt_exp_(\d+)_split=([^:;]*))|(_vis_opt_exp_(\d+)_exclude=[^;]*)|(_vis_opt_out=([^;]*))|(_vwo_global_opt_out=[^;]*)|(_vwo_uuid=([^;]*))|(_vwo_consent=([^;]*)))/g;null!==(n=o.exec(t));)try{n[1]?e.combination.push({id:n[2],value:r(n[3])}):n[4]?e.combinationChoose.push({id:n[5],value:r(n[6])}):n[7]?e.split.push({id:n[8],value:r(n[9])}):n[10]?e.exclude.push({id:n[11]}):n[12]?e.optOut=r(n[13]):n[14]?e.optOut=!0:n[15]?e.uuid=r(n[16]):n[17]&&(i=r(n[18]),e.consent=i&&3<=i.length?i.substring(0,3):null)}catch(e){}return e}();function i(){var e=function(){if(w.VWO&&Array.isArray(w.VWO))for(var e=0;e<w.VWO.length;e++){var t=w.VWO[e];if(Array.isArray(t)&&('setVisitorId'===t[0]||'setSessionId'===t[0]))return!0}return!1}(),t='a='+account_id+'&u='+encodeURIComponent(w._vis_opt_url||d.URL)+'&vn='+version+'&ph=1'+('undefined'!=typeof platform?'&p='+platform:'')+'&st='+w.performance.now();e||((n=function(){var e,t=[],n={},i=w.VWO&&w.VWO.appliedCampaigns||{};for(e in i){var o=i[e]&&i[e].v;o&&(t.push(e+'-'+o+'-1'),n[e]=!0)}if(s&&s.combination)for(var r=0;r<s.combination.length;r++){var a=s.combination[r];n[a.id]||t.push(a.id+'-'+a.value)}return t.join('|')}())&&(t+='&c='+n),(n=function(){var e=[],t={};if(s&&s.combinationChoose)for(var n=0;n<s.combinationChoose.length;n++){var i=s.combinationChoose[n];e.push(i.id+'-'+i.value),t[i.id]=!0}if(s&&s.split)for(var o=0;o<s.split.length;o++)t[(i=s.split[o]).id]||e.push(i.id+'-'+i.value);return e.join('|')}())&&(t+='&cc='+n),(n=function(){var e={},t=[];if(w.VWO&&Array.isArray(w.VWO))for(var n=0;n<w.VWO.length;n++){var i=w.VWO[n];if(Array.isArray(i)&&'setVariation'===i[0]&&i[1]&&Array.isArray(i[1]))for(var o=0;o<i[1].length;o++){var r,a=i[1][o];a&&'object'==typeof a&&(r=a.e,a=a.v,r&&a&&(e[r]=a))}}for(r in e)t.push(r+'-'+e[r]);return t.join('|')}())&&(t+='&sv='+n)),s&&s.optOut&&(t+='&o='+s.optOut);var n=function(){var e=[],t={};if(s&&s.exclude)for(var n=0;n<s.exclude.length;n++){var i=s.exclude[n];t[i.id]||(e.push(i.id),t[i.id]=!0)}return e.join('|')}();return n&&(t+='&e='+n),s&&s.uuid&&(t+='&id='+s.uuid),s&&s.consent&&(t+='&consent='+s.consent),w.name&&-1<w.name.indexOf('_vis_preview')&&(t+='&pM=true'),w.VWO&&w.VWO.ed&&(t+='&ed='+w.VWO.ed),t}code={nonce:v&&v.nonce,library_tolerance:function(){return'undefined'!=typeof library_tolerance?library_tolerance:void 0},settings_tolerance:function(){return cc.sT||settings_tolerance},hide_element_style:function(){return'{'+(cc.hES||hide_element_style)+'}'},hide_element:function(){return performance.getEntriesByName('first-contentful-paint')[0]?'':'string'==typeof cc.hE?cc.hE:hide_element},getVersion:function(){return version},finish:function(e){var t;f||(f=!0,(t=d.getElementById('_vis_opt_path_hides'))&&t.parentNode.removeChild(t),e&&((new Image).src='https://dev.visualwebsiteoptimizer.com/ee.gif?a='+account_id+e))},finished:function(){return f},addScript:function(e){var t=d.createElement('script');t.type='text/javascript',e.src?t.src=e.src:t.text=e.text,v&&t.setAttribute('nonce',v.nonce),d.getElementsByTagName('head')[0].appendChild(t)},load:function(e,t){t=t||{};var n=new XMLHttpRequest;n.open('GET',e,!0),n.withCredentials=!t.dSC,n.responseType=t.responseType||'text',n.onload=function(){if(t.onloadCb)return t.onloadCb(n,e);200===n.status?_vwo_code.addScript({text:n.responseText}):_vwo_code.finish('&e=loading_failure:'+e)},n.onerror=function(){if(t.onerrorCb)return t.onerrorCb(e);_vwo_code.finish('&e=loading_failure:'+e)},n.send()},init:function(){var e,t=this.settings_tolerance();w._vwo_settings_timer=setTimeout(function(){_vwo_code.finish()},t),'body'!==this.hide_element()?(n=d.createElement('style'),e=(t=this.hide_element())?t+this.hide_element_style():'',t=d.getElementsByTagName('head')[0],n.setAttribute('id','_vis_opt_path_hides'),v&&n.setAttribute('nonce',v.nonce),n.setAttribute('type','text/css'),n.styleSheet?n.styleSheet.cssText=e:n.appendChild(d.createTextNode(e)),t.appendChild(n)):(n=d.getElementsByTagName('head')[0],(e=d.createElement('div')).style.cssText='z-index: 2147483647 !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;',e.setAttribute('id','_vis_opt_path_hides'),e.classList.add('_vis_hide_layer'),n.parentNode.insertBefore(e,n.nextSibling));var n='https://dev.visualwebsiteoptimizer.com/j.php?'+i();-1!==w.location.search.indexOf('_vwo_xhr')?this.addScript({src:n}):this.load(n+'&x=true',{l:1})}};w._vwo_code=code;code.init();})();
+        </script>
+        <!-- End VWO Async SmartCode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            window.dataLayer.push({
+                'postPublishDate': '2019-06-16',
+                'postModifiedDate': '2024-02-07',
+            });
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+
+            gtag('consent', 'default', {
+                'ad_storage': 'denied',
+                'analytics_storage': 'denied',
+                'wait_for_update': 500,
+            });
+            gtag("set", "ads_data_redaction", true);
+        </script>
+                    <script src="https://cmp.osano.com/Azqaa0TTIUemBqY/5c75cdbf-4b45-46c6-9bdf-500dc1eacaf6/osano.js" crossorigin="anonymous"></script>
+            <script>
+                LUX=(function(){var a=("undefined"!==typeof(LUX)&&"undefined"!==typeof(LUX.gaMarks)?LUX.gaMarks:[]);var d=("undefined"!==typeof(LUX)&&"undefined"!==typeof(LUX.gaMeasures)?LUX.gaMeasures:[]);var j="LUX_start";var k=window.performance;var l=("undefined"!==typeof(LUX)&&LUX.ns?LUX.ns:(Date.now?Date.now():+(new Date())));if(k&&k.timing&&k.timing.navigationStart){l=k.timing.navigationStart}function f(){if(k&&k.now){return k.now()}var o=Date.now?Date.now():+(new Date());return o-l}function b(n){if(k){if(k.mark){return k.mark(n)}else{if(k.webkitMark){return k.webkitMark(n)}}}a.push({name:n,entryType:"mark",startTime:f(),duration:0});return}function m(p,t,n){if("undefined"===typeof(t)&&h(j)){t=j}if(k){if(k.measure){if(t){if(n){return k.measure(p,t,n)}else{return k.measure(p,t)}}else{return k.measure(p)}}else{if(k.webkitMeasure){return k.webkitMeasure(p,t,n)}}}var r=0,o=f();if(t){var s=h(t);if(s){r=s.startTime}else{if(k&&k.timing&&k.timing[t]){r=k.timing[t]-k.timing.navigationStart}else{return}}}if(n){var q=h(n);if(q){o=q.startTime}else{if(k&&k.timing&&k.timing[n]){o=k.timing[n]-k.timing.navigationStart}else{return}}}d.push({name:p,entryType:"measure",startTime:r,duration:(o-r)});return}function h(n){return c(n,g())}function c(p,o){for(i=o.length-1;i>=0;i--){var n=o[i];if(p===n.name){return n}}return undefined}function g(){if(k){if(k.getEntriesByType){return k.getEntriesByType("mark")}else{if(k.webkitGetEntriesByType){return k.webkitGetEntriesByType("mark")}}}return a}return{mark:b,measure:m,gaMarks:a,gaMeasures:d}})();LUX.ns=(Date.now?Date.now():+(new Date()));LUX.ac=[];LUX.cmd=function(a){LUX.ac.push(a)};LUX.init=function(){LUX.cmd(["init"])};LUX.send=function(){LUX.cmd(["send"])};LUX.addData=function(a,b){LUX.cmd(["addData",a,b])};LUX_ae=[];window.addEventListener("error",function(a){LUX_ae.push(a)});LUX_al=[];if("function"===typeof(PerformanceObserver)&&"function"===typeof(PerformanceLongTaskTiming)){var LongTaskObserver=new PerformanceObserver(function(c){var b=c.getEntries();for(var a=0;a<b.length;a++){var d=b[a];LUX_al.push(d)}});try{LongTaskObserver.observe({type:["longtask"]})}catch(e){}};            </script>
+            <script src="https://cdn.speedcurve.com/js/lux.js?id=1064505266" async defer crossorigin="anonymous"></script>
+                            <script>
+                const hostnameEnvironments = {
+                    'impact.com': 'production',
+                    'dev4impact.wpengine.com': 'dev',
+                }
+                window.sentryOnLoad = () => {
+                    Sentry.init({
+                        environment: hostnameEnvironments[window.location.hostname] || 'other',
+                        release: 'impact-website@2026.15.07.1',
+                        tracesSampleRate: 0,
+                        // Ignores an error message string or exact match.
+                        ignoreErrors: [
+                            'promise rejection',
+                            /^Can't find variable: _AutofillCallbackHandler$/,
+                            'Failed to fetch',
+                            'resource blocked by content blocker',
+                            'NetworkError when attempting to fetch resource',
+                            '500: Importing a module script failed.',
+                            '500: error loading dynamically imported module',
+                            'Qualified: invalid visitor state',
+                        ],
+                        replaysSessionSampleRate: 0,
+                        replaysOnErrorSampleRate: 0,
+                        // Check hostnameEnvironments before event is sent
+                        beforeSend: (event, hints) => {
+                            if (!hostnameEnvironments[window.location.hostname]) {
+                                return null;
+                            }
+                            return event;
+                        },
+                    });
+                    Sentry.setTag('Consent-Marketing', 'Unknown')
+                    Sentry.setTag('Consent-Analytics', 'Unknown')
+                    Sentry.setTag('Consent-Personalization', 'Unknown')
+                    if ('Osano' in window) {
+                        function setSentryConsentTags() {
+                            const {
+                                MARKETING,
+                                PERSONALIZATION,
+                                ANALYTICS,
+                            } = Osano.cm.getConsent()
+                            Sentry.setTag('Consent-Marketing', MARKETING)
+                            Sentry.setTag('Consent-Analytics', ANALYTICS)
+                            Sentry.setTag('Consent-Personalization', PERSONALIZATION)
+                        }
+
+                        setSentryConsentTags()
+                        Osano.cm.addEventListener('osano-cm-consent-changed', setSentryConsentTags)
+                    }
+                    
+                    window.addEventListener("error", function (event) {
+                        if (event.message === "Script error.") {
+                            const error = new Error("Script error from external script");
+                            error.event = event;
+                            Sentry && Sentry.captureException(error);
+                        }
+                    });
+                };
+            </script>
+            <script src="https://js.sentry-cdn.com/af8488f8751932198c0fb5fdb8c2043a.min.js" crossorigin="anonymous"></script>
+                <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffffff">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
+        <script nonce="551515">
+            dataLayer = window.dataLayer || [];
+            window.appValues = {
+                custom_country: '',
+                custom_rating: '',
+                user_status: '',
+            };
+        </script>
+                <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="alternate" hreflang="en" href="https://impact.com/terms-of-use/" />
+<link rel="alternate" hreflang="x-default" href="https://impact.com/terms-of-use/" />
+
+	<!-- This site is optimized with the Yoast SEO plugin v25.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Terms of Use - impact.com</title>
+	<meta name="description" content="Terms of Use. impact.com is the leading platform to find, manage, monitor &amp; pay partnership integrations for any business." />
+	<link rel="canonical" href="https://impact.com/terms-of-use/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Terms of Use - impact.com" />
+	<meta property="og:description" content="Terms of Use. impact.com is the leading platform to find, manage, monitor &amp; pay partnership integrations for any business." />
+	<meta property="og:url" content="https://impact.com/terms-of-use/" />
+	<meta property="og:site_name" content="impact.com" />
+	<meta property="article:publisher" content="https://www.facebook.com/impactdotcom1" />
+	<meta property="article:modified_time" content="2024-02-07T19:11:08+00:00" />
+	<meta property="og:image" content="https://impact.com/wp-content/uploads/2022/04/impact-logo-square.jpg" />
+	<meta property="og:image:width" content="1000" />
+	<meta property="og:image:height" content="1000" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@impactdotcom" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="19 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://impact.com/terms-of-use/","url":"https://impact.com/terms-of-use/","name":"Terms of Use - impact.com","isPartOf":{"@id":"https://impact.com/#website"},"primaryImageOfPage":{"@id":"https://impact.com/terms-of-use/#primaryimage"},"image":{"@id":"https://impact.com/terms-of-use/#primaryimage"},"thumbnailUrl":"https://impact.com/wp-content/uploads/2022/04/impact-logo-square.jpg","datePublished":"2019-06-16T18:16:03+00:00","dateModified":"2024-02-07T19:11:08+00:00","description":"Terms of Use. impact.com is the leading platform to find, manage, monitor & pay partnership integrations for any business.","breadcrumb":{"@id":"https://impact.com/terms-of-use/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://impact.com/terms-of-use/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://impact.com/terms-of-use/#primaryimage","url":"https://impact.com/wp-content/uploads/2022/04/impact-logo-square.jpg","contentUrl":"https://impact.com/wp-content/uploads/2022/04/impact-logo-square.jpg","width":1000,"height":1000,"caption":"impact logo"},{"@type":"BreadcrumbList","@id":"https://impact.com/terms-of-use/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://impact.com/"},{"@type":"ListItem","position":2,"name":"Terms of Use"}]},{"@type":"WebSite","@id":"https://impact.com/#website","url":"https://impact.com/","name":"impact.com","description":"Partnerships, Ad Fraud Detection &amp; Marketing Intelligence ~ SaaS Platform Solution","publisher":{"@id":"https://impact.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://impact.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://impact.com/#organization","name":"impact.com","url":"https://impact.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://impact.com/#/schema/logo/image/","url":"https://impact.com/wp-content/uploads/2021/10/impact-com-logo.png","contentUrl":"https://impact.com/wp-content/uploads/2021/10/impact-com-logo.png","width":772,"height":436,"caption":"impact.com"},"image":{"@id":"https://impact.com/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/impactdotcom1","https://x.com/impactdotcom","https://www.linkedin.com/company/impactdotcom/mycompany/verification/","https://www.youtube.com/channel/UCuaPPZyfe2xMscBBBDczu7w"]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<script type='application/javascript'  id='pys-version-script'>console.log('PixelYourSite Free version 11.1.3');</script>
+<link rel="alternate" type="application/rss+xml" title="impact.com &raquo; Feed" href="https://impact.com/feed/" />
+<link rel='stylesheet' id='vendor-css' href='https://impact.com/wp-content/themes/impact/dist/vendor/styles/vendor.css?ver=1721811351' type='text/css' media='all' />
+<link rel='stylesheet' id='ds-style-css' href='https://impact.com/wp-content/themes/impact/dist/theme/styles/ds.min.css?ver=1781083042' type='text/css' media='all' />
+<script type="text/javascript" src="https://impact.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://impact.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://impact.com/wp-content/plugins/pixelyoursite/dist/scripts/jquery.bind-first-0.2.3.min.js?ver=6.7.5" id="jquery-bind-first-js"></script>
+<script type="text/javascript" src="https://impact.com/wp-content/plugins/pixelyoursite/dist/scripts/js.cookie-2.1.3.min.js?ver=2.1.3" id="js-cookie-pys-js"></script>
+<script type="text/javascript" src="https://impact.com/wp-content/plugins/pixelyoursite/dist/scripts/tld.min.js?ver=2.3.1" id="js-tld-js"></script>
+<script type="text/javascript" id="pys-js-extra">
+/* <![CDATA[ */
+var pysOptions = {"staticEvents":{"facebook":{"init_event":[{"delay":0,"type":"static","ajaxFire":false,"name":"PageView","pixelIds":["440085658361906"],"eventID":"1fd0c58e-67c4-480b-9e38-056cc77bde33","params":{"page_title":"Terms of Use","post_type":"page","post_id":8504,"plugin":"PixelYourSite","user_role":"guest","event_url":"impact.com\/terms-of-use\/"},"e_id":"init_event","ids":[],"hasTimeWindow":false,"timeWindow":0,"woo_order":"","edd_order":""}]}},"dynamicEvents":[],"triggerEvents":[],"triggerEventTypes":[],"facebook":{"pixelIds":["440085658361906"],"advancedMatching":[],"advancedMatchingEnabled":false,"removeMetadata":false,"wooVariableAsSimple":false,"serverApiEnabled":false,"wooCRSendFromServer":false,"send_external_id":null,"enabled_medical":false,"do_not_track_medical_param":["event_url","post_title","page_title","landing_page","content_name","categories","category_name","tags"],"meta_ldu":false},"debug":"","siteUrl":"https:\/\/impact.com","ajaxUrl":"https:\/\/impact.com\/wp-admin\/admin-ajax.php","ajax_event":"94ac8bc3a9","enable_remove_download_url_param":"1","cookie_duration":"7","last_visit_duration":"60","enable_success_send_form":"","ajaxForServerEvent":"1","ajaxForServerStaticEvent":"1","useSendBeacon":"1","send_external_id":"1","external_id_expire":"180","track_cookie_for_subdomains":"1","google_consent_mode":"1","gdpr":{"ajax_enabled":false,"all_disabled_by_api":false,"facebook_disabled_by_api":false,"analytics_disabled_by_api":false,"google_ads_disabled_by_api":false,"pinterest_disabled_by_api":false,"bing_disabled_by_api":false,"externalID_disabled_by_api":false,"facebook_prior_consent_enabled":true,"analytics_prior_consent_enabled":true,"google_ads_prior_consent_enabled":null,"pinterest_prior_consent_enabled":true,"bing_prior_consent_enabled":true,"cookiebot_integration_enabled":false,"cookiebot_facebook_consent_category":"marketing","cookiebot_analytics_consent_category":"statistics","cookiebot_tiktok_consent_category":"marketing","cookiebot_google_ads_consent_category":"marketing","cookiebot_pinterest_consent_category":"marketing","cookiebot_bing_consent_category":"marketing","consent_magic_integration_enabled":false,"real_cookie_banner_integration_enabled":false,"cookie_notice_integration_enabled":false,"cookie_law_info_integration_enabled":false,"analytics_storage":{"enabled":true,"value":"granted","filter":false},"ad_storage":{"enabled":true,"value":"granted","filter":false},"ad_user_data":{"enabled":true,"value":"granted","filter":false},"ad_personalization":{"enabled":true,"value":"granted","filter":false}},"cookie":{"disabled_all_cookie":false,"disabled_start_session_cookie":false,"disabled_advanced_form_data_cookie":false,"disabled_landing_page_cookie":false,"disabled_first_visit_cookie":false,"disabled_trafficsource_cookie":false,"disabled_utmTerms_cookie":false,"disabled_utmId_cookie":false},"tracking_analytics":{"TrafficSource":"direct","TrafficLanding":"undefined","TrafficUtms":[],"TrafficUtmsId":[]},"GATags":{"ga_datalayer_type":"default","ga_datalayer_name":"dataLayerPYS"},"woo":{"enabled":false},"edd":{"enabled":false},"cache_bypass":"1785504364"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://impact.com/wp-content/plugins/pixelyoursite/dist/scripts/public.js?ver=11.1.3" id="pys-js"></script>
+<link rel='shortlink' href='https://impact.com/?p=8504' />
+<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><link rel="dns-prefetch" href="https://www.googletagmanager.com" crossorigin><link rel="preconnect" href="https://www.google-analytics.com" crossorigin><link rel="dns-prefetch" href="https://www.google-analytics.com" crossorigin><link rel="preconnect" href="https://munchkin.marketo.net" crossorigin><link rel="dns-prefetch" href="https://munchkin.marketo.net" crossorigin><link rel="preconnect" href="https://pipedream.wistia.com" crossorigin><link rel="dns-prefetch" href="https://pipedream.wistia.com" crossorigin><link rel="preconnect" href="https://280-xqp-994.mktoresp.com" crossorigin><link rel="dns-prefetch" href="https://280-xqp-994.mktoresp.com" crossorigin><link rel="preconnect" href="https://distillery.wistia.com" crossorigin><link rel="dns-prefetch" href="https://distillery.wistia.com" crossorigin><link rel="preload" href="/wp-content/themes/impact/dist/vendor/fonts/fa-light-300.woff2?ver=1" as="font" type="font/woff2" crossorigin><link rel="preload" href="/wp-content/themes/impact/dist/vendor/fonts/fa-solid-900.woff2?ver=1" as="font" type="font/woff2" crossorigin><link rel="preload" href="/wp-content/themes/impact/dist/vendor/fonts/fa-brands-400.woff2?ver=2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/wp-content/themes/impact/dist/vendor/fonts/sarabun-v12-latin-regular.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/wp-content/themes/impact/dist/vendor/fonts/sarabun-v12-latin-500.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/wp-content/themes/impact/dist/vendor/fonts/sarabun-v12-latin-600.woff2" as="font" type="font/woff2" crossorigin>            <script nonce="551515">
+                (function (w, d, s, l, i) {
+                    w[l] = w[l] || [];
+                    w[l].push({
+                        'gtm.start': new Date().getTime(),
+                        event: 'gtm.js',
+                    });
+                    var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s),
+                        dl = l != 'dataLayer' ? '&l=' + l : '';
+                    j.async = true;
+                    j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                    f.parentNode.insertBefore(j, f);
+                })(window, document, 'script', 'dataLayer', 'GTM-KB78PL6');
+            </script>
+            <script type="text/javascript" src="https://ws.zoominfo.com/pixel/x9t5HMrreUQLdXOemJuH" async referrerPolicy="unsafe-url"
+                    crossorigin="anonymous"></script>
+                <!-- Qualified -->
+        <script>
+            (function (w, q) {
+                w['QualifiedObject'] = q;
+                w[q] = w[q] || function () {
+                    (w[q].q = w[q].q || []).push(arguments)
+                };
+            })(window, 'qualified')
+        </script>
+        <script async src="https://js.qualified.com/qualified.js?token=RPc9T5v8CZ4m9FXm"></script>
+        <!-- End Qualified -->
+        
+        <script>
+            // This displays an error message if there is an error event for failing to load jQuery
+            window.onerror = (message) => {
+                if (message === 'Uncaught ReferenceError: jQuery is not defined' && !document.querySelector('.jquery-failed-message')) {
+                    const jqueryFailedMessage = document.createElement('div');
+                    jqueryFailedMessage.className = 'jquery-failed-message';
+                    document.body.prepend(jqueryFailedMessage);
+                }
+            };
+        </script>
+    </head>
+
+<body class="page-template page-template-page-legal-template page-template-page-legal-template-php page page-id-8504 ds">
+    <div id="referer" class="hidden" data-value=""></div>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KB78PL6" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <div class="navigation__mobile--backdrop"></div>
+<section id="navigation-mobile">
+    <div class="navigation-mobile__full"></div>
+</section>
+<div class="navigationcontainer">
+
+    <div role="navigation" class="top-nav">
+                <div class="drop-nav ">
+        <a aria-haspopup="true" class="has-chevron"
+                      target="_self" >
+            About        </a>
+                    <div class="submenu widget">
+                <div class="menu-about-top-right-container"><ul id="menu-about-top-right" class="menu"><li id="menu-item-65709" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65709"><a href="https://impact.com/about/">About impact.com</a></li>
+<li id="menu-item-140152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140152"><a href="https://impact.com/why-partnerships/">Why partnerships</a></li>
+<li id="menu-item-65710" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65710"><a href="https://impact.com/careers/">Careers</a></li>
+<li id="menu-item-140153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140153"><a href="https://impact.com/leadership/">Leadership</a></li>
+<li id="menu-item-140154" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140154"><a href="https://impact.com/awards/">Awards</a></li>
+<li id="menu-item-84754" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84754"><a href="https://impact.com/about/sustainability/">Sustainability</a></li>
+</ul></div>            </div>
+            </div>
+        <div class="menuNav ">
+        <a aria-haspopup="true" class=""
+           href="https://impact.com/contact/"            target="" >
+            Contact        </a>
+            </div>
+                    <div class="drop-nav">
+                <a title="English">English</a>
+                <div class="submenu language">
+                                            <a href="https://www.impact.com.cn/" title="简体中文">简体中文</a>
+                                            <a href="https://impact.com/ja/" title="日本語">日本語</a>
+                                            <a href="https://impact.com/it/" title="Italiano">Italiano</a>
+                                            <a href="https://impact.com/fr/" title="Français">Français</a>
+                                            <a href="https://impact.com/de/" title="Deutsch">Deutsch</a>
+                                    </div>
+            </div>
+            </div>
+
+    <div role="navigation" id="navigation-wrapper">
+        <a class="back" href="#">Back</a>
+        <a class="logo" href="https://impact.com/">
+            <img src="data:image/webp;base64,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"
+                 alt="Impact.com logo">
+        </a>
+        <div id="navigation-mobile__control" class="hidden-md hidden-lg">
+            <div class="menu-actions">
+                        <div class="menuNav ">
+        <a aria-haspopup="true" class=""
+           href="https://app.impact.com/login.user"            target="_blank" rel="noopener, noreferrer" >
+            Sign in        </a>
+            </div>
+        <a class="cta-button impact-red" href="/get-started/">Request a demo</a>
+                </div>
+            <a id="hamburger-icon" href="javascript:void(0)" title="Menu">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </a>
+        </div>
+        <nav class="main menu-primary__wrapper">
+                    <div class="drop-nav ">
+        <a aria-haspopup="true" class="has-chevron"
+                      target="_self" >
+            Platform        </a>
+                    <div class="two-dropdown submenu">
+                <div class="text-box">
+                    <div class="text">
+                        <h5><a aria-haspopup="true" href="https://impact.com/performance/" target=""
+                               >Performance</a></h5>
+                        <p>Discover, manage, and measure performance partnerships</p>
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="sub-menu">
+                        <div class="menu-platform-header-menu-container"><ul id="menu-platform-header-menu" class="menu"><li id="menu-item-65714" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65714"><a href="https://impact.com/discover-recruit/">Discover and Recruit</a></li>
+<li id="menu-item-65715" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65715"><a href="https://impact.com/partnership-contract-pay/">Contract and Pay</a></li>
+<li id="menu-item-65716" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65716"><a href="https://impact.com/partnership-track/">Track</a></li>
+<li id="menu-item-65717" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65717"><a href="https://impact.com/manage-engage/">Engage</a></li>
+<li id="menu-item-65718" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65718"><a href="https://impact.com/protect-monitor/">Protect and Monitor</a></li>
+<li id="menu-item-65719" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65719"><a href="https://impact.com/optimize-insights/">Optimize</a></li>
+</ul></div>                    </div>
+                </div>
+                <div class="text-box-second">
+                    <h5><a href="https://impact.com/creator/">Creator</a></h5>
+                    <p> Discover, manage, and measure creator partnerships</p>
+                </div>
+                <div class="text-box-second">
+                    <h5><a class="no-pill"
+                           href="/advocate/">Advocate</a></h5>
+                    <p> Engage, manage, reward, and track customer referrals</p>
+                </div>
+            </div>
+            </div>
+        <div class="drop-nav ">
+        <a aria-haspopup="true" class="has-chevron"
+                      target="_self" >
+            Brands        </a>
+                    <div class="submenu widget">
+                <div class="menu-brands-header-menu-container"><ul id="menu-brands-header-menu" class="menu"><li id="menu-item-65721" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65721"><a href="https://impact.com/affiliate-marketing/">Affiliate marketing</a></li>
+<li id="menu-item-65720" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65720"><a href="https://impact.com/influencer-marketing/">Influencer marketing</a></li>
+<li id="menu-item-131634" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131634"><a href="https://impact.com/creator-edit/">Creator Edit<i class="notification new-red"> </i></a></li>
+<li id="menu-item-117900" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-117900"><a href="https://impact.com/customer-referral-marketing/">Referral marketing</a></li>
+<li id="menu-item-140182" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140182"><a href="https://impact.com/seller/">Amazon Seller</a></li>
+<li id="menu-item-65722" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65722"><a href="https://impact.com/mobile/">Mobile partnerships</a></li>
+<li id="menu-item-65724" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65724"><a href="https://impact.com/business-development/">Business development</a></li>
+<li id="menu-item-65726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65726"><a href="https://impact.com/marketing-analysts/">Analytics and attribution</a></li>
+<li id="menu-item-67049" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67049"><a href="https://impact.com/saas-partnership-marketing/">Saas partnership marketing</a></li>
+<li id="menu-item-65736" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65736"><a href="https://impact.com/services/">Services</a></li>
+<li id="menu-item-69139" class="hidden pricing-a menu-item menu-item-type-post_type menu-item-object-page menu-item-69139"><a href="https://impact.com/integrated-platform-prices/">Shopify and BigCommerce</a></li>
+</ul></div>            </div>
+            </div>
+        <div class="drop-nav ">
+        <a aria-haspopup="true" class="has-chevron"
+                      target="_self" >
+            Publishers        </a>
+                    <div class="submenu widget">
+                <div class="menu-publishers-top-menu-container"><ul id="menu-publishers-top-menu" class="menu"><li id="menu-item-66340" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-66340"><a href="/partners/">Overview</a></li>
+<li id="menu-item-65738" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65738"><a href="https://impact.com/partners/affiliate-partners/">Affiliates</a></li>
+<li id="menu-item-65792" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65792"><a href="https://impact.com/partners/influencer-partners/">Influencers and creators</a></li>
+<li id="menu-item-65741" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65741"><a href="https://impact.com/partners/mobile-app-partners/">Mobile apps</a></li>
+<li id="menu-item-65742" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65742"><a href="https://impact.com/partners/publishers-media-groups-partners/">Content publishers</a></li>
+<li id="menu-item-66339" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66339"><a href="https://impact.com/partners/premium-news-and-media-publishers/">Premium news and media publishers</a></li>
+</ul></div>            </div>
+            </div>
+        <div class="drop-nav ">
+        <a aria-haspopup="true" class="has-chevron"
+                      target="_self" >
+            Partner with us        </a>
+                    <div class="submenu widget">
+                <div class="menu-partner-with-us-top-menu-container"><ul id="menu-partner-with-us-top-menu" class="menu"><li id="menu-item-66276" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66276"><a href="https://impact.com/agency-partner-program/">Agency partners</a></li>
+<li id="menu-item-66282" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-66282"><a href="/agency-partner-program/directory/">Agency directory</a></li>
+<li id="menu-item-80765" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-80765"><a href="https://impact.com/technology-partners/">Technology partners</a></li>
+<li id="menu-item-80766" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-80766"><a href="/technology-partners/directory/">Technology partners directory</a></li>
+<li id="menu-item-66290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66290"><a href="https://impact.com/referral-partner-program/">Referral partners</a></li>
+</ul></div>            </div>
+            </div>
+        <div class="drop-nav ">
+        <a aria-haspopup="true" class="has-chevron"
+                      target="_self" >
+            Insights        </a>
+                    <div class="submenu widget">
+                <div class="menu-insights-top-menu-container"><ul id="menu-insights-top-menu" class="menu"><li id="menu-item-65758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65758"><a href="https://impact.com/insights/">Resource hub</a></li>
+<li id="menu-item-65745" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65745"><a href="https://impact.com/customer-success-stories/">Customer stories</a></li>
+<li id="menu-item-65777" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65777"><a href="https://impact.com/partnership-economy/">The Partnership Economy</a></li>
+<li id="menu-item-88286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88286"><a href="https://impact.com/events/">Events</a></li>
+<li id="menu-item-65786" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65786"><a href="https://impact.com/partnerships-experience/">Partnerships Experience (iPX) Event</a></li>
+<li id="menu-item-65788" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65788"><a href="https://impact.com/partnerships-experience-academy/">Partnerships Experience Academy</a></li>
+</ul></div>            </div>
+            </div>
+        <div class="drop-nav hidden plg-menu">
+        <a aria-haspopup="true" class="has-chevron"
+                      target="_self" >
+            Sign up        </a>
+                    <div class="submenu widget">
+                <div class="menu-sign-up-container"><ul id="menu-sign-up" class="menu"><li id="menu-item-123831" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-123831"><a href="https://impact.com/integrated-platform-prices/">Affiliate advertiser sign up</a></li>
+<li id="menu-item-123833" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-123833"><a href="https://app.impact.com/signup/none/create-new-mediapartner-account-flow.ihtml">Affiliate publisher sign up</a></li>
+<li id="menu-item-123830" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-123830"><a href="https://impact.com/request-a-demo-for-brands/">Talk to sales</a></li>
+</ul></div>            </div>
+            </div>
+            <div class="plans-nav-link">
+                <a title="Plans"
+                   href="https://impact.com/plans-b2b/">Plans</a>
+            </div>
+
+            <div class="hidden-lg hidden-md">
+                        <div class="drop-nav ">
+        <a aria-haspopup="true" class="has-chevron"
+                      target="_self" >
+            About        </a>
+                    <div class="submenu widget">
+                <div class="menu-about-top-right-container"><ul id="menu-about-top-right-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65709"><a href="https://impact.com/about/">About impact.com</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140152"><a href="https://impact.com/why-partnerships/">Why partnerships</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65710"><a href="https://impact.com/careers/">Careers</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140153"><a href="https://impact.com/leadership/">Leadership</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140154"><a href="https://impact.com/awards/">Awards</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84754"><a href="https://impact.com/about/sustainability/">Sustainability</a></li>
+</ul></div>            </div>
+            </div>
+        <div class="menuNav ">
+        <a aria-haspopup="true" class=""
+           href="https://impact.com/contact/"            target="" >
+            Contact        </a>
+            </div>
+                                    <div class="drop-nav">
+                        <a title="English" class="has-chevron">English</a>
+                        <div style="min-width: 124px;" class="submenu">
+                                                            <a href="https://www.impact.com.cn/"
+                                   title="简体中文">简体中文</a>
+                                                            <a href="https://impact.com/ja/"
+                                   title="日本語">日本語</a>
+                                                            <a href="https://impact.com/it/"
+                                   title="Italiano">Italiano</a>
+                                                            <a href="https://impact.com/fr/"
+                                   title="Français">Français</a>
+                                                            <a href="https://impact.com/de/"
+                                   title="Deutsch">Deutsch</a>
+                                                    </div>
+                    </div>
+                            </div>
+
+            <span class="spacer"></span>
+            <div class="menu-actions">
+                        <div class="menuNav ">
+        <a aria-haspopup="true" class=""
+           href="https://app.impact.com/login.user"            target="_blank" rel="noopener, noreferrer" >
+            Sign in        </a>
+            </div>
+        <a class="cta-button impact-red" href="/get-started/">Request a demo</a>
+                </div>
+        </nav>
+    </div>
+</div>
+<div class="page-content">
+    <div class="legal-pages">
+        <div class="title-container">
+            <h1>Terms of Use</h1>
+        </div>
+    </div>
+    <div class="module">
+        
+<p class="top-p"><strong>Date of Last Revision: March 28, 2018.</strong></p>
+
+
+
+<p>&nbsp;</p>
+
+
+
+<p><strong>1.Introduction</strong><br>Impact.com (owned by Impact Tech, Inc.) welcomes you to our performance advertising directory and platform (“Service”). Impact Members are able to access our Service via our website https://impact.com (“Site”) and utilize the services of their membership level (each referred to as a “Member”). In this Terms of Use Agreement, Impact Tech, Inc. is referred to as “Impact”, “us”, “we” or “our”. By accessing or using our Site, you (the “User” or a Member) acknowledge that you have read, understand and agree to be bound by this Terms of Use Agreement (“Terms of Use” or “Agreement”). We reserve the right, at our sole discretion, to change, modify, add, or delete portions of these Terms of Use at any time without notice by posting the changes to these Terms of Use on this page. The date of last revision will be listed at the top of this page. Your continued use of the Service or Site after any such changes constitutes your acceptance of the new Terms of Use. If you do not agree to abide by these or any future Terms of Use, do not use or access (or continue to use or access) the Service or Site. It is your responsibility to regularly check the Site to determine if there have been changes to these Terms of Use and to review such changes.</p>
+
+
+
+<p>PLEASE READ THESE TERMS OF USE CAREFULLY AS THEY CONTAIN IMPORTANT INFORMATION REGARDING YOUR LEGAL RIGHTS, REMEDIES AND OBLIGATIONS. THESE INCLUDE VARIOUS LIMITATIONS AND EXCLUSIONS, AND A DISPUTE RESOLUTION CLAUSE THAT GOVERNS HOW DISPUTES WILL BE RESOLVED. THIS INTRODUCTION IS FULLY INCORPORATED IN THIS AGREEMENT BY THIS REFERENCE.</p>
+
+
+
+<p><strong>2. Eligibility</strong><br>Membership in the Service is void where prohibited. This Site is intended solely for users who are eighteen (18) years of age or older. Any registration by, use of or access to the Site by anyone under 18 is unauthorized, unlicensed and in violation of these Terms of Use. By using the Service or Site, you represent and warrant that you are 18 or older, and that you agree to and to abide by all of the terms and conditions of this Agreement.</p>
+
+
+
+<p><strong>3. Registration Data; Account Security</strong><br>In consideration of your use of the Site, you agree to (a) provide accurate, current and complete information about you as may be prompted by any registration forms on the Site (“Registration Data”); (b) maintain the security of your password and identification; (c) maintain and promptly update the Registration Data, and any other information you provide to Impact, to keep it accurate, current and complete; and (d) be fully responsible for all use of your account and for any actions that take place using your account.</p>
+
+
+
+<p><strong>4. Proprietary Rights in Site Content; Limited License</strong><br>All content on the Site and available through the Service, including designs, text, graphics, pictures, video, information, applications, software, music, sound and other files, and their selection and arrangement (the “Site Content”), are the proprietary property of Impact, its users or its licensors with all rights reserved. No Site Content may be modified, copied, distributed, framed, reproduced, republished, downloaded, displayed, posted, transmitted, or sold in any form or by any means, in whole or in part, without Impact’s prior written permission, except that the foregoing does not apply to User Content (as defined below) that you legally post on the Site or that you are authorized to use (only to the extent you are authorized to use) by other members. Provided that you are eligible for use of the Site, you are granted a limited license to access and use the Site and the Site Content and to download or print a copy of any portion of the Site Content to which you have properly gained access solely for your personal, non-commercial use, provided that you keep all copyright or other proprietary notices intact. Except for your own User Content, you may not upload or republish Site Content on any Internet, Intranet or Extranet site or incorporate the information in any other database or compilation, and any other use of the Site Content is strictly prohibited. Such license is subject to these Terms of Use and does not include use of any data mining, robots or similar data gathering or extraction methods. Any use of the Site or the Site Content other than as specifically authorized herein, without the prior written permission of Impact, is strictly prohibited and will terminate the license granted herein. Such unauthorized use may also violate applicable laws including copyright and trademark laws and applicable communications regulations and statutes. Unless explicitly stated herein, nothing in these Terms of Use shall be construed as conferring any license to intellectual property rights, whether by estoppel, implication or otherwise. This license is revocable at any time without notice and with or without cause.</p>
+
+
+
+<p><strong>5. Trademarks</strong><br>All Impact graphics. logos, designs, trademarks, service marks, service names, and trade dress are the sole property of Impact, and may be subject to state and/or federal U.S. protection and that of other countries. Impact’s trademarks and trade dress may not be used, including as part of trademarks and/or as part of domain names, in connection with any product or service in any manner that is likely to cause confusion and may not be copied, imitated, or used, in whole or in part, without the prior written permission of the Impact.</p>
+
+
+
+<p><strong>6. User Conduct</strong><br>You understand that except for as expressly provided in your service agreement with us, the Service and Site may not be used by you for commercial purposes. You represent, warrant and agree that no materials of any kind submitted through your account or otherwise posted, transmitted, or shared by you on or through the Service will violate or infringe upon the rights of any third party, including copyright, trademark, privacy, publicity or other personal or proprietary rights; or contain libelous, defamatory or otherwise unlawful material.</p>
+
+
+
+<p>In addition, you agree not to use the Service or Site to:</p>
+
+
+
+<p>harvest or collect email addresses or other contact information of other users from the Service or Site by electronic or other means for the purposes of sending unsolicited emails or other unsolicited communications; use the Service or Site in any unlawful manner or in any other manner that could damage, disable, overburden or impair the Site; use automated scripts to collect information from or otherwise interact with the Service or Site; upload, post, transmit, share, store or otherwise make available any content that we deem to be harmful, threatening, unlawful, defamatory, infringing, abusive, inflammatory, harassing, vulgar, obscene, fraudulent, invasive of privacy or publicity rights, hateful, or racially, ethnically or otherwise objectionable; upload, post, transmit, share, store or otherwise make available any videos other than those the are to be used expressly pursuant to and compliant with your service agreement with us; register for a User account on behalf of an individual other than yourself, or register any group or entity unless you are expressly authorized to do so; impersonate any person or entity, or falsely state or otherwise misrepresent yourself, your age or your affiliation with any person or entity; upload, post, transmit, share or otherwise make available any unsolicited or unauthorized advertising, solicitations, promotional materials, “junk mail,” “spam,” “chain letters,” “pyramid schemes,” or any other illegal or unethical form of solicitation; upload, post, transmit, share, store or otherwise make publicly available on the Site any private information of any third party, including, addresses, phone numbers, email addresses, Social Security numbers and credit card numbers; solicit personal information from anyone under 18 or solicit passwords or personally identifying information for commercial or unlawful purposes; upload, post, transmit, share or otherwise make available any material that contains software viruses or any other computer code, files or programs designed to interrupt, destroy or limit the functionality of any computer software or hardware or telecommunications equipment; intimidate or harass another; upload, post, transmit, share, store or otherwise make available content that would constitute, encourage or provide instructions for a criminal offense, violate the rights of any party, or that would otherwise create liability or violate any local, state, national or international law; use or attempt to use another’s account, service or system without authorization from Impact, or create a false identity on the Service or Site. upload, post, transmit, share, store or otherwise make available content that, in the sole judgment of Impact, is objectionable or which restricts or inhibits any other person from using or enjoying the Site, or which may expose Impact or its users to any harm or liability of any type.</p>
+
+
+
+<p>Without limiting any of the foregoing, you also agree to abide by our Impact Code of Conduct that provides further information regarding the authorized conduct of users on the Site.</p>
+
+
+
+<p><strong>7. User Content Posted on the Site</strong><br>You are solely responsible for the profiles, messages, notes, text, information, advertisements, listings, and other content that you upload, publish or display (hereinafter, “post”) on or through the services or the Site, or transmit to or share with other Members (collectively the “Member Content”). You may not post, transmit, or share Member Content on the Site or Service that you did not create or that you do not have permission to post. You understand and agree that Impact may, but is not obligated to, review the Site and may delete or remove (without notice) any Site Content or Member Content in its sole discretion, for any reason or no reason, including Member Content that in the sole judgment of Impact violates this Agreement or any other agreement that governs your use of the Service or Site, or which might be offensive, illegal, or that might violate the rights, harm, or threaten the safety of users or others. You are solely responsible at your sole cost and expense for creating backup copies and replacing any Member Content you post or store on the Site or provide to the Impact.</p>
+
+
+
+<p>When you post Member Content to the Site, you authorize and direct us to make such copies thereof as we deem necessary in order to facilitate the posting and storage of the Member Content on the Site. By posting Member Content to any part of the Site, you automatically grant, and you represent and warrant that you have the right to grant, to Impact revocable, non-exclusive, transferable, fully paid, worldwide license to use, copy, publicly perform, publicly display, reformat, translate, and distribute such Member Content for the purposes of performing Impact’s services, the Service and Site. You may revoke the foregoing license and remove your Member Content from the Site at any time. If you choose to remove your Member Content, the license granted above will automatically expire, however you acknowledge that Impact may retain archived copies of your Member Content. Impact does not assert any ownership over your Member Content; rather, as between us and you, subject to the rights granted to us in these Terms, you retain full ownership of all of your Member Content and any intellectual property rights or other proprietary rights associated with your Member Content.</p>
+
+
+
+<p><strong>8. Copyright Complaints</strong><br>We respect the intellectual property rights of others and we prohibit users from uploading, posting or otherwise transmitting on the Site or service any materials that violate another party’s intellectual property rights. When we receive written notification of alleged copyright infringement, we promptly remove or disable access to the allegedly infringing material in accordance with the Digital Millennium Copyright Act. Impact may also at its sole discretion limit access to the Site and/or terminate the memberships of any users who infringe any intellectual property rights of others, whether or not there is any repeat infringement. If you believe that any material on the Site and/or through the Service infringes upon any copyright which you own or control, you may send a written notification of such infringement to:</p>
+
+
+
+<p>Impact Tech, Inc.</p>
+
+
+
+<p>Copyright Agent<br>223 E. De La Guerra St.<br>Santa Barbara, CA 93101</p>
+
+
+
+<p><strong>9. Third Party Websites and Content</strong><br>The Service or Site may contain, or you may receive, links to other web sites (“Third Party Sites”) as well as information, applications, software and other content or items belonging to or originating from third parties (the “Third Party Applications, Software or Content”). Such Third Party Sites and Third Party Applications, Software or Content are not investigated, monitored or checked for accuracy, appropriateness, or completeness by us, and we are not responsible for any Third Party Sites accessed through the Site or any Third Party Applications, Software or Content posted on, available through or installed from the Site, including the content, accuracy, offensiveness, opinions, reliability, privacy practices or other policies of or contained in the Third Party Sites or the Third Party Applications, Software or Content. Inclusion of, linking to or permitting the use or installation of any Third Party Site or any Third Party Applications, Software or Content does not imply approval or endorsement thereof by us. If you decide to leave the Site and access the Third Party Sites or to use or install any Third Party Applications, Software or Content, you do so at your own risk and you should be aware that our terms and policies no longer govern. You should review the applicable terms and policies, including privacy and data gathering practices, of any site to which you navigate from the Site or relating to any applications you use or install from the site.</p>
+
+
+
+<p><strong>10. Terms of Sale</strong><br>Whenever services are available for purchase from Impact, the services shall include specific terms, conditions and policies applicable to your purchase of services from Impact (“Terms of Sale”). By ordering services from Impact through the Site, you agree to be bound by and accept the applicable Terms of Sale. The Terms of Sale are subject to change without prior notice at any time, in Impact’s sole discretion so you should review the Terms of Sale each time you make a purchase.</p>
+
+
+
+<p><strong>11. User Disputes</strong><br>You are solely responsible for your interactions with other Members. We reserve the right, but have no obligation, to monitor disputes between you and other Members.</p>
+
+
+
+<p><strong>12. Privacy</strong><br>Please review and print out our Member Privacy Policy. By using Site or Service you are consenting to have your personal data transferred to and processed in the United States. Our Member Privacy Policy is subject to change so you are encouraged to review periodically.</p>
+
+
+
+<p><strong>13. Disclaimers</strong><br>Impact is not responsible or liable in any manner for any Member Content or Third Party Applications, Software or Content posted on the Site or in connection with the Service, whether posted or caused by Members, Impact, by third parties or by any of the equipment or programming associated with or utilized in the Site, Service. Although we provide rules for Member conduct and postings, we do not control and are not responsible for what Members post, transmit or share on the Service and are not responsible for any offensive, inappropriate, obscene, unlawful or otherwise objectionable content you may encounter on the Service or in connection with any Member Content or Third Party Applications, Software or Content. Impact is not responsible for the conduct, whether online or offline, of any Member of the Site or Service.</p>
+
+
+
+<p>The Site, and Service may be temporarily unavailable from time to time for maintenance or other reasons. Impact assumes no responsibility for any error, omission, interruption, deletion, defect, delay in operation or transmission, communications line failure, theft or destruction or unauthorized access to, or alteration of, Member communications or use of the Service. Impact is not responsible for any technical malfunction or other problems of any telephone network or the Site, computer systems, servers or providers, computer or mobile phone equipment, software, failure of email on account of technical problems or traffic congestion on the Internet or on the Site or combination thereof, including injury or damage to User’s or to any other person’s computer, mobile phone, or other hardware or software, related to or resulting from using or downloading materials in connection with the Web and/or in connection with the Service, including any Mobile Client software. Under no circumstances will Impact be responsible for any loss or damage, including any loss or damage to any Member Content or personal injury or death, resulting from anyone’s use of the Site, Service, any Member Content or Third Party Applications, Software or Content posted on or through the Site, and Service or transmitted to Users, or any interactions between users of the Site, whether online or offline.</p>
+
+
+
+<p>THE SITE, THE SERVICE, ANY PLATFORM APPLICATIONS AND THE SITE CONTENT ARE PROVIDED “AS-IS” AND IMPACT DISCLAIMS ANY AND ALL REPRESENTATIONS AND WARRANTIES, WHETHER EXPRESS OR IMPLIED, INCLUDING IMPLIED WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT. IMPACT CANNOT GUARANTEE AND DOES NOT PROMISE ANY SPECIFIC RESULTS FROM USE OF THE SITE AND/OR THE SERVICE AND/OR ANY PLATFORM APPLICATIONS. COMPANY DOES NOT REPRESENT OR WARRANT THAT SOFTWARE, CONTENT OR MATERIALS ON THE SITE, THE SERVICE OR ANY PLATFORM APPLICATIONS ARE ACCURATE, COMPLETE, RELIABLE, CURRENT OR ERROR-FREE OR THAT THE SITE OR SERVICE ITS SERVERS, OR ANY PLATFORM APPLICATIONS ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. THEREFORE, YOU SHOULD EXERCISE CAUTION IN THE USE AND DOWNLOADING OF ANY SUCH SOFTWARE, CONTENT OR MATERIALS AND USE INDUSTRY-RECOGNIZED SOFTWARE TO DETECT AND DISINFECT VIRUSES. WITHOUT LIMITING THE FOREGOING, YOU UNDERSTAND AND AGREE THAT YOU DOWNLOAD OR OTHERWISE OBTAIN CONTENT, MATERIAL, DATA OR SOFTWARE (INCLUDING ANY MOBILE CLIENT) FROM OR THROUGH THE SERVICE AND ANY PLATFORM APPLICATIONS AT YOUR OWN DISCRETION AND RISK AND THAT YOU WILL BE SOLELY RESPONSIBLE FOR YOUR USE THEREOF AND ANY DAMAGES TO YOUR MOBILE DEVICE OR COMPUTER SYSTEM, LOSS OF DATA OR OTHER HARM OF ANY KIND THAT MAY RESULT.</p>
+
+
+
+<p>Impact reserves the right to change any and all content, software and other items used or contained in the Site, Directory and any Platform Applications offered by Impact at any time without notice.</p>
+
+
+
+<p><strong>14. Limitation on Liability</strong><br>IN NO EVENT WILL IMPACT OR ITS DIRECTORS, EMPLOYEES OR AGENTS BE LIABLE TO YOU OR ANY THIRD PERSON FOR ANY INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL OR PUNITIVE DAMAGES, INCLUDING FOR ANY LOST PROFITS OR LOST DATA ARISING FROM YOUR USE OF THE SITE OR THE SERVICE, ANY PLATFORM APPLICATIONS OR ANY OF THE SITE CONTENT OR OTHER MATERIALS ON, ACCESSED THROUGH OR DOWNLOADED FROM THE SITE, EVEN IF IMPACT IS AWARE OR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED HEREIN, IMPACT&#8217;S LIABILITY TO YOU FOR ANY CAUSE WHATSOEVER, AND REGARDLESS OF THE FORM OF THE ACTION, WILL AT ALL TIMES BE LIMITED TO THE AMOUNT PAID, IF ANY, BY YOU TO COMPANY FOR THE SERVICE DURING THE TERM OF MEMBERSHIP, BUT IN NO CASE WILL IMPACT&#8217;S LIABILITY TO YOU EXCEED $1000. YOU ACKNOWLEDGE THAT IF NO FEES ARE PAID TO COMPANY FOR THE SERVICE, YOU SHALL BE LIMITED TO INJUNCTIVE RELIEF ONLY, UNLESS OTHERWISE PERMITTED BY LAW, AND SHALL NOT BE ENTITLED TO DAMAGES OF ANY KIND FROM COMPANY, REGARDLESS OF THE CAUSE OF ACTION.</p>
+
+
+
+<p><strong>15. Termination</strong><br>Impact may terminate your membership, delete your profile and any content or information that you have posted on the Site or through the Service and/or prohibit you from using or accessing the Service or Site (or any portion, aspect or feature of the Service or Site) for any reason, or no reason, at any time in its sole discretion, with or without notice, including if it believes that you are under 18.</p>
+
+
+
+<p><strong>16. Governing Law; Venue and Jurisdiction</strong><br>By visiting or using the Site and/or the Service, you agree that the laws of the State of California (USA), except for its conflict of law provisions governs your visit, use and this Agreement. Each party may apply to the state courts in Los Angeles, California, USA, and, to the extent that federal courts have exclusive jurisdiction, in Los Angeles, California, for injunctive relief until such time as an award is rendered or the dispute is otherwise resolved, and the Parties agree that those courts and JAMS arbitration (in accordance with the “Arbitration” provision below) shall be the exclusive for any such actions related to this Agreement. Both parties consent to such venue and jurisdiction. A party that primarily prevails in an action brought under this Agreement is entitled to recover from the other party its reasonable attorneys’ fees and costs. This Site is controlled and operated from within the United States. Impact makes no representation that the Site is appropriate or available in locations outside the United States. Those who choose to access the Site from other locations do so at their own risk and are responsible for compliance with applicable laws.</p>
+
+
+
+<p><strong>17. Arbitration</strong><br>The Parties will attempt in good faith to resolve through negotiation any dispute, claim, or controversy arising out of or relating to this Agreement or breach, termination, enforcement, interpretation or validity thereof, including the determination of the scope or applicability of this section (“Dispute”). If the Dispute is not resolved through verbal and written communications, the matter will be submitted to JAMS, or its successor, for arbitration. Any Dispute submitted to arbitration shall be determined by arbitration in Los Angeles, California, USA before a sole arbitrator, in accordance with the laws of the State of California for agreements made in and to be performed in that State. The language of the arbitration shall be English. The arbitration shall be administered by JAMS pursuant to its Comprehensive Arbitration Rules and Procedures. Except with respect to a party’s indemnification obligations, the arbitrator will have no authority to award punitive damages or any other damages not measured by the prevailing party’s actual damages, and may not, in any event, make any ruling, finding or award that does not conform to the terms and conditions of this Agreement. Judgment on the arbitration award (“Award”) may be entered in any court having jurisdiction. The arbitrator shall, in the Award, allocate all of the costs of the arbitration, including the fees of the arbitrator and the reasonable attorneys’ fees of the party that primarily prevails, against the party that did not primarily prevail.</p>
+
+
+
+<p><strong>18. Indemnity</strong><br>You agree to indemnify and hold Impact, its subsidiaries and affiliates, and each of their directors, officers, agents, contractors, partners and employees, harmless from and against any loss, liability, claim, demand, damages, costs and expenses, including reasonable attorney’s fees, arising out of or in connection with any Member Content, any Third Party Applications, Software or Content you post or share on or through the Site (including through the “Share” features), your use of the Service or Site, your conduct in connection with the Service or Site or with other users of the Service or Site, or any violation of this Agreement or of any law or the rights of any third party.</p>
+
+
+
+<p><strong>19. Submissions</strong><br>You acknowledge and agree that any questions, comments, suggestions, ideas, feedback or other information about the Site or Service (“Submissions”), provided by you to Impact are non-confidential and shall become the sole property of Impact. Impact shall own exclusive rights, including all intellectual property rights, and shall be entitled to the unrestricted use and dissemination of these Submissions for any purpose, commercial or otherwise, without acknowledgment or compensation to you.</p>
+
+
+
+<p><strong>20. Definitions and Constructions</strong><br>Unless otherwise specified, the terms “includes”, “including”, “e.g.,”, “for example”, and other similar terms are deemed to include the term “without limitation” immediately thereafter. Terms used in these Terms with the initial letter(s) capitalized will have the meaning attributed to them in these Terms.</p>
+
+
+
+<p><strong>21. General</strong><br>If you are registering on the Site as a business entity, you represent that you have the authority to bind the entity to this Agreement. Impact may assign any of its rights or obligations under the Terms to another party without notice or consent for any reason. You and Impact are independent contractors, and no agency, partnership, joint venture, employee-employer or franchiser-franchisee relationship is intended or created by the Terms.</p>
+
+
+
+<p class="bottom-p"><strong>22. Other</strong><br>These Member Terms of Use, as amended from time to time, constitute the entire agreement between you and Impact regarding the use of the Site and/or the Service, superseding any prior agreements between you and Impact relating to your use of the Site or Service. The failure of Impact to exercise or enforce any right or provision of these Terms of Use shall not constitute a waiver of such right or provision in that or any other instance. If any provision of this Agreement is held invalid, the remainder of this Agreement shall continue in full force and effect. If any provision of these Terms of Use shall be deemed unlawful, void or for any reason unenforceable, then that provision shall be deemed severable from these Terms of Use and shall not affect the validity and enforceability of any remaining provisions. We reserve the right, at its discretion, to modify these Terms at any time. Changes to these Terms will be posted on the Website or sent to you via email. All changes are effective upon posting to the Website. Your continued use of the Website following a posting of changes is your agreement to the changes and you are bound by the then-current version of these Terms. If any changes to these Terms are unacceptable to you, you must discontinue use of the Site and Service. Impact reserves the right to suspend or deny, in its sole discretion, your access to all or any portion of the Site, including for any violation of any provision of these Terms. Impact also reserves the right to change the Site without notice to you, at any time.</p>
+
+
+
+<style> .bottom-p {padding-bottom:50px} </style>
+
+
+
+<p></p>
+    </div>
+</div>
+<div>
+    <footer id="footer">
+            <div id="footerMenu">
+                    <div class="widgetBlock ">
+                    <a class="mainMenuItem"  tabindex="0"
+               target="_self"
+               >
+                Platform            </a>
+                    <div class="submenu">
+                <ul id="menu-platform" class="menu"><li id="menu-item-14903" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14903"><a href="https://impact.com/performance/">Performance</a></li>
+<li id="menu-item-90619" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90619"><a href="https://impact.com/creator/">Creator</a></li>
+<li id="menu-item-131633" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131633"><a href="https://impact.com/advocate/">Advocate</a></li>
+<li id="menu-item-12784" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12784"><a href="https://impact.com/discover-recruit/">Discover and Recruit</a></li>
+<li id="menu-item-12783" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12783"><a href="https://impact.com/partnership-contract-pay/">Contract and Pay</a></li>
+<li id="menu-item-12782" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12782"><a href="https://impact.com/partnership-track/">Track</a></li>
+<li id="menu-item-12781" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12781"><a href="https://impact.com/manage-engage/">Engage</a></li>
+<li id="menu-item-12779" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12779"><a href="https://impact.com/protect-monitor/">Protect and Monitor</a></li>
+<li id="menu-item-12780" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12780"><a href="https://impact.com/optimize-insights/">Optimize</a></li>
+</ul>            </div>
+            </div>
+        <div class="widgetBlock ">
+                    <a class="mainMenuItem"  tabindex="0"
+               target="_self"
+               >
+                For Brands            </a>
+                    <div class="submenu">
+                <ul id="menu-for-brands" class="menu"><li id="menu-item-37219" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37219"><a href="https://impact.com/affiliate-marketing/">Affiliate marketing</a></li>
+<li id="menu-item-37220" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37220"><a href="https://impact.com/influencer-marketing/">Influencer marketing</a></li>
+<li id="menu-item-131635" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131635"><a href="https://impact.com/creator-edit/">Creator Edit<i class="notification new-pink"> </i></a></li>
+<li id="menu-item-66202" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66202"><a href="https://impact.com/influencer-marketing/managed-services/">Managed services: influencer</a></li>
+<li id="menu-item-117892" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-117892"><a href="https://impact.com/customer-referral-marketing/">Referral marketing</a></li>
+<li id="menu-item-140183" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140183"><a href="https://impact.com/seller/">Amazon Seller</a></li>
+<li id="menu-item-37221" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37221"><a href="https://impact.com/business-development/">Business development</a></li>
+<li id="menu-item-37224" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37224"><a href="https://impact.com/mobile/">Mobile partnerships</a></li>
+<li id="menu-item-43584" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43584"><a href="https://impact.com/saas-partnership-marketing/">Saas partnership marketing</a></li>
+<li id="menu-item-37161" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37161"><a href="https://impact.com/marketing-analysts/">Analytics and attribution</a></li>
+<li id="menu-item-37160" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37160"><a href="https://impact.com/services/">Services</a></li>
+</ul>            </div>
+            </div>
+        <div class="widgetBlock ">
+                    <a class="mainMenuItem"  tabindex="0"
+               target="_self"
+               >
+                For Publishers            </a>
+                    <div class="submenu">
+                <ul id="menu-for-publishers" class="menu"><li id="menu-item-66194" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-66194"><a href="/partners/">Overview</a></li>
+<li id="menu-item-37162" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37162"><a href="https://impact.com/partners/affiliate-partners/">Affiliates</a></li>
+<li id="menu-item-37164" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37164"><a href="https://impact.com/partners/influencer-partners/">Influencers and creators</a></li>
+<li id="menu-item-37165" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37165"><a href="https://impact.com/partners/mobile-app-partners/">Mobile apps</a></li>
+<li id="menu-item-37163" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37163"><a href="https://impact.com/partners/publishers-media-groups-partners/">Content publishers</a></li>
+<li id="menu-item-66193" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66193"><a href="https://impact.com/partners/premium-news-and-media-publishers/">Premium news and media publishers</a></li>
+</ul>            </div>
+            </div>
+        <div class="widgetBlock ">
+                    <a class="mainMenuItem"  tabindex="0"
+               target="_self"
+               >
+                Insights            </a>
+                    <div class="submenu">
+                <ul id="menu-insights" class="menu"><li id="menu-item-151538" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-151538"><a href="https://impact.com/press-releases/">Press releases</a></li>
+<li id="menu-item-44748" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44748"><a href="/insights/">Resource hub</a></li>
+<li id="menu-item-37172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37172"><a href="https://impact.com/partnerships-experience-academy/">Partnerships Experience Academy</a></li>
+<li id="menu-item-37168" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37168"><a href="https://impact.com/partnership-economy/">The Partnership Economy</a></li>
+<li id="menu-item-88287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88287"><a href="https://impact.com/events/">Events</a></li>
+<li id="menu-item-37171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37171"><a href="https://impact.com/partnerships-experience/">Partnerships Experience (iPX) Event</a></li>
+<li id="menu-item-37173" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37173"><a href="/find-influencers/">Influencer &#038; creator directory</a></li>
+<li id="menu-item-37170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37170"><a href="https://impact.com/glossary/">Glossary</a></li>
+</ul>            </div>
+            </div>
+        <div class="widgetBlock ">
+                    <a class="mainMenuItem"  tabindex="0"
+               target="_self"
+               >
+                Partner with impact.com            </a>
+                    <div class="submenu">
+                <ul id="menu-partner-with-impact-com" class="menu"><li id="menu-item-37174" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37174"><a href="https://impact.com/agency-partner-program/">Agency partner program</a></li>
+<li id="menu-item-66095" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-66095"><a href="/agency-partner-program/directory/">Agency directory</a></li>
+<li id="menu-item-80767" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-80767"><a href="https://impact.com/technology-partners/">Technology partners</a></li>
+<li id="menu-item-80768" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-80768"><a href="/technology-partners/directory/">Technology partners directory</a></li>
+<li id="menu-item-37176" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37176"><a href="https://impact.com/referral-partner-program/">Referral partner program</a></li>
+<li id="menu-item-37177" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37177"><a target="_blank" href="https://integrations.impact.com/">Developer portal</a></li>
+</ul>            </div>
+            </div>
+        <div class="widgetBlock ">
+                    <a class="mainMenuItem"  tabindex="0"
+               target="_self"
+               >
+                About            </a>
+                    <div class="submenu">
+                <ul id="menu-aboutmenu" class="menu"><li id="menu-item-100" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-100"><a href="/about/">About impact.com</a></li>
+<li id="menu-item-140155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140155"><a href="https://impact.com/why-partnerships/">Why partnerships</a></li>
+<li id="menu-item-80600" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-80600"><a href="https://impact.com/contact/">Contact</a></li>
+<li id="menu-item-101" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-101"><a href="/careers/">Careers</a></li>
+<li id="menu-item-140156" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140156"><a href="https://impact.com/leadership/">Leadership</a></li>
+<li id="menu-item-140157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140157"><a href="https://impact.com/awards/">Awards</a></li>
+<li id="menu-item-86689" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86689"><a href="https://impact.com/about/sustainability/">Sustainability</a></li>
+<li id="menu-item-86178" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-86178"><a target="_blank" href="https://help.impact.com/en/support/home">Help center</a></li>
+<li id="menu-item-109412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-109412"><a href="https://impact.com/security-and-privacy/">Security and privacy</a></li>
+</ul>            </div>
+            </div>
+        </div>
+        <div id="socialmedia">
+                    <div class="newsletter-signup">
+            <div class="form-module">
+                <div class="form-container">
+                    <div class="form">
+                        <form class="custom-marketo-form" data-id="2571" autocomplete="off" novalidate>
+    <p class="signUp">Sign up for our monthly newsletter</p>
+    <div class="container">
+        <div class="flexWrap">
+            <div class="input-field newsletterEmail">
+                <label for="newsletterEmail">Business email</label>
+                <input type="email" id="newsletterEmail" name="Email" class="required newsletterEmail">
+                <p class="error">Please enter valid email address</p>
+                <p class="error blacklist">Please use different email address</p>
+            </div>
+            <div class="button">
+                <button type="submit" name="submit" value="Submit" class="newsletter-btn">Subscribe</button>
+            </div>
+        </div>
+        <div id="consent" class="checkbox_msg newsletterEmailConsent">
+            <div class="wrapper">
+                <input name="GDPR_email_opt_in__c" id="GDPR_email_opt_in__c" class="checkbox required" type="checkbox">
+                <h4 class="comm_message">Yes, I would like to receive marketing communications regarding impact.com products, services, and events. I can unsubscribe at a later time. By registering, you confirm that you agree to the storing and processing of your personal data by impact.com as described in the <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.</a>
+                </h4>
+                <p class="error">This field is required</p>
+            </div>
+        </div>
+        <button type="submit" name="submit" value="Submit" class="newsletter-btn mobile">Subscribe</button>
+    </div>
+    <p class="thankYou">Congratulations. You have successfully signed up to our newsletter. Keep an eye on your inbox.</p>
+</form>
+<form preload data-id="2571" id="mktoForm_2571"
+                                      class="mkto-custom-thanks mkto-custom-form " data-thanks="Thank you for signing up to our monthly newsletter.<br/>You'll be hearing from us soon.">
+</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="widgetBlock ">
+                    <a class="mainMenuItem"  tabindex="0"
+               target="_self"
+               >
+                Social Media            </a>
+                    <div class="submenu">
+                <ul id="menu-social-media-menu-footer" class="menu"><li id="menu-item-78769" class="fa-brands fa-linkedin-in menu-item menu-item-type-custom menu-item-object-custom menu-item-78769"><a target="_blank" href="https://www.linkedin.com/company/impactdotcom/">Linkedin</a></li>
+<li id="menu-item-78771" class="fa-brands fa-instagram menu-item menu-item-type-custom menu-item-object-custom menu-item-78771"><a target="_blank" href="https://www.instagram.com/impactdotcom/">Instagram</a></li>
+<li id="menu-item-78767" class="fa-brands fa-facebook-f menu-item menu-item-type-custom menu-item-object-custom menu-item-78767"><a target="_blank" href="https://www.facebook.com/impactdotcom1">Facebook</a></li>
+<li id="menu-item-78770" class="fa-brands fa-youtube menu-item menu-item-type-custom menu-item-object-custom menu-item-78770"><a target="_blank" href="https://www.youtube.com/c/impactdotcom">Youtube</a></li>
+<li id="menu-item-78773" class="fa-brands fa-tiktok menu-item menu-item-type-custom menu-item-object-custom menu-item-78773"><a target="_blank" href="https://www.tiktok.com/@impactdotcom">TikTok</a></li>
+<li id="menu-item-81093" class="fa fa-rss menu-item menu-item-type-custom menu-item-object-custom menu-item-81093"><a target="_blank" href="https://impact.com/feed/">RSS feed</a></li>
+</ul>            </div>
+            </div>
+<div class="widgetBlock appStore">
+<div class="submenu">
+<a aria-label="Download on the app store" href="https://apps.apple.com/app/impact-com/id1629721141" target="_blank" rel="noopener noreferrer" ><img decoding="async" src="https://impact.com/wp-content/uploads/2023/06/App-store-apple-01-1.svg" alt="Apple logo with text indicating the option to download from the App Store." width="118px" height="42px" loading="lazy"/></a><a aria-label="Get it on Google play" href="https://play.google.com/store/apps/details?id=com.impact.impactApp" target="_blank" rel="noopener noreferrer" ><img decoding="async" src="https://impact.com/wp-content/uploads/2023/06/Google_Play_Store_badge_EN-1-01-1.svg" alt="Black button with white text GET IT ON, above Google Play featuring a colorful triangular logo on the left." width="145px" height="44px" loading="lazy"/></a>
+</div>
+</div>
+        </div>
+        <div id="footerBottom">
+            <p><img decoding="async" class="impact-logo-footer" src="https://impact.com/wp-content/uploads/2022/04/Logo_all-white.png" alt="impact.com logo white" height="45px" width="130px" loading="lazy"></p>
+        <div class="widgetBlock ">
+                    <div class="submenu">
+                                    <div class="leftBox">
+                                                                            <p>© 2025 Impact Tech, Inc</p>
+                                            </div>
+                <ul id="menu-footermenu" class="menu"><li id="menu-item-97487" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-97487"><a href="#">Legal policies</a>
+<ul class="sub-menu">
+	<li id="menu-item-13353" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13353"><a href="/privacy-policy/">Privacy policy</a></li>
+	<li id="menu-item-13354" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-13354"><a href="/terms-of-use/" aria-current="page">Terms of use</a></li>
+	<li id="menu-item-16224" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16224"><a href="/accessibility-policy/">Accessibility policy</a></li>
+	<li id="menu-item-24993" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24993"><a target="_blank" href="https://impact.responsibledisclosure.com/hc/en-us">Responsible disclosure</a></li>
+	<li id="menu-item-97488" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-97488"><a target="_blank" href="https://impact.com/legal/IRL_Modern_Slavery_Statement.pdf">Modern slavery statement</a></li>
+	<li id="menu-item-108102" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-108102"><a target="_blank" href="https://impact.com/legal/PAIA_manual_impact_radius_SA.pdf">PAIA manual</a></li>
+	<li id="menu-item-83893" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83893"><a href="https://impact.com/imprint/">Imprint</a></li>
+</ul>
+</li>
+</ul>            </div>
+            </div>
+        </div>
+    
+</footer>
+
+<div id="ep-instant-results"></div><noscript><img height="1" width="1" style="display: none;" src="https://www.facebook.com/tr?id=440085658361906&ev=PageView&noscript=1&cd%5Bpage_title%5D=Terms+of+Use&cd%5Bpost_type%5D=page&cd%5Bpost_id%5D=8504&cd%5Bplugin%5D=PixelYourSite&cd%5Buser_role%5D=guest&cd%5Bevent_url%5D=impact.com%2Fterms-of-use%2F" alt=""></noscript>
+<script type="text/javascript" src="https://impact.com/wp-content/themes/impact/dist/vendor/scripts/vendor.min.js?ver=1721811351" id="vendor-js"></script>
+<script type="text/javascript" src="https://impact.com/wp-content/themes/impact/dist/theme/scripts/theme.min.js?ver=1773820547" id="theme-js"></script>
+    <noscript>
+        <img src="https://ws.zoominfo.com/pixel/x9t5HMrreUQLdXOemJuH" width="1" height="1" style="display: none;"/>
+        <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=94558&fmt=gif"/>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=274149381222612&ev=PageView&noscript=1"/>
+    </noscript>
+    </body>
+
+</html>

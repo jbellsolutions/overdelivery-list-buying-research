@@ -1,0 +1,74 @@
+[
+  {
+    "name": "lscmarketinggroup",
+    "url": "https://lscmarketinggroup.com/",
+    "status": 200,
+    "final": "https://lscmarketinggroup.com/",
+    "bytes": 180000,
+    "title": "Digital &amp; Email Marketing Services near NYC | LSC Marketing Group"
+  },
+  {
+    "name": "usadata",
+    "url": "https://www.usadata.com",
+    "status": 200,
+    "final": "https://www.usadata.com",
+    "bytes": 180000,
+    "title": "Data-Driven Marketing &amp; Audience Intelligence | USADATA &mdash; Targeting, Data, Omnichannel Execution"
+  },
+  {
+    "name": "exactdata",
+    "url": "https://www.exactdata.com",
+    "status": 200,
+    "final": "https://www.exactdata.com",
+    "bytes": 148314,
+    "title": "Exact Data: Mailing Lists and Leads"
+  },
+  {
+    "name": "data_axle",
+    "url": "https://www.data-axle.com",
+    "status": 200,
+    "final": "https://www.data-axle.com",
+    "bytes": 180000,
+    "title": "Data Axle - Limitless Data. Measurable Marketing."
+  },
+  {
+    "name": "wiland",
+    "url": "https://wiland.com",
+    "status": 200,
+    "final": "https://wiland.com",
+    "bytes": 104083,
+    "title": "Marketing Audiences and Enhancement Data - Wiland"
+  },
+  {
+    "name": "epsilon",
+    "url": "https://www.epsilon.com/us",
+    "status": 200,
+    "final": "https://www.epsilon.com/us",
+    "bytes": 180000,
+    "title": "Unlock marketing&#x27;s full potential | Epsilon US"
+  },
+  {
+    "name": "acxiom",
+    "url": "https://www.acxiom.com",
+    "status": 200,
+    "final": "https://www.acxiom.com",
+    "bytes": 180000,
+    "title": "We put data to work - Acxiom"
+  },
+  {
+    "name": "listsource_corelogic",
+    "url": "https://www.listsource.com/homepage/index.html",
+    "status": 200,
+    "final": "https://www.listsource.com/homepage/index.html",
+    "bytes": 36421,
+    "title": "Prospect Lists - Homeowner data lists, direct mail lists | CoreLogic"
+  },
+  {
+    "name": "experian_marketing",
+    "url": "https://www.experian.com/marketing/",
+    "status": 200,
+    "final": "https://www.experian.com/marketing/",
+    "bytes": 102946,
+    "title": "Data-Driven Marketing Services from Experian"
+  }
+]

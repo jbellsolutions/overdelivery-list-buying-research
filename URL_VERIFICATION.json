@@ -1,0 +1,507 @@
+{
+  "checked_count": 98,
+  "http_200_count": 92,
+  "http_403_count": 6,
+  "browser_verified_count": 6,
+  "browser_verified_urls": [
+    "https://www.marketingdive.com/advertise/",
+    "https://www.ciodive.com/advertise/",
+    "https://www.retaildive.com/advertise/",
+    "https://www.hrdive.com/advertise/",
+    "https://www.healthcaredive.com/advertise/",
+    "https://www.restaurantdive.com/advertise/"
+  ],
+  "failures": [],
+  "results": [
+    {
+      "url": "https://www.nextmark.com/media-finder/",
+      "status": 200,
+      "final_url": "https://www.nextmark.com/media-finder/"
+    },
+    {
+      "url": "https://www.worldata.com/",
+      "status": 200,
+      "final_url": "https://outcomemedia.com/"
+    },
+    {
+      "url": "https://www.listgiant.com/",
+      "status": 200,
+      "final_url": "https://listgiant.com/"
+    },
+    {
+      "url": "https://www.paved.com/advertisers",
+      "status": 200,
+      "final_url": "https://www.paved.com/advertisers"
+    },
+    {
+      "url": "https://swapstack.co/",
+      "status": 200,
+      "final_url": "http://www.swapstack.co/"
+    },
+    {
+      "url": "https://www.udimi.com/buy-solo-ads",
+      "status": 200,
+      "final_url": "https://udimi.com/buy-solo-ads"
+    },
+    {
+      "url": "https://impact.com/",
+      "status": 200,
+      "final_url": "https://impact.com/"
+    },
+    {
+      "url": "https://partnerstack.com/",
+      "status": 200,
+      "final_url": "https://partnerstack.com/"
+    },
+    {
+      "url": "https://www.everflow.io/",
+      "status": 200,
+      "final_url": "https://www.everflow.io/"
+    },
+    {
+      "url": "https://www.awin.com/",
+      "status": 200,
+      "final_url": "https://www.awin.com/"
+    },
+    {
+      "url": "https://www.cj.com/",
+      "status": 200,
+      "final_url": "https://www.cj.com/"
+    },
+    {
+      "url": "https://www.tune.com/",
+      "status": 200,
+      "final_url": "https://www.tune.com/"
+    },
+    {
+      "url": "https://www.clickbank.com/",
+      "status": 200,
+      "final_url": "https://www.clickbank.com/"
+    },
+    {
+      "url": "https://www.maxbounty.com/",
+      "status": 200,
+      "final_url": "https://maxbounty.com/"
+    },
+    {
+      "url": "https://www.performcb.com/",
+      "status": 200,
+      "final_url": "https://www.performcb.com/"
+    },
+    {
+      "url": "https://www.anteriad.com/",
+      "status": 200,
+      "final_url": "https://anteriad.com/"
+    },
+    {
+      "url": "https://passionfroot.me/",
+      "status": 200,
+      "final_url": "https://www.passionfroot.me/"
+    },
+    {
+      "url": "https://www.flexoffers.com/",
+      "status": 200,
+      "final_url": "https://www.flexoffers.com/"
+    },
+    {
+      "url": "https://www.shareasale.com/",
+      "status": 200,
+      "final_url": "https://www.awin.com/us/getting-started-sas?utm_medium=redirect&utm_source=www.shareasale.com"
+    },
+    {
+      "url": "https://www.ana.net/",
+      "status": 200,
+      "final_url": "https://www.ana.net/"
+    },
+    {
+      "url": "https://dmaw.org/",
+      "status": 200,
+      "final_url": "https://www.dmaw.org/"
+    },
+    {
+      "url": "https://lscmarketinggroup.com/",
+      "status": 200,
+      "final_url": "https://lscmarketinggroup.com/"
+    },
+    {
+      "url": "https://www.usadata.com/",
+      "status": 200,
+      "final_url": "https://www.usadata.com/"
+    },
+    {
+      "url": "https://www.exactdata.com/",
+      "status": 200,
+      "final_url": "https://www.exactdata.com/"
+    },
+    {
+      "url": "https://www.data-axle.com/",
+      "status": 200,
+      "final_url": "https://www.data-axle.com/"
+    },
+    {
+      "url": "https://wiland.com/",
+      "status": 200,
+      "final_url": "https://wiland.com/"
+    },
+    {
+      "url": "https://www.epsilon.com/us",
+      "status": 200,
+      "final_url": "https://www.epsilon.com/us"
+    },
+    {
+      "url": "https://www.acxiom.com/",
+      "status": 200,
+      "final_url": "https://www.acxiom.com/"
+    },
+    {
+      "url": "https://www.listsource.com/homepage/index.html",
+      "status": 200,
+      "final_url": "https://www.listsource.com/homepage/index.html"
+    },
+    {
+      "url": "https://www.experian.com/marketing/",
+      "status": 200,
+      "final_url": "https://www.experian.com/marketing/"
+    },
+    {
+      "url": "https://srds.com/direct-marketing-lists/",
+      "status": 200,
+      "final_url": "https://srds.com/direct-marketing-lists/"
+    },
+    {
+      "url": "https://www.esteemarketing.com/our-company-direct-marketing-list-services/",
+      "status": 200,
+      "final_url": "https://www.esteemarketing.com/our-company-direct-marketing-list-services/"
+    },
+    {
+      "url": "https://conraddirect.com/services/lists/",
+      "status": 200,
+      "final_url": "https://conraddirect.com/services/lists/"
+    },
+    {
+      "url": "https://www.geonmedia.com/list-management/",
+      "status": 200,
+      "final_url": "https://www.geonmedia.com/list-management/"
+    },
+    {
+      "url": "https://www.directmail.com/directory/services/list_management/",
+      "status": 200,
+      "final_url": "https://www.directmail.com/directory/services/list_management/"
+    },
+    {
+      "url": "https://www.amerilist.com/list-services-compiled-direct-response-lists",
+      "status": 200,
+      "final_url": "https://www.amerilist.com/list-services-compiled-direct-response-lists"
+    },
+    {
+      "url": "http://www.globaldirectmarketing.com/",
+      "status": 200,
+      "final_url": "http://www.globaldirectmarketing.com/"
+    },
+    {
+      "url": "http://www.responsedynamicsinc.com/list.html",
+      "status": 200,
+      "final_url": "http://www.responsedynamicsinc.com/list.html"
+    },
+    {
+      "url": "https://dralists.com/lists",
+      "status": 200,
+      "final_url": "https://dralists.com/lists"
+    },
+    {
+      "url": "https://www.keymarketingcorp.com/list_brokerage",
+      "status": 200,
+      "final_url": "https://www.keymarketingcorp.com/list_brokerage"
+    },
+    {
+      "url": "https://www.keyacquisition.com/what-we-do/",
+      "status": 200,
+      "final_url": "https://www.keyacquisition.com/what-we-do/"
+    },
+    {
+      "url": "https://www.wsponton.com/distinct-marketing-solutions/",
+      "status": 200,
+      "final_url": "https://www.wsponton.com/distinct-marketing-solutions/"
+    },
+    {
+      "url": "https://northamericandirectmarketing.com/services",
+      "status": 200,
+      "final_url": "https://northamericandirectmarketing.com/services"
+    },
+    {
+      "url": "https://www.mccarthymediagroup.com/brokerage-services.html",
+      "status": 200,
+      "final_url": "https://www.mccarthymediagroup.com/brokerage-services.html"
+    },
+    {
+      "url": "https://lists.infocusmarketing.com/",
+      "status": 200,
+      "final_url": "https://lists.infocusmarketing.com/"
+    },
+    {
+      "url": "https://belardiwong.com/",
+      "status": 200,
+      "final_url": "https://belardiwong.com/"
+    },
+    {
+      "url": "https://outcomemedia.com/",
+      "status": 200,
+      "final_url": "https://outcomemedia.com/"
+    },
+    {
+      "url": "https://theagora.com/",
+      "status": 200,
+      "final_url": "https://theagora.com/"
+    },
+    {
+      "url": "https://lists.nextmark.com/market?page=order/online/datacard&id=413017",
+      "status": 200,
+      "final_url": "https://lists.nextmark.com/market;jsessionid=12EE4D786F9663AEA1038AD699371515?page=order/online/datacard&id=413017"
+    },
+    {
+      "url": "https://www.10dollarsoloads.com/",
+      "status": 200,
+      "final_url": "https://www.10dollarsoloads.com/"
+    },
+    {
+      "url": "https://www.easysoloads.com/",
+      "status": 200,
+      "final_url": "https://www.easysoloads.com/"
+    },
+    {
+      "url": "https://trafficforme.com/",
+      "status": 200,
+      "final_url": "https://trafficforme.com/"
+    },
+    {
+      "url": "https://soloadsx.com/directory/",
+      "status": 200,
+      "final_url": "https://soloadsx.com/directory/"
+    },
+    {
+      "url": "https://www.myleadgensecret.com/",
+      "status": 200,
+      "final_url": "https://www.myleadgensecret.com/"
+    },
+    {
+      "url": "https://gen3marketing.com/",
+      "status": 200,
+      "final_url": "https://gen3marketing.com/"
+    },
+    {
+      "url": "https://www.accelerationpartners.com/",
+      "status": 200,
+      "final_url": "https://www.accelerationpartners.com/"
+    },
+    {
+      "url": "https://www.dma.org.uk/",
+      "status": 200,
+      "final_url": "https://www.dma.org.uk/"
+    },
+    {
+      "url": "https://www.fedma.org/",
+      "status": 200,
+      "final_url": "https://www.fedma.org/"
+    },
+    {
+      "url": "https://www.nemoa.org/",
+      "status": 200,
+      "final_url": "https://www.nemoa.org/"
+    },
+    {
+      "url": "https://www.iab.com/",
+      "status": 200,
+      "final_url": "https://www.iab.com/"
+    },
+    {
+      "url": "https://www.mediapost.com/",
+      "status": 200,
+      "final_url": "https://www.mediapost.com/"
+    },
+    {
+      "url": "https://www.melissa.com/direct/mailing-lists-sales-leads",
+      "status": 200,
+      "final_url": "https://www.melissa.com/direct/mailing-lists-sales-leads"
+    },
+    {
+      "url": "https://www.beehiiv.com/ad-network",
+      "status": 200,
+      "final_url": "https://www.beehiiv.com/ad-network"
+    },
+    {
+      "url": "https://letterwell.co/advertisers-faqs/",
+      "status": 200,
+      "final_url": "https://letterwell.co/advertisers-faqs/"
+    },
+    {
+      "url": "https://www.hecto.io/",
+      "status": 200,
+      "final_url": "https://www.hecto.io/"
+    },
+    {
+      "url": "https://sponsorgap.com/",
+      "status": 200,
+      "final_url": "https://sponsorgap.com/"
+    },
+    {
+      "url": "https://kreatorstack.com/",
+      "status": 200,
+      "final_url": "https://kreatorstack.com/"
+    },
+    {
+      "url": "https://www.liveintent.com/",
+      "status": 200,
+      "final_url": "https://www.liveintent.com/"
+    },
+    {
+      "url": "https://www.jeeng.com/",
+      "status": 200,
+      "final_url": "https://www.jeeng.com/"
+    },
+    {
+      "url": "https://www.smartbrief.com/advertise",
+      "status": 200,
+      "final_url": "https://www.smartbrief.com/advertise"
+    },
+    {
+      "url": "https://www.searchenginejournal.com/advertise/",
+      "status": 200,
+      "final_url": "https://www.searchenginejournal.com/advertise/"
+    },
+    {
+      "url": "https://www.b2bmarketing.net/growth-solutions/",
+      "status": 200,
+      "final_url": "https://www.b2bmarketing.net/growth-solutions/"
+    },
+    {
+      "url": "https://www.marketingdive.com/advertise/",
+      "status": 403,
+      "error": "HTTPError: Forbidden"
+    },
+    {
+      "url": "https://www.ciodive.com/advertise/",
+      "status": 403,
+      "error": "HTTPError: Forbidden"
+    },
+    {
+      "url": "https://www.retaildive.com/advertise/",
+      "status": 403,
+      "error": "HTTPError: Forbidden"
+    },
+    {
+      "url": "https://www.hrdive.com/advertise/",
+      "status": 403,
+      "error": "HTTPError: Forbidden"
+    },
+    {
+      "url": "https://www.healthcaredive.com/advertise/",
+      "status": 403,
+      "error": "HTTPError: Forbidden"
+    },
+    {
+      "url": "https://www.restaurantdive.com/advertise/",
+      "status": 403,
+      "error": "HTTPError: Forbidden"
+    },
+    {
+      "url": "https://www.chiefmarketer.com/advertise/",
+      "status": 200,
+      "final_url": "https://www.chiefmarketer.com/advertise/"
+    },
+    {
+      "url": "https://digiday.com/advertise/",
+      "status": 200,
+      "final_url": "https://digiday.com/advertise/"
+    },
+    {
+      "url": "https://morningbrewinc.com/advertise-with-us",
+      "status": 200,
+      "final_url": "https://morningbrewinc.com/advertise-with-us"
+    },
+    {
+      "url": "https://www.thedailyupside.com/advertise-with-us/",
+      "status": 200,
+      "final_url": "https://www.thedailyupside.com/advertise-with-us/"
+    },
+    {
+      "url": "https://advertising.theskimm.com/",
+      "status": 200,
+      "final_url": "https://advertising.theskimm.com/"
+    },
+    {
+      "url": "https://advertising.nytimes.com/",
+      "status": 200,
+      "final_url": "https://advertising.nytimes.com/"
+    },
+    {
+      "url": "https://advertising.hearstmagazines.com/advertising",
+      "status": 200,
+      "final_url": "https://advertising.hearstmagazines.com/advertising"
+    },
+    {
+      "url": "https://www.theatlantic.com/advertising/",
+      "status": 200,
+      "final_url": "https://www.theatlantic.com/advertising/"
+    },
+    {
+      "url": "https://mediakit.outsideinc.com/p/1",
+      "status": 200,
+      "final_url": "https://mediakit.outsideinc.com/p/1"
+    },
+    {
+      "url": "https://www.flyingmag.com/advertising-page/",
+      "status": 200,
+      "final_url": "https://www.flyingmag.com/advertising-page/"
+    },
+    {
+      "url": "https://www.farmanddairy.com/advertise",
+      "status": 200,
+      "final_url": "https://www.farmanddairy.com/advertise"
+    },
+    {
+      "url": "https://www.americanrifleman.org/advertising/",
+      "status": 200,
+      "final_url": "https://www.americanrifleman.org/advertising/"
+    },
+    {
+      "url": "https://www.nrafamily.org/advertising/",
+      "status": 200,
+      "final_url": "https://www.nrafamily.org/advertising/"
+    },
+    {
+      "url": "https://www.healthlinemedia.com/advertise",
+      "status": 200,
+      "final_url": "https://www.healthlinemedia.com/advertise"
+    },
+    {
+      "url": "https://www.people.inc/advertising",
+      "status": 200,
+      "final_url": "https://www.people.inc/advertising"
+    },
+    {
+      "url": "https://mailcon.com/sponsors-and-exhibitors/",
+      "status": 200,
+      "final_url": "https://mailcon.com/sponsors-and-exhibitors/"
+    },
+    {
+      "url": "https://www.affiliatesummit.com/",
+      "status": 200,
+      "final_url": "https://www.affiliatesummit.com/"
+    },
+    {
+      "url": "https://www.leadscon.com/event/lead-to-customer-conference-2026/",
+      "status": 200,
+      "final_url": "https://www.leadscon.com/event/lead-to-customer-conference-2026/"
+    },
+    {
+      "url": "https://emailinnovationsworld.com/",
+      "status": 200,
+      "final_url": "https://emailinnovationsworld.com/"
+    },
+    {
+      "url": "https://sparkloop.app/",
+      "status": 200,
+      "final_url": "https://sparkloop.app/"
+    }
+  ]
+}

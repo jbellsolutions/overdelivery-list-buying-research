@@ -1,0 +1,1582 @@
+    <!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <!-- Start VWO Async SmartCode -->
+        <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
+        <script type='text/javascript' id='vwoCode'>
+            window._vwo_code ||
+            (function () {
+                var w=window,
+                    d=document;
+                var account_id=1188715,
+                    version=2.2,
+                    settings_tolerance=2000,
+                    hide_element='body',
+                    hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important';
+                /* DO NOT EDIT BELOW THIS LINE */
+                if(f=!1,v=d.querySelector('#vwoCode'),cc={},-1<d.URL.indexOf('__vwo_disable__')||w._vwo_code)return;try{var e=JSON.parse(localStorage.getItem('_vwo_'+account_id+'_config'));cc=e&&'object'==typeof e?e:{}}catch(e){}function r(t){try{return decodeURIComponent(t)}catch(e){return t}}var s=function(){var e={combination:[],combinationChoose:[],split:[],exclude:[],uuid:null,consent:null,optOut:null},t=d.cookie||'';if(!t)return e;for(var n,i,o=/(?:^|;\s*)(?:(_vis_opt_exp_(\d+)_combi=([^;]*))|(_vis_opt_exp_(\d+)_combi_choose=([^;]*))|(_vis_opt_exp_(\d+)_split=([^:;]*))|(_vis_opt_exp_(\d+)_exclude=[^;]*)|(_vis_opt_out=([^;]*))|(_vwo_global_opt_out=[^;]*)|(_vwo_uuid=([^;]*))|(_vwo_consent=([^;]*)))/g;null!==(n=o.exec(t));)try{n[1]?e.combination.push({id:n[2],value:r(n[3])}):n[4]?e.combinationChoose.push({id:n[5],value:r(n[6])}):n[7]?e.split.push({id:n[8],value:r(n[9])}):n[10]?e.exclude.push({id:n[11]}):n[12]?e.optOut=r(n[13]):n[14]?e.optOut=!0:n[15]?e.uuid=r(n[16]):n[17]&&(i=r(n[18]),e.consent=i&&3<=i.length?i.substring(0,3):null)}catch(e){}return e}();function i(){var e=function(){if(w.VWO&&Array.isArray(w.VWO))for(var e=0;e<w.VWO.length;e++){var t=w.VWO[e];if(Array.isArray(t)&&('setVisitorId'===t[0]||'setSessionId'===t[0]))return!0}return!1}(),t='a='+account_id+'&u='+encodeURIComponent(w._vis_opt_url||d.URL)+'&vn='+version+'&ph=1'+('undefined'!=typeof platform?'&p='+platform:'')+'&st='+w.performance.now();e||((n=function(){var e,t=[],n={},i=w.VWO&&w.VWO.appliedCampaigns||{};for(e in i){var o=i[e]&&i[e].v;o&&(t.push(e+'-'+o+'-1'),n[e]=!0)}if(s&&s.combination)for(var r=0;r<s.combination.length;r++){var a=s.combination[r];n[a.id]||t.push(a.id+'-'+a.value)}return t.join('|')}())&&(t+='&c='+n),(n=function(){var e=[],t={};if(s&&s.combinationChoose)for(var n=0;n<s.combinationChoose.length;n++){var i=s.combinationChoose[n];e.push(i.id+'-'+i.value),t[i.id]=!0}if(s&&s.split)for(var o=0;o<s.split.length;o++)t[(i=s.split[o]).id]||e.push(i.id+'-'+i.value);return e.join('|')}())&&(t+='&cc='+n),(n=function(){var e={},t=[];if(w.VWO&&Array.isArray(w.VWO))for(var n=0;n<w.VWO.length;n++){var i=w.VWO[n];if(Array.isArray(i)&&'setVariation'===i[0]&&i[1]&&Array.isArray(i[1]))for(var o=0;o<i[1].length;o++){var r,a=i[1][o];a&&'object'==typeof a&&(r=a.e,a=a.v,r&&a&&(e[r]=a))}}for(r in e)t.push(r+'-'+e[r]);return t.join('|')}())&&(t+='&sv='+n)),s&&s.optOut&&(t+='&o='+s.optOut);var n=function(){var e=[],t={};if(s&&s.exclude)for(var n=0;n<s.exclude.length;n++){var i=s.exclude[n];t[i.id]||(e.push(i.id),t[i.id]=!0)}return e.join('|')}();return n&&(t+='&e='+n),s&&s.uuid&&(t+='&id='+s.uuid),s&&s.consent&&(t+='&consent='+s.consent),w.name&&-1<w.name.indexOf('_vis_preview')&&(t+='&pM=true'),w.VWO&&w.VWO.ed&&(t+='&ed='+w.VWO.ed),t}code={nonce:v&&v.nonce,library_tolerance:function(){return'undefined'!=typeof library_tolerance?library_tolerance:void 0},settings_tolerance:function(){return cc.sT||settings_tolerance},hide_element_style:function(){return'{'+(cc.hES||hide_element_style)+'}'},hide_element:function(){return performance.getEntriesByName('first-contentful-paint')[0]?'':'string'==typeof cc.hE?cc.hE:hide_element},getVersion:function(){return version},finish:function(e){var t;f||(f=!0,(t=d.getElementById('_vis_opt_path_hides'))&&t.parentNode.removeChild(t),e&&((new Image).src='https://dev.visualwebsiteoptimizer.com/ee.gif?a='+account_id+e))},finished:function(){return f},addScript:function(e){var t=d.createElement('script');t.type='text/javascript',e.src?t.src=e.src:t.text=e.text,v&&t.setAttribute('nonce',v.nonce),d.getElementsByTagName('head')[0].appendChild(t)},load:function(e,t){t=t||{};var n=new XMLHttpRequest;n.open('GET',e,!0),n.withCredentials=!t.dSC,n.responseType=t.responseType||'text',n.onload=function(){if(t.onloadCb)return t.onloadCb(n,e);200===n.status?_vwo_code.addScript({text:n.responseText}):_vwo_code.finish('&e=loading_failure:'+e)},n.onerror=function(){if(t.onerrorCb)return t.onerrorCb(e);_vwo_code.finish('&e=loading_failure:'+e)},n.send()},init:function(){var e,t=this.settings_tolerance();w._vwo_settings_timer=setTimeout(function(){_vwo_code.finish()},t),'body'!==this.hide_element()?(n=d.createElement('style'),e=(t=this.hide_element())?t+this.hide_element_style():'',t=d.getElementsByTagName('head')[0],n.setAttribute('id','_vis_opt_path_hides'),v&&n.setAttribute('nonce',v.nonce),n.setAttribute('type','text/css'),n.styleSheet?n.styleSheet.cssText=e:n.appendChild(d.createTextNode(e)),t.appendChild(n)):(n=d.getElementsByTagName('head')[0],(e=d.createElement('div')).style.cssText='z-index: 2147483647 !important;position: fixed !important;left: 0 !important;top: 0 !important;width: 100% !important;height: 100% !important;background: white !important;',e.setAttribute('id','_vis_opt_path_hides'),e.classList.add('_vis_hide_layer'),n.parentNode.insertBefore(e,n.nextSibling));var n='https://dev.visualwebsiteoptimizer.com/j.php?'+i();-1!==w.location.search.indexOf('_vwo_xhr')?this.addScript({src:n}):this.load(n+'&x=true',{l:1})}};w._vwo_code=code;code.init();})();
+        </script>
+        <!-- End VWO Async SmartCode -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            window.dataLayer.push({
+                'postPublishDate': '2019-11-26',
+                'postModifiedDate': '2026-06-10',
+            });
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+
+            gtag('consent', 'default', {
+                'ad_storage': 'denied',
+                'analytics_storage': 'denied',
+                'wait_for_update': 500,
+            });
+            gtag("set", "ads_data_redaction", true);
+        </script>
+                    <script src="https://cmp.osano.com/Azqaa0TTIUemBqY/5c75cdbf-4b45-46c6-9bdf-500dc1eacaf6/osano.js" crossorigin="anonymous"></script>
+            <script>
+                LUX=(function(){var a=("undefined"!==typeof(LUX)&&"undefined"!==typeof(LUX.gaMarks)?LUX.gaMarks:[]);var d=("undefined"!==typeof(LUX)&&"undefined"!==typeof(LUX.gaMeasures)?LUX.gaMeasures:[]);var j="LUX_start";var k=window.performance;var l=("undefined"!==typeof(LUX)&&LUX.ns?LUX.ns:(Date.now?Date.now():+(new Date())));if(k&&k.timing&&k.timing.navigationStart){l=k.timing.navigationStart}function f(){if(k&&k.now){return k.now()}var o=Date.now?Date.now():+(new Date());return o-l}function b(n){if(k){if(k.mark){return k.mark(n)}else{if(k.webkitMark){return k.webkitMark(n)}}}a.push({name:n,entryType:"mark",startTime:f(),duration:0});return}function m(p,t,n){if("undefined"===typeof(t)&&h(j)){t=j}if(k){if(k.measure){if(t){if(n){return k.measure(p,t,n)}else{return k.measure(p,t)}}else{return k.measure(p)}}else{if(k.webkitMeasure){return k.webkitMeasure(p,t,n)}}}var r=0,o=f();if(t){var s=h(t);if(s){r=s.startTime}else{if(k&&k.timing&&k.timing[t]){r=k.timing[t]-k.timing.navigationStart}else{return}}}if(n){var q=h(n);if(q){o=q.startTime}else{if(k&&k.timing&&k.timing[n]){o=k.timing[n]-k.timing.navigationStart}else{return}}}d.push({name:p,entryType:"measure",startTime:r,duration:(o-r)});return}function h(n){return c(n,g())}function c(p,o){for(i=o.length-1;i>=0;i--){var n=o[i];if(p===n.name){return n}}return undefined}function g(){if(k){if(k.getEntriesByType){return k.getEntriesByType("mark")}else{if(k.webkitGetEntriesByType){return k.webkitGetEntriesByType("mark")}}}return a}return{mark:b,measure:m,gaMarks:a,gaMeasures:d}})();LUX.ns=(Date.now?Date.now():+(new Date()));LUX.ac=[];LUX.cmd=function(a){LUX.ac.push(a)};LUX.init=function(){LUX.cmd(["init"])};LUX.send=function(){LUX.cmd(["send"])};LUX.addData=function(a,b){LUX.cmd(["addData",a,b])};LUX_ae=[];window.addEventListener("error",function(a){LUX_ae.push(a)});LUX_al=[];if("function"===typeof(PerformanceObserver)&&"function"===typeof(PerformanceLongTaskTiming)){var LongTaskObserver=new PerformanceObserver(function(c){var b=c.getEntries();for(var a=0;a<b.length;a++){var d=b[a];LUX_al.push(d)}});try{LongTaskObserver.observe({type:["longtask"]})}catch(e){}};            </script>
+            <script src="https://cdn.speedcurve.com/js/lux.js?id=1064505266" async defer crossorigin="anonymous"></script>
+                            <script>
+                const hostnameEnvironments = {
+                    'impact.com': 'production',
+                    'dev4impact.wpengine.com': 'dev',
+                }
+                window.sentryOnLoad = () => {
+                    Sentry.init({
+                        environment: hostnameEnvironments[window.location.hostname] || 'other',
+                        release: 'impact-website@2026.15.07.1',
+                        tracesSampleRate: 0,
+                        // Ignores an error message string or exact match.
+                        ignoreErrors: [
+                            'promise rejection',
+                            /^Can't find variable: _AutofillCallbackHandler$/,
+                            'Failed to fetch',
+                            'resource blocked by content blocker',
+                            'NetworkError when attempting to fetch resource',
+                            '500: Importing a module script failed.',
+                            '500: error loading dynamically imported module',
+                            'Qualified: invalid visitor state',
+                        ],
+                        replaysSessionSampleRate: 0,
+                        replaysOnErrorSampleRate: 0,
+                        // Check hostnameEnvironments before event is sent
+                        beforeSend: (event, hints) => {
+                            if (!hostnameEnvironments[window.location.hostname]) {
+                                return null;
+                            }
+                            return event;
+                        },
+                    });
+                    Sentry.setTag('Consent-Marketing', 'Unknown')
+                    Sentry.setTag('Consent-Analytics', 'Unknown')
+                    Sentry.setTag('Consent-Personalization', 'Unknown')
+                    if ('Osano' in window) {
+                        function setSentryConsentTags() {
+                            const {
+                                MARKETING,
+                                PERSONALIZATION,
+                                ANALYTICS,
+                            } = Osano.cm.getConsent()
+                            Sentry.setTag('Consent-Marketing', MARKETING)
+                            Sentry.setTag('Consent-Analytics', ANALYTICS)
+                            Sentry.setTag('Consent-Personalization', PERSONALIZATION)
+                        }
+
+                        setSentryConsentTags()
+                        Osano.cm.addEventListener('osano-cm-consent-changed', setSentryConsentTags)
+                    }
+                    
+                    window.addEventListener("error", function (event) {
+                        if (event.message === "Script error.") {
+                            const error = new Error("Script error from external script");
+                            error.event = event;
+                            Sentry && Sentry.captureException(error);
+                        }
+                    });
+                };
+            </script>
+            <script src="https://js.sentry-cdn.com/af8488f8751932198c0fb5fdb8c2043a.min.js" crossorigin="anonymous"></script>
+                <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffffff">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
+        <script nonce="461785">
+            dataLayer = window.dataLayer || [];
+            window.appValues = {
+                custom_country: '',
+                custom_rating: '',
+                user_status: '',
+            };
+        </script>
+                <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="alternate" hreflang="en" href="https://impact.com/" />
+<link rel="alternate" hreflang="de" href="https://impact.com/de/" />
+<link rel="alternate" hreflang="fr" href="https://impact.com/fr/" />
+<link rel="alternate" hreflang="it" href="https://impact.com/it/" />
+<link rel="alternate" hreflang="ja" href="https://impact.com/ja/" />
+<link rel="alternate" hreflang="x-default" href="https://impact.com/" />
+
+	<!-- This site is optimized with the Yoast SEO plugin v25.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>impact.com - The All-in-One Partnership Management Platform</title>
+	<meta name="description" content="impact.com offers a unified platform for managing affiliates, influencers, and referrals, streamlining partnerships for brands &amp; publishers." />
+	<link rel="canonical" href="https://impact.com/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="impact.com - The All-in-One Partnership Management Platform" />
+	<meta property="og:description" content="impact.com offers a unified platform for managing affiliates, influencers, and referrals, streamlining partnerships for brands &amp; publishers." />
+	<meta property="og:url" content="https://impact.com/" />
+	<meta property="og:site_name" content="impact.com" />
+	<meta property="article:publisher" content="https://www.facebook.com/impactdotcom1" />
+	<meta property="article:modified_time" content="2026-06-10T14:01:56+00:00" />
+	<meta property="og:image" content="https://impact.com/wp-content/uploads/2022/04/impact-logo-square.jpg" />
+	<meta property="og:image:width" content="1000" />
+	<meta property="og:image:height" content="1000" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@impactdotcom" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://impact.com/","url":"https://impact.com/","name":"impact.com - The All-in-One Partnership Management Platform","isPartOf":{"@id":"https://impact.com/#website"},"about":{"@id":"https://impact.com/#organization"},"primaryImageOfPage":{"@id":"https://impact.com/#primaryimage"},"image":{"@id":"https://impact.com/#primaryimage"},"thumbnailUrl":"https://impact.com/wp-content/uploads/2022/04/impact-logo-square.jpg","datePublished":"2019-11-26T10:06:08+00:00","dateModified":"2026-06-10T14:01:56+00:00","description":"impact.com offers a unified platform for managing affiliates, influencers, and referrals, streamlining partnerships for brands & publishers.","breadcrumb":{"@id":"https://impact.com/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://impact.com/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://impact.com/#primaryimage","url":"https://impact.com/wp-content/uploads/2022/04/impact-logo-square.jpg","contentUrl":"https://impact.com/wp-content/uploads/2022/04/impact-logo-square.jpg","width":1000,"height":1000,"caption":"impact logo"},{"@type":"BreadcrumbList","@id":"https://impact.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://impact.com/#website","url":"https://impact.com/","name":"impact.com","description":"Partnerships, Ad Fraud Detection &amp; Marketing Intelligence ~ SaaS Platform Solution","publisher":{"@id":"https://impact.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://impact.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://impact.com/#organization","name":"impact.com","url":"https://impact.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://impact.com/#/schema/logo/image/","url":"https://impact.com/wp-content/uploads/2021/10/impact-com-logo.png","contentUrl":"https://impact.com/wp-content/uploads/2021/10/impact-com-logo.png","width":772,"height":436,"caption":"impact.com"},"image":{"@id":"https://impact.com/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/impactdotcom1","https://x.com/impactdotcom","https://www.linkedin.com/company/impactdotcom/mycompany/verification/","https://www.youtube.com/channel/UCuaPPZyfe2xMscBBBDczu7w"]}]}</script>
+	<meta name="baidu-site-verification" content="code-S2Jjie4bKn" />
+	<meta name="google-site-verification" content="refJ-QIvb2pxAPGy4VUZ73HX4UY06j21HqQkFC_FmgE" />
+	<!-- / Yoast SEO plugin. -->
+
+
+<script type='application/javascript'  id='pys-version-script'>console.log('PixelYourSite Free version 11.1.3');</script>
+<link rel="alternate" type="application/rss+xml" title="impact.com &raquo; Feed" href="https://impact.com/feed/" />
+<link rel='stylesheet' id='vendor-css' href='https://impact.com/wp-content/themes/impact/dist/vendor/styles/vendor.css?ver=1721811351' type='text/css' media='all' />
+<link rel='stylesheet' id='ds-style-css' href='https://impact.com/wp-content/themes/impact/dist/theme/styles/ds.min.css?ver=1781083042' type='text/css' media='all' />
+<script type="text/javascript" src="https://impact.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://impact.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://impact.com/wp-content/plugins/pixelyoursite/dist/scripts/jquery.bind-first-0.2.3.min.js?ver=6.7.5" id="jquery-bind-first-js"></script>
+<script type="text/javascript" src="https://impact.com/wp-content/plugins/pixelyoursite/dist/scripts/js.cookie-2.1.3.min.js?ver=2.1.3" id="js-cookie-pys-js"></script>
+<script type="text/javascript" src="https://impact.com/wp-content/plugins/pixelyoursite/dist/scripts/tld.min.js?ver=2.3.1" id="js-tld-js"></script>
+<script type="text/javascript" id="pys-js-extra">
+/* <![CDATA[ */
+var pysOptions = {"staticEvents":{"facebook":{"init_event":[{"delay":0,"type":"static","ajaxFire":false,"name":"PageView","pixelIds":["440085658361906"],"eventID":"8d6bed27-af2c-44f1-a7eb-e6aba1e4d181","params":{"page_title":"Home","post_type":"page","post_id":9940,"plugin":"PixelYourSite","user_role":"guest","event_url":"impact.com\/"},"e_id":"init_event","ids":[],"hasTimeWindow":false,"timeWindow":0,"woo_order":"","edd_order":""}]}},"dynamicEvents":[],"triggerEvents":[],"triggerEventTypes":[],"facebook":{"pixelIds":["440085658361906"],"advancedMatching":[],"advancedMatchingEnabled":false,"removeMetadata":false,"wooVariableAsSimple":false,"serverApiEnabled":false,"wooCRSendFromServer":false,"send_external_id":null,"enabled_medical":false,"do_not_track_medical_param":["event_url","post_title","page_title","landing_page","content_name","categories","category_name","tags"],"meta_ldu":false},"debug":"","siteUrl":"https:\/\/impact.com","ajaxUrl":"https:\/\/impact.com\/wp-admin\/admin-ajax.php","ajax_event":"94ac8bc3a9","enable_remove_download_url_param":"1","cookie_duration":"7","last_visit_duration":"60","enable_success_send_form":"","ajaxForServerEvent":"1","ajaxForServerStaticEvent":"1","useSendBeacon":"1","send_external_id":"1","external_id_expire":"180","track_cookie_for_subdomains":"1","google_consent_mode":"1","gdpr":{"ajax_enabled":false,"all_disabled_by_api":false,"facebook_disabled_by_api":false,"analytics_disabled_by_api":false,"google_ads_disabled_by_api":false,"pinterest_disabled_by_api":false,"bing_disabled_by_api":false,"externalID_disabled_by_api":false,"facebook_prior_consent_enabled":true,"analytics_prior_consent_enabled":true,"google_ads_prior_consent_enabled":null,"pinterest_prior_consent_enabled":true,"bing_prior_consent_enabled":true,"cookiebot_integration_enabled":false,"cookiebot_facebook_consent_category":"marketing","cookiebot_analytics_consent_category":"statistics","cookiebot_tiktok_consent_category":"marketing","cookiebot_google_ads_consent_category":"marketing","cookiebot_pinterest_consent_category":"marketing","cookiebot_bing_consent_category":"marketing","consent_magic_integration_enabled":false,"real_cookie_banner_integration_enabled":false,"cookie_notice_integration_enabled":false,"cookie_law_info_integration_enabled":false,"analytics_storage":{"enabled":true,"value":"granted","filter":false},"ad_storage":{"enabled":true,"value":"granted","filter":false},"ad_user_data":{"enabled":true,"value":"granted","filter":false},"ad_personalization":{"enabled":true,"value":"granted","filter":false}},"cookie":{"disabled_all_cookie":false,"disabled_start_session_cookie":false,"disabled_advanced_form_data_cookie":false,"disabled_landing_page_cookie":false,"disabled_first_visit_cookie":false,"disabled_trafficsource_cookie":false,"disabled_utmTerms_cookie":false,"disabled_utmId_cookie":false},"tracking_analytics":{"TrafficSource":"direct","TrafficLanding":"undefined","TrafficUtms":[],"TrafficUtmsId":[]},"GATags":{"ga_datalayer_type":"default","ga_datalayer_name":"dataLayerPYS"},"woo":{"enabled":false},"edd":{"enabled":false},"cache_bypass":"1785503043"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://impact.com/wp-content/plugins/pixelyoursite/dist/scripts/public.js?ver=11.1.3" id="pys-js"></script>
+<link rel='shortlink' href='https://impact.com/' />
+<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin><link rel="dns-prefetch" href="https://www.googletagmanager.com" crossorigin><link rel="preconnect" href="https://www.google-analytics.com" crossorigin><link rel="dns-prefetch" href="https://www.google-analytics.com" crossorigin><link rel="preconnect" href="https://munchkin.marketo.net" crossorigin><link rel="dns-prefetch" href="https://munchkin.marketo.net" crossorigin><link rel="preconnect" href="https://pipedream.wistia.com" crossorigin><link rel="dns-prefetch" href="https://pipedream.wistia.com" crossorigin><link rel="preconnect" href="https://280-xqp-994.mktoresp.com" crossorigin><link rel="dns-prefetch" href="https://280-xqp-994.mktoresp.com" crossorigin><link rel="preconnect" href="https://distillery.wistia.com" crossorigin><link rel="dns-prefetch" href="https://distillery.wistia.com" crossorigin><link rel="preload" href="/wp-content/themes/impact/dist/vendor/fonts/fa-light-300.woff2?ver=1" as="font" type="font/woff2" crossorigin><link rel="preload" href="/wp-content/themes/impact/dist/vendor/fonts/fa-solid-900.woff2?ver=1" as="font" type="font/woff2" crossorigin><link rel="preload" href="/wp-content/themes/impact/dist/vendor/fonts/fa-brands-400.woff2?ver=2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/wp-content/themes/impact/dist/vendor/fonts/sarabun-v12-latin-regular.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/wp-content/themes/impact/dist/vendor/fonts/sarabun-v12-latin-500.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/wp-content/themes/impact/dist/vendor/fonts/sarabun-v12-latin-600.woff2" as="font" type="font/woff2" crossorigin>            <script nonce="461785">
+                (function (w, d, s, l, i) {
+                    w[l] = w[l] || [];
+                    w[l].push({
+                        'gtm.start': new Date().getTime(),
+                        event: 'gtm.js',
+                    });
+                    var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s),
+                        dl = l != 'dataLayer' ? '&l=' + l : '';
+                    j.async = true;
+                    j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                    f.parentNode.insertBefore(j, f);
+                })(window, document, 'script', 'dataLayer', 'GTM-KB78PL6');
+            </script>
+            <script type="text/javascript" src="https://ws.zoominfo.com/pixel/x9t5HMrreUQLdXOemJuH" async referrerPolicy="unsafe-url"
+                    crossorigin="anonymous"></script>
+                <!-- Qualified -->
+        <script>
+            (function (w, q) {
+                w['QualifiedObject'] = q;
+                w[q] = w[q] || function () {
+                    (w[q].q = w[q].q || []).push(arguments)
+                };
+            })(window, 'qualified')
+        </script>
+        <script async src="https://js.qualified.com/qualified.js?token=RPc9T5v8CZ4m9FXm"></script>
+        <!-- End Qualified -->
+        
+        <script>
+            // This displays an error message if there is an error event for failing to load jQuery
+            window.onerror = (message) => {
+                if (message === 'Uncaught ReferenceError: jQuery is not defined' && !document.querySelector('.jquery-failed-message')) {
+                    const jqueryFailedMessage = document.createElement('div');
+                    jqueryFailedMessage.className = 'jquery-failed-message';
+                    document.body.prepend(jqueryFailedMessage);
+                }
+            };
+        </script>
+    </head>
+
+<body class="home page-template page-template-page-ds page-template-page-ds-php page page-id-9940 ds">
+    <div id="referer" class="hidden" data-value=""></div>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KB78PL6" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <div class="navigation__mobile--backdrop"></div>
+<section id="navigation-mobile">
+    <div class="navigation-mobile__full"></div>
+</section>
+<div class="navigationcontainer">
+
+    <div role="navigation" class="top-nav">
+                <div class="drop-nav ">
+        <a aria-haspopup="true" class="has-chevron"
+                      target="_self" >
+            About        </a>
+                    <div class="submenu widget">
+                <div class="menu-about-top-right-container"><ul id="menu-about-top-right" class="menu"><li id="menu-item-65709" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65709"><a href="https://impact.com/about/">About impact.com</a></li>
+<li id="menu-item-140152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140152"><a href="https://impact.com/why-partnerships/">Why partnerships</a></li>
+<li id="menu-item-65710" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65710"><a href="https://impact.com/careers/">Careers</a></li>
+<li id="menu-item-140153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140153"><a href="https://impact.com/leadership/">Leadership</a></li>
+<li id="menu-item-140154" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140154"><a href="https://impact.com/awards/">Awards</a></li>
+<li id="menu-item-84754" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84754"><a href="https://impact.com/about/sustainability/">Sustainability</a></li>
+</ul></div>            </div>
+            </div>
+        <div class="menuNav ">
+        <a aria-haspopup="true" class=""
+           href="https://impact.com/contact/"            target="" >
+            Contact        </a>
+            </div>
+                    <div class="drop-nav">
+                <a title="English">English</a>
+                <div class="submenu language">
+                                            <a href="https://www.impact.com.cn/" title="简体中文">简体中文</a>
+                                            <a href="https://impact.com/ja/" title="日本語">日本語</a>
+                                            <a href="https://impact.com/it/" title="Italiano">Italiano</a>
+                                            <a href="https://impact.com/fr/" title="Français">Français</a>
+                                            <a href="https://impact.com/de/" title="Deutsch">Deutsch</a>
+                                    </div>
+            </div>
+            </div>
+
+    <div role="navigation" id="navigation-wrapper">
+        <a class="back" href="#">Back</a>
+        <a class="logo" href="https://impact.com/">
+            <img src="data:image/webp;base64,UklGRu4LAABXRUJQVlA4TOILAAAvk4EjEK/DoJEkRXXk5xy+cJpnDYzaSHLkntfxR3PEcmoFbdtIvv9gHatjv7KKbVvE1mA3IIooKmgqwpXAufy7atu2YUan8g6ABT8Gg/dJ6HvuEeDDPPU34lb81NEX7yWcfTjp44CUKYMGsILSICWkQAIKxBiDUhHxtx0KoB9BASwAFcLCFbn3ux8QLusPF4uMux4Vg1QUJS2IFsKiVSqE0An9KFLRyyTlT8rMtYTC1Eaxbv3kCAQI/r9ZiIgJ4FqHo4K0Z9vTtrLcZcqYmZkjjZmZl87DHI+pOP7/Uk+b+n09eW+0LxH9d+A2kiK5lpkOFx7gbds2LZGkbTOIxgZdwrRasrDCkjboJBukYeT//zsTjmM/Dshs5j2i/7IgyY7bZh4RXpK8wAN4gA+sfLO/mkxs7B4dC3F8uLt1HhCcbRwL3xxuBYSmrHHJ33DhCqXsnZPeplCNO05460I94XHKNweP4kLA4p7RfEYukNgl+kDgTBDcuYA7IbglIQJIzcWwR++/OwWG8Bm1rQoRQFr3cKxR2wGObWoL49ijNoHkL6Di4jilth0cK4Hkd9EW0LDjUPz/AzEK6tJgc86tSlp2OAtjOGIAAzbPSAO1W7cAHIv7pInYraMANvfNAKn/aVtg6tq4v0pKGgX3PoLUS7OwhilZzGiccn4WnJYTXISZZxA2R7NZlXYIschAijiGlRlatguZAkwTg9usHR4ZYa86zWZO1Sx0aYdjmnL10FEusr3S7dGRiv0x+NIGknyzslCy6aOsTTi3InmC47DCUPrA0oHPj6FltGtk2vFfiJ89OmsLTRuZmJyamhofQV3UtvLF8w+uLz6D/fcC35evqVwGCa+RO5me6/t3LxhI3MsseXqlv9dHqZAvj/g+pFpu3ijv+0kq5+PH6KtQ+CJUrbB7ux2ra1oILcHzFEkTgvehaoYRc2X5Q/bC+E4Npq2oAmHDuGQDZROaiyOfJeyyBizTJk8iWl0F9h8FwhqBYB3AIkmO5dNHfPFJ8tEXWRJxspHyDIT9JCkCZA3Jp5T6ioSPAmgiykZlUbiItwSI1uzzGFMn6v6ODuNsQoLjTOtnh8suAsyVI26UkhRRPS1QTDbQKDXtlf4GMK96hQTNNuPn/hTh6qTcHSz40KosxajmtGRRVh0ll2EJeBLq5luj3gnynZQERSxQl5YihnMksayXUsQyzXI+lkSFtQDuwWRcnxbcygY2D1kksx8CumeuhB6RneadVHMl5D7KsbAizs2rhLv61iYWl9go7SKpfRtQklgs2F6mzOHMaEei2LRJrf3MRBHIODLaNKZnkk8MuvYKU8ca6ln0875tZ8WTGO71ku48q6j7QbOI6S2KlAGS1jQnSRTyEpnuYqSCbeYj+oHtjdUBk8rOGYngSOBaoqXDfNgr8mtJNCvXSI/9MCP3OCLaxS4vQvC5I9BW58W4PISmCd7FSNtmMditczFSfUxkwJ6Njx/dQVWRO6D+zsg1jmfNHNUF1YcExwVC3cCr2w4iXDGQfUxHqG3LGljsyRuo9iTFJECRbjZkmWJf7Amr6SraQzZMkDgetEoa7Nysrc5eBaSV+JjoZapiz1aV/iTDA0uchYRIM/V9gty+ROKJ93jk4UY7UVhmG0NtbJBeARymCO+aQHHbgd7GuTqBXFInAjq+lkF5nqaZAFauX5K+P0q9xMPPcMI6gQGO2M0LMxtQPFgYN4G2Djv9ixt4ilYkG9AL/HiUZuYmsymu8C+BF/sBnRNQbM7vBX3iad4nAAmduBk55xM6oXTslSSu+pnm5sm/Sb0hrk+PD83QV5dPQY6kCvXoil4bpAJ/1Cg3aTWkLiY2sxNJe0/0fE4O5duWZRdVZp4Vek17/b5qkwlcpa/uBSLtBRgHVpkbf3WOlwsDWJGW/cz51ednz3CDrXRWyLtL+dYGz3HPz9EZ3RcJIRtCUEdQwZsj3QknG8kVQ9zprJTL5t+1jGecHFI+tRJNDanLi9KgWKejLpnAniNFM2jVxHre8BA/6VPgZgEIV9PKARty/iH6ps1VwElfXTxB8dUMNdQUa+4cKJwBGEfPl07a+2Ez94naDwdtGkn9n0EdQivExFALU/SmcSRQ4x4+QwxTA+S/rwGtBqXxl71EHQK9LiWnXYdJEdoNoGMa98LJaAYVWq+X0fLyXLxsFL1pW6DR7eV+A6hJLp8Ah8NiD5uKF3MH7nQN+Sz1KMaQIHXr/RMAPpFRairvqiUfgDORl5PweLq9L58GDk6foTTyFoagetQzOxn94nFsuKLfiA1y3OemjSOk7zeq+C+OfAxFZhI+3ebrZ8LhGKxhI4/GPOEFOi+zr+1rbRwlfUaSifk5833RHaCin9ksnRocTUYSixvYkWT6JG05/QfHpVOEo9Ik9D5oEqQxXhW/aH4T9rNth4WTj6PITHIhb1x/NFAmbub+6Gbh2AYXo40E8tyfkIdtL12ne7ORPLvVQuT1nm8O2JPoTHjAhWgiejY77QJWSgxl24mcCfboX7XcadA4gJgUszfKaPdfVOCoMQiFuDDgCU1k/4Cf7z9w/uLjZaBMnyXNsMSJ1U7CTTi6TSXKjE77YuoI08a048oeNLaE+cfOlhoHDSejD4djEvyEJmYuiL88PtTjLzUm89dT9faucavWAKrIQrAwFDBzidIO4JGzrhTFKSOqjWac8sUgqq+x6Ax7lRwcTOeccgdCu2nwHmFK1bwlETKn3MlV/Zj1p3nkuvH8Hau6dkQVVTgWng2dXR8/G7zqquWYTZRkdzPa9fxe59nWZV/F5+2k7KaVyZj66RIZD77tZg0l+jFakk0PJlfHzkwU333M9koUw9Uzw8A2uNzfrv6UII7sNcaH7fLira5v15PG+LDGAlk+FvXTbt/ZsWn7B7TjxI+iquu32/cEuYZ0cuF3MZqFjgnvCbvtZxlHecBWxaXU6OWvixmcLTCH2FkxuR6/9tDMKTa7g3SbwdkLmh2rDXvcU0vtPHc8nmDYS6hlhqG/DE/qcIvKSVu07anP4FOolpnLLpX7UNKR1so1Wyca4uKtRv3B+zYfe8UjynC2oLQmZjBuyGU+sYde1jW8t8LW1Qjfh9SJq5I9EJdj2pq3BVfuKZSllhnNR1nhHrXpH+ICu6aiagS8N0x3o316VFgNNatv77mStftyszEdfMFuLxoPhfuThatRw75fD1b9lD1Xnr1Fl7Bj/BAOdpTD5/e252az+eqYaHPWss6YFKrGggdqkp16JJB1A1YdUgvJ/n3Y6FRDC+UXt6by3heVYjDb1RM2TAqYMgntDOoQiCpc5YfUji39dlZ+FW6TO0vUf7v99vsAZPlSSMqlOGw52Xr+6sNhSwlOX8th8yUbAv8fGnjaTHlpm/Dh8dDMJHtoquIpO5TtMFd+J4L/Nvgbsf8HjvkwiSKhXFbjWsTU18w5dyw7o6Wout1CszGPkai8MlOR+fGpsejMCsSQoX1Zp6PIuJEQR4UZmlEULRX8t/p4vESkJRWuKLoYhiRm4mKZ8JtttfJ47KYPwSwbDt0lnKIoM2RUGavp7Dn17arDvIwfpZ5DKI6WjlkyO0pRlo7DwCgoTeQTb0p9lK46bnTcWn+iGpbxdNxLP1JhGxp74QJn7Jls1/Z9xWFGfqNiVy4lMzRm23IF5Wgu1HAPIpKMiqA4rjjeBC9G/knEfZL+tw2poediMVNS4le9Wr0S5j/1/IQPrTe7qT+ZVpdTHMgaxdab6+j1J+vIcI8fBMO8X4HD62ECJ+rOjqe8rTxiPqie3mMD0JZTElZkvx4RjD2pUXJBaFnJ/+n4J8E3PyZXEuwXi6kKOQ4OeC1J+RbLaymLeLoSBDv8hz8r9qVwoT66Mle3y7rpAHv6zSGmvHP9Bx2lNf1pcGRlPDkieNybVprpOy+2HdMpkLwbMoU66KqLIupIacaDvFyou7fvMf1OhkdKKfJJxiM06Koe84oMh5z2TcOKCocZeStnwuWWT6ii2mFGUnQP/y+U70JquUHAoKI+xihrM5ys3TdM73h+SNP02wUZAtlQivyFQiF/qcXI8dX2fzkYuTL0m38nGgM="
+                 alt="Impact.com logo">
+        </a>
+        <div id="navigation-mobile__control" class="hidden-md hidden-lg">
+            <div class="menu-actions">
+                        <div class="menuNav ">
+        <a aria-haspopup="true" class=""
+           href="https://app.impact.com/login.user"            target="_blank" rel="noopener, noreferrer" >
+            Sign in        </a>
+            </div>
+        <a class="cta-button impact-red" href="/get-started/">Request a demo</a>
+                </div>
+            <a id="hamburger-icon" href="javascript:void(0)" title="Menu">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </a>
+        </div>
+        <nav class="main menu-primary__wrapper">
+                    <div class="drop-nav ">
+        <a aria-haspopup="true" class="has-chevron"
+                      target="_self" >
+            Platform        </a>
+                    <div class="two-dropdown submenu">
+                <div class="text-box">
+                    <div class="text">
+                        <h5><a aria-haspopup="true" href="https://impact.com/performance/" target=""
+                               >Performance</a></h5>
+                        <p>Discover, manage, and measure performance partnerships</p>
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="sub-menu">
+                        <div class="menu-platform-header-menu-container"><ul id="menu-platform-header-menu" class="menu"><li id="menu-item-65714" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65714"><a href="https://impact.com/discover-recruit/">Discover and Recruit</a></li>
+<li id="menu-item-65715" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65715"><a href="https://impact.com/partnership-contract-pay/">Contract and Pay</a></li>
+<li id="menu-item-65716" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65716"><a href="https://impact.com/partnership-track/">Track</a></li>
+<li id="menu-item-65717" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65717"><a href="https://impact.com/manage-engage/">Engage</a></li>
+<li id="menu-item-65718" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65718"><a href="https://impact.com/protect-monitor/">Protect and Monitor</a></li>
+<li id="menu-item-65719" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65719"><a href="https://impact.com/optimize-insights/">Optimize</a></li>
+</ul></div>                    </div>
+                </div>
+                <div class="text-box-second">
+                    <h5><a href="https://impact.com/creator/">Creator</a></h5>
+                    <p> Discover, manage, and measure creator partnerships</p>
+                </div>
+                <div class="text-box-second">
+                    <h5><a class="no-pill"
+                           href="/advocate/">Advocate</a></h5>
+                    <p> Engage, manage, reward, and track customer referrals</p>
+                </div>
+            </div>
+            </div>
+        <div class="drop-nav ">
+        <a aria-haspopup="true" class="has-chevron"
+                      target="_self" >
+            Brands        </a>
+                    <div class="submenu widget">
+                <div class="menu-brands-header-menu-container"><ul id="menu-brands-header-menu" class="menu"><li id="menu-item-65721" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65721"><a href="https://impact.com/affiliate-marketing/">Affiliate marketing</a></li>
+<li id="menu-item-65720" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65720"><a href="https://impact.com/influencer-marketing/">Influencer marketing</a></li>
+<li id="menu-item-131634" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131634"><a href="https://impact.com/creator-edit/">Creator Edit<i class="notification new-red"> </i></a></li>
+<li id="menu-item-117900" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-117900"><a href="https://impact.com/customer-referral-marketing/">Referral marketing</a></li>
+<li id="menu-item-140182" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140182"><a href="https://impact.com/seller/">Amazon Seller</a></li>
+<li id="menu-item-65722" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65722"><a href="https://impact.com/mobile/">Mobile partnerships</a></li>
+<li id="menu-item-65724" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65724"><a href="https://impact.com/business-development/">Business development</a></li>
+<li id="menu-item-65726" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65726"><a href="https://impact.com/marketing-analysts/">Analytics and attribution</a></li>
+<li id="menu-item-67049" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67049"><a href="https://impact.com/saas-partnership-marketing/">Saas partnership marketing</a></li>
+<li id="menu-item-65736" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65736"><a href="https://impact.com/services/">Services</a></li>
+<li id="menu-item-69139" class="hidden pricing-a menu-item menu-item-type-post_type menu-item-object-page menu-item-69139"><a href="https://impact.com/integrated-platform-prices/">Shopify and BigCommerce</a></li>
+</ul></div>            </div>
+            </div>
+        <div class="drop-nav ">
+        <a aria-haspopup="true" class="has-chevron"
+                      target="_self" >
+            Publishers        </a>
+                    <div class="submenu widget">
+                <div class="menu-publishers-top-menu-container"><ul id="menu-publishers-top-menu" class="menu"><li id="menu-item-66340" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-66340"><a href="/partners/">Overview</a></li>
+<li id="menu-item-65738" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65738"><a href="https://impact.com/partners/affiliate-partners/">Affiliates</a></li>
+<li id="menu-item-65792" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65792"><a href="https://impact.com/partners/influencer-partners/">Influencers and creators</a></li>
+<li id="menu-item-65741" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65741"><a href="https://impact.com/partners/mobile-app-partners/">Mobile apps</a></li>
+<li id="menu-item-65742" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65742"><a href="https://impact.com/partners/publishers-media-groups-partners/">Content publishers</a></li>
+<li id="menu-item-66339" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66339"><a href="https://impact.com/partners/premium-news-and-media-publishers/">Premium news and media publishers</a></li>
+</ul></div>            </div>
+            </div>
+        <div class="drop-nav ">
+        <a aria-haspopup="true" class="has-chevron"
+                      target="_self" >
+            Partner with us        </a>
+                    <div class="submenu widget">
+                <div class="menu-partner-with-us-top-menu-container"><ul id="menu-partner-with-us-top-menu" class="menu"><li id="menu-item-66276" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66276"><a href="https://impact.com/agency-partner-program/">Agency partners</a></li>
+<li id="menu-item-66282" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-66282"><a href="/agency-partner-program/directory/">Agency directory</a></li>
+<li id="menu-item-80765" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-80765"><a href="https://impact.com/technology-partners/">Technology partners</a></li>
+<li id="menu-item-80766" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-80766"><a href="/technology-partners/directory/">Technology partners directory</a></li>
+<li id="menu-item-66290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66290"><a href="https://impact.com/referral-partner-program/">Referral partners</a></li>
+</ul></div>            </div>
+            </div>
+        <div class="drop-nav ">
+        <a aria-haspopup="true" class="has-chevron"
+                      target="_self" >
+            Insights        </a>
+                    <div class="submenu widget">
+                <div class="menu-insights-top-menu-container"><ul id="menu-insights-top-menu" class="menu"><li id="menu-item-65758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65758"><a href="https://impact.com/insights/">Resource hub</a></li>
+<li id="menu-item-65745" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65745"><a href="https://impact.com/customer-success-stories/">Customer stories</a></li>
+<li id="menu-item-65777" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65777"><a href="https://impact.com/partnership-economy/">The Partnership Economy</a></li>
+<li id="menu-item-88286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88286"><a href="https://impact.com/events/">Events</a></li>
+<li id="menu-item-65786" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65786"><a href="https://impact.com/partnerships-experience/">Partnerships Experience (iPX) Event</a></li>
+<li id="menu-item-65788" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65788"><a href="https://impact.com/partnerships-experience-academy/">Partnerships Experience Academy</a></li>
+</ul></div>            </div>
+            </div>
+        <div class="drop-nav hidden plg-menu">
+        <a aria-haspopup="true" class="has-chevron"
+                      target="_self" >
+            Sign up        </a>
+                    <div class="submenu widget">
+                <div class="menu-sign-up-container"><ul id="menu-sign-up" class="menu"><li id="menu-item-123831" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-123831"><a href="https://impact.com/integrated-platform-prices/">Affiliate advertiser sign up</a></li>
+<li id="menu-item-123833" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-123833"><a href="https://app.impact.com/signup/none/create-new-mediapartner-account-flow.ihtml">Affiliate publisher sign up</a></li>
+<li id="menu-item-123830" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-123830"><a href="https://impact.com/request-a-demo-for-brands/">Talk to sales</a></li>
+</ul></div>            </div>
+            </div>
+            <div class="plans-nav-link">
+                <a title="Plans"
+                   href="https://impact.com/plans-b2b/">Plans</a>
+            </div>
+
+            <div class="hidden-lg hidden-md">
+                        <div class="drop-nav ">
+        <a aria-haspopup="true" class="has-chevron"
+                      target="_self" >
+            About        </a>
+                    <div class="submenu widget">
+                <div class="menu-about-top-right-container"><ul id="menu-about-top-right-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65709"><a href="https://impact.com/about/">About impact.com</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140152"><a href="https://impact.com/why-partnerships/">Why partnerships</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65710"><a href="https://impact.com/careers/">Careers</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140153"><a href="https://impact.com/leadership/">Leadership</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140154"><a href="https://impact.com/awards/">Awards</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84754"><a href="https://impact.com/about/sustainability/">Sustainability</a></li>
+</ul></div>            </div>
+            </div>
+        <div class="menuNav ">
+        <a aria-haspopup="true" class=""
+           href="https://impact.com/contact/"            target="" >
+            Contact        </a>
+            </div>
+                                    <div class="drop-nav">
+                        <a title="English" class="has-chevron">English</a>
+                        <div style="min-width: 124px;" class="submenu">
+                                                            <a href="https://www.impact.com.cn/"
+                                   title="简体中文">简体中文</a>
+                                                            <a href="https://impact.com/ja/"
+                                   title="日本語">日本語</a>
+                                                            <a href="https://impact.com/it/"
+                                   title="Italiano">Italiano</a>
+                                                            <a href="https://impact.com/fr/"
+                                   title="Français">Français</a>
+                                                            <a href="https://impact.com/de/"
+                                   title="Deutsch">Deutsch</a>
+                                                    </div>
+                    </div>
+                            </div>
+
+            <span class="spacer"></span>
+            <div class="menu-actions">
+                        <div class="menuNav ">
+        <a aria-haspopup="true" class=""
+           href="https://app.impact.com/login.user"            target="_blank" rel="noopener, noreferrer" >
+            Sign in        </a>
+            </div>
+        <a class="cta-button impact-red" href="/get-started/">Request a demo</a>
+                </div>
+        </nav>
+    </div>
+</div>
+    <div class="page-content">
+            <style>
+            </style>
+    
+
+
+
+    <div class="consolidated-hero module gradient-animation-advanced left-align lrg-padding-top " data-module-position="1" data-distinct-module-position="1" data-tab-position="0" data-module-id="block_bc52027d26ccd055245836735879a690" data-module-name="Consolidated Hero" >
+        <div class="consolidated-hero-container transparent-video">
+            <div class="left">
+                <div class="content">
+                                                            <h1 class="title black animated-title-font-weight">
+                    One platform. All partnerships. AI-powered.                 </h1>
+                                    <div class="typewriter-text">
+                        <div id="text-steps">
+                                                                                                <h2 class="sliding-text">
+                                        <span>Creators.</span>
+                                    </h2>
+                                                                                                                                <h2 class="sliding-text">
+                                        <span>Affiliates.</span>
+                                    </h2>
+                                                                                                                                <h2 class="sliding-text">
+                                        <span>Customer referrals.</span>
+                                    </h2>
+                                                                                                                                <h2 class="sliding-text">
+                                        <span>Communities.</span>
+                                    </h2>
+                                                                                                                                <h2 class="sliding-text">
+                                        <span>Unified.</span>
+                                    </h2>
+                                                                                    </div>
+                    </div>
+                    <script>
+                        document.getElementById("text-steps")
+                            .animate([
+                                {transform: 'translateY(0)'},
+                                {transform: 'translateY(-375px)'},
+                            ], {
+                                duration: 10000,
+                                iterations: Infinity,
+                                easing: 'steps(5, end)',
+                            });
+
+                                                document.querySelectorAll(".sliding-text")
+                            .forEach(slide => {
+                                slide.animate(
+                                    [
+                                        {width: "0%"},
+                                        {width: "100%"},
+                                        {width: "0%"},
+                                    ],
+                                    {
+                                        duration: 2000,
+                                        iterations: Infinity,
+                                        easing: 'linear',
+                                    },
+                                );
+                            });
+                        
+                    </script>
+                
+                                    <div class="copy default"><p>The unified platform to manage creators, affiliates, and referrals — powered by $100B+ in partnership commerce and AI that turns discovery into performance.</p>
+</div>
+                            </div>
+                        <div class="cta-buttons">
+                                    <a class="cta-button                             default cta "                        href="/request-a-demo-for-brands/">
+                        Request a demo                                            </a>
+                                                        <a class="cta-button                             solid-white cta "                        href="/integrated-platform-prices/">
+                        Get started now                                            </a>
+                                                </div>
+                            <div class="hero-image"><img decoding="async" width="536" height="52" src="https://impact.com/wp-content/uploads/2025/10/G2_hero_image.webp" class="preload-placeholder" alt="G2 award" loading="eager" srcset="https://impact.com/wp-content/uploads/2025/10/G2_hero_image.webp 536w, https://impact.com/wp-content/uploads/2025/10/G2_hero_image-300x29.webp 300w" sizes="(max-width: 536px) 100vw, 536px" /></div>
+                    </div>
+                    <div class="right transparent-video">
+                                    <video class="preload-placeholder" autoplay loop muted playsinline width="100%">
+                                                    <source src="https://impact.com/wp-content/uploads/2025/09/home_hero_video_3.mov" type='video/quicktime; codecs="hvc1"'>
+                                                                            <source src="https://impact.com/wp-content/uploads/2025/09/home_hero_video_3.webm" type="video/webm">
+                                                Sorry, your browser doesn&#8217;t support embedded videos.
+                    </video>
+                            </div>
+            </div>
+    </div>
+    
+
+    <style>
+        .consolidated-hero.left-align .consolidated-hero-container .left .hero-image img {
+    padding-top: 20px;
+}
+
+    </style>
+    
+
+<div class="infinite-logo-scoller module white pt0 pb0 full-width" data-module-position="2" data-distinct-module-position="1" data-tab-position="0" data-module-id="block_278daeaf1f432b3f03cfe6c13200c3a1" data-module-name="Infinite Logo Scoller" >
+        <div class="scroller" style="animation-duration: 50s;">
+        <img decoding="async" width="2239" height="120" src="https://impact.com/wp-content/uploads/2025/08/Main-logo-scroller1.webp" class="attachment-full size-full" alt="Various client logos" srcset="https://impact.com/wp-content/uploads/2025/08/Main-logo-scroller1.webp" loading="lazy" /><img decoding="async" width="3840" height="240" src="https://impact.com/wp-content/uploads/2025/08/Main-logo-scroller2-1.webp" class="attachment-full size-full" alt="" srcset="https://impact.com/wp-content/uploads/2025/08/Main-logo-scroller2-1.webp" loading="lazy" />        <img decoding="async" width="2239" height="120" src="https://impact.com/wp-content/uploads/2025/08/Main-logo-scroller1.webp" class="attachment-full size-full" alt="Various client logos" srcset="https://impact.com/wp-content/uploads/2025/08/Main-logo-scroller1.webp" loading="lazy" /><img decoding="async" width="3840" height="240" src="https://impact.com/wp-content/uploads/2025/08/Main-logo-scroller2-1.webp" class="attachment-full size-full" alt="" srcset="https://impact.com/wp-content/uploads/2025/08/Main-logo-scroller2-1.webp" loading="lazy" />    </div>
+    </div>
+    
+
+    <div class="feature white-background" data-module-position="3" data-distinct-module-position="1" data-tab-position="0" data-module-id="block_c523973894f075bcfae133280a473bc6" data-module-name="Feature" >
+        <div class="feature-inner module center">
+            <div class="left">
+                                <div class="title">
+                                        <h2 class="default default">The AI-native partnership platform powering global commerce</h2>
+                </div>
+                <!-- TODO sanitize $copy below -->
+                                    <div class="copy medium"><p>See which partners influence your brand’s AI and LLM recommendations — and activate them in the same platform trusted by the world’s leading brands.</p>
+</div>
+                            </div>
+            <div class="right  no-shadow ">
+                                    <div class="stats-variant gradient-animation">
+                                                    <img decoding="async" width="1861" height="800" src="https://impact.com/wp-content/uploads/2025/09/100BStat-1.webp" class="attachment-full size-full" alt="woman smiling with a stat" loading="lazy" srcset="https://impact.com/wp-content/uploads/2025/09/100BStat-1.webp 1861w, https://impact.com/wp-content/uploads/2025/09/100BStat-1-300x129.webp 300w, https://impact.com/wp-content/uploads/2025/09/100BStat-1-1024x440.webp 1024w, https://impact.com/wp-content/uploads/2025/09/100BStat-1-768x330.webp 768w, https://impact.com/wp-content/uploads/2025/09/100BStat-1-1536x660.webp 1536w, https://impact.com/wp-content/uploads/2025/09/100BStat-1-1200x516.webp 1200w" sizes="auto, (max-width: 1861px) 100vw, 1861px" />                            <img decoding="async" width="1861" height="800" src="https://impact.com/wp-content/uploads/2025/09/1.27Mstat.webp" class="attachment-full size-full" alt="Two female looking at phone smiling next to stat" loading="lazy" srcset="https://impact.com/wp-content/uploads/2025/09/1.27Mstat.webp 1861w, https://impact.com/wp-content/uploads/2025/09/1.27Mstat-300x129.webp 300w, https://impact.com/wp-content/uploads/2025/09/1.27Mstat-1024x440.webp 1024w, https://impact.com/wp-content/uploads/2025/09/1.27Mstat-768x330.webp 768w, https://impact.com/wp-content/uploads/2025/09/1.27Mstat-1536x660.webp 1536w, https://impact.com/wp-content/uploads/2025/09/1.27Mstat-1200x516.webp 1200w" sizes="auto, (max-width: 1861px) 100vw, 1861px" />                            <img decoding="async" width="1861" height="800" src="https://impact.com/wp-content/uploads/2025/09/717Mstat.webp" class="attachment-full size-full" alt="Variety of shoes together with stat" loading="lazy" srcset="https://impact.com/wp-content/uploads/2025/09/717Mstat.webp 1861w, https://impact.com/wp-content/uploads/2025/09/717Mstat-300x129.webp 300w, https://impact.com/wp-content/uploads/2025/09/717Mstat-1024x440.webp 1024w, https://impact.com/wp-content/uploads/2025/09/717Mstat-768x330.webp 768w, https://impact.com/wp-content/uploads/2025/09/717Mstat-1536x660.webp 1536w, https://impact.com/wp-content/uploads/2025/09/717Mstat-1200x516.webp 1200w" sizes="auto, (max-width: 1861px) 100vw, 1861px" />                            <img decoding="async" width="1861" height="800" src="https://impact.com/wp-content/uploads/2025/09/8-of-the-top-10_stat-1.webp" class="attachment-full size-full" alt="man smiling at stats" loading="lazy" srcset="https://impact.com/wp-content/uploads/2025/09/8-of-the-top-10_stat-1.webp 1861w, https://impact.com/wp-content/uploads/2025/09/8-of-the-top-10_stat-1-300x129.webp 300w, https://impact.com/wp-content/uploads/2025/09/8-of-the-top-10_stat-1-1024x440.webp 1024w, https://impact.com/wp-content/uploads/2025/09/8-of-the-top-10_stat-1-768x330.webp 768w, https://impact.com/wp-content/uploads/2025/09/8-of-the-top-10_stat-1-1536x660.webp 1536w, https://impact.com/wp-content/uploads/2025/09/8-of-the-top-10_stat-1-1200x516.webp 1200w" sizes="auto, (max-width: 1861px) 100vw, 1861px" />                            <img decoding="async" width="1861" height="796" src="https://impact.com/wp-content/uploads/2025/09/Partnerbrand_stat.webp" class="attachment-full size-full" alt="Two people smiling" loading="lazy" srcset="https://impact.com/wp-content/uploads/2025/09/Partnerbrand_stat.webp 1861w, https://impact.com/wp-content/uploads/2025/09/Partnerbrand_stat-300x128.webp 300w, https://impact.com/wp-content/uploads/2025/09/Partnerbrand_stat-1024x438.webp 1024w, https://impact.com/wp-content/uploads/2025/09/Partnerbrand_stat-768x328.webp 768w, https://impact.com/wp-content/uploads/2025/09/Partnerbrand_stat-1536x657.webp 1536w, https://impact.com/wp-content/uploads/2025/09/Partnerbrand_stat-1200x513.webp 1200w" sizes="auto, (max-width: 1861px) 100vw, 1861px" />                            <img decoding="async" width="1861" height="800" src="https://impact.com/wp-content/uploads/2025/09/100BStat-1.webp" class="attachment-full size-full" alt="woman smiling with a stat" loading="lazy" srcset="https://impact.com/wp-content/uploads/2025/09/100BStat-1.webp 1861w, https://impact.com/wp-content/uploads/2025/09/100BStat-1-300x129.webp 300w, https://impact.com/wp-content/uploads/2025/09/100BStat-1-1024x440.webp 1024w, https://impact.com/wp-content/uploads/2025/09/100BStat-1-768x330.webp 768w, https://impact.com/wp-content/uploads/2025/09/100BStat-1-1536x660.webp 1536w, https://impact.com/wp-content/uploads/2025/09/100BStat-1-1200x516.webp 1200w" sizes="auto, (max-width: 1861px) 100vw, 1861px" />                    </div>
+                                                </div>
+        </div>
+    </div>
+    
+
+    <style>
+        div.logo-scroller.module {rn    padding-top: 0 !important;rn    padding-bottom: 20 !important;rn}    </style>
+    
+
+
+<style>
+.hero {padding-bottom: 10px !important;}
+
+</style>
+
+
+    <div class="feature-blocks module white" data-module-position="4" data-distinct-module-position="1" data-tab-position="0" data-module-id="block_b9b9f2b5d6d59c5e56c44be8b33e38b0" data-module-name="Feature Blocks" >
+        <div class="feature-block-inner">
+            
+            <div class=" copy">
+                                <h2 class="default">Affiliate, Creator, and Referral programs together at last</h2>
+                </div>
+                <div class="blocks two-blocks default stack">
+                                <a class="block"                        >
+                        <img decoding="async" width="600" height="400" src="https://impact.com/wp-content/uploads/2025/09/juggling-multiple-tools.webp" class="block-image" alt="man smiling in front of blue stats" loading="lazy" srcset="https://impact.com/wp-content/uploads/2025/09/juggling-multiple-tools.webp 600w, https://impact.com/wp-content/uploads/2025/09/juggling-multiple-tools-300x200.webp 300w" sizes="auto, (max-width: 600px) 100vw, 600px" />                        <h5>Stop juggling multiple tools and fragmented data. Finally, manage all your partnerships from one dashboard.</h5>
+                                            </a>
+                                    <a class="block"                        >
+                        <img decoding="async" width="600" height="400" src="https://impact.com/wp-content/uploads/2025/09/No-silos.webp" class="block-image" alt="Woman smiling pink stats" loading="lazy" srcset="https://impact.com/wp-content/uploads/2025/09/No-silos.webp 600w, https://impact.com/wp-content/uploads/2025/09/No-silos-300x200.webp 300w" sizes="auto, (max-width: 600px) 100vw, 600px" />                        <h5>No more silos. No more switching between platforms. Just one platform where you can see which partnerships actually drive sales.</h5>
+                                            </a>
+                        </div>
+                    <div class="button">
+                <a href="https://impact.com/performance/" class="cta-button" >
+                    Explore the expanded platform                </a>
+                            </div>
+            </div>
+    </div>
+    
+
+    <div class="statistic module white" data-module-position="5" data-distinct-module-position="1" data-tab-position="0" data-module-id="block_02d43406263a744e328297b66ba81f8f" data-module-name="Statistic" >
+        <div class="inner three-rows-bottom-cta">
+            <h3>The ROI case for <span class="gradient-animation-advanced">unified</span> partnership management </h3>
+            <p class="caption"></p>
+            <div class="specs blocks three-rows-bottom-cta gradient-animation-advanced">
+                                    <div class="block reverse">
+                        <h6>Brands using affiliates + influencers drive up to 46% more sales than single-channel strategies</h6>
+                        <h2 class="counter"
+                            data-target="46">46% </h2>
+                    </div>
+                                    <div class="block reverse">
+                        <h6>Integrating referrals with affiliate can lift revenue by as much as 22% </h6>
+                        <h2 class="counter"
+                            data-target="22">22% </h2>
+                    </div>
+                                    <div class="block reverse">
+                        <h6>You save 15+ hours per week managing partnerships from one dashboard instead of three</h6>
+                        <h2 class="counter"
+                            data-target="15">15+</h2>
+                    </div>
+                            </div>
+                            <div class="button">
+                                                        </div>
+                    </div>
+    </div>
+
+    
+
+    <div class="statistic module white" data-module-position="6" data-distinct-module-position="2" data-tab-position="0" data-module-id="block_49897908a65c8be83a0d8c5ed77a1cbb" data-module-name="Statistic" >
+        <div class="inner three-rows-bottom-cta">
+            <h3>Why it matters <span class="gradient-animation-advanced">now</span>  </h3>
+            <p class="caption"></p>
+            <div class="specs blocks three-rows-bottom-cta gradient-animation-advanced">
+                                    <div class="block reverse">
+                        <h6>AI-driven traffic to retail sites: up 4,700% YoY</h6>
+                        <h2 class="counter"
+                            data-target="4,700">4,700%</h2>
+                    </div>
+                                    <div class="block reverse">
+                        <h6>Shoppers using AI for purchases: 39% (53% plan to this year)</h6>
+                        <h2 class="counter"
+                            data-target="39">39%</h2>
+                    </div>
+                                    <div class="block reverse">
+                        <h6>Gen Z using AI search daily: 35%</h6>
+                        <h2 class="counter"
+                            data-target="35">35%</h2>
+                    </div>
+                            </div>
+                            <div class="button">
+                                            <a href="https://impact.com/request-a-demo-for-brands/" class="cta-button"> Request a demo</a>
+                                                        </div>
+                    </div>
+    </div>
+
+    
+
+    <style>
+        .block-editor .editor-styles-wrapper .gradient-animation-orange-red, body.ds .gradient-animation-orange-red {
+ animation: gradientSmooth 40s 
+ease infinite;
+    background: linear-gradient(90deg, #298dda, #d73184, #f5333f, #fccc38);
+    background-size: 400% 100%;
+}    </style>
+    
+
+    <div class="feature-blocks module gradient-animation-orange-red" data-module-position="7" data-distinct-module-position="2" data-tab-position="0" data-module-id="block_20b283cfe6b6c0f6277afbb1f1e59d93" data-module-name="Feature Blocks" >
+        <div class="feature-block-inner">
+            
+            <div class=" copy">
+                                <h2 class="default">Why leading brands are shifting marketing budget to partnerships</h2>
+                </div>
+                <div class="blocks three-blocks large scroll-horizontally">
+                                <a class="block"                        >
+                        <img decoding="async" src="https://impact.com/wp-content/uploads/2025/09/dollar_1_-1.svg" class="attachment-thumbnail size-thumbnail" alt="Dollar icon" loading="lazy" />                        <h5>Paid ads hit a ceiling</h5>
+                                                    <p><p><span style="font-weight: 400;">Brands spent $1 trillion on ads last year while acquisition efficiency continues to drop. Performance partnerships offer a better model. </span></p>
+</p>
+                                            </a>
+                                    <a class="block"                        >
+                        <img decoding="async" src="https://impact.com/wp-content/uploads/2025/09/two-people-group.svg" class="attachment-thumbnail size-thumbnail" alt="" loading="lazy" />                        <h5>Consumers trust people, not ads</h5>
+                                                    <p><p><span style="font-weight: 400;">89% trust personal recommendations over advertising. 2/3 of the world engages with creators daily, who now command 25% of social marketing budgets.</span></p>
+</p>
+                                            </a>
+                                    <a class="block"                        >
+                        <img decoding="async" src="https://impact.com/wp-content/uploads/2025/09/Mobile-1.svg" class="attachment-thumbnail size-thumbnail" alt="mobile phone icon" loading="lazy" />                        <h5>AI accelerates everything</h5>
+                                                    <p><p><span style="font-weight: 400;">AI-generated retail traffic grew 4,700% YoY. 39% of shoppers use AI for purchases, and 35% of Gen Z use AI search daily.</span></p>
+</p>
+                                            </a>
+                        </div>
+                    <div class="button">
+                <a href="https://impact.com/performance/" class="cta-button" >
+                    Explore partnerships                </a>
+                            </div>
+            </div>
+    </div>
+    
+
+    <style>
+        .feature.pink-blue {rn animation: gradientSmooth 40s ease infinite;rn    rn    background: linear-gradient(90deg, #298dda, #d73184, #f5333f, #fccc38);rn    background-size: 400% 100%;rn}    </style>
+    
+
+    <style>
+        .text-banner h3 {rn    font-size: 24px!important;rncolor: #667082;rn    line-height: 31px!importantrn}    </style>
+    
+
+    <div class="text-banner module pure-white no-bottom-padding center-aligned " data-module-position="8" data-distinct-module-position="1" data-tab-position="0" data-module-id="block_dba805504b459f76ef4d4bf0ee2b6752" data-module-name="Text Banner" >
+                                    <h2 class="default">Finally see which partnerships actually drive sales</h2>
+                            <h3>Stop guessing which partners are worth your budget.</h3>
+                <div class="copy"></div>
+            </div>
+    
+
+    <div class="feature white-background" data-module-position="9" data-distinct-module-position="2" data-tab-position="0" data-module-id="block_e2976927bc70b9169678f05a4b9b67db" data-module-name="Feature" >
+        <div class="feature-inner module right-text">
+            <div class="left">
+                                    <p class="caption red">AFFILIATE</p>
+                                <div class="title">
+                                        <h2 class="default default">We uncover which partnerships generate revenue, not just clicks and traffic</h2>
+                </div>
+                <!-- TODO sanitize $copy below -->
+                                    <div class="copy default"><p><span style="font-weight: 400;">Stop guessing which affiliates are worth your budget. Our platform shows you exactly which partnerships generate real revenue, not just clicks and traffic.</span></p>
+</div>
+                                    <ul class="list-copy">
+                                                    <li class="red">Get clear performance data on every partnership. See actual conversions, lifetime value, and ROI so you know where to double down and where to cut spending.</li>
+                                                    <li class="red">Find affiliates who already convert in your industry. Our vetted marketplace connects you with partners who have proven track records in your vertical. No more wasting time on partnerships that don&#8217;t deliver.</li>
+                                                    <li class="red">Scale the partnerships that work. When you find winners, our platform makes it easy to expand successful relationships and replicate what&#8217;s working across similar partners.</li>
+                                                    <li class="red">Now part of our unified platform. Manage your affiliate, creator, and referral programs from one dashboard with consistent tracking across all partnership types.</li>
+                                            </ul>
+                                    <div class="cta-buttons">
+                                                    <a href="https://impact.com/affiliate-marketing/" class="cta-button" >
+                                Affiliate for brands                            </a>
+                                                    <a href="/partners/affiliate-partners/"
+                               class="flip-button cta-link" >
+                                Affiliate for partners                            </a>
+                                            </div>
+                            </div>
+            <div class="right scroll-fade-animation shadow image">
+                <img decoding="async" width="768" height="516" src="https://impact.com/wp-content/uploads/2025/09/home-body-image_Affiliate.webp" class="feature-img" alt="product impact.com view" loading="lazy" srcset="https://impact.com/wp-content/uploads/2025/09/home-body-image_Affiliate.webp 768w, https://impact.com/wp-content/uploads/2025/09/home-body-image_Affiliate-300x202.webp 300w" sizes="auto, (max-width: 768px) 100vw, 768px" />            </div>
+        </div>
+    </div>
+    
+
+    <div class="feature white-background" data-module-position="10" data-distinct-module-position="3" data-tab-position="0" data-module-id="block_b059d5e3beae550c97298adcb1de5315" data-module-name="Feature" >
+        <div class="feature-inner module left-text">
+            <div class="left">
+                                    <p class="caption pink">CREATOR</p>
+                                <div class="title">
+                                        <h2 class="default default">Track real results from influencer campaigns, not just engagement. #1 influencer platform for performance-driven creator marketing</h2>
+                </div>
+                <!-- TODO sanitize $copy below -->
+                                    <div class="copy default"><p><span style="font-weight: 400;">Most influencer marketing stops at likes and shares. We track actual sales so you know which creators are driving real business growth.</span></p>
+</div>
+                                    <ul class="list-copy">
+                                                    <li class="pink">See which influencers actually convert customers. Track sales, not just vanity metrics, so you can invest in creators who deliver measurable ROI for your brand.</li>
+                                                    <li class="pink">Find creators who align with your brand and convert. Discover influencers whose audiences actually buy your products, not just engage with content.</li>
+                                                    <li class="pink">Scale creator partnerships with confidence. When you find creators who drive sales, expand those relationships and find similar influencers who deliver the same results.</li>
+                                                    <li class="pink">Now integrated with our performance platform. Manage creator campaigns alongside your affiliate and referral programs with the same rigorous tracking you expect.</li>
+                                            </ul>
+                                    <div class="cta-buttons">
+                                                    <a href="https://impact.com/creator/" class="cta-button" >
+                                Learn more                            </a>
+                                            </div>
+                            </div>
+            <div class="right scroll-fade-animation shadow image">
+                <img decoding="async" width="768" height="516" src="https://impact.com/wp-content/uploads/2025/09/home-body-image_Creator.webp" class="feature-img" alt="creator product preview page impact.com" loading="lazy" srcset="https://impact.com/wp-content/uploads/2025/09/home-body-image_Creator.webp 768w, https://impact.com/wp-content/uploads/2025/09/home-body-image_Creator-300x202.webp 300w" sizes="auto, (max-width: 768px) 100vw, 768px" />            </div>
+        </div>
+    </div>
+    
+
+    <div class="feature white-background" data-module-position="11" data-distinct-module-position="4" data-tab-position="0" data-module-id="block_49aebc48c1b27356aa8db76675694c96" data-module-name="Feature" >
+        <div class="feature-inner module right-text">
+            <div class="left">
+                                    <p class="caption orange">ADVOCATE</p>
+                                <div class="title">
+                                        <h2 class="default default">Turn your customers into a measurable revenue channel</h2>
+                </div>
+                <!-- TODO sanitize $copy below -->
+                                    <div class="copy default"><p><span style="font-weight: 400;">Your customers are already recommending you &#8211; now you can track it, optimize it, and scale it like any other marketing channel.</span></p>
+</div>
+                                    <ul class="list-copy">
+                                                    <li class="orange">See exactly how customer referrals drive new sales. Track the complete customer-to-customer journey with attribution that shows real revenue impact, not just referral activity.</li>
+                                                    <li class="orange">Cut acquisition costs while boosting revenue. Customer referrals convert at higher rates and cost less than paid ads &#8211; now you can measure and scale this channel properly.</li>
+                                                    <li class="orange">Turn satisfied customers into predictable growth. Build referral programs that consistently generate new customers, with clear tracking on what motivates referrals and drives results.</li>
+                                                    <li class="orange">Now integrated with our performance platform. Manage customer referral programs alongside affiliate and creator partnerships with the same detailed tracking and optimization tools.</li>
+                                            </ul>
+                                    <div class="cta-buttons">
+                                                    <a href="https://impact.com/advocate/" class="cta-button" >
+                                Learn more                            </a>
+                                            </div>
+                            </div>
+            <div class="right scroll-fade-animation shadow image">
+                <img decoding="async" width="768" height="516" src="https://impact.com/wp-content/uploads/2025/09/home-body-image_Advocate.webp" class="feature-img" alt="advocate product preview page impact.com" loading="lazy" srcset="https://impact.com/wp-content/uploads/2025/09/home-body-image_Advocate.webp 768w, https://impact.com/wp-content/uploads/2025/09/home-body-image_Advocate-300x202.webp 300w" sizes="auto, (max-width: 768px) 100vw, 768px" />            </div>
+        </div>
+    </div>
+    
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+    <div class="featured-series white" data-module-position="12" data-distinct-module-position="1" data-tab-position="0" data-module-id="block_6540f425c5a056a0a70ca152fb4c727b" data-module-name="Featured Series" >
+        <div class="featured-series-container module">
+            <button class="slick-prev" aria-label="Previous cards"></button>
+            <div class="content-column">
+                <div class="content">
+                    <a href="/case-studies/" class="cta-link without-arrow">View all</a>
+                    <h6></h6>
+                    <h3>Partnerships work. But don’t just take our word for it—see the results yourself</h3>
+                                    </div>
+                                    <a href="/case-studies/" class="cta-button ">View all</a>
+                            </div>
+            <div class="posts-column">
+                        <a class="insight-content-card" href="https://impact.com/case-studies/airslate-affiliate-growth-success-affa-csb-imp-ev-nam/"           data-content-type="case-studies">
+                            <div class="image-container">
+                    <img decoding="async" src="https://impact.com/wp-content/uploads/2026/05/airSlate-Logo.svg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy" />                </div>
+                <div class="copy">
+                    <h6>Case study</h6>
+                    <h3 class="statistic">4X</h3>
+                    <p class="byline">growth in affiliate program size over four years</p>
+                </div>
+                    </a>
+                <a class="insight-content-card" href="https://impact.com/case-studies/gusto-impressions-growth-creator-marketing-ctct-csb-crt-ev-nam/"           data-content-type="case-studies">
+                            <div class="image-container">
+                    <img decoding="async" src="https://impact.com/wp-content/uploads/2026/04/gusto-logo.svg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="gusto logo" loading="lazy" />                </div>
+                <div class="copy">
+                    <h6>Case study</h6>
+                    <h3 class="statistic">23.6m</h3>
+                    <p class="byline">impressions</p>
+                </div>
+                    </a>
+                <a class="insight-content-card" href="https://impact.com/case-studies/strands-are-media-case-study-pars-csp-imp-vd-apj/"           data-content-type="case-studies">
+                            <div class="image-container">
+                    <img decoding="async" src="https://impact.com/wp-content/uploads/2026/02/STRAND-Logo.svg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy" />                </div>
+                <div class="copy">
+                    <h6>Case study</h6>
+                    <h3 class="statistic">160%</h3>
+                    <p class="byline">revenue growth </p>
+                </div>
+                    </a>
+                <a class="insight-content-card" href="https://impact.com/case-studies/taylor-hart-case-study-affa-csb-imp-ev-emea/"           data-content-type="case-studies">
+                            <div class="image-container">
+                    <img decoding="async" src="https://impact.com/wp-content/uploads/2026/01/T_H-Secondary-Logo_Slate_Red-RGB.svg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy" />                </div>
+                <div class="copy">
+                    <h6>Case study</h6>
+                    <h3 class="statistic">3,755%</h3>
+                    <p class="byline">ROI</p>
+                </div>
+                    </a>
+                <a class="insight-content-card" href="https://impact.com/case-studies/elite-supplements-case-study-affa-csb-imp-ev-apac/"           data-content-type="case-studies">
+                            <div class="image-container">
+                    <img decoding="async" src="https://impact.com/wp-content/uploads/2026/01/Elite-Supplements_Logo_Black-002-01.svg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy" />                </div>
+                <div class="copy">
+                    <h6>Case study</h6>
+                    <h3 class="statistic">10+</h3>
+                    <p class="byline">ROAS</p>
+                </div>
+                    </a>
+                <a class="insight-content-card" href="https://impact.com/case-studies/starshipit-case-study-refr-csb-adv-ev-apac/"           data-content-type="case-studies">
+                            <div class="image-container">
+                    <img decoding="async" src="https://impact.com/wp-content/uploads/2025/12/Starshipit-Logo.svg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy" />                </div>
+                <div class="copy">
+                    <h6>Case study</h6>
+                    <h3 class="statistic">421%</h3>
+                    <p class="byline">ROI when comparing projected reward payments to ARR pipeline value</p>
+                </div>
+                    </a>
+                <a class="insight-content-card" href="https://impact.com/case-studies/bill-case-study-affa-csb-imp-ev-nam/"           data-content-type="case-studies">
+                            <div class="image-container">
+                    <img decoding="async" src="https://impact.com/wp-content/uploads/2025/12/BILL.com-Logo.svg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy" />                </div>
+                <div class="copy">
+                    <h6>Case study</h6>
+                    <h3 class="statistic">$1M</h3>
+                    <p class="byline">Closing high-value corporate deals ranging from $100k-1m</p>
+                </div>
+                    </a>
+                    </div>
+            <button class="slick-next" aria-label="Next cards"></button>
+        </div>
+    </div>
+    
+
+
+
+    <div class="consolidated-hero module gradient left-align  " data-module-position="13" data-distinct-module-position="2" data-tab-position="0" data-module-id="block_cebb120deffa85110d76e9ea212ab5c5" data-module-name="Consolidated Hero" >
+        <div class="consolidated-hero-container form">
+            <div class="left">
+                <div class="content">
+                                                            <h1 class="title black ">
+                    Take your partnership program to the next level                 </h1>
+                
+                                    <div class="copy default"><p>Find out how impact.com’s partnership management platform can help you effectively orchestrate the entire partner lifecycle for sustained growth.</p>
+</div>
+                            </div>
+                        <div class="cta-buttons">
+                            </div>
+                            <div class="hero-image"><img fetchpriority="high" decoding="async" width="670" height="476" src="https://impact.com/wp-content/uploads/2026/06/G2-Homepage_Summer_2026_EN.webp" class="preload-placeholder" alt="" loading="eager" srcset="https://impact.com/wp-content/uploads/2026/06/G2-Homepage_Summer_2026_EN.webp 670w, https://impact.com/wp-content/uploads/2026/06/G2-Homepage_Summer_2026_EN-300x213.webp 300w" sizes="(max-width: 670px) 100vw, 670px" /></div>
+                    </div>
+                    <div class="right form">
+                                    <h3>Request a demo</h3>
+                <form class="custom-marketo-form conditional-behaviour bookit-enabled" data-id="2713" autocomplete="off" novalidate>
+
+    <input type="hidden" name="LD_BookIt_Log_ID__c"/>
+
+    <div class="select-field">
+        <select aria-label="Company type" id="Account_Type__c" name="Account_Type__c" class="required conditional-effects" data-condition-id="a">
+            <option value="" disabled selected>Company type</option>
+            <option value="Advertiser">Brand</option>
+            <option value="Agency">Agency</option>
+            <option value="Publisher">Publisher, creator or affiliate</option>
+        </select>
+        <p class="error">Please select a company type</p>
+    </div>
+    <div class="select-field hidden only-Advertiser only-Agency only-Publisher" data-condition="a">
+        <select aria-label="What are you interested in?" id="PC_Primary_Topic_Interest__c" name="PC_Primary_Topic_Interest__c"
+                class="required conditional-effects hide-options" data-condition-id="b"
+                data-reset-condition="a">
+            <option class="default" value="" disabled selected>What are you interested in?</option>
+
+            <option value="Affiliate" class="hidden only-Advertiser" data-condition="a">Looking for an affiliate solution</option>
+            <option value="Influencer" class="hidden only-Advertiser" data-condition="a">Looking for an influencer solution</option>
+            <option value="Customer Referral" class="hidden only-Advertiser" data-condition="a">Looking for a customer referral solution</option>
+            <option value="All Partnerships" class="hidden only-Advertiser" data-condition="a">Looking for an all in one partnerships solution</option>
+
+            <option value="Partner with impact.com" class="hidden only-Agency" data-condition="a">Partner with impact.com</option>
+            <option value="Request on behalf of a client" class="hidden only-Agency" data-condition="a">Request on behalf of a client</option>
+
+            <option value="Flat fees or commission earnings from brands" class="hidden only-Publisher" data-condition="a">Flat fees or commission earnings from
+                brands
+            </option>
+            <option value="I want tools to grow my business" class="hidden only-Publisher" data-condition="a">I want tools to grow my business</option>
+        </select>
+        <p class="error">Please select an interest</p>
+        <div class="hidden-options hidden" data-for="PC_Primary_Topic_Interest__c"></div>
+    </div>
+
+    <div class="split-field">
+        <div class="input-field only- only-Customer-Referral only-Affiliate only-Influencer only-All-Partnerships only-Partner-with-impact-com only-Request-on-behalf-of-a-client only-I-want-tools-to-grow-my-business"
+             data-condition="b">
+            <label for="FirstName">First name</label>
+            <input type="text" id="FirstName" name="FirstName" class="required">
+            <p class="error">Please enter your first name</p>
+        </div>
+        <div class="input-field only- only-Customer-Referral only-Affiliate only-Influencer only-All-Partnerships only-Partner-with-impact-com only-Request-on-behalf-of-a-client only-I-want-tools-to-grow-my-business"
+             data-condition="b">
+            <label for="LastName">Last name</label>
+            <input type="text" id="LastName" name="LastName" class="required">
+            <p class="error">Please enter your last name</p>
+        </div>
+    </div>
+
+    <div class="split-field">
+        <div class="input-field only- only-Customer-Referral only-Affiliate only-Influencer only-All-Partnerships only-Partner-with-impact-com only-Request-on-behalf-of-a-client only-I-want-tools-to-grow-my-business"
+             data-condition="b">
+            <label for="Email">Business email</label>
+            <input type="email" id="Email" name="Email" class="required">
+            <p class="error">Please enter valid email address</p>
+            <p class="error blacklist">Please use different email address</p>
+        </div>
+        <div class="input-field only- only-Customer-Referral only-Affiliate only-Influencer only-All-Partnerships only-Partner-with-impact-com only-Request-on-behalf-of-a-client only-I-want-tools-to-grow-my-business"
+             data-condition="b">
+            <label for="Title">Job title</label>
+            <input type="text" id="Title" name="Title" class="required">
+            <p class="error">Please enter your job title</p>
+        </div>
+    </div>
+
+    <div class="split-field">
+        <div class="input-field only- only-Customer-Referral only-Affiliate only-Influencer only-All-Partnerships only-Partner-with-impact-com only-Request-on-behalf-of-a-client only-I-want-tools-to-grow-my-business"
+             data-condition="b">
+            <label for="Phone">Business phone</label>
+            <input type="tel" id="Phone" name="Phone" class="required">
+            <p class="error">Please enter valid phone number (503-555-1212)</p>
+        </div>
+        <div class="select-field only- only-Customer-Referral only-Affiliate only-Influencer only-All-Partnerships only-Partner-with-impact-com only-Request-on-behalf-of-a-client only-I-want-tools-to-grow-my-business"
+             data-condition="b">
+            <select aria-label="Country" id="Country" name="Country" class="required">
+                <option value="" disabled selected>Country</option>
+                <option value="United States">United States</option>
+                <option value="Australia">Australia</option>
+                <option value="Canada">Canada</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Albania">Albania</option>
+                <option value="Andorra">Andorra</option>
+                <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Austria">Austria</option>
+                <option value="Azerbaijan">Azerbaijan</option>
+                <option value="Bahamas">Bahamas</option>
+                <option value="Bahrain">Bahrain</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Barbados">Barbados</option>
+                <option value="Belarus">Belarus</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Belize">Belize</option>
+                <option value="Bhutan">Bhutan</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Brunei">Brunei</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Burma">Burma</option>
+                <option value="Cambodia">Cambodia</option>
+                <option value="Chile">Chile</option>
+                <option value="China">China</option>
+                <option value="China Hong Kong">China Hong Kong</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Cyprus">Cyprus</option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Dominica">Dominica</option>
+                <option value="Dominican Republic">Dominican Republic</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="El Salvador">El Salvador</option>
+                <option value="England">England</option>
+                <option value="Estonia">Estonia</option>
+                <option value="Fiji">Fiji</option>
+                <option value="Finland">Finland</option>
+                <option value="France">France</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Germany">Germany</option>
+                <option value="Greece">Greece</option>
+                <option value="Grenada">Grenada</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Guyana">Guyana</option>
+                <option value="Haiti">Haiti</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Iceland">Iceland</option>
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Iraq">Iraq</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Israel">Israel</option>
+                <option value="Italy">Italy</option>
+                <option value="Jamaica">Jamaica</option>
+                <option value="Japan">Japan</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Kiribati">Kiribati</option>
+                <option value="Kosovo">Kosovo</option>
+                <option value="Kuwait">Kuwait</option>
+                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                <option value="Laos">Laos</option>
+                <option value="Latvia">Latvia</option>
+                <option value="Lebanon">Lebanon</option>
+                <option value="Liechtenstein">Liechtenstein</option>
+                <option value="Lithuania">Lithuania</option>
+                <option value="Luxembourg">Luxembourg</option>
+                <option value="Macedonia (FYROM)">Macedonia (FYROM)</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Malta">Malta</option>
+                <option value="Marshall Islands">Marshall Islands</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Micronesia">Micronesia</option>
+                <option value="Moldova">Moldova</option>
+                <option value="Monaco">Monaco</option>
+                <option value="Mongolia">Mongolia</option>
+                <option value="Montenegro">Montenegro</option>
+                <option value="Myanmar">Myanmar</option>
+                <option value="Nauru">Nauru</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Norway">Norway</option>
+                <option value="Oman">Oman</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Palau">Palau</option>
+                <option value="Palestine">Palestine</option>
+                <option value="Panama">Panama</option>
+                <option value="Papua New Guinea">Papua New Guinea</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Peru">Peru</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Poland">Poland</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Romania">Romania</option>
+                <option value="Russia">Russia</option>
+                <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                <option value="Saint Lucia">Saint Lucia</option>
+                <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+                <option value="Samoa">Samoa</option>
+                <option value="San Marino">San Marino</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Scotland">Scotland</option>
+                <option value="Serbia">Serbia</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Slovakia">Slovakia</option>
+                <option value="Slovenia">Slovenia</option>
+                <option value="Solomon Islands">Solomon Islands</option>
+                <option value="South Africa">South Africa</option>
+                <option value="South Korea">South Korea</option>
+                <option value="Spain">Spain</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Suriname">Suriname</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Syria">Syria</option>
+                <option value="Taiwan">China Taiwan</option>
+                <option value="Tajikistan">Tajikistan</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Timor-Leste">Timor-Leste</option>
+                <option value="Tonga">Tonga</option>
+                <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Turkmenistan">Turkmenistan</option>
+                <option value="Tuvalu">Tuvalu</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="United Arab Emirates (UAE)">United Arab Emirates (UAE)</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Vanuatu">Vanuatu</option>
+                <option value="Vatican City">Vatican City</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Yemen">Yemen</option>
+            </select>
+            <p class="error">Please select country</p>
+        </div>
+    </div>
+
+    <div class="input-field only- only-Customer-Referral only-Affiliate only-Influencer only-All-Partnerships only-Partner-with-impact-com only-Request-on-behalf-of-a-client only-I-want-tools-to-grow-my-business"
+         data-condition="b">
+        <label for="Company">Company name</label>
+        <input type="text" id="Company" name="Company" class="required">
+        <p class="error">Please enter company name</p>
+    </div>
+    <div class="input-field only- only-Customer-Referral only-Affiliate only-Influencer only-All-Partnerships only-Partner-with-impact-com only-Request-on-behalf-of-a-client only-I-want-tools-to-grow-my-business"
+         data-condition="b">
+        <label for="Website" class="small">Company website</label>
+        <input type="url" id="Website" name="Website" class="required marketo-url-field" value="http://"
+               oninvalid="this.setCustomValidity('PLease enter url with http:\/\/ in front')" oninput="this.setCustomValidity('')" required>
+        <p class="error">Please enter valid website url with http:// in front</p>
+    </div>
+    <div class="select-field hidden only-Advertiser only-Agency" data-condition="a">
+        <select aria-label="Existing Affiliate program" id="Existing_Affiliate_Program__c" name="Existing_Affiliate_Program__c" class="required"
+                data-reset-condition="a">
+            <option value="" disabled selected>Existing program</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <p class="error">Please select option</p>
+    </div>
+    <div id="consent" class="checkbox_msg">
+        <input aria-label="Marketing communications" name="GDPR_email_opt_in__c" id="GDPR_email_opt_in__c" type="checkbox">
+        <h4 class="comm_message">Yes, I would like to receive marketing communications regarding impact.com products, services, and events. I can unsubscribe at
+            a later time.
+            <br><br>
+            By registering, you confirm that you agree to the storing and processing of your personal data by impact.com as described in the <a target="_blank"
+                                                                                                                                                rel="noopener, noreferrer"
+                                                                                                                                                href="https://impact.com/privacy-policy/">privacy
+                policy.</a>
+        </h4>
+    </div>
+    <button type="submit" name="submit" value="Get a demo" data-condition="b"
+            class="only- only-Customer-Referral only-Affiliate only-Influencer only-All-Partnerships only-Partner-with-impact-com only-Request-on-behalf-of-a-client only-I-want-tools-to-grow-my-business">
+        Request a demo
+    </button>
+    <a href="https://app.impact.com/signup/none/create-new-mediapartner-account-flow.ihtml?execution=e1s1#/?viewkey=signUpStart"
+       class="cta-button hidden only-Flat-fees-or-commission-earnings-from-brands" data-condition="b" target="_blank" rel="noopener noreferrer">Sign up</a>
+</form>
+
+<form preload data-id="2713" id="mktoForm_2713"
+                                      class="mkto-custom-form " data-thanks="">
+</form>
+            </div>
+            </div>
+    </div>
+    
+
+    <div class="dynamic-tabs module  default" data-module-position="14" data-distinct-module-position="1" data-tab-position="0" data-module-id="block_1057402901592356d2a8831b8a1f08b4" data-module-name="Dynamic Tabs" >
+        <div class="heading">
+                            <h3>impact.com partnership management platform</h3>
+                                        <p>Manages, protects, and optimizes all of your organization’s different partnerships. Learn more about how we can help you scale faster.</p>
+                    </div>
+
+        <div class="tab-pill-container">
+            <div class="tab-pills" role="tablist">
+                                    <a >
+                        <p class="tab-pill active " role="tab" tabindex="0"
+                           data-tab-index="0">
+                            Discover &amp; Recruit                        </p>
+                    </a>
+                                    <a >
+                        <p class="tab-pill  " role="tab" tabindex="0"
+                           data-tab-index="1">
+                            Contract &amp; Pay                        </p>
+                    </a>
+                                    <a >
+                        <p class="tab-pill  " role="tab" tabindex="0"
+                           data-tab-index="2">
+                            Track                        </p>
+                    </a>
+                                    <a >
+                        <p class="tab-pill  " role="tab" tabindex="0"
+                           data-tab-index="3">
+                             Engage                        </p>
+                    </a>
+                                    <a >
+                        <p class="tab-pill  " role="tab" tabindex="0"
+                           data-tab-index="4">
+                            Protect &amp; Monitor                        </p>
+                    </a>
+                                    <a >
+                        <p class="tab-pill  " role="tab" tabindex="0"
+                           data-tab-index="5">
+                            Optimize                        </p>
+                    </a>
+                            </div>
+        </div>
+
+        <div class="tab-content-container">
+                                        <div class="tab-content better-scroll active" data-tab-index="0">
+                        <div class="feature white-background" data-module-position="14" data-distinct-module-position="0" data-tab-position="1" data-module-id="block_8018" data-module-name="Feature" >
+        <div class="feature-inner module left-text">
+            <div class="left">
+                                <div class="title">
+                                        <h2 class="default default">Discover &amp; Recruit</h2>
+                </div>
+                <!-- TODO sanitize $copy below -->
+                                    <div class="copy default"><p>Discover a limitless number of global partners—and add them to your partnership program with ease. Save time with powerful discovery and recruitment automation.</p>
+</div>
+                                    <ul class="list-copy">
+                                                    <li class="red">Engage with customers at every stage of the buyer’s journey</li>
+                                                    <li class="red">Find partners, no matter where they are</li>
+                                                    <li class="red">Access key partner information to ensure the perfect match</li>
+                                                    <li class="red">Turn prospects into partners with ease</li>
+                                            </ul>
+                                    <div class="cta-buttons">
+                                                    <a href="/discover-recruit/" class="cta-button" >
+                                Learn more                            </a>
+                                            </div>
+                            </div>
+            <div class="right  shadow image">
+                <img decoding="async" width="768" height="539" src="https://impact.com/wp-content/uploads/2025/09/Discover-Recruit-affiliate-marketing.webp" class="feature-img" alt="preview of impact.com discover section" loading="lazy" srcset="https://impact.com/wp-content/uploads/2025/09/Discover-Recruit-affiliate-marketing.webp 768w, https://impact.com/wp-content/uploads/2025/09/Discover-Recruit-affiliate-marketing-300x211.webp 300w" sizes="auto, (max-width: 768px) 100vw, 768px" />            </div>
+        </div>
+    </div>
+                    </div>
+                            <div class="tab-content better-scroll " data-tab-index="1">
+                        <div class="feature white-background" data-module-position="14" data-distinct-module-position="0" data-tab-position="2" data-module-id="block_8867" data-module-name="Feature" >
+        <div class="feature-inner module left-text">
+            <div class="left">
+                                <div class="title">
+                                        <h2 class="default default">Contract &amp; Pay</h2>
+                </div>
+                <!-- TODO sanitize $copy below -->
+                                    <div class="copy default"><p>Choose your business outcomes, then reward the partners that drive them.</p>
+</div>
+                                    <ul class="list-copy">
+                                                    <li class="red">Align payouts to value</li>
+                                                    <li class="red">Participation bonuses reward all contributions</li>
+                                                    <li class="red">Pay at any point in the conversion funnel</li>
+                                                    <li class="red">Spark joy for your finance team</li>
+                                            </ul>
+                                    <div class="cta-buttons">
+                                                    <a href="/partnership-contract-pay/" class="cta-button" >
+                                Learn more                            </a>
+                                            </div>
+                            </div>
+            <div class="right  shadow image">
+                <img decoding="async" width="768" height="539" src="https://impact.com/wp-content/uploads/2025/09/Contract-Pay-affiliate-marketing.webp" class="feature-img" alt="Preview of impact.com contract pay" loading="lazy" srcset="https://impact.com/wp-content/uploads/2025/09/Contract-Pay-affiliate-marketing.webp 768w, https://impact.com/wp-content/uploads/2025/09/Contract-Pay-affiliate-marketing-300x211.webp 300w" sizes="auto, (max-width: 768px) 100vw, 768px" />            </div>
+        </div>
+    </div>
+                    </div>
+                            <div class="tab-content better-scroll " data-tab-index="2">
+                        <div class="feature white-background" data-module-position="14" data-distinct-module-position="0" data-tab-position="3" data-module-id="block_7390" data-module-name="Feature" >
+        <div class="feature-inner module left-text">
+            <div class="left">
+                                <div class="title">
+                                        <h2 class="default default">Track</h2>
+                </div>
+                <!-- TODO sanitize $copy below -->
+                                    <div class="copy default"><p>Track the traffic partners drive on all your properties, across any device.</p>
+</div>
+                                    <ul class="list-copy">
+                                                    <li class="red">Your tracking, your choice</li>
+                                                    <li class="red">See the whole picture with cross-device tracking</li>
+                                                    <li class="red">Future-proof your program</li>
+                                                    <li class="red">Streamline the user experience with TrueLink™</li>
+                                                    <li class="red">Make privacy a priority</li>
+                                                    <li class="red">Track partner-side impressions, STAT</li>
+                                            </ul>
+                                    <div class="cta-buttons">
+                                                    <a href="/partnership-track/" class="cta-button" >
+                                Learn more                            </a>
+                                            </div>
+                            </div>
+            <div class="right  shadow image">
+                <img decoding="async" width="768" height="539" src="https://impact.com/wp-content/uploads/2025/09/Track-affiliate-marketing.webp" class="feature-img" alt="Preview of impact.com&#039;s track screen" loading="lazy" srcset="https://impact.com/wp-content/uploads/2025/09/Track-affiliate-marketing.webp 768w, https://impact.com/wp-content/uploads/2025/09/Track-affiliate-marketing-300x211.webp 300w" sizes="auto, (max-width: 768px) 100vw, 768px" />            </div>
+        </div>
+    </div>
+                    </div>
+                            <div class="tab-content better-scroll " data-tab-index="3">
+                        <div class="feature white-background" data-module-position="14" data-distinct-module-position="0" data-tab-position="4" data-module-id="block_8593" data-module-name="Feature" >
+        <div class="feature-inner module left-text">
+            <div class="left">
+                                <div class="title">
+                                        <h2 class="default default"> Engage</h2>
+                </div>
+                <!-- TODO sanitize $copy below -->
+                                    <div class="copy default"><p>Proactive messaging and automated workflows make sure partners stay informed, productive, and on-brand.</p>
+</div>
+                                    <ul class="list-copy">
+                                                    <li class="red">Tell compelling stories with visualized data</li>
+                                                    <li class="red">Stay in the know with 40+ performance reports</li>
+                                                    <li class="red">Streamline creative and offer management</li>
+                                                    <li class="red">Automate your partner management workflows</li>
+                                                    <li class="red">Feed your need for easy catalog management</li>
+                                            </ul>
+                                    <div class="cta-buttons">
+                                                    <a href="/manage-engage/" class="cta-button" >
+                                Learn more                            </a>
+                                            </div>
+                            </div>
+            <div class="right  shadow image">
+                <img decoding="async" width="768" height="539" src="https://impact.com/wp-content/uploads/2025/09/Engage-affiliate-marketing.webp" class="feature-img" alt="Engage affiliate marketing preview" loading="lazy" srcset="https://impact.com/wp-content/uploads/2025/09/Engage-affiliate-marketing.webp 768w, https://impact.com/wp-content/uploads/2025/09/Engage-affiliate-marketing-300x211.webp 300w" sizes="auto, (max-width: 768px) 100vw, 768px" />            </div>
+        </div>
+    </div>
+                    </div>
+                            <div class="tab-content better-scroll " data-tab-index="4">
+                        <div class="feature white-background" data-module-position="14" data-distinct-module-position="0" data-tab-position="5" data-module-id="block_8296" data-module-name="Feature" >
+        <div class="feature-inner module left-text">
+            <div class="left">
+                                <div class="title">
+                                        <h2 class="default default">Protect &amp; Monitor</h2>
+                </div>
+                <!-- TODO sanitize $copy below -->
+                                    <div class="copy default"><p>Fortify your partnerships with full-stack protection across the entire consumer journey. Automate the daily monitoring and remediation of issues that could result in partner non-compliance. Expose affiliate fraud, influencer fraud, and traffic abnormalities wherever they corrupt your conversion paths. Cut out invalid traffic and reinvest spend in high-quality partnerships.</p>
+</div>
+                                    <ul class="list-copy">
+                                                    <li class="red">Find and resolve keyword violations quickly</li>
+                                                    <li class="red">Protect your promo codes from misuse</li>
+                                                    <li class="red">Stop paying out for fake leads or conversion events</li>
+                                                    <li class="red">Don’t fear the regulator</li>
+                                                    <li class="red">Ensure brand safety</li>
+                                            </ul>
+                                    <div class="cta-buttons">
+                                                    <a href="/protect-monitor/" class="cta-button" >
+                                Learn more                            </a>
+                                            </div>
+                            </div>
+            <div class="right  shadow image">
+                <img decoding="async" width="768" height="539" src="https://impact.com/wp-content/uploads/2025/09/Protect-Monitor-affiliate-marketing.webp" class="feature-img" alt="Protect and monitor preview" loading="lazy" srcset="https://impact.com/wp-content/uploads/2025/09/Protect-Monitor-affiliate-marketing.webp 768w, https://impact.com/wp-content/uploads/2025/09/Protect-Monitor-affiliate-marketing-300x211.webp 300w" sizes="auto, (max-width: 768px) 100vw, 768px" />            </div>
+        </div>
+    </div>
+                    </div>
+                            <div class="tab-content better-scroll " data-tab-index="5">
+                        <div class="feature white-background" data-module-position="14" data-distinct-module-position="0" data-tab-position="6" data-module-id="block_6497" data-module-name="Feature" >
+        <div class="feature-inner module left-text">
+            <div class="left">
+                                <div class="title">
+                                        <h2 class="default default">Optimize</h2>
+                </div>
+                <!-- TODO sanitize $copy below -->
+                                    <div class="copy default"><p>Continually optimize your partnerships for growth and efficiency.</p>
+</div>
+                                    <ul class="list-copy">
+                                                    <li class="red">Predict the future, optimize performance</li>
+                                                    <li class="red">Evaluate partner value</li>
+                                                    <li class="red">Assess customer lifetime value</li>
+                                                    <li class="red">Optimize and grow productive partnerships</li>
+                                            </ul>
+                                    <div class="cta-buttons">
+                                                    <a href="/optimize-insights/" class="cta-button" >
+                                Learn more                            </a>
+                                            </div>
+                            </div>
+            <div class="right  shadow image">
+                <img decoding="async" width="768" height="539" src="https://impact.com/wp-content/uploads/2025/09/Optimize-affiliate-marketing.webp" class="feature-img" alt="Optimise preview" loading="lazy" srcset="https://impact.com/wp-content/uploads/2025/09/Optimize-affiliate-marketing.webp 768w, https://impact.com/wp-content/uploads/2025/09/Optimize-affiliate-marketing-300x211.webp 300w" sizes="auto, (max-width: 768px) 100vw, 768px" />            </div>
+        </div>
+    </div>
+                    </div>
+                                </div>
+    </div>
+    
+
+    <section class="recommended-content module" data-module-position="15" data-distinct-module-position="1" data-tab-position="0" data-module-id="block_7a87ab90343058b2273b95c2dcc8c17d" data-module-name="Recommended Content" >
+        <h2>We also recommend</h2>
+        <div class="posts">
+                    <a class="insight-content-card" href="https://impact.com/affiliate/affiliate-program-management-tips/"           data-content-type="blog">
+                                <img decoding="async" width="1200" height="574" src="https://impact.com/wp-content/uploads/2014/03/management-tips-1200x574.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://impact.com/wp-content/uploads/2014/03/management-tips-1200x574.webp 1200w, https://impact.com/wp-content/uploads/2014/03/management-tips-300x144.webp 300w, https://impact.com/wp-content/uploads/2014/03/management-tips-1024x490.webp 1024w, https://impact.com/wp-content/uploads/2014/03/management-tips-768x368.webp 768w, https://impact.com/wp-content/uploads/2014/03/management-tips-1536x735.webp 1536w, https://impact.com/wp-content/uploads/2014/03/management-tips-940x450.webp 940w, https://impact.com/wp-content/uploads/2014/03/management-tips-1320x630.webp 1320w, https://impact.com/wp-content/uploads/2014/03/management-tips.webp 1880w" sizes="auto, (max-width: 1200px) 100vw, 1200px" />                                <div class="copy ">
+                    <h6>Blog</h6>
+                    <p>From transaction to value: modern affiliate program management tips</p>
+                </div>
+                    </a>
+                <a class="insight-content-card" href="https://impact.com/affiliate/affiliate-lead-generation/"           data-content-type="blog">
+                                <img decoding="async" width="1200" height="800" src="https://impact.com/wp-content/uploads/2022/06/lead-generation-1200x800.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="lead generation" loading="lazy" srcset="https://impact.com/wp-content/uploads/2022/06/lead-generation-1200x800.jpg 1200w, https://impact.com/wp-content/uploads/2022/06/lead-generation-300x200.jpg 300w, https://impact.com/wp-content/uploads/2022/06/lead-generation-1024x682.jpg 1024w, https://impact.com/wp-content/uploads/2022/06/lead-generation-768x512.jpg 768w, https://impact.com/wp-content/uploads/2022/06/lead-generation-1536x1024.jpg 1536w, https://impact.com/wp-content/uploads/2022/06/lead-generation.jpg 2000w" sizes="auto, (max-width: 1200px) 100vw, 1200px" />                                <div class="copy ">
+                    <h6>Blog</h6>
+                    <p>Why your affiliate lead generation strategy needs educators, not just lists</p>
+                </div>
+                    </a>
+                <a class="insight-content-card" href="https://impact.com/affiliate/prime-day-halo-effect/"           data-content-type="blog">
+                                <img decoding="async" width="1200" height="574" src="https://impact.com/wp-content/uploads/2026/07/prime-day-1200x574.webp" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="A woman using a laptop while holding a credit card, focused on online shopping or banking activities." loading="lazy" srcset="https://impact.com/wp-content/uploads/2026/07/prime-day-1200x574.webp 1200w, https://impact.com/wp-content/uploads/2026/07/prime-day-300x144.webp 300w, https://impact.com/wp-content/uploads/2026/07/prime-day-1024x490.webp 1024w, https://impact.com/wp-content/uploads/2026/07/prime-day-768x368.webp 768w, https://impact.com/wp-content/uploads/2026/07/prime-day-1536x735.webp 1536w, https://impact.com/wp-content/uploads/2026/07/prime-day-940x450.webp 940w, https://impact.com/wp-content/uploads/2026/07/prime-day-1320x630.webp 1320w, https://impact.com/wp-content/uploads/2026/07/prime-day.webp 1880w" sizes="auto, (max-width: 1200px) 100vw, 1200px" />                                <div class="copy ">
+                    <h6>Blog</h6>
+                    <p>Where Prime Day&#8217;s halo effect actually went in 2026</p>
+                </div>
+                    </a>
+                </div>
+
+                    <div class="more">Visit our <a href="https://impact.com/insights/">Resource hub</a> for more!
+</div>
+            </section>
+    
+
+
+<img decoding="async" src="https://d21y75miwcfqoq.cloudfront.net/55fd4ecb" style="position: absolute" referrerpolicy="no-referrer-when-downgrade">
+    </div>
+<footer id="footer">
+            <div id="footerMenu">
+                    <div class="widgetBlock ">
+                    <a class="mainMenuItem"  tabindex="0"
+               target="_self"
+               >
+                Platform            </a>
+                    <div class="submenu">
+                <ul id="menu-platform" class="menu"><li id="menu-item-14903" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14903"><a href="https://impact.com/performance/">Performance</a></li>
+<li id="menu-item-90619" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90619"><a href="https://impact.com/creator/">Creator</a></li>
+<li id="menu-item-131633" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131633"><a href="https://impact.com/advocate/">Advocate</a></li>
+<li id="menu-item-12784" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12784"><a href="https://impact.com/discover-recruit/">Discover and Recruit</a></li>
+<li id="menu-item-12783" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12783"><a href="https://impact.com/partnership-contract-pay/">Contract and Pay</a></li>
+<li id="menu-item-12782" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12782"><a href="https://impact.com/partnership-track/">Track</a></li>
+<li id="menu-item-12781" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12781"><a href="https://impact.com/manage-engage/">Engage</a></li>
+<li id="menu-item-12779" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12779"><a href="https://impact.com/protect-monitor/">Protect and Monitor</a></li>
+<li id="menu-item-12780" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12780"><a href="https://impact.com/optimize-insights/">Optimize</a></li>
+</ul>            </div>
+            </div>
+        <div class="widgetBlock ">
+                    <a class="mainMenuItem"  tabindex="0"
+               target="_self"
+               >
+                For Brands            </a>
+                    <div class="submenu">
+                <ul id="menu-for-brands" class="menu"><li id="menu-item-37219" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37219"><a href="https://impact.com/affiliate-marketing/">Affiliate marketing</a></li>
+<li id="menu-item-37220" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37220"><a href="https://impact.com/influencer-marketing/">Influencer marketing</a></li>
+<li id="menu-item-131635" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-131635"><a href="https://impact.com/creator-edit/">Creator Edit<i class="notification new-pink"> </i></a></li>
+<li id="menu-item-66202" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66202"><a href="https://impact.com/influencer-marketing/managed-services/">Managed services: influencer</a></li>
+<li id="menu-item-117892" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-117892"><a href="https://impact.com/customer-referral-marketing/">Referral marketing</a></li>
+<li id="menu-item-140183" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140183"><a href="https://impact.com/seller/">Amazon Seller</a></li>
+<li id="menu-item-37221" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37221"><a href="https://impact.com/business-development/">Business development</a></li>
+<li id="menu-item-37224" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37224"><a href="https://impact.com/mobile/">Mobile partnerships</a></li>
+<li id="menu-item-43584" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43584"><a href="https://impact.com/saas-partnership-marketing/">Saas partnership marketing</a></li>
+<li id="menu-item-37161" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37161"><a href="https://impact.com/marketing-analysts/">Analytics and attribution</a></li>
+<li id="menu-item-37160" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37160"><a href="https://impact.com/services/">Services</a></li>
+</ul>            </div>
+            </div>
+        <div class="widgetBlock ">
+                    <a class="mainMenuItem"  tabindex="0"
+               target="_self"
+               >
+                For Publishers            </a>
+                    <div class="submenu">
+                <ul id="menu-for-publishers" class="menu"><li id="menu-item-66194" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-66194"><a href="/partners/">Overview</a></li>
+<li id="menu-item-37162" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37162"><a href="https://impact.com/partners/affiliate-partners/">Affiliates</a></li>
+<li id="menu-item-37164" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37164"><a href="https://impact.com/partners/influencer-partners/">Influencers and creators</a></li>
+<li id="menu-item-37165" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37165"><a href="https://impact.com/partners/mobile-app-partners/">Mobile apps</a></li>
+<li id="menu-item-37163" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37163"><a href="https://impact.com/partners/publishers-media-groups-partners/">Content publishers</a></li>
+<li id="menu-item-66193" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66193"><a href="https://impact.com/partners/premium-news-and-media-publishers/">Premium news and media publishers</a></li>
+</ul>            </div>
+            </div>
+        <div class="widgetBlock ">
+                    <a class="mainMenuItem"  tabindex="0"
+               target="_self"
+               >
+                Insights            </a>
+                    <div class="submenu">
+                <ul id="menu-insights" class="menu"><li id="menu-item-151538" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-151538"><a href="https://impact.com/press-releases/">Press releases</a></li>
+<li id="menu-item-44748" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-44748"><a href="/insights/">Resource hub</a></li>
+<li id="menu-item-37172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37172"><a href="https://impact.com/partnerships-experience-academy/">Partnerships Experience Academy</a></li>
+<li id="menu-item-37168" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37168"><a href="https://impact.com/partnership-economy/">The Partnership Economy</a></li>
+<li id="menu-item-88287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88287"><a href="https://impact.com/events/">Events</a></li>
+<li id="menu-item-37171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37171"><a href="https://impact.com/partnerships-experience/">Partnerships Experience (iPX) Event</a></li>
+<li id="menu-item-37173" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37173"><a href="/find-influencers/">Influencer &#038; creator directory</a></li>
+<li id="menu-item-37170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37170"><a href="https://impact.com/glossary/">Glossary</a></li>
+</ul>            </div>
+            </div>
+        <div class="widgetBlock ">
+                    <a class="mainMenuItem"  tabindex="0"
+               target="_self"
+               >
+                Partner with impact.com            </a>
+                    <div class="submenu">
+                <ul id="menu-partner-with-impact-com" class="menu"><li id="menu-item-37174" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37174"><a href="https://impact.com/agency-partner-program/">Agency partner program</a></li>
+<li id="menu-item-66095" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-66095"><a href="/agency-partner-program/directory/">Agency directory</a></li>
+<li id="menu-item-80767" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-80767"><a href="https://impact.com/technology-partners/">Technology partners</a></li>
+<li id="menu-item-80768" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-80768"><a href="/technology-partners/directory/">Technology partners directory</a></li>
+<li id="menu-item-37176" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37176"><a href="https://impact.com/referral-partner-program/">Referral partner program</a></li>
+<li id="menu-item-37177" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37177"><a target="_blank" href="https://integrations.impact.com/">Developer portal</a></li>
+</ul>            </div>
+            </div>
+        <div class="widgetBlock ">
+                    <a class="mainMenuItem"  tabindex="0"
+               target="_self"
+               >
+                About            </a>
+                    <div class="submenu">
+                <ul id="menu-aboutmenu" class="menu"><li id="menu-item-100" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-100"><a href="/about/">About impact.com</a></li>
+<li id="menu-item-140155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140155"><a href="https://impact.com/why-partnerships/">Why partnerships</a></li>
+<li id="menu-item-80600" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-80600"><a href="https://impact.com/contact/">Contact</a></li>
+<li id="menu-item-101" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-101"><a href="/careers/">Careers</a></li>
+<li id="menu-item-140156" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140156"><a href="https://impact.com/leadership/">Leadership</a></li>
+<li id="menu-item-140157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140157"><a href="https://impact.com/awards/">Awards</a></li>
+<li id="menu-item-86689" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86689"><a href="https://impact.com/about/sustainability/">Sustainability</a></li>
+<li id="menu-item-86178" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-86178"><a target="_blank" href="https://help.impact.com/en/support/home">Help center</a></li>
+<li id="menu-item-109412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-109412"><a href="https://impact.com/security-and-privacy/">Security and privacy</a></li>
+</ul>            </div>
+            </div>
+        </div>
+        <div id="socialmedia">
+                    <div class="newsletter-signup">
+            <div class="form-module">
+                <div class="form-container">
+                    <div class="form">
+                        <form class="custom-marketo-form" data-id="2571" autocomplete="off" novalidate>
+    <p class="signUp">Sign up for our monthly newsletter</p>
+    <div class="container">
+        <div class="flexWrap">
+            <div class="input-field newsletterEmail">
+                <label for="newsletterEmail">Business email</label>
+                <input type="email" id="newsletterEmail" name="Email" class="required newsletterEmail">
+                <p class="error">Please enter valid email address</p>
+                <p class="error blacklist">Please use different email address</p>
+            </div>
+            <div class="button">
+                <button type="submit" name="submit" value="Submit" class="newsletter-btn">Subscribe</button>
+            </div>
+        </div>
+        <div id="consent" class="checkbox_msg newsletterEmailConsent">
+            <div class="wrapper">
+                <input name="GDPR_email_opt_in__c" id="GDPR_email_opt_in__c" class="checkbox required" type="checkbox">
+                <h4 class="comm_message">Yes, I would like to receive marketing communications regarding impact.com products, services, and events. I can unsubscribe at a later time. By registering, you confirm that you agree to the storing and processing of your personal data by impact.com as described in the <a href="/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.</a>
+                </h4>
+                <p class="error">This field is required</p>
+            </div>
+        </div>
+        <button type="submit" name="submit" value="Submit" class="newsletter-btn mobile">Subscribe</button>
+    </div>
+    <p class="thankYou">Congratulations. You have successfully signed up to our newsletter. Keep an eye on your inbox.</p>
+</form>
+<form preload data-id="2571" id="mktoForm_2571"
+                                      class="mkto-custom-thanks mkto-custom-form " data-thanks="Thank you for signing up to our monthly newsletter.<br/>You'll be hearing from us soon.">
+</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="widgetBlock ">
+                    <a class="mainMenuItem"  tabindex="0"
+               target="_self"
+               >
+                Social Media            </a>
+                    <div class="submenu">
+                <ul id="menu-social-media-menu-footer" class="menu"><li id="menu-item-78769" class="fa-brands fa-linkedin-in menu-item menu-item-type-custom menu-item-object-custom menu-item-78769"><a target="_blank" href="https://www.linkedin.com/company/impactdotcom/">Linkedin</a></li>
+<li id="menu-item-78771" class="fa-brands fa-instagram menu-item menu-item-type-custom menu-item-object-custom menu-item-78771"><a target="_blank" href="https://www.instagram.com/impactdotcom/">Instagram</a></li>
+<li id="menu-item-78767" class="fa-brands fa-facebook-f menu-item menu-item-type-custom menu-item-object-custom menu-item-78767"><a target="_blank" href="https://www.facebook.com/impactdotcom1">Facebook</a></li>
+<li id="menu-item-78770" class="fa-brands fa-youtube menu-item menu-item-type-custom menu-item-object-custom menu-item-78770"><a target="_blank" href="https://www.youtube.com/c/impactdotcom">Youtube</a></li>
+<li id="menu-item-78773" class="fa-brands fa-tiktok menu-item menu-item-type-custom menu-item-object-custom menu-item-78773"><a target="_blank" href="https://www.tiktok.com/@impactdotcom">TikTok</a></li>
+<li id="menu-item-81093" class="fa fa-rss menu-item menu-item-type-custom menu-item-object-custom menu-item-81093"><a target="_blank" href="https://impact.com/feed/">RSS feed</a></li>
+</ul>            </div>
+            </div>
+<div class="widgetBlock appStore">
+<div class="submenu">
+<a aria-label="Download on the app store" href="https://apps.apple.com/app/impact-com/id1629721141" target="_blank" rel="noopener noreferrer" ><img decoding="async" src="https://impact.com/wp-content/uploads/2023/06/App-store-apple-01-1.svg" alt="Apple logo with text indicating the option to download from the App Store." width="118px" height="42px" loading="lazy"/></a><a aria-label="Get it on Google play" href="https://play.google.com/store/apps/details?id=com.impact.impactApp" target="_blank" rel="noopener noreferrer" ><img decoding="async" src="https://impact.com/wp-content/uploads/2023/06/Google_Play_Store_badge_EN-1-01-1.svg" alt="Black button with white text GET IT ON, above Google Play featuring a colorful triangular logo on the left." width="145px" height="44px" loading="lazy"/></a>
+</div>
+</div>
+        </div>
+        <div id="footerBottom">
+            <p><img decoding="async" class="impact-logo-footer" src="https://impact.com/wp-content/uploads/2022/04/Logo_all-white.png" alt="impact.com logo white" height="45px" width="130px" loading="lazy"></p>
+        <div class="widgetBlock ">
+                    <div class="submenu">
+                                    <div class="leftBox">
+                                                                            <p>© 2025 Impact Tech, Inc</p>
+                                            </div>
+                <ul id="menu-footermenu" class="menu"><li id="menu-item-97487" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-97487"><a href="#">Legal policies</a>
+<ul class="sub-menu">
+	<li id="menu-item-13353" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13353"><a href="/privacy-policy/">Privacy policy</a></li>
+	<li id="menu-item-13354" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13354"><a href="/terms-of-use/">Terms of use</a></li>
+	<li id="menu-item-16224" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16224"><a href="/accessibility-policy/">Accessibility policy</a></li>
+	<li id="menu-item-24993" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24993"><a target="_blank" href="https://impact.responsibledisclosure.com/hc/en-us">Responsible disclosure</a></li>
+	<li id="menu-item-97488" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-97488"><a target="_blank" href="https://impact.com/legal/IRL_Modern_Slavery_Statement.pdf">Modern slavery statement</a></li>
+	<li id="menu-item-108102" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-108102"><a target="_blank" href="https://impact.com/legal/PAIA_manual_impact_radius_SA.pdf">PAIA manual</a></li>
+	<li id="menu-item-83893" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83893"><a href="https://impact.com/imprint/">Imprint</a></li>
+</ul>
+</li>
+</ul>            </div>
+            </div>
+        </div>
+    
+</footer>
+
+<div id="ep-instant-results"></div><noscript><img height="1" width="1" style="display: none;" src="https://www.facebook.com/tr?id=440085658361906&ev=PageView&noscript=1&cd%5Bpage_title%5D=Home&cd%5Bpost_type%5D=page&cd%5Bpost_id%5D=9940&cd%5Bplugin%5D=PixelYourSite&cd%5Buser_role%5D=guest&cd%5Bevent_url%5D=impact.com%2F" alt=""></noscript>
+<script type="text/javascript" src="https://impact.com/wp-content/themes/impact/dist/vendor/scripts/vendor.min.js?ver=1721811351" id="vendor-js"></script>
+<script type="text/javascript" src="https://impact.com/wp-content/themes/impact/dist/theme/scripts/theme.min.js?ver=1773820547" id="theme-js"></script>
+    <noscript>
+        <img src="https://ws.zoominfo.com/pixel/x9t5HMrreUQLdXOemJuH" width="1" height="1" style="display: none;"/>
+        <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=94558&fmt=gif"/>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=274149381222612&ev=PageView&noscript=1"/>
+    </noscript>
+    </body>
+
+</html>

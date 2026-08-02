@@ -1,0 +1,756 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <title>Prospect Lists - Homeowner data lists, direct mail lists | CoreLogic</title>
+    <meta name="title" content="Welcome to Corelogic"/>
+    <meta name="description"
+          content="Listsource is your source for prospect lists, homeowner lists, homeowner leads and direct marketing lists. Discover new homeowner lists, reverse mortgage prospects, foreclosure prospects and consumer marketing leads. From CoreLogic, experts in homeowner data, property information and real estate analytics."/>
+    <meta name="keywords"
+          content="prospect lists, data lists, homeowner leads, property marketing lists, direct mail lists"/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="revisit-after" content="1 days"/>
+    <meta name="classification" content="Real Estate Tools"/>
+    <meta name="resource-type" content="document"/>
+    <meta name="rating" content="General"/>
+    <meta name="language" content="English"/>
+    <meta name="doc-type" content="Public"/>
+    <meta name="doc-rights" content="Copy Written Work"/>
+    <meta http-equiv="Author" name="Author" content="CoreLogic"/>
+
+    <!-- css file  -->
+
+    <link rel="stylesheet" type="text/css" href="/css/960.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="/css/reset.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="/css/layout.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="/css/superfish.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="/css/global.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="/css/mfa_email_styles.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="/css/mfa_baseline.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="/list/css/mfa/mfaSignIn.css?v=1" media="all"/>
+    <link rel="stylesheet" type="text/css" href="/list/css/logInOverlay.css" media="all">
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"/>
+    
+    <style>
+        .container .pop-up{
+            height: 500px;
+            bottom: 200px;
+        }
+
+        .tag {
+            position: absolute;
+            top: 335px;
+            left: 79px;
+            z-index: 1000;
+            padding: 5px;
+            color: #FFFFFF;
+            font-weight: bold;
+            width: 224px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .tag.check-it-out {
+            background-color: #706559;
+        }
+
+        .tag.close-button{
+            top: 40px;
+            width: 17px !important;
+            height:20px;
+            left: 300px;
+            opacity: 0;
+        }
+
+        .tag.close-button:hover{
+            cursor: pointer;
+        }
+
+        .tag.learn-more {
+            top: 366px;
+            color: black;
+        }
+    </style>
+    
+    <!--navigation menu-->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" type="text/javascript"></script>
+    <!-- Menu dependencies -->
+
+    <script src="/js/template_js/superfish.js"></script>
+    <script src="/js/template_js/supersubs.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("ul.sf-menu").supersubs({
+                minWidth: 12,   // minimum width of sub-menus in em units
+                maxWidth: 27,   // maximum width of sub-menus in em units
+                extraWidth: 1     // extra width can ensure lines don't sometimes turn over
+                                  // due to slight rounding differences and font-family
+            }).superfish();  // call supersubs first, then superfish, so that subs are
+                             // not display:none when measuring. Call before initialising
+                             // containing tabs for same reason.
+        });
+    </script>
+
+    <script src="/js/template_js/lsuserlogin_functions.js"></script>
+    <script src="/js/template_js/mfa_login_functions.js?v=6"></script>
+    <script src="/js/mfa/mfaSignIn.js?v=5"></script>
+
+    <script language="javascript" type="text/javascript">
+        function getObj(name) {
+            if (document.getElementById) {
+                return document.getElementById(name);
+            } else if (document.all) {
+                return document.all[name];
+            } else if (document.layers) {
+                return document.layers[name];
+            }
+        }
+
+        function checkLogin() {
+            if (window.name == "MktWindow") {
+                return true;
+            }
+            return false;
+        }
+
+        function hideLogin(objname) {
+            obj = getObj(objname);
+            if (obj != null) {
+                if (checkLogin()) {
+                    obj.style.display = "none";
+                } else {
+                    obj.style.display = "inline";
+                }
+            }
+        }
+
+        function displayLogin(objname) {
+            obj = getObj(objname);
+            if (obj != null) {
+                if (checkLogin()) {
+                    obj.style.display = "inline";
+                } else {
+                    obj.style.display = "none";
+                }
+            }
+        }
+
+        function pageOpenInParentWindow(link) {
+            if (checkLogin()) {
+                window.opener.loadPageURLFromChildWindow(link);
+                window.close();
+            } else {
+                window.href.location = link;
+            }
+        }
+    </script>
+
+</head>
+<body>
+<script src="/js/araya_banner.js"></script>
+<div class="full-window">
+    <div class="container_16">
+        <!-- header -->
+
+        <div class="grid_16 header">
+            <div class="grid_4 alpha">
+                <h1><a href="/homepage/index.html"><img src="/images/logo.gif" width="220" height="111" border="0"/></a>
+                </h1>
+            </div>
+
+            <div class="grid_12 omega">
+
+                <!-- App Login Form or App Menu -->
+                <div class="grid_12 alpha omega">
+                    <form id="frmMain" name="frmMain" class="header-login" method="post">
+                        <div class="left margin-right-10"><b>Existing Customers:</b></div>
+                        <div class="left margin-right-10">
+                            <input type="text" class="login-field-user"
+                                   maxlength="50"
+                                   onFocus="if(this.value=='Username'){this.value=''};"
+                                   onBlur="if(this.value==''){this.value='Username'};" value="Username" id="userName"
+                                   name="userName"/>
+                        </div>
+                        <div class="left margin-right-10">
+                            <input type="password" class="login-field-password"
+                                   onFocus="form.password.style.background = '#FFF';"
+                                   onBlur="if(this.value==''){form.password.style.background = 'url(/images/image_css/password.gif) no-repeat 3% 50% #FFF';}"
+                                   value="" id="password" name="password"/>
+                        </div>
+                        <div class="left margin-right-10">
+                            <input name="submit"
+                                   onclick="mfaDataPopulation.mfaCheck(document.frmMain, event); return false;"
+                                   type="image" src="/images/image_css/btn-login.gif"/>
+                        </div>
+                        <INPUT type="hidden" value="" id="piProtectSessionId" name="piProtectSessionId"/>
+                        <INPUT type="hidden" value="" id="piProtectData" name="piProtectData"/>
+                        <div class="left"><a href="#" onclick="return openResetPasswordPopup()">Forgot Your Password</a></div>
+                    </form>
+                </div>
+                <!-- END OF App Login Form or App Menu -->
+
+                <div class="clear"></div>
+                <div class="grid_2 alpha prefix_5 header-phone"></div>
+
+                <div class="grid_2 header-live-chat">
+                    <img src="/images/header-support-866.404.2035.gif" alt="Support: 866.404.2035" border="0"/>
+                </div>
+                <div class="grid_3 omega" id="social-icons">
+                    <ul>
+                        <li><a href="http://www.facebook.com/CoreLogic" target="_blank"><img
+                                src="/images/image_css/social-facebook.gif" border="0"/></a></li>
+                        <li><a href="https://twitter.com/CoreLogicInc" target="_blank"><img
+                                src="/images/image_css/social-twitter.gif" border="0"/></a></li>
+                        <li><a href="http://www.linkedin.com/company/corelogic/listsource-324102/product"
+                               target="_blank"><img src="/images/image_css/social-linkedin.gif" border="0"/></a></li>
+                    </ul>
+                </div>
+
+
+                <div class="clear"></div>
+                <div class="grid_12 alpha omega">
+                    <div class="main-menu">
+                        <ul class="sf-menu">
+                            <li id="headerBuildList">
+                                <a href="/list/ui/buildList.htm" onclick="forwardBuildList();">Build List</a>
+                            </li>
+                            <li>
+                                <a href="/quick-lists/quick-list-overview-page/quick-list-overview-page.htm"
+                                   target='_self'>Quick
+                                    List</a>
+                            </li>
+                            <li>
+                                <a href="/market-solutions/market-solutions-overview.htm" target='_self'>Market
+                                    Solutions</a>
+                            </li>
+                            <li>
+                                <a href="/resources/usage-tools/resources-main-page.htm" target='_self'>Resources</a>
+                            </li>
+                            <li>
+                                <a href="/pricing/index.htm" target='_self'>Pricing</a>
+                            </li>
+                            <li>
+                                <a href="/reseller-program.htm" target='_self'>Resellers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end main menu -->
+
+                <!-- end header -->
+            </div>
+            <!-- end main menu -->
+        </div>
+    </div>
+    <!-- end header -->
+
+    <!-- end container -->
+    <script src="/js/template_js/jquery.speedometer.js"></script>
+    <script src="/js/template_js/excanvas.js"></script>
+    <script src="/js/template_js/odometer.js"></script>
+
+    <script type="text/javascript">
+        var odoSpeed = 0.1; // between 0-0.999999999
+        var odoMin = 133999900; // min 0
+        var odoMax = 134000000; // max 999999999
+        var tachoMax = 89; //percentage between 0-100
+
+        var n = odoMin;
+        var myOdometer;
+
+        function run() {
+            var div = document.getElementById("odometerDiv");
+            myOdometer = new Odometer(div, {value: n, digits: 9, tenths: false});
+            update();
+        }
+
+        function update() {
+            n = n + odoSpeed;
+            myOdometer.set(n);
+            /* This below condition for stopping Speedo when reach max value */
+            if (n < odoMax) {
+                setTimeout("update()", 0);
+            } else {
+                myOdometer.set(odoMax);
+            }
+        }
+
+        function init() {
+
+            $(function () {
+                $('#speedometer').speedometer({percentage: tachoMax || 0, limit: false});
+                run();
+            });
+        }
+
+        window.onload = init;
+    </script>
+
+    <div class="clear"></div>
+    <div class="container_16 index-main-body">
+        <!-- Index Page Header -->
+        <div class=" grid_16" id="index-page-header">
+            <div class="grid_9 alpha">
+                <h2><p>Build Your Local or National Marketing Prospect List with Fresh and Precise Property and
+                    Homeowner
+                    Information</p></h2>
+                <h3><p>ListSource is your source for property, homeowner and demographic-based leads. &#160;Create
+                    highly
+                    targeted homeowner direct marketing lead lists to speak directly to the audience that you are
+                    interested
+                    in.</p></h3>
+                <p>
+
+                    <a href='/list/ui/buildList.htm' class="brown-button-large"
+                       target='_self'><span>Build List</span></a>
+                    <a href='/list/ui/ecommerceRegistrationNow.htm?url=newEcomRegister' class="brown-button-large"
+                       target='_self'><span>Register Now</span></a>
+                </p>
+            </div>
+            <!-- grid 9 end -->
+            <div class="grid_5 omega" id="gauge">
+                <div id="speedometer" style="z-index:0 !important"></div>
+                <div id="odometerDiv"></div>
+            </div>
+        </div>
+        <!-- end Index page header -->
+        <div class="clear"></div>
+        <div class=" grid_16" id="index-full-width">
+            <div class="index-column-container">
+                <div class="index-column-block" id="column-block1" style="height:auto">
+                    <img src='/images/image_css/index-column-block-icon1.gif' alt='Search Properties'/>
+                    <h3>Search Properties</h3>
+                    <h4>Explore Millions Of Homes To Create Precise Marketing and Prospect Lists</h4>
+
+                    <p>Access property and ownership information that covers 94% of all property owners in the U.S. Our
+                        data
+                        is updated daily, ensuring that you always have access to the fresh and accurate data lists
+                        needed
+                        for properties throughout the U.S..</p>
+
+                </div>
+                <div class="index-column-block" id="column-block2" style="height:auto">
+                    <img src='/images/image_css/index-column-block-icon2.gif' alt='Discover Homeowners'/>
+                    <h3>Discover Homeowners</h3>
+                    <h4>Access The Precise Homeowner Information You Need</h4>
+                    <p>Whether you want to help homeowners go green, or increase donations for your non profit
+                        organization,
+                        discover a solution to create a custom direct marketing prospect&nbsp;list&nbsp;and connect with
+                        homeowners today.&nbsp;</p>
+                </div>
+                <div class="index-column-block" id="column-block3" style="height:auto">
+                    <img src='/images/image_css/index-column-block-icon3.gif' alt='Generate Leads with Prospect Lists'/>
+                    <h3>Generate Leads</h3>
+                    <h4>Create Your Custom Direct Marketing Prospect Lists</h4>
+
+                    <p>From home energy upgrades to insurance services, build a data&#160;list specifically created to
+                        meet
+                        your exact business offering. Focus on a local neighborhood or an entire state, to find the
+                        leads
+                        you need to target your best prospects.</p>
+
+                </div>
+                <div class="index-column-block last" id="column-block4" style="height:auto">
+                    <img src='/images/image_css/index-column-block-icon4.gif' alt='Target Prospects'/>
+                    <h3>Target Prospects</h3>
+                    <h4>Profit from Your Targeted Marketing Efforts</h4>
+                    <p>Use your marketing budget effectively by targeting only the prospects that will help you achieve
+                        your
+                        business goals. &nbsp;Use your prospect&nbsp;list to execute profitable direct marketing
+                        campaigns.
+                        Start profiting today!</p>
+                </div>
+            </div>
+        </div>
+        <!-- end 16 grid -->
+        <div class="clear"></div>
+        <!-- green buttons -->
+        <div class="grid_16">
+
+            <ul class="green-button-list">
+                <li><a href='/list/ui/buildList.htm' class="gray-button-small"
+                       target='_self'><span>Search Properties</span></a>
+                </li>
+                <li><a href='/list/ui/buildList.htm' class="gray-button-small"
+                       target='_self'><span>Discover Homeowners</span></a></li>
+                <li><a href='/list/ui/buildList.htm' class="gray-button-small"
+                       target='_self'><span>Generate Leads</span></a></li>
+                <li><a href='/list/ui/buildList.htm' class="gray-button-small"
+                       target='_self'><span>Target Prospects</span></a>
+                </li>
+            </ul>
+        </div>
+        <!-- end green buttons -->
+        <div class="clear"></div>
+        <!-- SHADOW -->
+        <div class="grid_16 shadow-bar"></div>
+        <!-- SHADOW -->
+        <div class="clear"></div>
+        <!-- Lower body content -->
+        <div class="grid_16 index-lower-body">
+            <div class="col-height-fix">
+                <div class="prefix_1_1 grid_4 alpha">
+                    <h4>Quick Lead Lists</h4>
+
+                    <ul class="custom-list1">
+
+                        <li><a href='/quick-lists/absentee-owners.htm' target='_self'>Absentee Property Owners</a></li>
+
+                        <li>
+                            <a href='/quick-lists/fha-and-va-military-home-loan-eligibility/fha-and-va-military-home-loan-eligibility.htm'
+                               target='_self'>FHA & VA Home Loan Eligibility</a></li>
+
+                        <li>
+                            <a href='/quick-lists/fha-and-va-military-home-loan-eligibility/fha-and-va-military-home-loan-eligibility.htm'
+                               target='_self'>First Time Home Buyers</a></li>
+
+                        <li><a href='/quick-lists/foreclosure-prospects/foreclosure-prospects.htm' target='_self'>Homes
+                            in
+                            Foreclosure</a></li>
+
+                        <li><a href='/quick-lists/insurance-prospects/insurance-prospects.htm' target='_self'>Insurance
+                            Prospects</a></li>
+
+                        <li><a href='/quick-lists/new-homeowners/new-homeowners.htm' target='_self'>New Mover List</a>
+                        </li>
+
+                        <li><a href='/quick-lists/reverse-mortgage-prospects/reverse-mortgage-prospects.htm'
+                               target='_self'>Reverse
+                            Mortgage Prospects</a></li>
+
+                        <li><a href='/quick-lists/quick-list-overview-page/quick-list-overview-page.htm' target='_self'>More
+                            Quick Lists...</a></li>
+
+                    </ul>
+                    <b><p>Access property and homeowner leads now!</p></b>
+                </div>
+                <div class="grid_4 alpha">
+                    <h4>Market Lead Solutions</h4>
+                    <ul class="custom-list1">
+
+                        <li><a href='/market-solutions/academics.htm' target='_self'>Academic Institutions</a></li>
+
+                        <li><a href='/market-solutions/commerical-real-estate.htm' target='_self'>Commercial Real
+                            Estate</a>
+                        </li>
+
+                        <li><a href='/market-solutions/direct-marketing.htm' target='_self'>Consumer Marketing</a></li>
+
+                        <li><a href='/market-solutions/government-and-utilities.htm' target='_self'>Government &
+                            Utilities</a></li>
+
+                        <li><a href='/market-solutions/green-marketing.htm' target='_self'>Green Marketing</a></li>
+
+                        <li><a href='/market-solutions/construction-and-home-improvement.htm' target='_self'>Home
+                            Improvement</a></li>
+
+                        <li><a href='/market-solutions/insurance.htm' target='_self'>Insurance</a></li>
+
+                        <li><a href='/market-solutions/mortgage-industry.htm' target='_self'>Mortgage Industry</a></li>
+
+                        <li><a href='/market-solutions/non-profit-organizations.htm' target='_self'>Non Profits</a></li>
+
+                        <li><a href='/market-solutions/residential-real-estate.htm' target='_self'>Residential Real
+                            Estate</a></li>
+
+                        <li><a href='/market-solutions/title-and-settlement-services.htm' target='_self'>Title &
+                            Settlement
+                            Services</a></li>
+                    </ul>
+                    <b>
+                    </b>
+                </div>
+                <!-- green buttons -->
+
+                <ul class="green-button-list2">
+                    <li><a href='/list/ui/buildList.htm' class="gray-button-small"
+                           target='_self'><span>Get started</span></a></li>
+                    <li><a href='/list/ui/buildList.htm' class="gray-button-small"
+                           target='_self'><span>Get started</span></a></li>
+                </ul>
+                <!-- end green buttons -->
+            </div>
+            <!-- col height fix -->
+            <!-- live chat box -->
+            <div class="grid_7 alpha omega" id="live-chat"><img src='/images/home-equity-icon-image-for-home-page.jpg'
+                                                                alt='Home Equity Leads' class="left padding-right-10"/>
+                <h4>Home Equity Leads</h4>
+                <p>&nbsp;</p>
+                <p>Seek homeowners who are prime candidates for a home equity loan or a cash-out refinance loan.</p>
+                <p><a href='/quick-lists/estimated-equity/estimated-equity.htm' class="gray-button-small"
+                      target='_blank'><span>Get Started</span></a></p>
+            </div>
+            <!-- end live chat box -->
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <div class="clear"></div>
+    <div class="footer">
+        <div class="container_16">
+            <!-- footer content -->
+            <div class="grid_16">
+                <div class="footer-col1">
+                    <a href="http://corelogic.com" target='_self'> <img alt="CoreLogic"
+                                                                        src="/images/image_css/logo-corelogic.gif"
+                                                                        width="73" height="73"
+                                                                        class="padding-top-40 footer-logo" border="0"/></a>
+
+
+                    <ul class="footer-links2">
+                        <li>Copyright &#169; 2023 Corelogic.</li>
+                        <li>All rights reserved.</li>
+                    </ul>
+                </div>
+                <div class="footer-col2">
+                    <ul class="footer-links">
+                        <li id="footerBuildList">
+                            <a href="/list/ui/buildList.htm">Build List</a>
+                        </li>
+                        <li><a href="/pricing/index.htm" target='_self'>Pricing</a></li>
+                        <li><a href="/resources/usage-tools/resources-main-page.htm" target='_self'>Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col3">
+                    <ul class="footer-links">
+                        <li><a href="/market-solutions/market-solutions-overview.htm" target='_self'>Market
+                            Solutions</a>
+                        </li>
+                        <li><a href="/quick-lists/quick-list-overview-page/quick-list-overview-page.htm" target='_self'>Quick
+                            List</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col4">
+                    <ul class="footer-links">
+                        <li><a href="/policies/policies.htm" target='_self'>Legal</a></li><li><a href="http://www.corelogic.com/privacy.aspx" target='_self'>Privacy</a></li>
+                        <li><a href="/site-map/site-map.htm" target='_self'>Site Map</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col5">
+                    <ul class="footer-links">
+                        <!-- contact link -->
+
+                        <li><b><a href="/list/ui/index.htm?search=contactUs" target="_self">Contact Us</a></b></li>
+                        <li>Call Sales: 866.774.3282</li>
+                        <li><a href="https://www.corelogic.com/support/sales-contact/" target="_blank" rel="noopener noreferrer">Contact Sales</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end footer content -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end footer container -->
+
+    <!-- MFA MODAL -->
+
+    <div id="mfaDpConfirmEmailDialog" style="display:none;" title="Confirm Your Contact Information">
+        <form>
+            <div class="content-bar">
+                <span class="fix-padding">
+                    As part of our ongoing effort to continuously improve our products and services, we are enhancing our online security measures, which includes ensuring that we have the correct information about your account.
+                </span>
+
+                <span>
+                    We will send a verification code to the email address we have associated with your account:
+                </span>
+
+                <strong><span id="maskedEmail" class="masked-email"></span></strong>
+
+                <span class="help-info buffer-bottom">
+                    <strong>Need help?</strong>Call client services at <a
+                        href="tel:8664042035">(866) 404-2035</a> or email <a
+                        href="mailto:support.cor@corelogic.com">support.cor@corelogic.com</a>.
+                </span>
+            </div>
+
+            <div class="footer-bar">
+                <button id="updateEmailButton" class="button" type="button"
+                        onClick="mfaDataPopulation.dpUpdateMyEmail()">
+                    Update My Email
+                </button>
+                <button type="submit" class="button submit-button">Get My Code</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="mfaDpEnterEmailDialog" style="display: none;" title="Update Your Information">
+        <form>
+            <div class="content-bar">
+                <span class="fix-padding">
+                    As part of our ongoing effort to continuously improve our products and services, we have enhanced our online security measures, which includes ensuring that we have the correct information about your account.
+                </span>
+
+                <span>
+                    The information provided will only be used for authentication purposes and not for marketing purposes.
+                </span>
+
+                <span>
+                    Please provide the correct contact information associated with this account:
+                </span>
+
+                <label>Email Address</label>
+                <input type="text" id="emailInput" maxLength="50" placeholder="Enter email address">
+                <span class="error-message" style="display: none;">
+                    <img src="/images/image_css/warning_icon.png">
+                    <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                    <span id="mfaDpEnterEmailDialog_emailErrorPlace"></span>
+                </span>
+
+                <span class="help-info">
+                    <strong>Need help?</strong>Call client services at <a href="tel:8664042035">(866) 404-2035</a> or email <a
+                        href="mailto:support.cor@corelogic.com">support.cor@corelogic.com</a>
+                </span>
+            </div>
+
+            <div class="footer-bar">
+                <button id="backButton" class="button" onClick="mfaDataPopulation.mfaBack()" style="display: none;">
+                    Back
+                </button>
+                <button type="submit" class="button disabled submit-button">Get My Code</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="mfaDpCodeVerificationDialog" style="display:none" title="Enter Verification Code">
+        <form>
+            <div class="content-bar">
+                <div class="fix-padding enterEmailFlow" style="display: none;">
+                    <span>
+                        We've sent a verification code to the email address you just provided. Please check your email and enter the code below.
+                    </span>
+                    <span>
+                        The email would have come from do-not-reply@corelogic.com with a subject line of "Your CoreLogic Verification Code".
+                    </span>
+                </div>
+                <div class="fix-padding confirmEmailFlow" style="display: none;">
+                    <span>
+                        As part of our ongoing effort to continuously improve our products and services, we are enhancing our online security measures, which includes ensuring that we have the correct information about your account.
+                    </span>
+                    <span>
+                        We've sent a verification code to the email address we have associated with your account:
+                    </span>
+                    <strong><span class="masked-email"></span></strong>
+                    <span>
+                        The verification email would have come from do-not-reply@corelogic.com with a subject line of "Your CoreLogic Verification Code".
+                    </span>
+                    <span>
+                        Please check your email for your verification code and enter the code below.
+                    </span>
+                </div>
+                <label>Verification Code</label>
+                <input type="password" id="verificationCodeInput" placeholder="Enter verification code">
+                <span class="error-message" style="display: none;">
+                    <img src="/images/image_css/warning_icon.png">
+                    <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                    <span id="mfaDpCodeVerificationDialog_otpErrorPlace"></span>
+                </span>
+                <span class="help-info">
+                    <strong>Need help?</strong>Call client services at <a href="tel:8664042035">(866) 404-2035</a> or email <a
+                        href="mailto:support.cor@corelogic.com">support.cor@corelogic.com</a>
+                </span>
+            </div>
+
+            <div class="footer-bar">
+                <button id="resendCodeButton" type="button" class="button"
+                        onClick="mfaDataPopulation.resendVerificationCode()">Resend Code
+                </button>
+                <button type="submit" class="button disabled submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="mfaDataPopulationSuccessDialog" style="display:none" title="Information Updated and Confirmed">
+        <div class="content-bar">
+            <span class="fix-padding">
+                Thank you for updating and confirming the contact information for your account. We value you as a client and greatly appreciate your continued business.
+            </span>
+        </div>
+
+        <div class="footer-bar">
+            <button type="button" class="button submit-button close-button"
+                    onclick="mfaDataPopulation.mfaDpSuccessDialog.dialog('close')">Close
+            </button>
+        </div>
+    </div>
+
+    <div id="mfaSignInChallengeDialog" style="display: none;" title="Enter Verification Code">
+        <form>
+            <div class="content-bar">
+            <span class="error-message" style="display: none;">
+                <img src="/images/image_css/warning_icon.png">
+                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                <span id="mfaSignInChallengeDialog_headErrorPlace" style="display: inline;"></span>
+            </span>
+                <span>
+                We've enhanced our portals with multi-factor authentication. Please enter the verification code sent to the email address associated with this account.
+            </span>
+                <span>
+                The email would have come from do-not-reply@corelogic.com with a subject line of "Your CoreLogic Verification Code".
+            </span>
+                <label>Verification Code</label>
+                <input id="mfaSignInChallengeDialog_otpField" type="password" name="otp"
+                       placeholder="Enter verification code">
+                <span class="error-message" style="display: none;">
+                <img src="/images/image_css/warning_icon.png">
+                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                <span id="mfaSignInChallengeDialog_otpErrorPlace"></span>
+            </span>
+                <span class="help-info">
+                <strong>Need help?</strong>Call client services at <a href="tel:8664042035">(866) 404-2035</a> or email <a
+                        href="mailto:support.cor@corelogic.com">support.cor@corelogic.com</a>
+            </span>
+            </div>
+            <div class="footer-bar">
+                <button id="mfaSignInChallengeDialog_resendBtn" type="button" class="button">Resend Code</button>
+                <button type="submit" class="button disabled submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="mfaSignInChallengeCompletedDialog" style="display: none;" title="Success!">
+        <div class="content-bar">
+        <span class="fix-padding">
+            Authentication complete.
+        </span>
+        </div>
+        <div class="footer-bar">
+            <button type="button" class="button submit-button close-button"
+                    onclick="jQuery('#mfaSignInChallengeCompletedDialog').dialog('close')">Continue
+            </button>
+        </div>
+    </div>
+
+    <!-- end MFA MODAL -->
+</div>
+
+<div id="progressBarDialog" class="log-in-overlay" title="Processing request">
+    <div class="log-in-overlay-text">
+        <div style="text-align: center;">
+            <img src="/list/images/wait.gif" style="text-align: center;"/>
+        </div>
+    </div>
+</div>
+
+<script language="javascript" type="text/javascript">
+    if (typeof hideLogin == 'function') {
+        hideLogin('headerBuildList');
+        hideLogin('footerBuildList');
+        hideLogin('divLogoLink');
+        displayLogin('divLogoImg');
+    }
+</script>
+
+<!-- PIProtect Integration -->
+<script src="/pingone-protect/pingProtectIntegration.js"></script>
+<script src='https://apps.pingone.com/signals/web-sdk/5.6.0/signals-sdk.js' onerror="var s=document.createElement('script');s.src='/pingone-protect/lib/signals-sdk.js';document.head.appendChild(s)"></script>
+<script src='/pingone-protect/listsource-piprotect.js'></script>
+<script src="/js/maze_snippet.js"></script>
+</body>
+</html>

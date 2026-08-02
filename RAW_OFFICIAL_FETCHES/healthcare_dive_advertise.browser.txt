@@ -1,0 +1,26 @@
+# Super Browser Playwright manual recheck
+# Requested URL: https://www.healthcaredive.com/advertise/
+# Final URL: https://www.healthcaredive.com/advertise/
+# Page title: Healthcare Dive Advertising Page
+# Run: run_0565ba395d89
+# Verification: high-confidence browser capture; direct HTTP result remains 403 in URL_VERIFICATION.json
+
+advertising@industrydive.com  202.331.2480
+Put your brand in front of hospital & healthcare execs
+
+Healthcare Dive is a digital publication reaching over 327,000 industry decision makers. Our readers rely on our free newsletters to deliver news and trends shaping their industry.
+
+Our marketing campaigns can help you:
+Generate leads for your sales team
+Tell your company's story via content marketing
+Position your company as a leader on key industry topics
+Increase brand recognition through reach and repetition
+Note that we publish a wide range of topics and themes driven by the news rather than an editorial calendar.
+Download the media kit
+
+Audience by the numbers:
+170,000 newsletter subscribers
+157,000 unique monthly visitors
+32% audience growth in the last year
+
+The page exposes an advertiser/media-kit form and a direct advertising@industrydive.com contact. Exact inventory, pricing, minimums, and list-transfer rights are not shown on the captured page.

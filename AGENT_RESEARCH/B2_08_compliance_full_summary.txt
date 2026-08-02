@@ -1,0 +1,16 @@
+- **Completed:** Researched U.S., UK, and EU/EEA compliance for rented/bought email lists, solo ads, newsletter sponsorships, affiliate email traffic, and direct mail, emphasizing regulator sources and buyer-operational controls.
+- **Created:** `/Users/home/email-list-compliance-research.md`
+- **Key findings:**
+  - **U.S. CAN-SPAM:** Primarily opt-out based; requires accurate headers, non-deceptive subjects, ad identification where applicable, physical postal address, functioning unsubscribe mechanism, and honoring opt-outs within 10 business days. Outsourcing to a list owner, publisher, ESP, or affiliate does not eliminate advertiser responsibility.
+  - **UK PECR:** Individual email/text marketing generally requires specific consent or a narrow same-sender soft opt-in. Bought-in lists and generic “third-party partners” consent are not sufficient. Advertisers can be treated as “instigators” even when another publisher sends the message.
+  - **EU/EEA:** ePrivacy Directive Article 13 generally requires prior consent for electronic-mail marketing, subject to a limited same-seller/similar-products exception. GDPR separately requires lawful, transparent, purpose-limited, minimized and documented processing, indirect-source notices, processor contracts, and immediate honoring of direct-marketing objections.
+  - **Direct mail:** Not covered by CAN-SPAM or PECR, but U.S. consumer-protection/state privacy rules and UK/EU GDPR lawful-basis, transparency, suppression, retention, and objection requirements still apply.
+  - **Disclosures:** FTC Endorsement Guides require clear and conspicuous affiliate/material-connection disclosures. UK CAP Code requires sponsored/editorial and unsolicited email marketing to be clearly identifiable.
+  - **Operational controls:** Require list provenance and exact consent language, audit rights, suppression synchronization, sender/advertiser allocation, complaint/bounce monitoring, tracking disclosures, data minimization, retention limits, and documented vendor/affiliate contracts.
+- **Official citations included in the file:**
+  - FTC CAN-SPAM guide and 15 U.S.C. §7704
+  - FTC Endorsement Guides Q&A
+  - ICO PECR email, bought-in-list, instigator, and lawful-basis guidance
+  - ASA/CAP Code sections 02 and 03
+  - EUR-Lex ePrivacy Directive 2002/58/EC and GDPR 2016/679
+- **Issue encountered:** The RTRVR research server was unavailable/time-outed. I used direct official regulator and government URLs via HTTP retrieval instead; FTC pages were protected by automated-request blocking, but the official U.S. Code page and FTC source URLs were still identified and cited.

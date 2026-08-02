@@ -1,0 +1,831 @@
+{
+  "summary": {
+    "vendor_records": 98,
+    "source_records": 112,
+    "unique_vendor_names": 98,
+    "unique_vendor_urls": 98,
+    "http_200": 92,
+    "http_403": 6,
+    "browser_verified": 6,
+    "browser_verified_directory_rows": 6,
+    "missing_raw_artifacts": 0,
+    "malformed_vendor_rows": 0,
+    "malformed_ledger_rows": 0,
+    "duplicate_vendor_names": 0,
+    "duplicate_vendor_urls": 0,
+    "published_file_count": 162,
+    "content_file_count": 160,
+    "public_capture_redaction_placeholders": 16,
+    "integrity_pass": true,
+    "secret_scan": "no unredacted credential-pattern matches"
+  },
+  "missing_raw_artifacts": [],
+  "malformed_vendor_rows": [],
+  "malformed_ledger_rows": [],
+  "manifest": [
+    {
+      "path": ".gitignore",
+      "bytes": 238,
+      "sha256": "1cd708f400cb417f8b35debfc87449edd9a276947520ebd7bf8122435a50fdc6"
+    },
+    {
+      "path": "AGENT_RESEARCH/00_DISPATCH_LOG.md",
+      "bytes": 844,
+      "sha256": "fb975e8a89f6e1b4a4458623f26e4d6843596d27cef1bd5be8020a296213e2e0"
+    },
+    {
+      "path": "AGENT_RESEARCH/01_SKEPTICAL_VENDOR_VERIFICATION.md",
+      "bytes": 16783,
+      "sha256": "f7293443f06adff3e0288df3430b3ae29b7bf160848e2b6035672a42e264b66e"
+    },
+    {
+      "path": "AGENT_RESEARCH/01_classic_list_ecosystem_full_summary.txt",
+      "bytes": 13047,
+      "sha256": "ec2657205f671533b24dec5cf2bfd42104d6751280532a0102b2c62a95e36253"
+    },
+    {
+      "path": "AGENT_RESEARCH/02_list_brokerage_market_map.md",
+      "bytes": 13613,
+      "sha256": "602c511d16e3d2ad41c800149d5ce5a256ab113c060c11b556ae5d93c6ba0ad7"
+    },
+    {
+      "path": "AGENT_RESEARCH/03_solo_ads_full_summary.txt",
+      "bytes": 14242,
+      "sha256": "b97d6470eb64450d278ccd5747a84b654dc990fce0fbcf3bae9271ca23e85a94"
+    },
+    {
+      "path": "AGENT_RESEARCH/05_affiliate_network_research.md",
+      "bytes": 13844,
+      "sha256": "c463537e17d91a94553551b1b09e30d25a05170ef47726f17cb6bd47cc2ee658"
+    },
+    {
+      "path": "AGENT_RESEARCH/08_discovery_associations_full_summary.txt",
+      "bytes": 12746,
+      "sha256": "71b8e3a6450a97a856f0adefa26bec14c9239904844c392030aad67ef09ada3a"
+    },
+    {
+      "path": "AGENT_RESEARCH/09_compliance_full_summary.txt",
+      "bytes": 2268,
+      "sha256": "d4555e5568dbb80dc0365d340833332e1d6a07796fdec4df13639b25c5874949"
+    },
+    {
+      "path": "AGENT_RESEARCH/09_list_buy_due_diligence.md",
+      "bytes": 13196,
+      "sha256": "00a4b7af3ffcbe7d268f1a2bf6e1110f52dc9a5e8b50c3efaadcaf1925e09d5f"
+    },
+    {
+      "path": "AGENT_RESEARCH/10_AGENT_STATUS.md",
+      "bytes": 2927,
+      "sha256": "eadf0ae91297368be653869189f765c414f99bdf7c2dffa1a5a2dac1fd93dab5"
+    },
+    {
+      "path": "AGENT_RESEARCH/10_archive_analysis_full_summary.txt",
+      "bytes": 14199,
+      "sha256": "b23e388590ee115441b56b5d16076e1e6a853b624b265c6d77b28de7b4dfc7af"
+    },
+    {
+      "path": "AGENT_RESEARCH/B2_01_postal_brokers_full_summary.txt",
+      "bytes": 12681,
+      "sha256": "2f54acc8ffa0e45711e53bee709f41e1a27210e13af9801579bd31f1a54b813b"
+    },
+    {
+      "path": "AGENT_RESEARCH/B2_02_newsletter_marketplaces_full_summary.txt",
+      "bytes": 15026,
+      "sha256": "42470c1611cee73cb48cb22c42f487c2edf30ba12e4057fa6b1e4df4f166ce7b"
+    },
+    {
+      "path": "AGENT_RESEARCH/B2_03_solo_ads_full_summary.txt",
+      "bytes": 9539,
+      "sha256": "06661167005aac75f4c4b4823dcd0d3aa35245df8aed01835363c7436daf5d34"
+    },
+    {
+      "path": "AGENT_RESEARCH/B2_04_affiliate_networks_full_summary.txt",
+      "bytes": 15395,
+      "sha256": "61dc094d88b5d105a706a472bccedb7c28687934303c3a8ad54616eacbfe22e3"
+    },
+    {
+      "path": "AGENT_RESEARCH/B2_05_brokerage_databases_full_summary.txt",
+      "bytes": 14090,
+      "sha256": "817cbb91450283a957201593355cf53be5ddfc38d5bd44ce73f9fa4f53d9a219"
+    },
+    {
+      "path": "AGENT_RESEARCH/B2_06_b2b_publishers_full_summary.txt",
+      "bytes": 7538,
+      "sha256": "8acdcdec25a5ae34888f20efb37839d94f73bc951bf92644b70412e8a2ea05b5"
+    },
+    {
+      "path": "AGENT_RESEARCH/B2_07_consumer_publishers_full_summary.txt",
+      "bytes": 7797,
+      "sha256": "ba499de6d02f49873b1cc74d031f68b2f75b26ab12d735da3bd396b087a1fc84"
+    },
+    {
+      "path": "AGENT_RESEARCH/B2_08_compliance_full_summary.txt",
+      "bytes": 2637,
+      "sha256": "bb4ffa61f59f1ac369daf56f2683ac0c1c2044de9db5e5cdc481e73ce72e6abe"
+    },
+    {
+      "path": "AGENT_RESEARCH/B2_08_email_list_compliance_checklist.md",
+      "bytes": 14767,
+      "sha256": "c02011333485fd78cf8b1eb4fc6c822cb7d949b1c759e642c0daa690ecd68adf"
+    },
+    {
+      "path": "AGENT_RESEARCH/B2_09_discovery_channels_full_summary.txt",
+      "bytes": 9506,
+      "sha256": "ac7cf44af596f16fc07ab0a82c09e8814fd3a2b4e586f94cb437a8eeac757608"
+    },
+    {
+      "path": "BUYER_DUE_DILIGENCE.md",
+      "bytes": 5159,
+      "sha256": "3558f8c01ffd330a395ebf5d77eb03d992e27cb24ff51f7384a9c727bae55fe8"
+    },
+    {
+      "path": "FINAL_REPORT.md",
+      "bytes": 7599,
+      "sha256": "37f2c0e615ce54ca065dcce89d06e21a04eb52b08a0bfd1c59e44c7ef7001870"
+    },
+    {
+      "path": "HISTORICAL_LIST_OPERATORS.md",
+      "bytes": 1872,
+      "sha256": "cee00e8a8bbf6dc2b545b0cd564b43747d3f7d9054496294413512658e91baa0"
+    },
+    {
+      "path": "LOCAL_ARCHIVE_SOURCE_MAP.md",
+      "bytes": 4222,
+      "sha256": "496421833b091ad5343da7c1e8329227a68ceb81374a159dcf5b58973ea81f47"
+    },
+    {
+      "path": "PROVIDER_SCORING_RUBRIC.md",
+      "bytes": 1699,
+      "sha256": "750ce84b8caa6f7d5e4f9b0426cc62046c3edb01c23f920deae82799f52527c0"
+    },
+    {
+      "path": "PUBLICATION_CHOICES.md",
+      "bytes": 3668,
+      "sha256": "8d46db9a1e66e580f12cb6a4f9f7794226fe574de3afc0128076079ed54463bf"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/10dollar_solo_ads.html",
+      "bytes": 200803,
+      "sha256": "10dab8cdaa6fdf39a63958f51b4bf03c8bb77ca1a32577404a293ea8f2b9f552"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/acceleration_partners.html",
+      "bytes": 250000,
+      "sha256": "6c46ae4f6f80bddf4f73e8c684d5014beb019880676bbca8d0e970df2d8afbf4"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/acxiom.html",
+      "bytes": 180000,
+      "sha256": "aa1bd23188e38026d3ff8a78e0836a6681b0e74f72fbe230885e6164737d9a21"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/affiliate_summit.html",
+      "bytes": 260318,
+      "sha256": "c27cf1919d6a651bb34379ec7980bd2801bfb828fafccaf86f656618a3122c33"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/agora_companies.html",
+      "bytes": 64515,
+      "sha256": "65f6475e8b8b8e3c738ec3fed44ec098b7c427829cfa51fb87613609453f2f60"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/aima.html",
+      "bytes": 150000,
+      "sha256": "4d85233dae6dc0dd1bee48d1bb32e7a8f14578182cd58f739a01df6ea199339b"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/american_rifleman_advertising.html",
+      "bytes": 117644,
+      "sha256": "b61cf36b7a8c7ca588bc71f2e93fcff0c1402431aeba4191099198a9943aeed9"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/amerilist_direct_response.html",
+      "bytes": 82294,
+      "sha256": "7986b29bd76a20d474790683001934224a13c7090cb0f8328d05498409bf0935"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/ana.html",
+      "bytes": 105618,
+      "sha256": "6491ea674115bd198a33b7f4daaf01fdc6c7648eb76e38c8e93ecff7d1a4de73"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/atlantic_advertising.html",
+      "bytes": 45093,
+      "sha256": "413bf9cfd41bd9c3720025a3b92bd4463672d4899ac2ee482fae56495943fe37"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/awin.html",
+      "bytes": 277524,
+      "sha256": "a99e0628463a5cb4487c470cfffe11a5aaa240e9d410d0b7bc05a2fbe12e7bd7"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/b2b_marketing_growth.html",
+      "bytes": 340884,
+      "sha256": "406d82b2eaded0a97534e9bc59cb8c12d19bb187a4fe1013cbf42110e2bdad5d"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/beehiiv_ad_network.html",
+      "bytes": 332701,
+      "sha256": "ea410691d10e5b252cc42d24fb0082357d51467af593ceb603acea98609e0e64"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/belardi_wong.html",
+      "bytes": 182110,
+      "sha256": "09b9ec20f9e5b227ae68e260f0de39330d7ee9a5acdf1d11fc6f2cf3e09c36a9"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/bottom_line_datacard.html",
+      "bytes": 27889,
+      "sha256": "c8a36aba4ae08fed93ce578b9b63026ebb391335ad6742ba3adf85b86807b03c"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/chief_marketer_advertise.html",
+      "bytes": 353487,
+      "sha256": "e24ed6a1ab59df4733c8e924d1ce370e6ecfb9d4540b97af3793ccd6feaf964e"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/cio_dive_advertise.blocked.txt",
+      "bytes": 186,
+      "sha256": "7f446d90f26d81babef45f9ab87f9547848f66910fcb37fb224e08dc88e95c7d"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/cio_dive_advertise.browser.txt",
+      "bytes": 1253,
+      "sha256": "037133e95d1d4f8b8f6d7f568f09bc8144a6f4cad779ae5d24eba58fad5150bf"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/cj.html",
+      "bytes": 184974,
+      "sha256": "159ca101ad994be6d7bea695c86d82628796f0e583c907edb86d7980611cb4e2"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/classic_data_fetches.json",
+      "bytes": 2116,
+      "sha256": "cf92484354ac1bb728c99faf388a5a637570f6e80cf7c405cd808808e4a3dab6"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/clickbank.html",
+      "bytes": 250000,
+      "sha256": "7d37ac9d035fd6c4d4f0fb908f665ef57fca441028fdb7bd2f617119ec9b7470"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/conrad_direct_lists.html",
+      "bytes": 68630,
+      "sha256": "ac29528689441afbd2b70a7a3e836b9cc37f6cc5e0a0e5aefde0b39a8b0e3c37"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/daily_upside_advertise.html",
+      "bytes": 178818,
+      "sha256": "8d3948be1cb01bf46913075bd943497637a4d6666e06de4fd79768577dff3781"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/data_axle.html",
+      "bytes": 180000,
+      "sha256": "b4fab49aacacfaa93cc25c3550ddc0316daec50b5ba3571cacd66aafcc0a145b"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/delegated_live_fetches.json",
+      "bytes": 8202,
+      "sha256": "e0959b96045ebf1b4b37b46a54dbb33faa7d7089afb2d12b65c2f2664d655677"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/digiday_advertise.html",
+      "bytes": 89712,
+      "sha256": "8cfb9bbbb4b9481ff38e81ecfa2756b9d4b30487b142d095dfca5f10bd08f183"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/directmail_list_management.html",
+      "bytes": 24593,
+      "sha256": "84d93b7d1e3af7c9373bcc9fa315f0bf95ff711271277c81c9d135e380edae24"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/directmarketingassociation.html",
+      "bytes": 60158,
+      "sha256": "d334b688366dc706da175b1debed38bd11364b2e942f12915393a24f18ed5e05"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/dma_uk.html",
+      "bytes": 250000,
+      "sha256": "c5b7a48b3c5d21f5ecff7be03664fdba1ae2f7facdc25f32f4b54a9402cee4d6"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/dmaw.html",
+      "bytes": 150000,
+      "sha256": "021274683c84030ed0f54077069d4e79a5b0d99da580919424e5be3663b3b2b2"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/dra_lists.html",
+      "bytes": 49982,
+      "sha256": "2f4944f4f6174915218a8f958fb1e995d912f777524fa98f17a23a40bfdeac96"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/easy_solo_ads.html",
+      "bytes": 144091,
+      "sha256": "fa606ec19dbeae8e53b2bd7a0639cb62b95cace7b06334790a741596e8af3f16"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/email_innovations_world.html",
+      "bytes": 142000,
+      "sha256": "f6093564278b75199c9bae00d77a9824d9255bba1bd8a18fbbeefa4b1d71734b"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/emailmedia.html",
+      "bytes": 1072,
+      "sha256": "f417b512301fdd03df90759739e3a5d32d4a37c57889cba53284460a9d4b23ad"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/epsilon.html",
+      "bytes": 180000,
+      "sha256": "d6c152c22dd654a3cb5435faaf888c3a8ac44bbbe2de5905fe6753a25df63185"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/esteemarketing_emg.html",
+      "bytes": 80015,
+      "sha256": "ca0032f38d8e76350432949cc20e3aabe44d0dbefd1da9da494bf5403fe1439f"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/everflow.html",
+      "bytes": 134088,
+      "sha256": "571fc82a1b66c97c53209479ccd92d65a4735c2f6de860267976d17a3caa6873"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/exactdata.html",
+      "bytes": 148310,
+      "sha256": "40c608be4ed10425ce4d59f17a559dddaa57262fc6bbca783f558744d57a9d2b"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/experian_marketing.html",
+      "bytes": 102946,
+      "sha256": "cbcad29da2a29131ed5e7ef8e77437900d8286a8091371abaa70e6e3e89335a7"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/farm_and_dairy_advertise.html",
+      "bytes": 84705,
+      "sha256": "ccdedb83957d051d2b3f6cf5faf05bbbb2291c3ca2574cb229cdecf1a1c982b8"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/fedma.html",
+      "bytes": 229099,
+      "sha256": "bf9101b193e3fc3b2a026d5a80c50e7865f56181fbea4a9cc78a3dba80b03d9c"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/fetch_index.csv",
+      "bytes": 1891,
+      "sha256": "16833c142d9bb0f5c6564e3abf0253986f9c00f626251b8076d9ac16210b97ef"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/fetch_manifest.json",
+      "bytes": 2171,
+      "sha256": "a63f1be763cd0795b4420054082d4fc4bb69f016f50dea1f05ea40089d8148ae"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/flexoffers.html",
+      "bytes": 226659,
+      "sha256": "7412793a2810cdfa65a5a70e1721b53f812255442909f7d224a2623615750ac3"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/flying_advertising.html",
+      "bytes": 175036,
+      "sha256": "6df8f5034bf9bc3b77c78400be922278cbd9155951da47a5b19067ca03c3ea05"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/ftc_can_spam.html",
+      "bytes": 250000,
+      "sha256": "0a30eb0c38b2209844dae66d53f5c6304d0d743adbdf20a8106fd7f640e6c571"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/ftc_endorsement.html",
+      "bytes": 250000,
+      "sha256": "9bac4bd27bd9efc80db214d6c53db933179d229487ef8afd4b9dd4a66cb61596"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/gen3_marketing.html",
+      "bytes": 250000,
+      "sha256": "0ae7065a01741073f064e5d3adab4abf8f5bf3e9bfc9b4356a3d37464739bf1b"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/geon_media_list_management.html",
+      "bytes": 78908,
+      "sha256": "654a25002648f28fa6abeceb8af9dabbc873cd9b8726476533ffdd88a47d392e"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/global_direct.html",
+      "bytes": 5511,
+      "sha256": "4291e93aa3b5795768f5fe2b56d8c157b644ca31a63edad08573b98919f5ce3d"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/healthcare_dive_advertise.blocked.txt",
+      "bytes": 193,
+      "sha256": "70e281a95aa41975b73a38e42965e53f85771fa4ae89a44803e65aa5755de4ce"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/healthcare_dive_advertise.browser.txt",
+      "bytes": 1301,
+      "sha256": "d705a4ad6085605a53f81d9696d7861d8fcb1c3b9d618e255b4b61f0c26ed3ea"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/healthline_advertise.html",
+      "bytes": 47728,
+      "sha256": "786225a9603878547a7102e8b0b820acaa4fd50f243bb7f79e0fd78ad869ff84"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/hearst_advertising.html",
+      "bytes": 400000,
+      "sha256": "e0c6cbe54ce5661219e0d174bdfa3cd93b04e256a9227cdfcf1ab5d2619d4d2f"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/hecto.html",
+      "bytes": 400000,
+      "sha256": "72f53e97b9cf80ab229da654bbab0a40886f31d9be9ceacf4efb6a8a326e7f38"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/hr_dive_advertise.blocked.txt",
+      "bytes": 185,
+      "sha256": "a615e963d30c4b1f72c8e7ea2a53206d3613a8296329794390917fe2615eb1aa"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/hr_dive_advertise.browser.txt",
+      "bytes": 1272,
+      "sha256": "9800018643207f15d8978a3dbaebeb8b706759f15c59a15d04f9bb3b60ad3be5"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/iab.html",
+      "bytes": 234164,
+      "sha256": "24ea1cc601c94a48cb84abe7ef278bac18e3ef759b7ee4d1f27fddf1e0a625ba"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/ico_direct_marketing.html",
+      "bytes": 45289,
+      "sha256": "7bfb833413719b9da63d22a29bec374cdaf233f0c02cb41a2322d1f364a5c0ec"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/impact.html",
+      "bytes": 144071,
+      "sha256": "40a9a7fabb0aca363bfafa456b4625d8e180cd0b7a41c1eb77fad299292b87bf"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/impact_terms.html",
+      "bytes": 94202,
+      "sha256": "3ebf57e63456147012b2b5f9283e8b4921ba13b08673759bcacdb7e629df867c"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/infocus_lists.html",
+      "bytes": 19252,
+      "sha256": "58a0ebf9301c035e593f8e755fcf912e5f228d2e11f454c59704c3b648d8eac7"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/jeeng.html",
+      "bytes": 109556,
+      "sha256": "57a0e6fc665e88b13a784b25b4058f3bc5448a5e81370f182fea5c7d8405272f"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/kap_key_acquisition.html",
+      "bytes": 50745,
+      "sha256": "045ca3da11f44d3aa35a5e95044cee84832a46f7bc15824bc0f0dde984402fe9"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/key_marketing_advantage.html",
+      "bytes": 13370,
+      "sha256": "281c762f48948695a3f8149947fa49523f0a0e3e6673f7fb5cf446aa4147998c"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/keyword_evidence.json",
+      "bytes": 35762,
+      "sha256": "a4803e0286e95d1deaa5460ff73772bad7994ec6c54294ab917a2e4a225f5008"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/kreatorstack.html",
+      "bytes": 47353,
+      "sha256": "5483f19d7a397e7a6acf2a24bad8269255a45393891d5835df8fcfaf70c3291b"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/leadscon_2026.html",
+      "bytes": 366398,
+      "sha256": "9be8d015b479b999944154828199f28cac284b45123c566d833642e6812a4a5d"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/letterwell_advertisers.html",
+      "bytes": 77601,
+      "sha256": "b233a3d941705248d2740fcddb64bc920b60b69cb7fabc505fdf11c18015c3b9"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/listgiant.html",
+      "bytes": 190449,
+      "sha256": "2676411a5836546569bf542b1fb8da3499d9eea6c6ba37c396ddb8f42a2df88b"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/listgiant_email.html",
+      "bytes": 153857,
+      "sha256": "00adea15336aa5aba3cd07846310d29409d57d9563f813846b86d74f3e75ea55"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/listsource_corelogic.html",
+      "bytes": 36421,
+      "sha256": "7287ef333e5ce1daf846450b3e12da548009ecf3324d9e68d9ccd8456764437b"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/liveintent.html",
+      "bytes": 382590,
+      "sha256": "53941c9caf492c0874061fbf06b33990736c232a53d030de4e342bd5e5a61853"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/lscmarketinggroup.html",
+      "bytes": 180000,
+      "sha256": "7c97bced546512b0233d9090d018ab8c0c1c16bc08719a8623b45015e03008de"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/mailcon_sponsors.html",
+      "bytes": 224655,
+      "sha256": "38703799c72e454c00fd1f052d6dafe67b6424c087a4806f4a2a7be77f92c2cb"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/marketing_dive_advertise.blocked.txt",
+      "bytes": 192,
+      "sha256": "38540cc281857b21d6047a69bea9dd2eae68133325a1c251ea1af07caebc0df1"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/marketing_dive_advertise.browser.txt",
+      "bytes": 1296,
+      "sha256": "97cf0d5c4550cad435b667f29579cb8a0331450d0ad6dc7f519b8498a16f023a"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/maxbounty.html",
+      "bytes": 250000,
+      "sha256": "3bbf850d1244fdb1ca0194a76068bb7a1e87c21ec1e64d0d78084a020b05478e"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/mccarthy_media.html",
+      "bytes": 5622,
+      "sha256": "2a7fa325077d9311240ed9e505780981aba802b207ddc4210ccadc0d976ed2b6"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/mediapost.html",
+      "bytes": 136335,
+      "sha256": "4138dca4fa5a20af475594ffbef7a3802f4823f7cbd91bc0c5a7cd9043cd8bbc"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/melissa_lists.html",
+      "bytes": 164943,
+      "sha256": "371529bbe51206a3125b61b06392de5062d638f2f0e3886bdc366f4ce5717706"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/meritdirect.html",
+      "bytes": 195570,
+      "sha256": "c1b5bb3a0fefce2a2cf80b7ef05de5f69be167675454a3be2ddadfa58076a1c0"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/morning_brew_advertise.html",
+      "bytes": 400000,
+      "sha256": "e020f9b6153f7222485c0bb2348f99c6406164435b2f1f83a1dc091eea3e786c"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/my_lead_gen_secret.html",
+      "bytes": 32725,
+      "sha256": "6bd2b5333f2bc1208e3e41853ae7edbaa7cf835cab608ad2cf9a965cd007ecbc"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/nemoa.html",
+      "bytes": 32367,
+      "sha256": "3a50e8f5e3d662db004a2fa19d281b5ff406c9248e908ef4b889b4114c0508b6"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/nextmark.html",
+      "bytes": 124084,
+      "sha256": "eb719470ae4ae20ef63be39522721b4372a80087be4986d40ea2c8d4f51a2c4a"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/nextmark_media_finder.html",
+      "bytes": 125981,
+      "sha256": "1b9c39a4aeb9187b25a234eb97470c98960fcdea104e3298b986dd29977baba2"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/nextmark_pricing.html",
+      "bytes": 124062,
+      "sha256": "30d6a85fd6e97753a3c40130cf771ec32e8b268e407497ec0ad572075d5aaff2"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/north_american_direct.html",
+      "bytes": 18584,
+      "sha256": "0b80e8e541bc431a7a991e8387e044af1b0f7229d713c9ea2fc1322aef28383c"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/nra_family_advertising.html",
+      "bytes": 110580,
+      "sha256": "c025b95b3f7e61cd3840cf0542c4634230fc1dbc389fb04e0fbf5bd0c710cb9c"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/nyt_advertising.html",
+      "bytes": 262040,
+      "sha256": "1719b0a7cc46156f9055366dbdb90b63add8a7b4e48a77277c227749805ece11"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/outcome_media.html",
+      "bytes": 20341,
+      "sha256": "77be7a092e88daae90e31c7589c495dd1402461283da6aa6aa7e863df730d0f4"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/outside_media_kit.html",
+      "bytes": 357813,
+      "sha256": "45e76289ceb61bfdf191435736aa0be50fd8aae0bdd596c4361b1d0eddabb12d"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/partnerstack.html",
+      "bytes": 239400,
+      "sha256": "5a84afd04abb1003933fc7197148faf1035c5e90a6d27160cf42816f57a64ec3"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/passionfroot.html",
+      "bytes": 300000,
+      "sha256": "ecdb0e7e181cfaf2f955a54e5f763dc22d1b2567f31adf60596fe9f49a2f6f7f"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/passionfroot_creators.html",
+      "bytes": 400000,
+      "sha256": "e68f96b1ab9bca6f3790ca33a7c161cd3ea2e8bb8b9f7edd52a9aa922f600e37"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/paved.html",
+      "bytes": 296148,
+      "sha256": "804db45c160355e11746ae7d81a3d43d6b5bf875d47a70f8e5181c11d8780fd0"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/paved_advertisers.html",
+      "bytes": 250000,
+      "sha256": "400c0c1501fcf182538a550eafa94fcda0fd813398ceaa3ddca9f0f34143b964"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/paved_terms.html",
+      "bytes": 250000,
+      "sha256": "627d729834794252f162ac07ccb78938a709bc3c104fa920099d48d08bf7afc0"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/people_inc_advertising.html",
+      "bytes": 400000,
+      "sha256": "5f2c1308d50e5bc6e4529d8e38f59bc11169e8110b0fa25218fd862f99c70c17"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/performcb.html",
+      "bytes": 249893,
+      "sha256": "9c6d1a910ef9ac4ba44ac6f14add4da2c1aa9840dc879386ad3707e547597c5d"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/response_dynamics.html",
+      "bytes": 4223,
+      "sha256": "3d00967c2b06b7548c2c606668c8c34c7dff9a5f1e5ef0725fb98877b72fc847"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/restaurant_dive_advertise.blocked.txt",
+      "bytes": 193,
+      "sha256": "60b0f2308efe1b1e37d41af26a66c727bb2e5a8d2e97fab91c86d70edbdab8b2"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/restaurant_dive_advertise.browser.txt",
+      "bytes": 1300,
+      "sha256": "a0905c0e6adc13eacc5503937c5d9337f0c1f4b9000276617644ad84b5d9133e"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/retail_dive_advertise.blocked.txt",
+      "bytes": 189,
+      "sha256": "40f357bc68e7d26349d24ffab3c53c9b7d5e1620bfa6e6eef2474298408540a1"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/retail_dive_advertise.browser.txt",
+      "bytes": 1270,
+      "sha256": "70e4dead3fadc657f4d213300ef32e667e2dae0a99e664f0f4969f3cbbcd8aef"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/search_engine_journal_advertise.html",
+      "bytes": 273846,
+      "sha256": "41f9ec2276d8efea1e5c2e64ae3340edfff69a7f81c0ec108ef81f8da57150d6"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/shareasale.html",
+      "bytes": 147717,
+      "sha256": "e82c9decb8e6b4233c7c0a34199bfe6a347ec9c5ca5f9c3a5c4b9fba32f18b89"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/smartbrief_advertise.html",
+      "bytes": 116971,
+      "sha256": "d82bcf79404b57ca261a527cb6b0f1f273c970bf1385449b404de8fe03506b01"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/soloadsx_directory.html",
+      "bytes": 120752,
+      "sha256": "3d0806654214d5b42f83fa6ec4534a6b9b40fb482bba18bbf1831ff93ea51ca7"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/sparkloop.html",
+      "bytes": 35322,
+      "sha256": "5019bf435dd5625e790693de29a7e891169a1d73b9a68290a286d68e2be2e81c"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/sponsorgap.html",
+      "bytes": 124105,
+      "sha256": "685912607ada537cd16d1916876557b76c0b61af7c981f14d88dcbf42a39ddb9"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/srds_direct_marketing.html",
+      "bytes": 122054,
+      "sha256": "6fafd143ef27ba1c68d1cf6e9321be29973ca8d6f921af0bece6f95db41ec1c8"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/swapstack.html",
+      "bytes": 62044,
+      "sha256": "648bbbb91711a282af73474195db502c3395681bbcc049b76061028ac08fab08"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/swapstack_pricing.html",
+      "bytes": 24973,
+      "sha256": "15214670ce5444861fb87ed0408fb3ee3039e89302e38cc92bde30654a19f483"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/theskimm_advertise.html",
+      "bytes": 39314,
+      "sha256": "702e4b6c8a4c4cbb7cac8b3ab306799b58fc261354c119b90c9b77f57e05f6cb"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/trafficforme.html",
+      "bytes": 88641,
+      "sha256": "a0e43b331dc0e1df7dc110ee26159d38063a0c4082c31c009911a404ebbb94e7"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/tune.html",
+      "bytes": 120492,
+      "sha256": "b6eac1da8d60583466253aa61afb6b3f892dc4d0e4273884af225a03d3181820"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/udimi.html",
+      "bytes": 118484,
+      "sha256": "9156aface1b2e833f812d50d4165bba0a66afaa7b43bd2bf3a7d0592966e7a3e"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/udimi_buy.html",
+      "bytes": 138274,
+      "sha256": "e80c3a5c3683570a86f0aefaa245ecf1c2d73497a7f15ab0d341d30165f5cbf7"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/usadata.html",
+      "bytes": 180000,
+      "sha256": "336c33daaabff2ff43ad214a71a4b7a78b46f1a568a3cba118743bfa6545797d"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/wiland.html",
+      "bytes": 104083,
+      "sha256": "0b76cd10f533943191d494fbf864cc8ff43a05b0747d14490f129542f4e635db"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/worldata.html",
+      "bytes": 20341,
+      "sha256": "77be7a092e88daae90e31c7589c495dd1402461283da6aa6aa7e863df730d0f4"
+    },
+    {
+      "path": "RAW_OFFICIAL_FETCHES/ws_ponton.html",
+      "bytes": 158162,
+      "sha256": "006c4d6b8b6e47215bbbeec5a01349331d6567e03eaa03104f506c1f13053d71"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4401,
+      "sha256": "9cab56608b25df7a73f7451fb088805bc961ddd4a75cfcbfda773d1407f59317"
+    },
+    {
+      "path": "RESEARCH_COVERAGE_STATUS.md",
+      "bytes": 1003,
+      "sha256": "af8853a564bfc0632e007ae5c5b5032fee224c75b41e2d938aced3c6945f6e8e"
+    },
+    {
+      "path": "RESEARCH_GAPS.md",
+      "bytes": 2259,
+      "sha256": "e345945c844e586993544e17bb05fd14390cf96bc445127a4e54cd1c276283d0"
+    },
+    {
+      "path": "SOURCE_LEDGER.csv",
+      "bytes": 35573,
+      "sha256": "19f34bd7b0a522b36af187d165f87ea0008a272979bffbaf37edef198e7a19d2"
+    },
+    {
+      "path": "ULTIMATE_GUIDE.md",
+      "bytes": 22722,
+      "sha256": "eb10cb4911bea6c609edc25d3660985701289961cfe040e022f7342145fa1587"
+    },
+    {
+      "path": "URL_VERIFICATION.json",
+      "bytes": 14282,
+      "sha256": "11afb03c1202359f75622d7d29140bf3be711892153d3d1087a5fc9023a1c4fc"
+    },
+    {
+      "path": "VENDOR_DIRECTORY.csv",
+      "bytes": 43897,
+      "sha256": "95ec43a202f1fdf40ff98c9e60cd237263937fc0dffc0e116c88e4b75471ce0a"
+    },
+    {
+      "path": "index.html",
+      "bytes": 8576,
+      "sha256": "5cfcd73ddf6e961b78fb4544e2514da85df3666a18e858b2da369023640a5712"
+    }
+  ],
+  "metadata_files_excluded_from_manifest": [
+    "REPOSITORY_MANIFEST.json",
+    "FINAL_VALIDATION.json"
+  ]
+}

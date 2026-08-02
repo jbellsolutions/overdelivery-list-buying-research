@@ -1,0 +1,84 @@
+[
+  {
+    "name": "worldata",
+    "url": "https://www.worldata.com",
+    "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)>"
+  },
+  {
+    "name": "nextmark",
+    "url": "https://www.nextmark.com",
+    "status": 200,
+    "bytes": 124084,
+    "title": "NextMark - Tools for Media Planning, Media Sales, and Ad Operations"
+  },
+  {
+    "name": "meritdirect",
+    "url": "https://www.meritdirect.com",
+    "status": 200,
+    "bytes": 195570,
+    "title": "Anteriad | Full-Funnel B2B Marketing Solutions to Drive Demand"
+  },
+  {
+    "name": "paved",
+    "url": "https://www.paved.com",
+    "status": 200,
+    "bytes": 296148,
+    "title": "The World\u2019s Largest Newsletter Ad Network | Paved"
+  },
+  {
+    "name": "swapstack",
+    "url": "https://swapstack.co",
+    "status": 200,
+    "bytes": 62044,
+    "title": "Harness the growth power of creator audiences | Welcome to Swapstack"
+  },
+  {
+    "name": "passionfroot",
+    "url": "https://passionfroot.me",
+    "status": 200,
+    "bytes": 300000,
+    "title": "Passionfroot - The AI Agent for Creator-led GTM"
+  },
+  {
+    "name": "impact",
+    "url": "https://impact.com",
+    "status": 200,
+    "bytes": 144071,
+    "title": "impact.com - The All-in-One Partnership Management Platform"
+  },
+  {
+    "name": "partnerstack",
+    "url": "https://partnerstack.com",
+    "status": 200,
+    "bytes": 239408,
+    "title": "Partner Ecosystem Platform | Rated #1 | PartnerStack"
+  },
+  {
+    "name": "everflow",
+    "url": "https://www.everflow.io",
+    "status": 200,
+    "bytes": 134088,
+    "title": "Everflow - Partner Marketing Platform For Revenue Growth"
+  },
+  {
+    "name": "awin",
+    "url": "https://www.awin.com",
+    "status": 200,
+    "bytes": 277523,
+    "title": "Join our global affiliate platform | Awin"
+  },
+  {
+    "name": "cj",
+    "url": "https://www.cj.com",
+    "status": 200,
+    "bytes": 184974,
+    "title": "CJ.com Home"
+  },
+  {
+    "name": "udimi",
+    "url": "https://www.udimi.com",
+    "status": 200,
+    "bytes": 118484,
+    "title": "Buy solo ads from the best solo ad vendors - Udimi"
+  }
+]

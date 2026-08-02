@@ -1,0 +1,833 @@
+
+
+  
+<!DOCTYPE html>
+
+<html class="no-js" lang="en-US">
+
+<head><meta charset="UTF-8"><script type="347296b83006fe3b03d99702-text/javascript">if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script type="347296b83006fe3b03d99702-text/javascript">(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.4",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseout","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),await this.T(),await this.F(),await this.j(),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise(t=>setTimeout(t,500-Date.now()+this.lastTouchEnd)),this.I(),this.H(),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))},{isRocket:!0})}o(){window.addEventListener("pageshow",t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0},{isRocket:!0}),window.addEventListener("pagehide",()=>{this.onFirstUserAction=null},{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",function i(o){o.changedTouches[0]&&t.changedTouches[0]&&Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}),"INPUT"===o.target.tagName&&"text"===o.target.type||(o.target.dispatchEvent(new TouchEvent("touchend",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new MouseEvent("mouseover",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1,clientX:o.changedTouches[0].clientX,clientY:o.changedTouches[0].clientY})),event.preventDefault()))},{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,t.composedPath&&t.composedPath()[0].getRootNode()instanceof ShadowRoot&&(t.rocketTarget=t.composedPath()[0]),this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach(t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.addEventListener("visibilitychange",this.userEventHandler,{isRocket:!0})}U(){this.userEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.removeEventListener("visibilitychange",this.userEventHandler,{isRocket:!0}),this.savedUserEvents.forEach(t=>{(t.rocketTarget||t.target).dispatchEvent(new window[t.constructor.name](t.type,t))})}m(){const t="return false",e=Array.from(this.attributeEvents,t=>"data-rocket-"+t),i="["+this.attributeEvents.join("],[")+"]",o="[data-rocket-"+this.attributeEvents.join("],[data-rocket-")+"]",s=(e,i,o)=>{o&&o!==t&&(e.setAttribute("data-rocket-"+i,o),e["rocket"+i]=new Function("event",o),e.setAttribute(i,t))};new MutationObserver(t=>{for(const n of t)"attributes"===n.type&&(n.attributeName.startsWith("data-rocket-")||this.everythingLoaded?n.attributeName.startsWith("data-rocket-")&&this.everythingLoaded&&this.N(n.target,n.attributeName.substring(12)):s(n.target,n.attributeName,n.target.getAttribute(n.attributeName))),"childList"===n.type&&n.addedNodes.forEach(t=>{if(t.nodeType===Node.ELEMENT_NODE)if(this.everythingLoaded)for(const i of[t,...t.querySelectorAll(o)])for(const t of i.getAttributeNames())e.includes(t)&&this.N(i,t.substring(12));else for(const e of[t,...t.querySelectorAll(i)])for(const t of e.getAttributeNames())this.attributeEvents.includes(t)&&s(e,t,e.getAttribute(t))})}).observe(document,{subtree:!0,childList:!0,attributeFilter:[...this.attributeEvents,...e]})}I(){this.attributeEvents.forEach(t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach(e=>{this.N(e,t)})})}N(t,e){const i=t.getAttribute("data-rocket-"+e);i&&(t.setAttribute(e,i),t.removeAttribute("data-rocket-"+e))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):(t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o}),"mouseenter"!==e&&"mouseleave"!==e||t.originalAddEventListener.call(this,e,t.savedUserEvents.push,o))},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}J(t,e){this.savedEventListeners=this.savedEventListeners.filter(i=>{let o=i.type,s=i.target||window;return e!==o||t!==s||(this.B(o,s)&&(i.type="rocket-"+o),this.$(i),!1)})}H(){EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener,this.savedEventListeners.forEach(t=>this.$(t))}$(t){t.remove?this.originalRemoveEventListener.call(t.target,t.type,t.func,t.options):this.originalAddEventListener.call(t.target,t.type,t.func,t.options)}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map(t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e})),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,()=>{e[t].forEach(t=>t())},{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout(()=>i.bind(document)(o)):i.bind(document)(o)}return"function"==typeof i&&(t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s)),o([])},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise(t=>{this.userActionTriggered?t():this.onFirstUserAction=t})}async L(){return new Promise(t=>{document.addEventListener("DOMContentLoaded",()=>{this.realDomReadyFired=!0,t()},{isRocket:!0})})}async j(){return this.realWindowLoadedFired?Promise.resolve():new Promise(t=>{window.addEventListener("load",t,{isRocket:!0})})}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver(t=>{for(const e of t)e.addedNodes.forEach(t=>{"SCRIPT"!==t.tagName||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise(e=>{const i=()=>{const i=this.pendingScripts.findIndex(e=>e.script===t);i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)})})})}),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async F(){await this.X(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.F()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach(e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this.Y(t,"preconnect")}async G(t){if(await this.K(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise(e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))}),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",()=>{i.setAttribute("data-rocket-status","failed-network"),e()},{isRocket:!0}),setTimeout(()=>{i.isConnected||e()},1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.G(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())},{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}});t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.G(e),this.C(t)):Promise.resolve()}O(){this.Y([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}Y(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach(t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}}),document.head.appendChild(o)}W(){this.trash.forEach(t=>t.remove())}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(document,"DOMContentLoaded"),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.K(),this.J(window,"DOMContentLoaded"),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(window,"load"),window.dispatchEvent(new Event("rocket-load")),await this.K(),window.rocketonload&&window.rocketonload(),await this.K(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this.K(),this.J(window,"pageshow");const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.K(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async K(){Date.now()-this.lastBreath>45&&(await this.X(),this.lastBreath=Date.now())}async X(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}B(t,e){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();</script>
+  
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="pingback" href="https://www.tune.com/xmlrpc.php">
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v26.8 (Yoast SEO v26.9) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->
+	<title>TUNE Partner Marketing Platform | TUNE</title>
+<link data-rocket-prefetch href="https://fonts.googleapis.com" rel="dns-prefetch">
+<link data-rocket-preload as="style" href="https://fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700%2C900%2C100italic%2C300italic%7CLora%3A300%2C400%2C700%2C900%7CLato%3A400%2C400i%2C700%2C700i&#038;subset=latin%2Clatin-ext&#038;display=swap" rel="preload">
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="347296b83006fe3b03d99702-|49"></script><link href="https://fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700%2C900%2C100italic%2C300italic%7CLora%3A300%2C400%2C700%2C900%7CLato%3A400%2C400i%2C700%2C700i&#038;subset=latin%2Clatin-ext&#038;display=swap" media="print" onload="this.media=&#039;all&#039;" rel="stylesheet">
+<noscript data-wpr-hosted-gf-parameters=""><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700%2C900%2C100italic%2C300italic%7CLora%3A300%2C400%2C700%2C900%7CLato%3A400%2C400i%2C700%2C700i&#038;subset=latin%2Clatin-ext&#038;display=swap"></noscript><link rel="preload" data-rocket-preload as="image" href="https://www.tune.com/wp-content/themes/tune.com/img/logos/white/logo-tapjoy.svg" fetchpriority="high">
+	<meta name="description" content="Partner the way you want to with TUNE (formerly HasOffers), the industry&#039;s most flexible partner marketing platform." />
+	<link rel="canonical" href="https://www.tune.com/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Home" />
+	<meta property="og:description" content="Partner the way you want to with TUNE (formerly HasOffers), the industry&#039;s most flexible partner marketing platform." />
+	<meta property="og:url" content="https://www.tune.com/" />
+	<meta property="og:site_name" content="TUNE" />
+	<meta property="article:publisher" content="https://www.facebook.com/tune" />
+	<meta property="article:modified_time" content="2026-03-17T15:28:30+00:00" />
+	<meta property="og:image" content="https://www.tune.com/wp-content/uploads/2024/03/tune-logo-white-background-1500px.jpg" />
+	<meta property="og:image:width" content="1500" />
+	<meta property="og:image:height" content="600" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="https://www.tune.com/tune-com-content/uploads/2016/07/TUNE-Logo-1024x512.png" />
+	<meta name="twitter:site" content="@tune" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.tune.com/","url":"https://www.tune.com/","name":"TUNE Partner Marketing Platform | TUNE","isPartOf":{"@id":"https://www.tune.com/#website"},"about":{"@id":"https://www.tune.com/#organization"},"datePublished":"2016-06-30T00:28:02+00:00","dateModified":"2026-03-17T15:28:30+00:00","description":"Partner the way you want to with TUNE (formerly HasOffers), the industry's most flexible partner marketing platform.","breadcrumb":{"@id":"https://www.tune.com/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.tune.com/"]}]},{"@type":"BreadcrumbList","@id":"https://www.tune.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://www.tune.com/#website","url":"https://www.tune.com/","name":"TUNE","description":"Partner Marketing Platform","publisher":{"@id":"https://www.tune.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.tune.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://www.tune.com/#organization","name":"TUNE","url":"https://www.tune.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.tune.com/#/schema/logo/image/","url":"https://www.tune.com/wp-content/uploads/2017/09/TUNE_WordMark_Color_square800x800.png","contentUrl":"https://www.tune.com/wp-content/uploads/2017/09/TUNE_WordMark_Color_square800x800.png","width":800,"height":800,"caption":"TUNE"},"image":{"@id":"https://www.tune.com/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/tune","https://x.com/tune","https://www.linkedin.com/company/tune","https://www.youtube.com/channel/UCF465Ad8Nkv1KVYmJ-BCTbw/featured"]}]}</script>
+	<meta name="google-site-verification" content="ENWMcl6npHk9SlV6cvhtnBvjpNHSrcdkU8XvWl_jCWM" />
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href='//app.enzuzo.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="TUNE &raquo; Feed" href="https://www.tune.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="TUNE &raquo; Comments Feed" href="https://www.tune.com/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.tune.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.tune.com%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.tune.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.tune.com%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.tune.com/wp-includes/css/dist/block-library/style.min.css?ver=7.0.2' media='all' />
+<style id="wp-block-library-theme-inline-css">
+.wp-block-audio :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio :where(figcaption){color:#ffffffa6}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed :where(figcaption){color:#ffffffa6}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:#ffffffa6}:root :where(.wp-block-image figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme :root :where(.wp-block-image figcaption){color:#ffffffa6}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote :where(cite),.wp-block-pullquote :where(footer),.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote:where(.has-text-align-right){border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote:where(.has-text-align-center){border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote:where(.is-style-plain){border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table :where(figcaption){color:#ffffffa6}.wp-block-video :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video :where(figcaption){color:#ffffffa6}.wp-block-video{margin:0 0 1em}:root :where(.wp-block-template-part.has-background){margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+/*# sourceURL=/wp-includes/css/dist/block-library/theme.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-icon svg){width: 24px;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-term-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-term-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link rel='stylesheet' id='quoty-css' href='https://www.tune.com/wp-content/plugins/quoty/public/css/quoty-public.min.css?ver=1.0.0' media='all' />
+<link data-minify="1" rel='stylesheet' id='us-plugin-styles-css' href='https://www.tune.com/wp-content/cache/min/1/wp-content/plugins/ultimate-social-deux/public/assets/css/style.css?ver=1783041035' media='all' />
+<link data-minify="1" rel='stylesheet' id='x-theme-css' href='https://www.tune.com/wp-content/cache/min/1/wp-content/themes/x/framework/dist/theme.8543f24.css?ver=1783041035' media='all' />
+<link data-minify="1" rel='stylesheet' id='x-child-theme-css' href='https://www.tune.com/wp-content/cache/min/1/wp-content/themes/tune.com/style.css?ver=1783041036' media='all' />
+<link data-minify="1" rel='stylesheet' id='x-stack-css' href='https://www.tune.com/wp-content/cache/min/1/wp-content/themes/x/framework/dist/css/site/stacks/renew.css?ver=1783041036' media='all' />
+<link data-minify="1" rel='stylesheet' id='x-cranium-migration-css' href='https://www.tune.com/wp-content/cache/min/1/wp-content/themes/x/framework/legacy/cranium/dist/css/site/renew.css?ver=1783041036' media='all' />
+<link data-minify="1" rel='stylesheet' id='x-child-css' href='https://www.tune.com/wp-content/cache/min/1/wp-content/themes/tune.com/style.css?ver=1783041036' media='all' />
+
+
+<link data-minify="1" rel='stylesheet' id='tune-style-css' href='https://www.tune.com/wp-content/cache/min/1/wp-content/themes/tune.com/style.css?ver=1783041036' media='all' />
+<style id="cs-inline-css">
+@media (min-width:767px){.x-hide-xl{display:none !important;}}@media (min-width:480px) and (max-width:766px){.x-hide-md{display:none !important;}}@media (max-width:479px){.x-hide-xs{display:none !important;}} a,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,.x-comment-time:hover,#reply-title small a,.comment-reply-link:hover,.x-comment-author a:hover,.x-recent-posts a:hover .h-recent-posts{color:#007aff;}a:hover,#reply-title small a:hover{color:hsl(0,2%,37%);}.entry-title:before{color:#dddddd;}a.x-img-thumbnail:hover,li.bypostauthor > article.comment{border-color:#007aff;}.flex-direction-nav a,.flex-control-nav a:hover,.flex-control-nav a.flex-active,.x-dropcap,.x-skill-bar .bar,.x-pricing-column.featured h2,.h-comments-title small,.x-pagination a:hover,.woocommerce-pagination a:hover,.x-entry-share .x-share:hover,.entry-thumb,.widget_tag_cloud .tagcloud a:hover,.widget_product_tag_cloud .tagcloud a:hover,.x-highlight,.x-recent-posts .x-recent-posts-img:after,.x-portfolio-filters{background-color:#007aff;}.x-portfolio-filters:hover{background-color:hsl(0,2%,37%);}.x-main{width:calc(72% - 3.20197%);}.x-sidebar{width:calc(100% - 3.20197% - 72%);}.h-landmark{font-weight:400;}.x-comment-author a{color:#515151;}.x-comment-author a,.comment-form-author label,.comment-form-email label,.comment-form-url label,.comment-form-rating label,.comment-form-comment label,.widget_calendar #wp-calendar caption,.widget_calendar #wp-calendar th,.x-accordion-heading .x-accordion-toggle,.x-nav-tabs > li > a:hover,.x-nav-tabs > .active > a,.x-nav-tabs > .active > a:hover{color:#272727;}.widget_calendar #wp-calendar th{border-bottom-color:#272727;}.x-pagination span.current,.woocommerce-pagination span[aria-current],.x-portfolio-filters-menu,.widget_tag_cloud .tagcloud a,.h-feature-headline span i,.widget_price_filter .ui-slider .ui-slider-handle{background-color:#272727;}@media (max-width:978.98px){}html{font-size:16px;}@media (min-width:480px){html{font-size:16px;}}@media (min-width:767px){html{font-size:16px;}}@media (min-width:979px){html{font-size:16px;}}@media (min-width:1200px){html{font-size:16px;}}body{font-style:normal;font-weight:400;color:#515151;background-color:#f3f3f3;}.w-b{font-weight:400 !important;}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-family:"Lato",sans-serif;font-style:normal;font-weight:400;}h1,.h1{letter-spacing:0.00em;}h2,.h2{letter-spacing:0.00em;}h3,.h3{letter-spacing:0.00em;}h4,.h4{letter-spacing:0.00em;}h5,.h5{letter-spacing:0.00em;}h6,.h6{letter-spacing:0.00em;}.w-h{font-weight:400 !important;}.x-container.width{width:88%;}.x-container.max{max-width:1200px;}.x-bar-content.x-container.width{flex-basis:88%;}.x-main.full{float:none;display:block;width:auto;}@media (max-width:978.98px){.x-main.full,.x-main.left,.x-main.right,.x-sidebar.left,.x-sidebar.right{float:none;display:block;width:auto !important;}}.entry-header,.entry-content{font-size:1rem;}body,input,button,select,textarea{font-family:"Lato",sans-serif;}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,.h1 a,.h2 a,.h3 a,.h4 a,.h5 a,.h6 a,blockquote{color:#272727;}.cfc-h-tx{color:#272727 !important;}.cfc-h-bd{border-color:#272727 !important;}.cfc-h-bg{background-color:#272727 !important;}.cfc-b-tx{color:#515151 !important;}.cfc-b-bd{border-color:#515151 !important;}.cfc-b-bg{background-color:#515151 !important;}.x-btn,.button,[type="submit"]{color:#ffffff;border-color:rgb(0,122,255);background-color:rgb(0,122,255);text-shadow:0 0.075em 0.075em rgba(0,0,0,0.5);border-radius:0.25em;}.x-btn:hover,.button:hover,[type="submit"]:hover{color:#ffffff;border-color:#600900;background-color:#ef2201;text-shadow:0 0.075em 0.075em rgba(0,0,0,0.5);}.x-btn.x-btn-real,.x-btn.x-btn-real:hover{margin-bottom:0.25em;text-shadow:0 0.075em 0.075em rgba(0,0,0,0.65);}.x-btn.x-btn-real{box-shadow:0 0.25em 0 0 #a71000,0 4px 9px rgba(0,0,0,0.75);}.x-btn.x-btn-real:hover{box-shadow:0 0.25em 0 0 #a71000,0 4px 9px rgba(0,0,0,0.75);}.x-btn.x-btn-flat,.x-btn.x-btn-flat:hover{margin-bottom:0;text-shadow:0 0.075em 0.075em rgba(0,0,0,0.65);box-shadow:none;}.x-btn.x-btn-transparent,.x-btn.x-btn-transparent:hover{margin-bottom:0;border-width:3px;text-shadow:none;text-transform:uppercase;background-color:transparent;box-shadow:none;}body .gform_wrapper .gfield_required{color:#007aff;}body .gform_wrapper h2.gsection_title,body .gform_wrapper h3.gform_title,body .gform_wrapper .top_label .gfield_label,body .gform_wrapper .left_label .gfield_label,body .gform_wrapper .right_label .gfield_label{font-weight:400;}body .gform_wrapper h2.gsection_title{letter-spacing:0.00em!important;}body .gform_wrapper h3.gform_title{letter-spacing:0.00em!important;}body .gform_wrapper .top_label .gfield_label,body .gform_wrapper .left_label .gfield_label,body .gform_wrapper .right_label .gfield_label{color:#272727;}body .gform_wrapper .validation_message{font-weight:400;}.bg .mejs-container,.x-video .mejs-container{position:unset !important;} @font-face{font-family:'FontAwesomePro';font-style:normal;font-weight:900;font-display:block;src:url('https://www.tune.com/wp-content/plugins/cornerstone/assets/fonts/fa-solid-900.woff2?ver=6.7.2') format('woff2'),url('https://www.tune.com/wp-content/plugins/cornerstone/assets/fonts/fa-solid-900.ttf?ver=6.7.2') format('truetype');}[data-x-fa-pro-icon]{font-family:"FontAwesomePro" !important;}[data-x-fa-pro-icon]:before{content:attr(data-x-fa-pro-icon);}[data-x-icon],[data-x-icon-o],[data-x-icon-l],[data-x-icon-s],[data-x-icon-b],[data-x-icon-sr],[data-x-icon-ss],[data-x-icon-sl],[data-x-fa-pro-icon],[class*="cs-fa-"]{display:inline-flex;font-style:normal;font-weight:400;text-decoration:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}[data-x-icon].left,[data-x-icon-o].left,[data-x-icon-l].left,[data-x-icon-s].left,[data-x-icon-b].left,[data-x-icon-sr].left,[data-x-icon-ss].left,[data-x-icon-sl].left,[data-x-fa-pro-icon].left,[class*="cs-fa-"].left{margin-right:0.5em;}[data-x-icon].right,[data-x-icon-o].right,[data-x-icon-l].right,[data-x-icon-s].right,[data-x-icon-b].right,[data-x-icon-sr].right,[data-x-icon-ss].right,[data-x-icon-sl].right,[data-x-fa-pro-icon].right,[class*="cs-fa-"].right{margin-left:0.5em;}[data-x-icon]:before,[data-x-icon-o]:before,[data-x-icon-l]:before,[data-x-icon-s]:before,[data-x-icon-b]:before,[data-x-icon-sr]:before,[data-x-icon-ss]:before,[data-x-icon-sl]:before,[data-x-fa-pro-icon]:before,[class*="cs-fa-"]:before{line-height:1;}@font-face{font-family:'FontAwesome';font-style:normal;font-weight:900;font-display:block;src:url('https://www.tune.com/wp-content/plugins/cornerstone/assets/fonts/fa-solid-900.woff2?ver=6.7.2') format('woff2'),url('https://www.tune.com/wp-content/plugins/cornerstone/assets/fonts/fa-solid-900.ttf?ver=6.7.2') format('truetype');}[data-x-icon],[data-x-icon-s],[data-x-icon][class*="cs-fa-"]{font-family:"FontAwesome" !important;font-weight:900;}[data-x-icon]:before,[data-x-icon][class*="cs-fa-"]:before{content:attr(data-x-icon);}[data-x-icon-s]:before{content:attr(data-x-icon-s);}@font-face{font-family:'FontAwesomeRegular';font-style:normal;font-weight:400;font-display:block;src:url('https://www.tune.com/wp-content/plugins/cornerstone/assets/fonts/fa-regular-400.woff2?ver=6.7.2') format('woff2'),url('https://www.tune.com/wp-content/plugins/cornerstone/assets/fonts/fa-regular-400.ttf?ver=6.7.2') format('truetype');}@font-face{font-family:'FontAwesomePro';font-style:normal;font-weight:400;font-display:block;src:url('https://www.tune.com/wp-content/plugins/cornerstone/assets/fonts/fa-regular-400.woff2?ver=6.7.2') format('woff2'),url('https://www.tune.com/wp-content/plugins/cornerstone/assets/fonts/fa-regular-400.ttf?ver=6.7.2') format('truetype');}[data-x-icon-o]{font-family:"FontAwesomeRegular" !important;}[data-x-icon-o]:before{content:attr(data-x-icon-o);}@font-face{font-family:'FontAwesomeLight';font-style:normal;font-weight:300;font-display:block;src:url('https://www.tune.com/wp-content/plugins/cornerstone/assets/fonts/fa-light-300.woff2?ver=6.7.2') format('woff2'),url('https://www.tune.com/wp-content/plugins/cornerstone/assets/fonts/fa-light-300.ttf?ver=6.7.2') format('truetype');}@font-face{font-family:'FontAwesomePro';font-style:normal;font-weight:300;font-display:block;src:url('https://www.tune.com/wp-content/plugins/cornerstone/assets/fonts/fa-light-300.woff2?ver=6.7.2') format('woff2'),url('https://www.tune.com/wp-content/plugins/cornerstone/assets/fonts/fa-light-300.ttf?ver=6.7.2') format('truetype');}[data-x-icon-l]{font-family:"FontAwesomeLight" !important;font-weight:300;}[data-x-icon-l]:before{content:attr(data-x-icon-l);}@font-face{font-family:'FontAwesomeBrands';font-style:normal;font-weight:normal;font-display:block;src:url('https://www.tune.com/wp-content/plugins/cornerstone/assets/fonts/fa-brands-400.woff2?ver=6.7.2') format('woff2'),url('https://www.tune.com/wp-content/plugins/cornerstone/assets/fonts/fa-brands-400.ttf?ver=6.7.2') format('truetype');}[data-x-icon-b]{font-family:"FontAwesomeBrands" !important;}[data-x-icon-b]:before{content:attr(data-x-icon-b);}.widget.widget_rss li .rsswidget:before{content:"\f35d";padding-right:0.4em;font-family:"FontAwesome";} .m1ql-0.x-section{margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;}.m1ql-1.x-section{border-top-width:0;border-right-width:0;border-bottom-width:0;border-left-width:0;padding-right:0px;padding-bottom:45px;padding-left:0px;z-index:1;}.m1ql-2.x-section{padding-top:45px;}.m1ql-3.x-section{background-color:#052552;}.m1ql-4.x-section{margin-top:0%;margin-right:0em;margin-bottom:-3.2%;margin-left:0em;}.m1ql-5.x-section{padding-top:0px;}.m1ql-6.x-container{margin-top:0em;margin-right:auto;margin-left:auto;border-top-width:0;border-right-width:0;border-bottom-width:0;border-left-width:0;box-shadow:none;}.m1ql-7.x-container{margin-bottom:0em;}.m1ql-8.x-container{z-index:999999;}.m1ql-9.x-container{z-index:1;}.m1ql-a.x-container{margin-bottom:4em;}.m1ql-b.x-column{border-top-width:0;border-right-width:0;border-bottom-width:0;border-left-width:0;box-shadow:none;z-index:1;} .us_twitter{background-color:#000000;}.us_facebook{background-color:#000000;}.us_linkedin{background-color:#000000;}.us_wrapper.us_skin_round a:hover{color:#000!important;background-color:#ccc;}#insent-iframe{margin-bottom:41px;}.x-flexslider .x-slides .x-slide{display:block !important;}
+/*# sourceURL=cs-inline-css */
+</style>
+<script type="rocketlazyloadscript" id="jquery-core-js" data-rocket-src="https://www.tune.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="jquery-migrate-js" data-rocket-src="https://www.tune.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="rpt_front_style-js" data-rocket-src="https://www.tune.com/wp-content/plugins/related-posts-thumbnails/assets/js/front.min.js?ver=4.3.1" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" data-minify="1" id="rpt-lazy-load-js" data-rocket-src="https://www.tune.com/wp-content/cache/min/1/wp-content/plugins/related-posts-thumbnails/assets/js/lazy-load.js?ver=1783041036" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="enzuzo_cookie_consent-js" data-rocket-src="https://app.enzuzo.com/scripts/cookiebar/6e312ff2-b731-11ef-8075-3f10bd8e4873?ver=1.0.0" data-rocket-defer defer></script>
+<script id="us-script-js-extra" type="347296b83006fe3b03d99702-text/javascript">
+var us_script = {"ajaxurl":"https://www.tune.com/wp-admin/admin-ajax.php","tweet_via":"tune","success":"Great work! Your message was sent.","trying":"Trying to send email...","total_shares_text":"Shares","facebook_height":"500","facebook_width":"900","twitter_height":"500","twitter_width":"900","googleplus_height":"500","googleplus_width":"900","delicious_height":"550","delicious_width":"550","stumble_height":"550","stumble_width":"550","linkedin_height":"550","linkedin_width":"550","pinterest_height":"320","pinterest_width":"720","buffer_height":"500","buffer_width":"900","reddit_height":"500","reddit_width":"900","vkontakte_height":"500","vkontakte_width":"900","printfriendly_height":"500","printfriendly_width":"1045","pocket_height":"500","pocket_width":"900","tumblr_height":"500","tumblr_width":"900","flipboard_height":"500","flipboard_width":"900","weibo_height":"500","weibo_width":"900","xing_height":"500","xing_width":"900","ok_height":"500","ok_width":"900","managewp_height":"500","managewp_width":"900","meneame_height":"500","meneame_width":"900","digg_height":"500","digg_width":"900","home_url":"https://www.tune.com","B":"B","M":"M","k":"k","nonce":"d59b22eafe","already_loved_message":"You have already loved this item.","error_message":"Sorry, there was a problem processing your request.","logged_in":"false","bitly":"false"};
+//# sourceURL=us-script-js-extra
+</script>
+<script type="rocketlazyloadscript" id="us-script-js" data-rocket-src="https://www.tune.com/wp-content/plugins/ultimate-social-deux/public/assets/js/min/us.script-min.js?ver=6.0.7" data-rocket-defer defer></script>
+<script id="us-native-js-extra" type="347296b83006fe3b03d99702-text/javascript">
+var us_native_script = {"vkontakte_appid":"","facebook_appid":""};
+//# sourceURL=us-native-js-extra
+</script>
+<script type="rocketlazyloadscript" id="us-native-js" data-rocket-src="https://www.tune.com/wp-content/plugins/ultimate-social-deux/public/assets/js/min/us.native-min.js?ver=6.0.7" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="jquery-cookie-js" data-rocket-src="https://www.tune.com/wp-content/plugins/ultimate-social-deux/public/assets/js/min/jquery.cookie-min.js?ver=1.0" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="jquery-magnific-popup-js" data-rocket-src="https://www.tune.com/wp-content/plugins/ultimate-social-deux/public/assets/js/min/jquery.magnific-popup-min.js?ver=1.0" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="jquery-sticky-js" data-rocket-src="https://www.tune.com/wp-content/plugins/ultimate-social-deux/public/assets/js/min/jquery.sticky-min.js?ver=1.0" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="jquery-fittext-js" data-rocket-src="https://www.tune.com/wp-content/plugins/ultimate-social-deux/public/assets/js/min/jquery.fittext-min.js?ver=1.2" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="jquery-tooltipster-js" data-rocket-src="https://www.tune.com/wp-content/plugins/ultimate-social-deux/public/assets/js/min/jquery.tooltipster-min.js?ver=3.3" data-rocket-defer defer></script>
+<script id="ajax-script-js-extra" type="347296b83006fe3b03d99702-text/javascript">
+var ajax_object = {"ajax_url":"https://www.tune.com/wp-admin/admin-ajax.php"};
+//# sourceURL=ajax-script-js-extra
+</script>
+<script type="rocketlazyloadscript" data-minify="1" id="ajax-script-js" data-rocket-src="https://www.tune.com/wp-content/cache/min/1/wp-content/themes/tune.com/js/signup-progress-bar.js?ver=1783041036" data-rocket-defer defer></script>
+<link rel="https://api.w.org/" href="https://www.tune.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.tune.com/wp-json/wp/v2/pages/2253" /><link rel='shortlink' href='https://www.tune.com/' />
+        <style>
+            #related_posts_thumbnails li {
+                border-right: 1px solid #DDDDDD;
+                background-color: #FFFFFF            }
+
+            #related_posts_thumbnails li:hover {
+                background-color: #EEEEEF;
+            }
+
+            .relpost_content {
+                font-size: 12px;
+                color: #333333;
+            }
+
+            .relpost-block-single {
+                background-color: #FFFFFF;
+                border-right: 1px solid #DDDDDD;
+                border-left: 1px solid #DDDDDD;
+                margin-right: -1px;
+            }
+
+            .relpost-block-single:hover {
+                background-color: #EEEEEF;
+            }
+        </style>
+
+        <style type="text/css">.us_sticky .us_wrapper{background-color:#ffffff;}.us_floating .us_wrapper .us_button{width:45px;-webkit-transition:width 100ms ease-in-out,background-color 400ms ease-out;-moz-transition:width 100ms ease-in-out,background-color 400ms ease-out;-o-transition:width 100ms ease-in-out,background-color 400ms ease-out;transition:width 100ms ease-in-out,background-color 400ms ease-out;}.us_floating .us_wrapper .us_button:hover{width:90px;-webkit-transition:width 100ms ease-in-out,background-color 400ms ease-out;-moz-transition:width 100ms ease-in-out,background-color 400ms ease-out;-o-transition:width 100ms ease-in-out,background-color 400ms ease-out;transition:width 100ms ease-in-out,background-color 400ms ease-out;}.us_facebook{background-color:#3b5998;}.us_facebook:hover{background-color:#111111;}.us_twitter{background-color:#00ABF0;}.us_twitter:hover{background-color:#111111;}.us_google{background-color:#D95232;}.us_google:hover{background-color:#111111;}.us_delicious{background-color:#66B2FD;}.us_delicious:hover{background-color:#008000;}.us_stumble{background-color:#E94B24;}.us_stumble:hover{background-color:#008000;}.us_linkedin{background-color:#1C86BC;}.us_linkedin:hover{background-color:#111111;}.us_pinterest{background-color:#AE181F;}.us_pinterest:hover{background-color:#008000;}.us_buffer{background-color:#000000;}.us_buffer:hover{background-color:#008000;}.us_reddit{background-color:#30659B;}.us_reddit:hover{background-color:#008000;}.us_vkontakte{background-color:#537599;}.us_vkontakte:hover{background-color:#008000;}.us_mail{background-color:#666666;}.us_mail:hover{background-color:#008000;}.us_love{background-color:#FF0000;}.us_love:hover{background-color:#008000;}.us_pocket{background-color:#ee4056;}.us_pocket:hover{background-color:#008000;}.us_tumblr{background-color:#529ecc;}.us_tumblr:hover{background-color:#008000;}.us_print{background-color:#60d0d4;}.us_print:hover{background-color:#008000;}.us_flipboard{background-color:#c10000;}.us_flipboard:hover{background-color:#008000;}.us_comments{background-color:#111111;}.us_comments:hover{background-color:#111111;}.us_feedly{background-color:#414141;}.us_feedly:hover{background-color:#008000;}.us_youtube:hover{background-color:#008000;}.us_youtube{background-color:#cc181e;}.us_vimeo{background-color:#1bb6ec;}.us_vimeo:hover{background-color:#008000;}.us_behance{background-color:#1769ff;}.us_behance:hover{background-color:#008000;}.us_ok{background-color:#f2720c;}.us_ok:hover{background-color:#008000;}.us_weibo{background-color:#e64141;}.us_weibo:hover{background-color:#008000;}.us_managewp{background-color:#098ae0;}.us_managewp:hover{background-color:#008000;}.us_xing{background-color:#026466;}.us_xing:hover{background-color:#008000;}.us_whatsapp{background-color:#34af23;}.us_whatsapp:hover{background-color:#008000;}.us_meneame{background-color:#ff6400;}.us_meneame:hover{background-color:#008000;}.us_digg{background-color:#000000;}.us_digg:hover{background-color:#008000;}.us_dribbble{background-color:#f72b7f;}.us_dribbble:hover{background-color:#008000;}.us_envato{background-color:#82b540;}.us_envato:hover{background-color:#008000;}.us_github{background-color:#201e1f;}.us_github:hover{background-color:#008000;}.us_soundcloud{background-color:#ff6f00;}.us_soundcloud:hover{background-color:#008000;}.us_instagram{background-color:#48769c;}.us_instagram:hover{background-color:#008000;}.us_feedpress{background-color:#ffafaf;}.us_feedpress:hover{background-color:#008000;}.us_mailchimp{background-color:#6dc5dc;}.us_mailchimp:hover{background-color:#008000;}.us_flickr{background-color:#0062dd;}.us_flickr:hover{background-color:#008000;}.us_members{background-color:#0ab071;}.us_members:hover{background-color:#008000;}.us_more{background-color:#53B27C;}.us_more:hover{background-color:#008000;}.us_posts{background-color:#924e2a;}.us_posts:hover{background-color:#008000;}.us_facebook a{color:#3b5998;}.us_facebook a:hover{color:#111111;}.us_twitter a{color:#00ABF0;}.us_twitter a:hover{color:#111111;}.us_google a{color:#D95232;}.us_google a:hover{color:#111111;}.us_delicious a{color:#66B2FD;}.us_delicious a:hover{color:#008000;}.us_stumble a{color:#E94B24;}.us_stumble a:hover{color:#008000;}.us_linkedin a{color:#1C86BC;}.us_linkedin a:hover{color:#111111;}.us_pinterest a{color:#AE181F;}.us_pinterest a:hover{color:#008000;}.us_buffer a{color:#000000;}.us_buffer a:hover{color:#008000;}.us_reddit a{color:#30659B;}.us_reddit a:hover{color:#008000;}.us_vkontakte a{color:#537599;}.us_vkontakte a:hover{color:#008000;}.us_mail a{color:#666666;}.us_mail a:hover{color:#008000;}.us_love a,.us_love{color:#FF0000;}.us_love a:hover,.us_love:hover{color:#008000;}.us_pocket a{color:#ee4056;}.us_pocket a:hover{color:#008000;}.us_tumblr a{color:#529ecc;}.us_tumblr a:hover{color:#008000;}.us_print a{color:#60d0d4;}.us_print a:hover{color:#008000;}.us_flipboard a{color:#c10000;}.us_flipboard a:hover{color:#008000;}.us_comments a,.us_comments{color:#111111;}.us_comments a:hover,.us_comments:hover{color:#111111;}.us_feedly a{color:#414141;}.us_feedly a:hover{color:#008000;}.us_youtube a{color:#cc181e;}.us_youtube a:hover{color:#008000;}.us_vimeo a{color:#1bb6ec;}.us_vimeo a:hover{color:#008000;}.us_behance a{color:#1769ff;}.us_behance a:hover{color:#008000;}.us_ok a{color:#f2720c;}.us_ok a:hover{color:#008000;}.us_weibo a{color:#e64141;}.us_weibo a:hover{color:#008000;}.us_managewp a{color:#098ae0;}.us_managewp a:hover{color:#008000;}.us_xing a{color:#026466;}.us_xing a:hover{color:#008000;}.us_whatsapp a{color:#34af23;}.us_whatsapp a:hover{color:#008000;}.us_meneame a{color:#ff6400;}.us_meneame a:hover{color:#008000;}.us_digg a{color:#000000;}.us_digg a:hover{color:#008000;}.us_dribbble a{ color:#f72b7f;}.us_dribbble a:hover{ color:#008000;}.us_envato a{color:#82b540;}.us_envato a:hover{color:#008000;}.us_github a{color:#201e1f;}.us_github a:hover{color:#008000;}.us_soundcloud a{color:#ff6f00;}.us_soundcloud a:hover{color:#008000;}.us_instagram a{color:#48769c;}.us_instagram a:hover{color:#008000;}.us_feedpress{color:#ffafaf;}.us_feedpress:hover{color:#008000;}.us_mailchimp{color:#6dc5dc;}.us_mailchimp:hover{color:#008000;}.us_flickr a{color:#0062dd;}.us_flickr a:hover{color:#008000;}.us_members{color:#0ab071;}.us_members:hover{color:#008000;}.us_more a{color:#53B27C;}.us_more a:hover{color:#008000;}.us_posts{color:#924e2a;}.us_posts:hover{color:#008000;}</style>
+			<!-- GTM Data Layer -->
+			<script type="rocketlazyloadscript">
+				window.dataLayer = window.dataLayer || [];
+				window.dataLayer.push({'event': 'dataLayer-loaded'});
+			</script>
+
+			<!-- Google Tag Manager -->
+			<script type="rocketlazyloadscript">
+				(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+				})(window,document,'script','dataLayer','GTM-WR52GC');
+			</script>
+			<!-- End Google Tag Manager -->
+			    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="pingback" href="https://www.tune.com/xmlrpc.php">
+  <meta name="generator" content="Elementor 4.1.4; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<!-- Google Tag Manager -->
+<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WR52GC');</script>
+<!-- End Google Tag Manager -->
+
+
+<!-- Microsoft Clarity -->
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "hn25kfir0x");
+</script>
+<!-- End Microsoft Clarity -->
+
+<script type="rocketlazyloadscript">
+document.addEventListener("DOMContentLoaded", function() {
+  // Wait for Enzuzo consent
+  if (typeof enzuzoConsent !== "undefined" && enzuzoConsent.onConsent) {
+    enzuzoConsent.onConsent(function() {
+      // Dynamically load Adobe Dynamic Chat script
+      var adobeScript = document.createElement("script");
+      adobeScript.src = "https://assets.adoberesources.net/loader.js?orgId=15E7084762BF7AED0A495C66%40AdobeOrg&instanceId=tuneinc&env=prod&geo=va7";
+      adobeScript.async = true;
+      document.head.appendChild(adobeScript);
+    });
+  } else {
+    // Fallback: load script immediately if Enzuzo is not available
+    var adobeScript = document.createElement("script");
+    adobeScript.src = "https://assets.adoberesources.net/loader.js?orgId=15E7084762BF7AED0A495C66%40AdobeOrg&instanceId=tuneinc&env=prod&geo=va7";
+    adobeScript.async = true;
+    document.head.appendChild(adobeScript);
+  }
+});
+</script>
+<style id="wp-custom-css">
+.list-arrows ul li {
+    list-style-type: none;
+    position: relative;
+    margin-bottom: 12px;
+    padding-left: 8px;
+	  line-height: 20px;
+}
+.list-arrows ul li:before {
+    content: '';
+    width: 40px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(https://v.fastcdn.co/u/82117a37/61624273-0-right-arrow-11.svg);
+    position: absolute;
+    left: -24px;
+    opacity: 1;
+    top: 1px;
+}
+
+#drift-frame-controller {
+	display:none;
+}
+
+#insent-iframe {
+
+    margin-bottom: 41px;
+}
+.x-topbar .p-info,.x-topbar .p-info a,.x-topbar .x-social-global a{
+    color:#ffffff;
+}
+.x-topbar .p-info a:hover{
+    color:#959baf;
+}
+.x-topbar{
+    background-color:hsl(0,0%,100%);
+}
+.x-navbar .desktop .x-nav > li:before{
+    padding-top:28px;
+}
+.x-navbar .desktop .x-nav > li > a,.x-navbar .desktop .sub-menu li > a,.x-navbar .mobile .x-nav li a{
+    color:hsl(0,0%,0%);
+}
+.x-navbar .desktop .x-nav > li > a:hover,.x-navbar .desktop .x-nav > .x-active > a,.x-navbar .desktop .x-nav > .current-menu-item > a,.x-navbar .desktop .sub-menu li > a:hover,.x-navbar .desktop .sub-menu li.x-active > a,.x-navbar .desktop .sub-menu li.current-menu-item > a,.x-navbar .desktop .x-nav .x-megamenu > .sub-menu > li > a,.x-navbar .mobile .x-nav li > a:hover,.x-navbar .mobile .x-nav li.x-active > a,.x-navbar .mobile .x-nav li.current-menu-item > a{
+    color:hsl(228,86%,57%);
+}
+.x-btn-navbar,.x-btn-navbar:hover{
+    color:#ffffff;
+}
+.x-navbar .desktop .sub-menu li:before,.x-navbar .desktop .sub-menu li:after{
+    background-color:hsl(0,0%,0%);
+}
+.x-navbar,.x-navbar .sub-menu{
+    background-color:hsl(0,0%,100%) !important;
+}
+.x-btn-navbar,.x-btn-navbar.collapsed:hover{
+    background-color:#476481;
+}
+.x-btn-navbar.collapsed{
+    background-color:#3e5771;
+}
+.x-navbar .desktop .x-nav > li > a:hover > span,.x-navbar .desktop .x-nav > li.x-active > a > span,.x-navbar .desktop .x-nav > li.current-menu-item > a > span{
+    box-shadow:0 2px 0 0 hsl(228,86%,57%);
+}
+.x-navbar .desktop .x-nav > li > a{
+    height:70px;
+    padding-top:28px;
+}
+.x-navbar .desktop .x-nav > li ul{
+    top:70px;
+}
+body.x-navbar-fixed-top-active .x-navbar-wrap{
+    height:70px;
+}
+.x-navbar-inner{
+    min-height:70px;
+}
+.x-brand{
+    margin-top:18px;
+    font-family:"Lato",sans-serif;
+    font-size:1px;
+    font-style:normal;
+    font-weight:700;
+    letter-spacing:-0.044em;
+    color:hsl(0,0%,100%);
+}
+.x-brand:hover,.x-brand:focus{
+    color:hsl(0,0%,100%);
+}
+.x-brand img{
+    width:105px;
+}
+.x-navbar .x-nav-wrap .x-nav > li > a{
+    font-family:"Lato",sans-serif;
+    font-style:normal;
+    font-weight:700;
+    letter-spacing:0.085em;
+    text-transform:uppercase;
+}
+.x-navbar .desktop .x-nav > li > a{
+    font-size:13px;
+}
+.x-navbar .desktop .x-nav > li > a:not(.x-btn-navbar-woocommerce){
+    padding-left:20px;
+    padding-right:20px;
+}
+.x-navbar .desktop .x-nav > li > a > span{
+    margin-right:-0.085em;
+}
+.x-btn-navbar{
+    margin-top:10px;
+}
+.x-btn-navbar,.x-btn-navbar.collapsed{
+    font-size:24px;
+}
+@media (max-width:979px){
+    body.x-navbar-fixed-top-active .x-navbar-wrap{
+        height:auto;
+    }
+    .x-widgetbar{
+        left:0;
+        right:0;
+    }
+}
+.message-banner.message-banner--blue{
+	background-color:#052552!important;
+}
+</style>
+<style id="rocket-lazyrender-inline-css">[data-wpr-lazyrender] {content-visibility: auto;}</style><meta name="generator" content="WP Rocket 3.20.3" data-wpr-features="wpr_delay_js wpr_defer_js wpr_minify_js wpr_preconnect_external_domains wpr_automatic_lazy_rendering wpr_oci wpr_minify_css wpr_preload_links wpr_desktop" /></head>
+
+<body class="home wp-singular page-template page-template-template-blank-11 page-template-template-blank-11-php page page-id-2253 wp-theme-x wp-child-theme-tunecom page-home x-renew x-child-theme-active x-full-width-layout-active x-full-width-active x-page-title-disabled elementor-default elementor-kit-73744 x-navbar-fixed-top-active cornerstone-v7_7_12 x-v10_1_3">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WR52GC "
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+  
+  <div  id="x-root" class="x-root">
+
+    			<!-- Google Tag Manager (noscript)-->
+			<noscript>
+				<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WR52GC" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+			</noscript>
+			<!-- End Google Tag Manager (noscript)-->
+
+			
+    <div  id="top" class="site">
+
+    
+  <header  class="masthead masthead-inline header-transparent" role="banner" data-is-transparent="true">
+    
+
+  <div class="x-navbar-wrap">
+    <div class="x-navbar">
+      <div class="x-navbar-inner">
+        <div class="x-container max width">
+          
+<a href="https://www.tune.com/" data-link-type="header" class="x-brand img" title="Partner Marketing Platform">
+  <img src="//www.tune.com/tune-com-content/uploads/2019/05/tune-logo.png" alt="Partner Marketing Platform"></a>          
+<a href="#" id="x-btn-navbar" class="x-btn-navbar collapsed" data-x-toggle="collapse-b" data-x-toggleable="x-nav-wrap-mobile" aria-expanded="false" aria-controls="x-nav-wrap-mobile" role="button">
+  <i class="x-icon-bars" data-x-icon-s="&#xf0c9;"></i>
+  <span class="visually-hidden">Navigation</span>
+</a>
+
+<nav class="x-nav-wrap desktop" role="navigation">
+  <ul id="menu-top-menu" class="x-nav x-nav--main"><li id="menu-item-52255" class="x-megamenu no-click col-2 title-with-col menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-52255"><a href="#" data-link-type="header"><span>Solutions</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-71842" class="no-click sub-head-title menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-71842"><a href="#" data-link-type="header"><span>Business Type</span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-70219" class="sub-head-link menu-item menu-item-type-post_type menu-item-object-page menu-item-70219"><a href="https://www.tune.com/solutions/advertisers/" data-link-type="header"><span>Advertisers</span></a></li>
+		<li id="menu-item-70221" class="sub-head-link menu-item menu-item-type-post_type menu-item-object-page menu-item-70221"><a href="https://www.tune.com/solutions/networks/" data-link-type="header"><span>Networks</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-71843" class="no-click sub-head-title right-col menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-71843"><a href="#" data-link-type="header"><span>Top Verticals</span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-71844" class="sub-head-link menu-item menu-item-type-post_type menu-item-object-page menu-item-71844"><a href="https://www.tune.com/affiliate-marketing/direct-to-consumer-ecommerce/" data-link-type="header"><span>Direct-to-Consumer</span></a></li>
+		<li id="menu-item-71846" class="sub-head-link menu-item menu-item-type-post_type menu-item-object-page menu-item-71846"><a href="https://www.tune.com/affiliate-marketing/financial-services/" data-link-type="header"><span>Financial Services</span></a></li>
+		<li id="menu-item-71845" class="sub-head-link menu-item menu-item-type-post_type menu-item-object-page menu-item-71845"><a href="https://www.tune.com/affiliate-marketing/subscription-services/" data-link-type="header"><span>Subscription Services</span></a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-51001" class="no-click menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-51001"><a href="#" data-link-type="header"><span>Why Tune</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-70227" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70227"><a href="https://www.tune.com/platform/" data-link-type="header"><span>TUNE Platform</span></a></li>
+	<li id="menu-item-70223" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70223"><a href="https://www.tune.com/partners/" data-link-type="header"><span>TUNE Partners</span></a></li>
+	<li id="menu-item-71383" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71383"><a href="https://www.tune.com/customer-stories/" data-link-type="header"><span>Customers</span></a></li>
+	<li id="menu-item-70225" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70225"><a href="https://www.tune.com/professional-services/" data-link-type="header"><span>Professional Services</span></a></li>
+</ul>
+</li>
+<li id="menu-item-71390" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-71390"><a href="#" data-link-type="header"><span>Pricing</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-71391" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71391"><a href="https://www.tune.com/solutions/advertisers/compare-plans/" data-link-type="header"><span>For Advertisers</span></a></li>
+	<li id="menu-item-71392" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71392"><a href="https://www.tune.com/solutions/networks/compare-plans/" data-link-type="header"><span>For Networks</span></a></li>
+</ul>
+</li>
+<li id="menu-item-51015" class="no-click menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-51015"><a href="#" data-link-type="header"><span>Learn</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-51021" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51021"><a href="/resources/resource-library/" title="Mobile marketing research " data-link-type="header"><span>Resources</span></a></li>
+	<li id="menu-item-75300" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75300"><a href="/resources/resource-library/#event" data-link-type="header"><span>Events</span></a></li>
+</ul>
+</li>
+<li id="menu-item-51031" class="no-click menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-51031"><a href="#" data-link-type="header"><span>Support</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-51033" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51033"><a href="https://support.tune.com/hc/en-us" title="Documentation and training for HasOffers by TUNE" data-link-type="header"><span>Help Site</span></a></li>
+	<li id="menu-item-3669" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3669"><a href="http://developers.tune.com/" title="Developer documentation for TUNE and HasOffers" data-link-type="header"><span>Developer Site</span></a></li>
+	<li id="menu-item-3663" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3663"><a href="http://academy.tune.com/" title="TUNE Training and Academy" data-link-type="header"><span>Training</span></a></li>
+	<li id="menu-item-3667" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3667"><a href="https://tune.zendesk.com/hc/en-us/requests/new" title="Customer support for TUNE and HasOffers" data-link-type="header"><span>Contact Support</span></a></li>
+</ul>
+</li>
+<li id="menu-item-52259" class="no-click menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-52259"><a href="#" data-link-type="header"><span>About</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-70233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70233"><a href="https://www.tune.com/about/" data-link-type="header"><span>About TUNE</span></a></li>
+	<li id="menu-item-75079" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75079"><a href="https://www.tune.com/about/leadership/" data-link-type="header"><span>Leadership</span></a></li>
+	<li id="menu-item-70235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70235"><a href="https://www.tune.com/about/careers/" data-link-type="header"><span>Careers</span></a></li>
+	<li id="menu-item-70237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70237"><a href="https://www.tune.com/contact-us/" data-link-type="header"><span>Contact Us</span></a></li>
+</ul>
+</li>
+<li id="menu-item-37855" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37855"><a href="https://www.tune.com/blog/" title="TUNE Blog" data-link-type="header"><span>Blog</span></a></li>
+</ul></nav>
+
+<div id="x-nav-wrap-mobile" class="x-nav-wrap mobile x-collapsed" data-x-toggleable="x-nav-wrap-mobile" data-x-toggle-collapse="1" aria-hidden="true" aria-labelledby="x-btn-navbar">
+  <ul id="menu-top-menu-1" class="x-nav x-nav--main"><li class="x-megamenu no-click col-2 title-with-col menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-52255"><a href="#" data-link-type="header"><span>Solutions</span></a>
+<ul class="sub-menu">
+	<li class="no-click sub-head-title menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-71842"><a href="#" data-link-type="header"><span>Business Type</span></a>
+	<ul class="sub-menu">
+		<li class="sub-head-link menu-item menu-item-type-post_type menu-item-object-page menu-item-70219"><a href="https://www.tune.com/solutions/advertisers/" data-link-type="header"><span>Advertisers</span></a></li>
+		<li class="sub-head-link menu-item menu-item-type-post_type menu-item-object-page menu-item-70221"><a href="https://www.tune.com/solutions/networks/" data-link-type="header"><span>Networks</span></a></li>
+	</ul>
+</li>
+	<li class="no-click sub-head-title right-col menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-71843"><a href="#" data-link-type="header"><span>Top Verticals</span></a>
+	<ul class="sub-menu">
+		<li class="sub-head-link menu-item menu-item-type-post_type menu-item-object-page menu-item-71844"><a href="https://www.tune.com/affiliate-marketing/direct-to-consumer-ecommerce/" data-link-type="header"><span>Direct-to-Consumer</span></a></li>
+		<li class="sub-head-link menu-item menu-item-type-post_type menu-item-object-page menu-item-71846"><a href="https://www.tune.com/affiliate-marketing/financial-services/" data-link-type="header"><span>Financial Services</span></a></li>
+		<li class="sub-head-link menu-item menu-item-type-post_type menu-item-object-page menu-item-71845"><a href="https://www.tune.com/affiliate-marketing/subscription-services/" data-link-type="header"><span>Subscription Services</span></a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="no-click menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-51001"><a href="#" data-link-type="header"><span>Why Tune</span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70227"><a href="https://www.tune.com/platform/" data-link-type="header"><span>TUNE Platform</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70223"><a href="https://www.tune.com/partners/" data-link-type="header"><span>TUNE Partners</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71383"><a href="https://www.tune.com/customer-stories/" data-link-type="header"><span>Customers</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70225"><a href="https://www.tune.com/professional-services/" data-link-type="header"><span>Professional Services</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-71390"><a href="#" data-link-type="header"><span>Pricing</span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71391"><a href="https://www.tune.com/solutions/advertisers/compare-plans/" data-link-type="header"><span>For Advertisers</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71392"><a href="https://www.tune.com/solutions/networks/compare-plans/" data-link-type="header"><span>For Networks</span></a></li>
+</ul>
+</li>
+<li class="no-click menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-51015"><a href="#" data-link-type="header"><span>Learn</span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51021"><a href="/resources/resource-library/" title="Mobile marketing research " data-link-type="header"><span>Resources</span></a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75300"><a href="/resources/resource-library/#event" data-link-type="header"><span>Events</span></a></li>
+</ul>
+</li>
+<li class="no-click menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-51031"><a href="#" data-link-type="header"><span>Support</span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51033"><a href="https://support.tune.com/hc/en-us" title="Documentation and training for HasOffers by TUNE" data-link-type="header"><span>Help Site</span></a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3669"><a href="http://developers.tune.com/" title="Developer documentation for TUNE and HasOffers" data-link-type="header"><span>Developer Site</span></a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3663"><a href="http://academy.tune.com/" title="TUNE Training and Academy" data-link-type="header"><span>Training</span></a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3667"><a href="https://tune.zendesk.com/hc/en-us/requests/new" title="Customer support for TUNE and HasOffers" data-link-type="header"><span>Contact Support</span></a></li>
+</ul>
+</li>
+<li class="no-click menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-52259"><a href="#" data-link-type="header"><span>About</span></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70233"><a href="https://www.tune.com/about/" data-link-type="header"><span>About TUNE</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75079"><a href="https://www.tune.com/about/leadership/" data-link-type="header"><span>Leadership</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70235"><a href="https://www.tune.com/about/careers/" data-link-type="header"><span>Careers</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70237"><a href="https://www.tune.com/contact-us/" data-link-type="header"><span>Contact Us</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37855"><a href="https://www.tune.com/blog/" title="TUNE Blog" data-link-type="header"><span>Blog</span></a></li>
+</ul></div>
+
+<nav class="x-nav-wrap desktop x-nav--login" role="navigation"><ul id="menu-login-get-started" class="x-nav"><li id="menu-item-40997" class="right-nav--get-started menu-item menu-item-type-custom menu-item-object-custom menu-item-40997"><a href="https://mkt.tune.com/RequestaDemo_NavBar.html" title="Get Started" data-link-type="button"><span>Request a Demo</span></a></li>
+</ul></nav><div class="x-nav-wrap mobile x-nav--login collapse" role="navigation"><ul id="menu-login-get-started-1" class="x-nav"><li class="right-nav--get-started menu-item menu-item-type-custom menu-item-object-custom menu-item-40997"><a href="https://mkt.tune.com/RequestaDemo_NavBar.html" title="Get Started" data-link-type="button"><span>Request a Demo</span></a></li>
+</ul></div>        </div>
+      </div>
+    </div>
+  </div>
+
+  </header>
+
+  <div  class="x-main full" role="main">
+
+    
+      <article id="post-2253" class="post-2253 page type-page status-publish hentry no-post-thumbnail">
+        
+
+<div class="entry-content content">
+
+	
+	
+	<div id="cs-content" class="cs-content"><div class="x-section e2253-e1 m1ql-0 m1ql-1 m1ql-2 message-banner message-banner--blue" style="height: 40px;" id="tune-evergreen"><div class="x-container e2253-e2 m1ql-6 m1ql-7 m1ql-8"><div class="x-column x-sm x-1-1 e2253-e3 m1ql-b"><div class="x-flexslider-shortcode-container"><div  class="x-flexslider x-flexslider-shortcode x-flexslider-shortcode-1" data-x-element-slider="{&quot;animation&quot;:&quot;slide&quot;,&quot;reverse&quot;:false,&quot;slideTime&quot;:&quot;4000&quot;,&quot;slideSpeed&quot;:&quot;4000&quot;,&quot;controlNav&quot;:false,&quot;prevNextNav&quot;:false,&quot;slideshow&quot;:true,&quot;random&quot;:false,&quot;touch&quot;:true,&quot;pauseOnHover&quot;:true}" style="height: 35px; background-color: #062452; color: #ffffff;"><ul class="x-slides"><li  class="x-slide" style="background-color: #062452;"><a href="https://www.tune.com/influencer-affiliate-blueprint/?utm_content=homepage-evergreen-banner">Download E-Book</a> | The Influencer Affiliate Blueprint</li></ul></div></div></div></div></div><div id="x-section-1" class="x-section hero bg-image" style="margin: 0px;padding: 0px;border-style: solid;border-width: 0px;border-color: hsl(0, 0%, 85%); background-color: transparent;" ><div id="" class="x-container max width" style="margin: 0px auto;padding: 0px;" ><div  class="x-column x-sm tile-south-west x-1-1" style="padding: 0px; background-color:transparent;" ><h1  class="h-feature-headline h1" style="color: hsla(0, 0%, 0%, 0);padding-top: 100px;"><span><i class="x-icon-lightbulb-o x-framework-icon" data-x-icon-s="&#xf0eb;"  style="background-color: transparent!important;" ></i>PARTNER THE WAY 
+<br>
+YOU WANT TO
+</span></h1></div></div></div><div class="x-section e2253-e10 m1ql-0 m1ql-1 m1ql-2 m1ql-3 logo-wall-row" style="max-height: 80px;"><div class="x-container max width e2253-e11 m1ql-6 m1ql-7 m1ql-9"><div class="x-column x-sm x-1-1 e2253-e12 m1ql-b"><div  class="x-raw-content logo-wall-blur" ><div class="logo-wall">
+
+
+
+<img decoding="async" src="/wp-content/themes/tune.com/img/logos/white/logo-grammarly-white.svg" alt="Grammarly Logo" width="120" />
+
+<img decoding="async" src="/wp-content/themes/tune.com/img/logos/white/logo-groupon.svg" alt="Groupon Logo" width="100" />
+
+<img decoding="async" src="/wp-content/themes/tune.com/img/logos/white/logo-prodege.svg" alt="Protege Logo" width="100" />
+<img decoding="async" src="/wp-content/themes/tune.com/img/logos/white/logo-RVshare_White200.png" alt="RVshare Logo" width="100" />
+<img decoding="async" src="/wp-content/themes/tune.com/img/logos/white/logo-fluent.svg" type="image/svg+xml" alt="Fluent Logo" width="100" />
+<img fetchpriority="high" decoding="async" class="extra-logo" src="/wp-content/themes/tune.com/img/logos/white/logo-tapjoy.svg" type="image/svg+xml" alt="Tapjoy Logo" style="padding-top:8px" width="70" />
+<img decoding="async" class="extra-logo" src="/wp-content/themes/tune.com/img/logos/white/logo-NordVPN.svg" alt="NordVPN Logo" style="margin-right:0!important;" width="90"/>
+<div class="logo-wall-btn">
+  <div><a id="blur-btn" data-link-type='button' class="x-btn x-btn-global" href="https://www.tune.com/customer-stories/" style="color:white">VIEW OUR CUSTOMERS</a>
+  </div>
+</div>
+
+</div>
+</div></div></div></div><div class="x-section e2253-e14 m1ql-1 m1ql-2 m1ql-4 section-subhero  col-80 background---gray"><div class="x-container max width e2253-e15 m1ql-6 m1ql-7 m1ql-9"><div class="x-column x-sm x-1-1 e2253-e16 m1ql-b"><h4  class="h-custom-headline cs-ta-center type-no-margin-top h4" style="font-size:1.9em;"><span>TUNE Partner Marketing Platform</span></h4><h2  class="h-custom-headline cs-ta-center h5" style="margin-top: -15px;"><span>
+
+TUNE is the only affiliate marketing platform that gives marketers true flexibility and control of their data and partner program. Brands, agencies, and networks around the world use TUNE to manage, measure, pay, and grow their programs through direct partnerships and the TUNE Marketplace.</span></h2><hr  class="x-gap x-hide-lg x-hide-md x-hide-sm x-hide-xs" style="margin: 60px 0 0 0;"></div></div></div><div class="x-section e2253-e20 m1ql-0 m1ql-1 m1ql-5 background---gray " style="padding-bottom: 70px;" id="gradient-block"><div class="x-container max width e2253-e21 m1ql-6 m1ql-7 m1ql-9"><div class="x-column x-sm x-1-2 e2253-e22 m1ql-b background---white"><hr  class="x-gap x-hide-lg x-hide-md x-hide-xl" style="margin: 20px 0 0 0;"><h4  class="h-custom-headline cs-ta-center h4" ><span>For Advertisers
+</span></h4><div id="" class="x-text cs-ta-center banded" style="padding-left: 5%; padding-right: 5%;font-weight:300;" ><p>Complete partner management. Proactive fraud prevention. International payment processing. All the tools you need to build better&nbsp;relationships.</p>
+</div><div id="" class="x-text cs-ta-center" style="padding-bottom: 20px;" ><p><a data-link-type='button' class="x-btn x-btn-global" href="https://www.tune.com/solutions/advertisers/" title="For Advertisers" style="color:white">FIND OUT MORE</a></p>
+</div></div><div class="x-column x-sm x-1-2 e2253-e27 m1ql-b background---white"><hr  class="x-gap x-hide-lg x-hide-md x-hide-xl" style="margin: 20px 0 0 0;"><h4  class="h-custom-headline cs-ta-center h4" ><span>For Networks</span></h4><div id="" class="x-text cs-ta-center" style="padding-left: 5%; padding-right: 5%; font-weight:300;" ><p>Unparalleled scalability. Advanced automation. Real-time data streaming. Best-in-class support. A powerful platform to build your affiliate network on.</p>
+</div><div id="" class="x-text cs-ta-center" style="padding-bottom: 20px;" ><p><a data-link-type='button' class="x-btn x-btn-global" href="https://www.tune.com/solutions/networks/" title="For Networks" style="color:white">FIND OUT MORE<br />
+</a></p>
+</div></div></div></div><div class="x-section e2253-e32 m1ql-0 m1ql-1 m1ql-2 background-line-right"><div class="x-container max width e2253-e33 m1ql-6 m1ql-9 m1ql-a swap-stack-order"><div class="x-column x-sm x-1-2 e2253-e34 m1ql-b bullet-blue swap-stack-order"><h2  class="h-custom-headline h6" ><span>FLEXIBLE TECHNOLOGY</span></h2><h4  class="h-custom-headline h4" style="margin-top: -10px;"><span>Build a Branded Partner Experience</span></h4><div id="" class="x-text" style="margin-top: -15px;" ><p><span style="font-weight: 300;">Unlike the competition, TUNE is a fully customizable SaaS platform. That means we give you the industry’s most powerful and unique set of tools to integrate, manage, and compensate your marketing partnerships, plus the flexibility to differentiate your business.</span></p>
+<ul>
+<li style="font-weight: 300;"><span style="font-weight: 300;">White labeling, personalized dashboards and interfaces, saved reports, and more keep you true to your brand</span></li>
+<li style="font-weight: 300;"><span style="font-weight: 300;">API-based foundation with over 650 endpoints for unparalleled custom functionality </span></li>
+<li style="font-weight: 300;"><span style="font-weight: 300;">Professional services team available for custom solutions development, technical consulting, and more</span></li>
+</ul>
+</div></div><div class="x-column x-sm x-1-2 e2253-e38 m1ql-b"><div id="" class="x-text" style="padding-top: 6%;" ><p><img decoding="async"  class="people-right" src="/wp-content/themes/tune.com/img/pages/home-assets/CreateYourPlatform.png" alt="Platform" /></p>
+</div></div></div><div class="x-container max width e2253-e40 m1ql-6 m1ql-7 m1ql-9"><div class="x-column x-sm x-1-2 e2253-e41 m1ql-b"><div id="" class="x-text" style="" ><p><img decoding="async" class="people-left" src="/wp-content/themes/tune.com/img/pages/home-assets/WorkSmarterWithPartners.png" alt="Our Partners" /></p>
+</div></div><div class="x-column x-sm x-1-2 e2253-e43 m1ql-b"><h2  class="h-custom-headline h6" ><span>INTELLIGENT TOOLS
+</span></h2><h4  class="h-custom-headline h4" style="margin-top: -10px;"><span>Work Smarter With Every Partner </span></h4><div id="" class="x-text" style="margin-top: -15px;" ><p><span style="font-weight: 300;">Time is money. Let us save you both with a robust suite of optimization and reporting features that empower you to work more efficiently with more partners and across more channels than ever before. </span></p>
+<ul>
+<li style="font-weight: 300;"><span style="font-weight: 300;">Advanced automation tools streamline workflows and minimize risks </span></li>
+<li style="font-weight: 300;"><span style="font-weight: 300;">Native postback capabilities ensure accurate tracking across mobile and web</span></li>
+<li style="font-weight: 300;"><span style="font-weight: 300;">Real-time reporting and data streaming power better decision-making  </span></li>
+</ul>
+</div></div></div><div class="x-container max width e2253-e47 m1ql-6 m1ql-7 m1ql-9 swap-stack-order"><div class="x-column x-sm x-1-2 e2253-e48 m1ql-b bullet-blue swap-stack-order"><h2  class="h-custom-headline h6" ><span>SECURE CONTROLS
+</span></h2><h4  class="h-custom-headline h4" style="margin-top: -10px;"><span>Build Greater Trust With Partners</span></h4><div id="" class="x-text" style="margin-top: -15px;" ><p><span style="font-weight: 300;">TUNE maintains high standards in safeguarding the data of our customers and their end users. We strive to build and uphold trust as a company by creating policies and products that help our customers build trust with theirs. These include: </span></p>
+<ul>
+<li style="font-weight: 300;"><span style="font-weight: 300;"><a href="https://www.tune.com/resources/data-and-privacy/">SOC 2 Type II</a> and <a href="https://www.tune.com/blog/tune-successfully-completes-soc-2-type-ii-and-soc-1-type-ii-examination-security-controls/">SOC 1 Type II</a> certification</span></li>
+<li style="font-weight: 300;"><span style="font-weight: 300;"><a href="https://www.tune.com/gdpr/">General Data Protection Regulation</a> compliance with ePrivacy certification </span></li>
+<li style="font-weight: 300;"><span style="font-weight: 300;">Proactive fraud prevention</span></li>
+<li style="font-weight: 300;"><span style="font-weight: 300;">Verifiable global payments and transactions</span></li>
+<li style="font-weight: 300;"><span style="font-weight: 300;">Cloud-based system infrastructure with <a href="http://status.hasoffers.com/">99.9% uptime</a></span></li>
+<li style="font-weight: 300;"><span style="font-weight: 300;">Global support team with 98% customer service satisfaction rating</span></li>
+</ul>
+</div></div><div class="x-column x-sm x-1-2 e2253-e52 m1ql-b"><div id="" class="x-text secure-img" style="padding-top: 4%;" ><p><img decoding="async"  class="people-right" src="/wp-content/themes/tune.com/img/pages/home-assets/BuildGreaterTrust.png" alt="Trust" /></p>
+</div></div></div></div><div class="x-section e2253-e54 m1ql-0 m1ql-1 m1ql-2 m1ql-3 col-80 gradient-blue "><div class="x-container max width e2253-e55 m1ql-6 m1ql-7 m1ql-9"><div class="x-column x-sm x-1-1 e2253-e56 m1ql-b mbm"><h2  class="h-custom-headline cs-ta-center h3" style="color: #fff;"><span>Realize Your Full Partner Potential</span></h2><div  class="x-raw-content" style="text-align:center;"><a data-link-type='button' class="x-btn x-btn-global" href="https://mkt.tune.com/RequestaDemo_homepage.html" title="Request a Demo" style="color:white; margin-right:1%;">REQUEST A DEMO</a>
+</div></div></div></div></div>
+	
+	
+</div>
+
+      </article>
+
+    
+  </div>
+
+
+
+
+      
+
+  
+    <footer  class="x-colophon bottom" role="contentinfo">
+      <div class="x-container max width">
+
+                  <div class="x-social-global"></div>        
+                  
+<div class="footer-menu-wrap has-8-cols is-hidden--mobile has-widget-area"><ul class="widget-wrap first-only"><li id="custom_html-2" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div class="x-custom-widget"> 
+<img src="/wp-content/themes/tune.com/img/brand/tune-logo.png" alt="TUNE Marketing Console" width="100">
+<p style="color: #044026 !important; padding-top:8px; font-size:12px !important;">&copy; 2026 <span class="text-uppercase">Tune</span>, Inc.</p>
+
+<div id="footer-get-started">
+<a title="Request a Demo" href="https://mkt.tune.com/RequestaDemo_footer.html" data-link-type="button">Request a Demo</a>
+</div>
+	<div id="footer-social">
+		<a href="https://www.facebook.com/TUNE/" target="_blank" title="TUNE Facebook page"><i  class="x-icon x-icon-facebook-square" data-x-icon-b="&#xf082;" aria-hidden="true"></i></a>
+		<a href="https://twitter.com/tune" target="_blank" title="TUNE Twitter page"><i  class="x-icon x-icon-twitter-square" data-x-icon-b="&#xf081;" aria-hidden="true"></i></a>
+		<a href="https://www.linkedin.com/company/tune" title="TUNE Linkedin page" target="_blank"><i  class="x-icon x-icon-linkedin-square" data-x-icon-b="&#xf08c;" aria-hidden="true"></i></a>
+		<a class="footer-social-icon" href="https://www.g2.com/products/tune/reviews"><div class="g2-badge"></div></a>
+	</div>
+<img style="padding-top:4px" src="https://www.tune.com/wp-content/uploads/2025/08/soc-badge-2x.png" alt=“AICPA-SOC” width="100">
+</div></div></li></ul><ul id="menu-footer-menu" class="x-nav"><li id="nav_menu-7" class="widget-container"><div class="menu-footer-menu-1-container"><ul id="menu-footer-menu-1" class="menu"><li id="menu-item-50927" class="no-click footer-parent-link menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-50927"><a href="#">Solutions</a>
+<ul class="sub-menu">
+	<li id="menu-item-70239" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70239"><a href="https://www.tune.com/solutions/advertisers/">For Advertisers</a></li>
+	<li id="menu-item-70241" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70241"><a href="https://www.tune.com/solutions/networks/">For Networks</a></li>
+	<li id="menu-item-71805" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71805"><a href="https://www.tune.com/affiliate-marketing/direct-to-consumer-ecommerce/">Direct-to-Consumer</a></li>
+	<li id="menu-item-71804" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71804"><a href="https://www.tune.com/affiliate-marketing/financial-services/">Financial Services</a></li>
+	<li id="menu-item-71803" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71803"><a href="https://www.tune.com/affiliate-marketing/subscription-services/">Subscription Services</a></li>
+</ul>
+</li>
+</ul></div></li><li id="nav_menu-6" class="widget-container"><div class="menu-footer-menu-2-container"><ul id="menu-footer-menu-2" class="menu"><li id="menu-item-50933" class="footer-parent-link no-click menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-50933"><a href="#">Why Tune</a>
+<ul class="sub-menu">
+	<li id="menu-item-70247" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70247"><a href="https://www.tune.com/platform/">Platform</a></li>
+	<li id="menu-item-70243" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70243"><a href="https://www.tune.com/partners/">Partners</a></li>
+	<li id="menu-item-71333" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71333"><a href="https://www.tune.com/customer-stories/">Customers</a></li>
+	<li id="menu-item-70245" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70245"><a href="https://www.tune.com/professional-services/">Services</a></li>
+</ul>
+</li>
+</ul></div></li><li id="nav_menu-5" class="widget-container"><div class="menu-footer-menu-3-container"><ul id="menu-footer-menu-3" class="menu"><li id="menu-item-71424" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-71424"><a href="#">Pricing</a>
+<ul class="sub-menu">
+	<li id="menu-item-71425" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71425"><a href="https://www.tune.com/solutions/advertisers/compare-plans/">For Advertisers</a></li>
+	<li id="menu-item-71426" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71426"><a href="https://www.tune.com/solutions/networks/compare-plans/">For Networks</a></li>
+</ul>
+</li>
+</ul></div></li><li id="nav_menu-4" class="widget-container"><div class="menu-footer-menu-4-container"><ul id="menu-footer-menu-4" class="menu"><li id="menu-item-50955" class="footer-parent-link no-click menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-50955"><a href="#">Learn</a>
+<ul class="sub-menu">
+	<li id="menu-item-70455" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70455"><a href="https://www.tune.com/resources/resource-library/">Resources</a></li>
+	<li id="menu-item-70457" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70457"><a href="https://www.tune.com/resources/resource-library/#event">Events</a></li>
+	<li id="menu-item-70459" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70459"><a href="https://www.tune.com/blog/">Blog</a></li>
+</ul>
+</li>
+</ul></div></li><li id="nav_menu-3" class="widget-container"><div class="menu-footer-menu-5-container"><ul id="menu-footer-menu-5" class="menu"><li id="menu-item-50967" class="footer-parent-link no-click menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-50967"><a href="#">Support</a>
+<ul class="sub-menu">
+	<li id="menu-item-70461" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70461"><a href="https://support.tune.com/hc/en-us">Help Site</a></li>
+	<li id="menu-item-70463" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70463"><a href="https://developers.tune.com/">Developer Site</a></li>
+	<li id="menu-item-70465" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70465"><a href="https://academy.tune.com/">Training</a></li>
+	<li id="menu-item-70467" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-70467"><a href="https://tune.zendesk.com/hc/en-us/requests/new">Contact Support</a></li>
+</ul>
+</li>
+</ul></div></li><li id="nav_menu-9" class="widget-container"><div class="menu-footer-menu-6-container"><ul id="menu-footer-menu-6" class="menu"><li id="menu-item-70469" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-70469"><a href="#">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-70471" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70471"><a href="https://www.tune.com/about/">About TUNE</a></li>
+	<li id="menu-item-70473" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70473"><a href="https://www.tune.com/about/careers/">Careers</a></li>
+	<li id="menu-item-71385" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-71385"><a href="https://mkt.tune.com/advocacy-program.html">Advocacy Program</a></li>
+	<li id="menu-item-70479" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70479"><a href="https://www.tune.com/contact-us/">Contact Us</a></li>
+</ul>
+</li>
+</ul></div></li><li id="nav_menu-11" class="widget-container"><div class="menu-footer-menu-7-container"><ul id="menu-footer-menu-7" class="menu"><li id="menu-item-74435" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-74435"><a href="#">LEGAL</a>
+<ul class="sub-menu">
+	<li id="menu-item-74436" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74436"><a href="https://www.tune.com/resources/data-and-privacy/privacy-policies/">Privacy Policy</a></li>
+	<li id="menu-item-74437" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-74437"><a href="/resources/data-and-privacy/privacy-policies/#CA">Notice for CA Residents</a></li>
+	<li id="menu-item-74439" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-74439"><a target="_blank" href="https://app.smartsheet.com/b/form/f756b77f7b8c454c9f4d5c950e95bd2b">Personal Data Request Form</a></li>
+	<li id="menu-item-74438" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74438"><a href="https://www.tune.com/resources/data-and-privacy/data-processing-agreement/">Data Processing Agreement</a></li>
+	<li id="menu-item-74528" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74528"><a href="https://www.tune.com/resources/data-and-privacy/terms-of-use/">Terms of Use</a></li>
+</ul>
+</li>
+</ul></div></li></ul><ul class="widget-wrap"><li id="custom_html-2" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><div class="x-custom-widget"> 
+<img src="/wp-content/themes/tune.com/img/brand/tune-logo.png" alt="TUNE Marketing Console" width="100">
+<p style="color: #044026 !important; padding-top:8px; font-size:12px !important;">&copy; 2026 <span class="text-uppercase">Tune</span>, Inc.</p>
+
+<div id="footer-get-started">
+<a title="Request a Demo" href="https://mkt.tune.com/RequestaDemo_footer.html" data-link-type="button">Request a Demo</a>
+</div>
+	<div id="footer-social">
+		<a href="https://www.facebook.com/TUNE/" target="_blank" title="TUNE Facebook page"><i  class="x-icon x-icon-facebook-square" data-x-icon-b="&#xf082;" aria-hidden="true"></i></a>
+		<a href="https://twitter.com/tune" target="_blank" title="TUNE Twitter page"><i  class="x-icon x-icon-twitter-square" data-x-icon-b="&#xf081;" aria-hidden="true"></i></a>
+		<a href="https://www.linkedin.com/company/tune" title="TUNE Linkedin page" target="_blank"><i  class="x-icon x-icon-linkedin-square" data-x-icon-b="&#xf08c;" aria-hidden="true"></i></a>
+		<a class="footer-social-icon" href="https://www.g2.com/products/tune/reviews"><div class="g2-badge"></div></a>
+	</div>
+<img style="padding-top:4px" src="https://www.tune.com/wp-content/uploads/2025/08/soc-badge-2x.png" alt=“AICPA-SOC” width="100">
+</div></div></li>
+</ul></div><div class="footer-menu-wrap has-1-cols is-hidden--desktop"><ul id="menu-footer-mobile-menu" class="x-nav"><li id="block-5" class="widget-container"><div class="x-custom-widget">
+	<img decoding="async" src="/wp-content/themes/tune.com/img/brand/tune-logo.png" alt="TUNE Logo" width="100">
+	<p id="footer-copywrite" class=" text-align-center">© 2026 <span class="text-uppercase">Tune</span>, Inc.</p>
+
+	<div id="footer-get-started">
+		<a title="Request a Demo" href="https://mkt.tune.com/RequestaDemo_footer.html" data-link-type="button">Request a Demo</a>
+	</div>
+
+</div></li><li id="nav_menu-8" class="widget-container"><div class="menu-footer-mobile-menu-container"><ul id="menu-footer-mobile-menu" class="menu"><li id="menu-item-70261" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70261"><a href="https://www.tune.com/solutions/advertisers/">For Advertisers</a></li>
+<li id="menu-item-70263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70263"><a href="https://www.tune.com/solutions/networks/">For Networks</a></li>
+<li id="menu-item-52233" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52233"><a href="https://help.tune.com/">Support</a></li>
+<li id="menu-item-70265" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70265"><a href="https://www.tune.com/contact-us/">Contact Us</a></li>
+<li id="menu-item-70269" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70269"><a href="https://www.tune.com/about/careers/">Careers</a></li>
+<li id="menu-item-74397" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74397"><a href="https://www.tune.com/resources/data-and-privacy/privacy-policies/">Privacy Policy</a></li>
+<li id="menu-item-52237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52237"><a href="https://www.tune.com/resources/data-and-privacy/terms-of-use/">Terms of Use</a></li>
+</ul></div></li></ul></div>        
+                  <div class="x-colophon-content">
+                      </div>
+        
+      </div>
+    </footer>
+
+  
+
+    
+    </div> <!-- END .x-site -->
+
+    
+  </div> <!-- END .x-root -->
+
+<div data-wpr-lazyrender="1" id="cs-footer"></div><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/tune.com/*","/wp-content/themes/x/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="rocketlazyloadscript">
+
+function getParam(p) {
+  var match = RegExp('[?&]' + p + '=([^&]*)').exec(window.location.search);
+  return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+
+function getExpiryRecord(value) {
+  var expiryPeriod = 90 * 24 * 60 * 60 * 1000; // 90 day expiry in milliseconds
+
+  var expiryDate = new Date().getTime() + expiryPeriod;
+  return {
+    value: value,
+    expiryDate: expiryDate
+  };
+}
+
+function addGclid() {
+  var gclidParam = getParam('gclid');
+  var gclidFormFields = ['gclid_field', 'foobar']; // all possible gclid form field ids here
+  var gclidRecord = null;
+  var currGclidFormField;
+
+  var gclsrcParam = getParam('gclsrc');
+  var isGclsrcValid = !gclsrcParam || gclsrcParam.indexOf('aw') !== -1;
+
+  gclidFormFields.forEach(function (field) {
+    if (document.getElementById(field)) {
+      currGclidFormField = document.getElementById(field);
+    }
+  });
+
+  if (gclidParam && isGclsrcValid) {
+    gclidRecord = getExpiryRecord(gclidParam);
+    localStorage.setItem('gclid', JSON.stringify(gclidRecord));
+  }
+
+  var gclid = gclidRecord || JSON.parse(localStorage.getItem('gclid'));
+  var isGclidValid = gclid && new Date().getTime() < gclid.expiryDate;
+
+  if (currGclidFormField && isGclidValid) {
+    currGclidFormField.value = gclid.value;
+  }
+}
+
+window.addEventListener('load', addGclid);
+  </script>
+
+
+<div data-wpr-lazyrender="1" id="quotyContainer" platforms="twitter" selector=".single-post .entry-content"></div>
+			<script type="rocketlazyloadscript">
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<script id="cs-js-extra" type="347296b83006fe3b03d99702-text/javascript">
+var csJsData = {"linkSelector":"#x-root a[href*=\"#\"]","bp":{"base":2,"ranges":[0,480,767],"count":2}};
+//# sourceURL=cs-js-extra
+</script>
+<script id="cs-js" src="https://www.tune.com/wp-content/plugins/cornerstone/assets/js/site/cs-classic.7.7.12.js?ver=7.7.12" data-rocket-defer defer type="347296b83006fe3b03d99702-text/javascript"></script>
+<script type="rocketlazyloadscript" data-minify="1" id="quoty-js" data-rocket-src="https://www.tune.com/wp-content/cache/min/1/wp-content/plugins/quoty/public/js/dist/quoty-public.js?ver=1783041036" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+//# sourceURL=rocket-browser-checker-js-after
+</script>
+<script id="rocket-preload-links-js-extra" type="347296b83006fe3b03d99702-text/javascript">
+var RocketPreloadLinksConfig = {"excludeUris":"/solutions/advertisers/|/solutions/networks/|/affiliate-marketing/direct-to-consumer-ecommerce/|/affiliate-marketing/financial-services/|/affiliate-marketing/subscription-services/|/contact-us/|/api/v1/|/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/(index.php/)?(.*)wp-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https://www.tune.com","onHoverDelay":"100","rateThrottle":"3"};
+//# sourceURL=rocket-preload-links-js-extra
+</script>
+<script type="rocketlazyloadscript" id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+
+//# sourceURL=rocket-preload-links-js-after
+</script>
+<script type="rocketlazyloadscript" id="tune-script-js" data-rocket-src="https://www.tune.com/wp-content/themes/tune.com/js/dist/main.min.js?ver=1728394616" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="jquery-ui-core-js" data-rocket-src="https://www.tune.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" id="jquery-ui-progressbar-js" data-rocket-src="https://www.tune.com/wp-includes/js/jquery/ui/progressbar.min.js?ver=1.13.3" data-rocket-defer defer></script>
+<script id="x-site-js-extra" type="347296b83006fe3b03d99702-text/javascript">
+var xJsData = [];
+//# sourceURL=x-site-js-extra
+</script>
+<script type="rocketlazyloadscript" data-minify="1" id="x-site-js" data-rocket-src="https://www.tune.com/wp-content/cache/min/1/wp-content/themes/x/framework/dist/js/site/x.js?ver=1783041036" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" async data-wp-strategy="async" fetchpriority="low" id="comment-reply-js" data-rocket-src="https://www.tune.com/wp-includes/js/comment-reply.min.js?ver=7.0.2"></script>
+<script id="cs-flexslider-js" src="https://www.tune.com/wp-content/plugins/cornerstone/assets/js/site/flexslider.js?ver=7.7.12" data-rocket-defer defer type="347296b83006fe3b03d99702-text/javascript"></script>
+<script type="rocketlazyloadscript">window.addEventListener('DOMContentLoaded', function() {jQuery(document).ready(function($) {});});</script>
+<script type="347296b83006fe3b03d99702-text/javascript">(()=>{class RocketElementorPreload{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode-wpr",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}t(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this.i(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach((t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this.o(t)}catch(t){}}))}o(t){const e=JSON.parse(t.dataset.settings),i=e.m||e.animation_delay||0,n=e[this.animationSettingKeys.find((t=>e[t]))];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let o=setTimeout((()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this.l(t,e)}),i);window.addEventListener("rocket-startLoading",(function(){clearTimeout(o)}))}i(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach((t=>{e.forEach((e=>{i.push(t+e)}))})),i}l(t,e){this.i().forEach((t=>delete e[t])),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorPreload;requestAnimationFrame(t.t.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorPreload.run)})();</script><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="347296b83006fe3b03d99702-|49" defer></script></body>
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

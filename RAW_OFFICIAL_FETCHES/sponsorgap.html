@@ -1,0 +1,953 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://img.logo.dev" crossorigin><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="dns-prefetch" href="https://img.logo.dev"><link rel="dns-prefetch" href="https://unpkg.com"><link rel="dns-prefetch" href="https://plausible.io"><meta name="description" content="SponsorGap is the leading destination for insights about brands buying sponsorships in newsletters or websites and creators looking for their next sponsor. Find sponsors based on industry field, newsletter category, audience size and other metrics."><meta name="keywords" content="newsletter sponsors, brand sponsorships, newsletter advertising, creator monetization, sponsor discovery"><meta property="og:url" content="https://sponsorgap.com"><meta property="og:type" content="website"><meta property="og:title" content="SponsorGap - Find Newsletter Sponsors"><meta property="og:description" content="SponsorGap is the leading destination for insights about brands buying sponsorships in newsletters or websites and creators looking for their next sponsor. Find sponsors based on industry field, newsletter category, audience size and other metrics."><meta property="og:image" content="https://sponsorgap.com/images/landing.png"><meta property="og:site_name" content="SponsorGap"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@sponsorgap"><meta name="twitter:title" content="SponsorGap - Find Newsletter Sponsors"><meta name="twitter:creator" content="@sponsorgap"><meta name="twitter:description" content="SponsorGap is the leading destination for insights about brands buying sponsorships in newsletters or websites and creators looking for their next sponsor. Find sponsors based on industry field, newsletter category, audience size and other metrics."><meta name="twitter:image" content="https://sponsorgap.com/images/landing.png"><link rel="canonical" href="https://sponsorgap.com"><link rel="alternate" type="application/rss+xml" title="SponsorGap Blog RSS Feed" href="https://sponsorgap.com/blog/feed.xml"><link rel="shortcut icon" href="/images/faviconSponsorgap.ico" type="image/x-icon"><link rel="stylesheet" href="/stylesheets/style.css"><script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script><title>SponsorGap - Find Newsletter Sponsors</title><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://sponsorgap.com/#organization",
+      "name": "SponsorGap",
+      "url": "https://sponsorgap.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://sponsorgap.com/images/faviconSponsorgap.ico"
+      },
+      "sameAs": ["https://twitter.com/sponsorgap"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://sponsorgap.com/#website",
+      "url": "https://sponsorgap.com",
+      "name": "SponsorGap",
+      "publisher": {"@id": "https://sponsorgap.com/#organization"},
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://sponsorgap.com/find-sponsors?search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
+</script><!-- Analytics and tracking--><script defer src="https://www.googletagmanager.com/gtag/js?id=UA-24727257-12"></script><script defer data-domain="sponsorgap.com" src="https://plausible.io/js/plausible.js"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-24727257-12');
+</script></head><body style="position: relative; background-color: #ffffff;"><style>.content-frame-left, .content-frame-right {
+  position: absolute;
+  width: 0;
+  border-left: 2px dotted rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  pointer-events: none;
+  height: 100vh;
+}
+.content-frame-left {
+  left: calc((100% - 1280px) / 2 - 60px);
+}
+.content-frame-right {
+  right: calc((100% - 1280px) / 2 - 60px);
+  border-left: none;
+  border-right: 2px dotted rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 1280px) {
+  .content-frame-left {
+    left: 20px;
+  }
+  .content-frame-right {
+    right: 20px;
+  }
+}</style><!-- Left border line--><div class="content-frame-left"></div><!-- Right border line  --><div class="content-frame-right"></div><script>// Position border lines to start after hero section - only on index page
+(function() {
+  function initBorderLines() {
+    // Only show dot lines on the index page (check for try-our-database-section)
+    const previewSection = document.getElementById('try-our-database-section');
+    if (!previewSection) {
+      // Not the index page - hide the dot lines
+      const leftLine = document.querySelector('.content-frame-left');
+      const rightLine = document.querySelector('.content-frame-right');
+      if (leftLine) leftLine.style.display = 'none';
+      if (rightLine) rightLine.style.display = 'none';
+      return;
+    }
+    
+    const leftLine = document.querySelector('.content-frame-left');
+    const rightLine = document.querySelector('.content-frame-right');
+    
+    if (!leftLine || !rightLine) {
+      setTimeout(initBorderLines, 200);
+      return;
+    }
+    
+    // Calculate where the preview section actually starts (accounting for its background)
+    const rect = previewSection.getBoundingClientRect();
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const sectionTop = rect.top + scrollTop;
+    
+    leftLine.style.top = sectionTop + 'px';
+    leftLine.style.height = `calc(100% - ${sectionTop}px)`;
+    rightLine.style.top = sectionTop + 'px';
+    rightLine.style.height = `calc(100% - ${sectionTop}px)`;
+  }
+  
+  // Only run once on load, no scroll listeners
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initBorderLines);
+  } else {
+    setTimeout(initBorderLines, 100);
+  }
+})();</script><style>.sg-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid #f3f4f6;
+    transition: box-shadow 0.2s;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+.sg-nav.scrolled { box-shadow: 0 1px 12px rgba(0,0,0,0.08); }
+.sg-nav-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    gap: 2rem;
+}
+/* Logo */
+.sg-nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+.sg-nav-logo img { height: 28px; width: auto; }
+.sg-nav-logo-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #111827;
+    letter-spacing: -0.01em;
+}
+/* Center nav */
+.sg-nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    flex: 1;
+}
+.sg-nav-link {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4b5563;
+    padding: 6px 11px;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: color 0.15s, background 0.15s;
+    white-space: nowrap;
+}
+.sg-nav-link:hover { color: #111827; background: #f9fafb; }
+.sg-nav-link.active { color: #4f46e5; background: #eef2ff; }
+/* Dropdown */
+.sg-nav-drop { position: relative; }
+.sg-nav-drop-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4b5563;
+    padding: 6px 11px;
+    border-radius: 7px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: color 0.15s, background 0.15s;
+}
+.sg-nav-drop-btn:hover { color: #111827; background: #f9fafb; }
+.sg-nav-drop-btn svg { transition: transform 0.18s; }
+.sg-nav-drop-btn.open svg { transform: rotate(180deg); }
+.sg-nav-drop-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 560px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1), 0 2px 8px rgba(0,0,0,0.06);
+    padding: 12px;
+    z-index: 200;
+}
+.sg-nav-drop-menu.open { display: flex; gap: 8px; }
+.sg-drop-col { flex: 1; }
+.sg-drop-col-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #9ca3af;
+    padding: 4px 10px 8px;
+}
+.sg-drop-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 9px 10px;
+    border-radius: 9px;
+    text-decoration: none;
+    transition: background 0.1s;
+}
+.sg-drop-item:hover { background: #f9fafb; }
+.sg-drop-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #6b7280;
+}
+.sg-drop-item:hover .sg-drop-icon { background: #eef2ff; color: #4f46e5; }
+.sg-drop-item-text { min-width: 0; }
+.sg-drop-item-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #111827;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.sg-drop-item-desc { font-size: 12px; color: #9ca3af; margin-top: 1px; line-height: 1.4; }
+.sg-drop-badge {
+    font-size: 10px;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.sg-drop-badge.new { background: #fef3c7; color: #92400e; }
+.sg-drop-badge.hot { background: #fee2e2; color: #991b1b; }
+.sg-drop-divider { height: 1px; background: #f3f4f6; margin: 8px 0; }
+/* Right CTAs */
+.sg-nav-ctas {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+}
+.sg-nav-signin {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4b5563;
+    padding: 6px 12px;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: color 0.15s, background 0.15s;
+}
+.sg-nav-signin:hover { color: #111827; background: #f9fafb; }
+.sg-nav-cta {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: #4f46e5;
+    padding: 7px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.15s;
+    white-space: nowrap;
+}
+.sg-nav-cta:hover { background: #3730a3; }
+/* Mobile toggle */
+.sg-nav-mobile-btn {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    cursor: pointer;
+    color: #374151;
+}
+.sg-nav-mobile-btn:hover { background: #f9fafb; }
+/* Mobile menu */
+.sg-nav-mobile {
+    display: none;
+    border-top: 1px solid #f3f4f6;
+    background: #fff;
+    padding: 12px 16px 20px;
+}
+.sg-nav-mobile.open { display: block; }
+.sg-mob-link {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    color: #374151;
+    padding: 10px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.1s;
+}
+.sg-mob-link:hover { background: #f9fafb; color: #111827; }
+.sg-mob-section-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #9ca3af;
+    padding: 12px 10px 6px;
+}
+.sg-mob-tool {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #4b5563;
+    padding: 8px 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.1s;
+}
+.sg-mob-tool:hover { background: #f9fafb; color: #111827; }
+.sg-mob-tool-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    background: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #6b7280;
+}
+.sg-mob-divider { height: 1px; background: #f3f4f6; margin: 8px 0; }
+.sg-mob-ctas {
+    display: flex;
+    gap: 8px;
+    padding-top: 12px;
+    border-top: 1px solid #f3f4f6;
+    margin-top: 8px;
+}
+.sg-mob-ctas a:first-child {
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+    padding: 9px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    text-decoration: none;
+    transition: background 0.1s;
+}
+.sg-mob-ctas a:first-child:hover { background: #f9fafb; }
+.sg-mob-ctas a:last-child {
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: #4f46e5;
+    padding: 9px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.1s;
+}
+.sg-mob-ctas a:last-child:hover { background: #3730a3; }
+@media(max-width: 768px) {
+    .sg-nav-links, .sg-nav-ctas { display: none !important; }
+    .sg-nav-mobile-btn { display: flex; }
+}
+</style><nav class="sg-nav" id="sg-nav"><div class="sg-nav-inner"><!-- Logo--><a class="sg-nav-logo" href="/"><img src="/images/logo.png" alt="SponsorGap" onerror="this.style.display='none'"/><span class="sg-nav-logo-name">SponsorGap</span></a><!-- Desktop nav links--><div class="sg-nav-links"><a class="sg-nav-link" href="/find-sponsors">Find Sponsors</a><a class="sg-nav-link" href="/find-creators">Find Creators</a><!-- Tools dropdown--><div class="sg-nav-drop"><button class="sg-nav-drop-btn" id="drop-btn" type="button" onclick="toggleNavDrop()">Tools<svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg></button><div class="sg-nav-drop-menu" id="drop-menu"><div class="sg-drop-col"><div class="sg-drop-col-label">Tools</div><a class="sg-drop-item" href="https://sponsormynewsletter.com/?ref=Sponsorgap" target="_blank"><div class="sg-drop-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div><div class="sg-drop-item-text"><div class="sg-drop-item-name">SponsorMyNewsletter<span class="sg-drop-badge hot">Hot</span></div><div class="sg-drop-item-desc">Get sponsors delivered to your inbox</div></div></a><a class="sg-drop-item" href="/sponsorship-search-engine"><div class="sg-drop-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0"></path></svg></div><div class="sg-drop-item-text"><div class="sg-drop-item-name">Free Search Engine</div><div class="sg-drop-item-desc">Search 25k+ sponsor deals</div></div></a><a class="sg-drop-item" href="/sponsor-trends"><div class="sg-drop-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg></div><div class="sg-drop-item-text"><div class="sg-drop-item-name">Sponsor Trends</div><div class="sg-drop-item-desc">Trending brands by industry</div></div></a><a class="sg-drop-item" href="/compare"><div class="sg-drop-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg></div><div class="sg-drop-item-text"><div class="sg-drop-item-name">Compare Sponsors<span class="sg-drop-badge new">New</span></div><div class="sg-drop-item-desc">Side-by-side sponsor analysis</div></div></a><a class="sg-drop-item" href="/newsletter-ad-copy"><div class="sg-drop-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg></div><div class="sg-drop-item-text"><div class="sg-drop-item-name">Ad Copy Library</div><div class="sg-drop-item-desc">Real ads from top newsletters</div></div></a><a class="sg-drop-item" href="/sponsor-calendar"><div class="sg-drop-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></div><div class="sg-drop-item-text"><div class="sg-drop-item-name">Sponsor Calendar</div><div class="sg-drop-item-desc">Upcoming ad slot availability</div></div></a></div><div class="sg-drop-col"><div class="sg-drop-col-label">Datasets</div><a class="sg-drop-item" href="/software-sponsors-dataset"><div class="sg-drop-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg></div><div class="sg-drop-item-text"><div class="sg-drop-item-name">Software Sponsors</div><div class="sg-drop-item-desc">SaaS & dev tool brands</div></div></a><a class="sg-drop-item" href="/ecommerce-sponsors-dataset"><div class="sg-drop-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg></div><div class="sg-drop-item-text"><div class="sg-drop-item-name">Ecommerce Sponsors</div><div class="sg-drop-item-desc">DTC & retail brands</div></div></a><a class="sg-drop-item" href="/finance-sponsors-dataset"><div class="sg-drop-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="sg-drop-item-text"><div class="sg-drop-item-name">Finance Sponsors</div><div class="sg-drop-item-desc">Fintech & investment brands</div></div></a><a class="sg-drop-item" href="/crypto-sponsors-dataset"><div class="sg-drop-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div><div class="sg-drop-item-text"><div class="sg-drop-item-name">Crypto Sponsors</div><div class="sg-drop-item-desc">Web3 & blockchain brands</div></div></a></div></div></div><a class="sg-nav-link" href="/pricing">Pricing</a><a class="sg-nav-link" href="/api">API</a><a class="sg-nav-link" href="/blog">Blog</a><!-- Resources dropdown--><div class="sg-nav-drop"><button class="sg-nav-drop-btn" id="resources-btn" type="button" onclick="toggleResourcesDrop()">Resources<svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg></button><div class="sg-nav-drop-menu" id="resources-menu" style="width:320px;"><div class="sg-drop-col"><a class="sg-drop-item" href="/getting-started"><div class="sg-drop-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div><div class="sg-drop-item-text"><div class="sg-drop-item-name">Getting Started</div><div class="sg-drop-item-desc">Land your first sponsor in 10 minutes</div></div></a><a class="sg-drop-item" href="/help"><div class="sg-drop-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div><div class="sg-drop-item-text"><div class="sg-drop-item-name">Help & FAQ</div><div class="sg-drop-item-desc">Answers to common questions</div></div></a><div class="sg-drop-divider"></div><a class="sg-drop-item" href="/mcp"><div class="sg-drop-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div><div class="sg-drop-item-text"><div class="sg-drop-item-name">Claude AI · MCP<span class="sg-drop-badge new">New</span></div><div class="sg-drop-item-desc">Use SponsorGap inside Claude, Cursor & more</div></div></a></div></div></div></div><!-- Desktop CTAs--><div class="sg-nav-ctas"><a class="sg-nav-signin" href="https://app.sponsorgap.com/signin">Sign in</a><a class="sg-nav-cta" href="https://app.sponsorgap.com/register">Start free →</a></div><!-- Mobile hamburger--><button class="sg-nav-mobile-btn" type="button" onclick="toggleMobileNav()" aria-label="Menu"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" id="mob-icon-open"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path></svg><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="display:none" id="mob-icon-close"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg></button></div><!-- Mobile menu panel--><div class="sg-nav-mobile" id="sg-nav-mobile"><a class="sg-mob-link" href="/find-sponsors">Find Sponsors</a><a class="sg-mob-link" href="/find-creators">Find Creators</a><a class="sg-mob-link" href="/pricing">Pricing</a><a class="sg-mob-link" href="/api">API</a><a class="sg-mob-link" href="/blog">Blog</a><a class="sg-mob-link" href="/getting-started">Getting Started</a><a class="sg-mob-link" href="/help">Help & FAQ</a><a class="sg-mob-link" href="/mcp">Claude AI · MCP</a><div class="sg-mob-section-label">Tools</div><a class="sg-mob-tool" href="https://sponsormynewsletter.com/?ref=Sponsorgap" target="_blank"><div class="sg-mob-tool-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div>SponsorMyNewsletter</a><a class="sg-mob-tool" href="/sponsorship-search-engine"><div class="sg-mob-tool-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0"></path></svg></div>Free Search Engine</a><a class="sg-mob-tool" href="/sponsor-trends"><div class="sg-mob-tool-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg></div>Sponsor Trends</a><a class="sg-mob-tool" href="/newsletter-ad-copy"><div class="sg-mob-tool-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg></div>Ad Copy Library</a><a class="sg-mob-tool" href="/sponsor-calendar"><div class="sg-mob-tool-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg></div>Sponsor Calendar</a><a class="sg-mob-tool" href="/compare"><div class="sg-mob-tool-icon"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg></div>Compare Sponsors</a><div class="sg-mob-ctas"><a href="https://app.sponsorgap.com/signin">Sign in</a><a href="https://app.sponsorgap.com/register">Start free →</a></div></div></nav><script>// Sticky shadow on scroll
+window.addEventListener('scroll', function() {
+    document.getElementById('sg-nav').classList.toggle('scrolled', window.scrollY > 8);
+});
+
+// Tools dropdown
+function toggleNavDrop() {
+    const btn  = document.getElementById('drop-btn');
+    const menu = document.getElementById('drop-menu');
+    const open = menu.classList.toggle('open');
+    btn.classList.toggle('open', open);
+    // Close resources if open
+    document.getElementById('resources-menu').classList.remove('open');
+    document.getElementById('resources-btn').classList.remove('open');
+}
+
+// Resources dropdown
+function toggleResourcesDrop() {
+    const btn  = document.getElementById('resources-btn');
+    const menu = document.getElementById('resources-menu');
+    const open = menu.classList.toggle('open');
+    btn.classList.toggle('open', open);
+    // Close tools if open
+    document.getElementById('drop-menu').classList.remove('open');
+    document.getElementById('drop-btn').classList.remove('open');
+}
+
+document.addEventListener('click', function(e) {
+    if (!e.target.closest('.sg-nav-drop')) {
+        document.getElementById('drop-menu').classList.remove('open');
+        document.getElementById('drop-btn').classList.remove('open');
+        document.getElementById('resources-menu').classList.remove('open');
+        document.getElementById('resources-btn').classList.remove('open');
+    }
+});
+
+// Mobile menu
+function toggleMobileNav() {
+    const menu  = document.getElementById('sg-nav-mobile');
+    const open  = menu.classList.toggle('open');
+    document.getElementById('mob-icon-open').style.display  = open ? 'none'  : '';
+    document.getElementById('mob-icon-close').style.display = open ? ''      : 'none';
+}
+
+// Highlight active nav link
+(function() {
+    const path = window.location.pathname;
+    document.querySelectorAll('.sg-nav-link').forEach(function(a) {
+        if (a.getAttribute('href') === path) a.classList.add('active');
+    });
+})();</script><style>:root {
+  --sg-indigo:    #4f46e5;
+  --sg-indigo-dk: #3730a3;
+  --sg-indigo-bg: #eef2ff;
+  --sg-indigo-bd: #c7d2fe;
+  --sg-green:     #059669;
+  --sg-green-bg:  #d1fae5;
+  --sg-text:      #111827;
+  --sg-muted:     #6b7280;
+  --sg-light:     #9ca3af;
+  --sg-border:    #e5e7eb;
+  --sg-bg:        #f9fafb;
+  --sg-font: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --sg-mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, monospace;
+}
+
+.sg { font-family: var(--sg-font); max-width: 1040px; margin: 0 auto; padding: 3rem 2rem 5rem; }
+
+/* Toggle */
+.sg-toggle-wrap { display:flex; border:1px solid var(--sg-border); border-radius:12px; padding:3px; width:fit-content; margin:2.5rem auto 0; background:#fff; }
+.sg-toggle-btn  { font-family:var(--sg-font); font-size:14px; padding:8px 24px; border-radius:9px; border:none; cursor:pointer; transition:all 0.18s; background:transparent; color:var(--sg-muted); font-weight:400; }
+.sg-toggle-btn.active { background:#fff; color:var(--sg-text); font-weight:600; border:1px solid var(--sg-border); box-shadow:0 1px 4px rgba(0,0,0,0.08); }
+
+/* Hero */
+.sg-eyebrow { font-family:var(--sg-mono); font-size:11px; letter-spacing:0.08em; color:var(--sg-indigo); text-transform:uppercase; margin-bottom:1.25rem; display:flex; align-items:center; justify-content:center; gap:10px; }
+.sg-eyebrow::before,.sg-eyebrow::after { content:''; display:inline-block; width:28px; height:1px; background:var(--sg-indigo); opacity:0.4; }
+.sg-h1  { font-family:var(--sg-font); font-size:clamp(42px,6.5vw,64px); font-weight:800; line-height:1.06; letter-spacing:-0.02em; color:var(--sg-text); max-width:720px; margin:0 auto 1.25rem; }
+.sg-h1 em { font-style:italic; color:var(--sg-indigo); font-weight:800; }
+.sg-sub { font-size:18px; line-height:1.75; color:var(--sg-muted); max-width:560px; margin:0 auto 2.25rem; font-weight:400; }
+#rotating-word { color:var(--sg-indigo); font-weight:600; }
+.sg-hint { font-size:12px; color:var(--sg-light); margin-top:1rem; font-family:var(--sg-mono); }
+
+/* Buttons */
+.sg-btn-p { font-family:var(--sg-font); font-size:15px; font-weight:600; padding:12px 26px; border-radius:9px; border:none; background:var(--sg-text); color:#fff; cursor:pointer; text-decoration:none; display:inline-block; transition:background 0.15s; }
+.sg-btn-p:hover { background:#1f2937; }
+.sg-btn-s { font-family:var(--sg-font); font-size:15px; font-weight:500; color:var(--sg-muted); background:transparent; border:1px solid var(--sg-border); border-radius:9px; padding:12px 26px; cursor:pointer; text-decoration:none; display:inline-block; transition:border-color 0.15s,color 0.15s; }
+.sg-btn-s:hover { border-color:#9ca3af; color:var(--sg-text); }
+
+/* Stats strip */
+.sg-stats { display:grid; grid-template-columns:repeat(3,1fr); border:1px solid var(--sg-border); border-radius:14px; margin:2.5rem 0 0; overflow:hidden; background:#fff; }
+.sg-stat  { padding:1.5rem; text-align:center; }
+.sg-stat:not(:last-child) { border-right:1px solid var(--sg-border); }
+.sg-stat-n { font-family:var(--sg-font); font-size:36px; font-weight:800; letter-spacing:-0.02em; color:var(--sg-text); display:block; line-height:1; }
+.sg-stat-l { font-size:13px; color:var(--sg-light); margin-top:6px; }
+
+/* Live indicator */
+@keyframes sg-pulse { 0%,100%{opacity:1;} 50%{opacity:0.3;} }
+.sg-live-dot { width:7px; height:7px; border-radius:50%; background:#22c55e; display:inline-block; animation:sg-pulse 2s ease-in-out infinite; vertical-align:middle; flex-shrink:0; }
+.sg-live-bar { display:flex; align-items:center; justify-content:center; gap:7px; font-family:var(--sg-mono); font-size:11px; color:var(--sg-light); margin-top:12px; }
+
+/* Section */
+.sg-section { margin:4rem 0; }
+.sg-sec-label { font-family:var(--sg-mono); font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--sg-light); margin-bottom:0.9rem; }
+.sg-sec-h2 { font-family:var(--sg-font); font-size:clamp(28px,4vw,38px); font-weight:800; line-height:1.15; letter-spacing:-0.02em; color:var(--sg-text); margin-bottom:0.9rem; }
+.sg-sec-h2 em { font-style:italic; color:var(--sg-indigo); }
+.sg-sec-p  { font-size:16px; color:var(--sg-muted); line-height:1.75; max-width:600px; }
+
+/* ── LIVE DATA SECTION ─────────────────────── */
+.sg-live-wrap { max-width: 1040px; margin: 0 auto; padding: 0 2rem; }
+.sg-live-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin-top:1.75rem; }
+
+/* Activity feed */
+.sg-feed-card { border:1px solid var(--sg-border); border-radius:14px; overflow:hidden; background:#fff; }
+.sg-feed-head { display:flex; align-items:center; justify-content:space-between; padding:12px 16px; border-bottom:1px solid var(--sg-border); background:var(--sg-bg); }
+.sg-feed-title { font-size:12px; font-weight:600; color:var(--sg-text); display:flex; align-items:center; gap:7px; }
+.sg-feed-sub   { font-family:var(--sg-mono); font-size:10px; color:var(--sg-light); }
+.sg-feed-list  { padding:6px 0; min-height:220px; }
+
+@keyframes sg-slide-in { from{opacity:0;transform:translateY(-10px);} to{opacity:1;transform:translateY(0);} }
+.sg-feed-item { display:flex; align-items:center; gap:10px; padding:8px 14px; animation:sg-slide-in 0.35s ease both; }
+.sg-feed-logo { width:28px; height:28px; border-radius:7px; background:var(--sg-bg); flex-shrink:0; overflow:hidden; position:relative; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; color:var(--sg-light); border:1px solid var(--sg-border); }
+.sg-feed-logo img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.sg-feed-info { flex:1; min-width:0; }
+.sg-feed-name { font-size:13px; font-weight:600; color:var(--sg-text); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.sg-feed-news { font-size:11px; color:var(--sg-muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.sg-feed-time { font-family:var(--sg-mono); font-size:10px; color:var(--sg-light); flex-shrink:0; }
+.sg-feed-foot { padding:8px 14px; border-top:1px solid var(--sg-border); background:var(--sg-bg); }
+
+/* Industry chart */
+.sg-chart-card { border:1px solid var(--sg-border); border-radius:14px; overflow:hidden; background:#fff; }
+.sg-chart-head { display:flex; align-items:center; justify-content:space-between; padding:12px 16px; border-bottom:1px solid var(--sg-border); background:var(--sg-bg); }
+.sg-chart-body { padding:16px; }
+.sg-bar-row    { margin-bottom:14px; }
+.sg-bar-row:last-child { margin-bottom:0; }
+.sg-bar-label  { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:5px; }
+.sg-bar-name   { font-size:12px; font-weight:500; color:var(--sg-text); }
+.sg-bar-count  { font-family:var(--sg-mono); font-size:11px; color:var(--sg-muted); }
+.sg-bar-track  { background:#f3f4f6; border-radius:99px; height:7px; overflow:hidden; }
+.sg-bar-fill   { height:100%; border-radius:99px; background:var(--sg-indigo); width:0; transition:width 1.3s cubic-bezier(0.4,0,0.2,1); }
+.sg-bar-fill.green  { background:var(--sg-green); }
+.sg-bar-fill.violet { background:#7c3aed; }
+.sg-bar-fill.orange { background:#ea580c; }
+
+/* Leaderboard card */
+.sg-rank-card { border:1px solid var(--sg-border); border-radius:14px; overflow:hidden; background:#fff; }
+.sg-rank-head { display:flex; align-items:center; justify-content:space-between; padding:12px 16px; border-bottom:1px solid var(--sg-border); background:var(--sg-bg); }
+.sg-rank-row  { display:flex; align-items:center; gap:10px; padding:8px 14px; border-bottom:1px solid var(--sg-border); }
+.sg-rank-row:last-child { border-bottom:none; }
+.sg-rank-num  { font-family:var(--sg-mono); font-size:11px; color:var(--sg-light); width:16px; flex-shrink:0; text-align:center; }
+.sg-rank-logo { width:26px; height:26px; border-radius:6px; background:var(--sg-bg); flex-shrink:0; overflow:hidden; position:relative; display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:700; color:var(--sg-light); border:1px solid var(--sg-border); }
+.sg-rank-logo img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.sg-rank-info { flex:1; min-width:0; }
+.sg-rank-name { font-size:12px; font-weight:600; color:var(--sg-text); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.sg-rank-niche{ font-size:10px; color:var(--sg-muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.sg-rank-aud  { font-family:var(--sg-mono); font-size:10px; color:var(--sg-indigo); flex-shrink:0; }
+.sg-rank-foot { padding:8px 14px; border-top:1px solid var(--sg-border); background:var(--sg-bg); }
+
+/* Insight cards */
+.sg-ig { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:1.75rem; }
+.sg-ic { background:var(--sg-bg); border-radius:12px; padding:1.25rem 1.4rem; border:1px solid var(--sg-border); }
+.sg-ic-tag  { font-size:10px; font-family:var(--sg-mono); color:var(--sg-indigo); text-transform:uppercase; letter-spacing:0.06em; margin-bottom:8px; }
+.sg-ic-name { font-weight:700; font-size:15px; color:var(--sg-text); margin-bottom:5px; display:flex; align-items:center; gap:8px; }
+.sg-ic-logo { width:20px; height:20px; border-radius:5px; object-fit:cover; }
+.sg-ic-det  { font-size:13px; color:var(--sg-muted); line-height:1.5; }
+.sg-badge-g { display:inline-block; margin-top:10px; font-size:10px; padding:3px 9px; border-radius:4px; background:var(--sg-green-bg); color:var(--sg-green); font-family:var(--sg-mono); }
+.sg-badge-i { display:inline-block; margin-top:10px; font-size:10px; padding:3px 9px; border-radius:4px; background:var(--sg-indigo-bg); color:var(--sg-indigo); font-family:var(--sg-mono); }
+
+/* ── TRY IT LIVE ─────────────────────── */
+.sg-try-wrap { background:#fff; border:1px solid var(--sg-border); border-radius:16px; padding:2rem; margin-top:1.75rem; }
+.sg-pf-input  { width:100%; padding:12px 14px 12px 40px; border:1.5px solid var(--sg-border); border-radius:9px; font-family:var(--sg-font); font-size:15px; color:var(--sg-text); outline:none; background:#fff; transition:border-color 0.15s,box-shadow 0.15s; }
+.sg-pf-input:focus { border-color:var(--sg-indigo); box-shadow:0 0 0 3px rgba(79,70,229,0.08); }
+.sg-pf-select { padding:12px 14px; border:1.5px solid var(--sg-border); border-radius:9px; font-family:var(--sg-font); font-size:14px; color:var(--sg-text); background:#fff; outline:none; cursor:pointer; min-width:130px; }
+.sg-pf-select:focus { border-color:var(--sg-indigo); }
+.sg-search-chip { font-size:12px; font-family:var(--sg-mono); padding:5px 13px; border:1px solid var(--sg-border); border-radius:20px; color:var(--sg-muted); background:#fff; cursor:pointer; transition:all 0.15s; }
+.sg-search-chip:hover,.sg-search-chip.active { border-color:var(--sg-indigo); color:var(--sg-indigo); background:var(--sg-indigo-bg); }
+.sg-result-row { display:flex; align-items:center; gap:12px; padding:10px 14px; text-decoration:none; transition:background 0.1s; cursor:pointer; }
+.sg-result-row:hover { background:var(--sg-bg); }
+.sg-result-logo { width:36px; height:36px; border-radius:9px; background:var(--sg-bg); flex-shrink:0; overflow:hidden; position:relative; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:700; color:var(--sg-light); border:1px solid var(--sg-border); }
+.sg-result-logo img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.sg-result-name { font-size:14px; font-weight:600; color:var(--sg-text); margin:0; }
+.sg-result-sub  { font-size:12px; color:var(--sg-muted); margin:1px 0 0; }
+.sg-result-right { display:flex; flex-direction:column; align-items:flex-end; gap:3px; flex-shrink:0; }
+.sg-result-tag  { font-size:11px; font-family:var(--sg-mono); color:var(--sg-light); }
+.sg-result-aud  { font-size:11px; font-family:var(--sg-mono); color:var(--sg-indigo); }
+.sg-result-more { display:flex; align-items:center; justify-content:space-between; padding:11px 14px; font-size:13px; color:var(--sg-indigo); font-weight:600; text-decoration:none; background:var(--sg-indigo-bg); border-top:1px solid var(--sg-indigo-bd); }
+.sg-result-more:hover { background:var(--sg-indigo-bd); }
+.sg-result-locked { display:flex; align-items:center; justify-content:center; gap:8px; padding:14px; background:linear-gradient(to bottom, rgba(255,255,255,0.4), #fff); font-size:13px; color:var(--sg-muted); border-top:1px solid var(--sg-border); text-align:center; }
+.sg-search-empty { text-align:left; padding:24px 14px; font-size:13px; color:var(--sg-muted); }
+@keyframes sg-spin { from{transform:rotate(0deg);} to{transform:rotate(360deg);} }
+.sg-spinner { width:15px; height:15px; border:2px solid var(--sg-border); border-top-color:var(--sg-indigo); border-radius:50%; animation:sg-spin 0.7s linear infinite; flex-shrink:0; }
+
+/* Feature table */
+.sg-features { display:flex; flex-direction:column; border:1px solid var(--sg-border); border-radius:14px; overflow:hidden; margin-top:1.75rem; }
+.sg-feat-row  { display:grid; grid-template-columns:170px 1fr; }
+.sg-feat-row:not(:last-child) { border-bottom:1px solid var(--sg-border); }
+.sg-feat-label { padding:1.5rem; border-right:1px solid var(--sg-border); background:var(--sg-bg); }
+.sg-feat-num   { font-family:var(--sg-mono); font-size:10px; color:var(--sg-light); margin-bottom:6px; }
+.sg-feat-name  { font-size:14px; font-weight:600; color:var(--sg-text); line-height:1.3; }
+.sg-feat-body  { padding:1.5rem; }
+.sg-feat-body p { font-size:14px; color:var(--sg-muted); line-height:1.7; }
+.sg-pill { display:inline-block; margin-top:8px; margin-right:4px; font-size:11px; padding:3px 9px; border-radius:4px; background:#f3f4f6; color:var(--sg-muted); border:1px solid var(--sg-border); font-family:var(--sg-mono); }
+
+/* Testimonial */
+.sg-testi { border-left:3px solid var(--sg-indigo); padding:1.5rem 1.75rem; margin-top:2.5rem; background:var(--sg-bg); border-radius:0 12px 12px 0; }
+.sg-testi q { font-family:var(--sg-font); font-size:19px; font-weight:500; line-height:1.6; color:var(--sg-text); quotes:none; font-style:italic; }
+.sg-testi q::before { content:'\201C'; }
+.sg-testi q::after  { content:'\201D'; }
+.sg-testi-attr { font-size:13px; color:var(--sg-light); margin-top:14px; display:flex; align-items:center; gap:8px; }
+.sg-testi-attr strong { color:var(--sg-muted); font-weight:600; }
+
+/* Full platform grid */
+.sg-platform { margin-top:2rem; }
+.sg-platform-cats { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-top:1.75rem; }
+.sg-platform-cat { background:#fff; border:1px solid var(--sg-border); border-radius:14px; padding:1.25rem 1.4rem 1.4rem; }
+.sg-platform-cat-icon { width:34px; height:34px; border-radius:9px; background:var(--sg-indigo-bg); display:flex; align-items:center; justify-content:center; margin-bottom:1rem; color:var(--sg-indigo); }
+.sg-platform-cat-title { font-size:13px; font-weight:700; color:var(--sg-text); margin-bottom:10px; }
+.sg-platform-feat { display:flex; align-items:flex-start; gap:8px; padding:6px 0; border-bottom:1px solid var(--sg-border); }
+.sg-platform-feat:last-child { border-bottom:none; padding-bottom:0; }
+.sg-platform-feat-dot { width:5px; height:5px; border-radius:50%; background:var(--sg-indigo); flex-shrink:0; margin-top:6px; }
+.sg-platform-feat-text { font-size:13px; color:var(--sg-muted); line-height:1.45; }
+.sg-platform-feat-text strong { color:var(--sg-text); font-weight:600; display:block; font-size:13px; }
+.sg-platform-feat-text span { font-size:11px; color:var(--sg-light); }
+@media(max-width:900px) { .sg-platform-cats { grid-template-columns:repeat(2,1fr); } }
+@media(max-width:540px) { .sg-platform-cats { grid-template-columns:1fr; } }
+
+/* Brand logo grid */
+.sg-brand-grid { display:flex; flex-wrap:wrap; gap:7px; margin-top:1.25rem; align-items:center; }
+.sg-brand-card { display:flex; align-items:center; gap:7px; padding:6px 11px; border:1px solid var(--sg-border); border-radius:9px; background:#fff; transition:border-color 0.15s,box-shadow 0.15s; text-decoration:none; }
+.sg-brand-card:hover { border-color:#d1d5db; box-shadow:0 2px 8px rgba(0,0,0,0.06); }
+.sg-brand-logo { width:18px; height:18px; border-radius:4px; object-fit:cover; flex-shrink:0; }
+.sg-brand-fallback { width:18px; height:18px; border-radius:4px; background:var(--sg-indigo-bg); display:flex; align-items:center; justify-content:center; font-size:9px; font-weight:700; color:var(--sg-indigo); flex-shrink:0; }
+.sg-brand-name { font-size:12px; font-family:var(--sg-mono); color:var(--sg-muted); }
+.sg-brand-more { font-size:12px; font-family:var(--sg-mono); color:var(--sg-indigo); padding:6px 13px; border:1px dashed var(--sg-indigo-bd); border-radius:9px; background:var(--sg-indigo-bg); }
+
+/* Pricing */
+.sg-pricing { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:1.75rem; }
+.sg-plan    { border:1px solid var(--sg-border); border-radius:14px; padding:1.5rem; position:relative; background:#fff; }
+.sg-plan.featured { border:2px solid var(--sg-indigo); }
+.sg-plan-badge { position:absolute; top:-12px; left:50%; transform:translateX(-50%); font-size:10px; font-family:var(--sg-mono); background:var(--sg-indigo); color:#fff; padding:3px 12px; border-radius:10px; white-space:nowrap; }
+.sg-plan-name  { font-size:13px; font-weight:600; color:var(--sg-text); margin-bottom:4px; }
+.sg-plan-price { font-family:var(--sg-font); font-size:32px; font-weight:800; letter-spacing:-0.02em; color:var(--sg-text); margin:10px 0 4px; }
+.sg-plan-price span { font-size:13px; color:var(--sg-light); font-weight:400; }
+.sg-plan-desc  { font-size:12px; color:var(--sg-light); line-height:1.5; margin-bottom:1rem; border-bottom:1px solid var(--sg-border); padding-bottom:1rem; }
+.sg-plan-feat  { font-size:13px; color:var(--sg-muted); padding:4px 0; display:flex; gap:6px; align-items:baseline; }
+.sg-plan-feat::before { content:'—'; color:var(--sg-border); flex-shrink:0; }
+
+/* Divider / Final */
+.sg-hr    { border:none; border-top:1px solid var(--sg-border); margin:3.5rem 0; }
+.sg-final { text-align:center; border:1px solid var(--sg-border); border-radius:14px; padding:3.5rem 2rem; }
+.sg-final h2 { font-family:var(--sg-font); font-size:clamp(28px,4vw,40px); font-weight:800; letter-spacing:-0.02em; color:var(--sg-text); margin-bottom:0.9rem; }
+.sg-final h2 em { font-style:italic; color:var(--sg-indigo); }
+.sg-final p  { font-size:15px; color:var(--sg-light); margin-bottom:1.75rem; }
+
+/* ── MCP / CLAUDE AI SECTION ────────────────────────────────── */
+.sg-mcp-wrap { background:#fff; border:1px solid var(--sg-border); border-radius:16px; overflow:hidden; margin-top:1.75rem; }
+.sg-mcp-grid { display:grid; grid-template-columns:1fr 1fr; }
+.sg-mcp-left { padding:2rem; border-right:1px solid var(--sg-border); }
+.sg-mcp-right { padding:2rem; background:var(--sg-bg); }
+.sg-mcp-step { display:flex; gap:14px; align-items:flex-start; margin-bottom:1.4rem; }
+.sg-mcp-step:last-child { margin-bottom:0; }
+.sg-mcp-step-num { width:26px; height:26px; border-radius:50%; background:var(--sg-indigo-bg); border:1px solid var(--sg-indigo-bd); display:flex; align-items:center; justify-content:center; font-family:var(--sg-mono); font-size:11px; font-weight:700; color:var(--sg-indigo); flex-shrink:0; margin-top:1px; }
+.sg-mcp-step-title { font-size:14px; font-weight:600; color:var(--sg-text); margin-bottom:3px; }
+.sg-mcp-step-body { font-size:13px; color:var(--sg-muted); line-height:1.55; }
+.sg-mcp-code { font-family:var(--sg-mono); font-size:11px; color:var(--sg-indigo); background:var(--sg-indigo-bg); border:1px solid var(--sg-indigo-bd); border-radius:5px; padding:4px 8px; margin-top:5px; display:inline-block; word-break:break-all; }
+.sg-mcp-prompts-label { font-family:var(--sg-mono); font-size:10px; letter-spacing:0.08em; text-transform:uppercase; color:var(--sg-light); margin-bottom:12px; }
+.sg-mcp-prompt { font-family:var(--sg-mono); font-size:12px; color:var(--sg-text); background:#fff; border:1px solid var(--sg-border); border-radius:8px; padding:10px 14px; margin-bottom:8px; line-height:1.4; position:relative; padding-left:32px; }
+.sg-mcp-prompt::before { content:'>'; position:absolute; left:12px; top:10px; color:var(--sg-indigo); font-weight:700; font-size:13px; }
+.sg-mcp-prompt:last-child { margin-bottom:0; }
+.sg-mcp-plans { display:flex; gap:6px; margin-top:1.25rem; }
+.sg-mcp-plan-badge { font-family:var(--sg-mono); font-size:10px; padding:3px 9px; border-radius:4px; background:var(--sg-indigo-bg); color:var(--sg-indigo); border:1px solid var(--sg-indigo-bd); }
+@media(max-width:768px) { .sg-mcp-grid { grid-template-columns:1fr; } .sg-mcp-left { border-right:none; border-bottom:1px solid var(--sg-border); } }
+
+@media(max-width:768px) {
+  .sg-live-grid { grid-template-columns:1fr; }
+}
+@media(max-width:640px) {
+  .sg-ig,.sg-pricing { grid-template-columns:1fr; }
+  .sg-feat-row { grid-template-columns:1fr; }
+  .sg-feat-label { border-right:none; border-bottom:1px solid var(--sg-border); }
+  .sg-stats { grid-template-columns:1fr; }
+  .sg-stat:not(:last-child) { border-right:none; border-bottom:1px solid var(--sg-border); }
+  .sg-try-wrap { padding:1.25rem; }
+  .sg-pf-row { flex-direction:column; }
+}
+</style><div class="sg"><!-- ── AUDIENCE TOGGLE ──────────────────────────────────────────────────────--><div style="text-align:center;"><p style="font-size:12px; color:var(--sg-light); margin-bottom:8px; font-family:var(--sg-mono); letter-spacing:0.05em;">I am a…</p><div class="sg-toggle-wrap"><button class="sg-toggle-btn active" id="btn-creator" onclick="setAudience('creator')">Newsletter creator</button><button class="sg-toggle-btn" id="btn-brand" onclick="setAudience('brand')">Brand / advertiser</button></div></div><!-- ── HERO ─────────────────────────────────────────────────────────────────--><div style="text-align:center; padding:3.5rem 0 2.5rem;"><div class="sg-eyebrow" id="hero-eyebrow">Sponsorship intelligence</div><h1 class="sg-h1" id="hero-h1">Find the brands already spending in&nbsp;<em>your niche</em></h1><p class="sg-sub" id="hero-sub">Stop cold-pitching strangers. SponsorGap shows you which brands are actively sponsoring <span id="rotating-word">newsletters</span> like yours — and connects you to the decision-makers.</p><div style="display:flex; gap:12px; justify-content:center; align-items:center; flex-wrap:wrap;"><a class="sg-btn-p" id="hero-cta1" href="https://app.sponsorgap.com/register">Start for free</a><a class="sg-btn-s" href="#try-live">See it live →</a></div><p class="sg-hint">No credit card required · 7-day free trial</p></div><!-- ── STATS STRIP ──────────────────────────────────────────────────────────--><div class="sg-stats"><div class="sg-stat"><span class="sg-stat-n" id="cnt-sponsors">0</span><span class="sg-stat-l">sponsorships tracked</span></div><div class="sg-stat"><span class="sg-stat-n" id="cnt-weekly">0</span><span class="sg-stat-l">new this week</span></div><div class="sg-stat"><span class="sg-stat-n" id="cnt-users">0</span><span class="sg-stat-l">creators signed up</span></div></div><div class="sg-live-bar"><span class="sg-live-dot"></span><span>database updated live</span></div></div><!-- ── LIVE DATA VISUALS ─────────────────────────────────────────────────────--><div class="sg-live-wrap" style="margin-top:3rem;"><div style="max-width:1040px; margin:0 auto; padding:0;"><p class="sg-sec-label" style="margin-bottom:0.9rem;">Real-time intelligence</p><h2 class="sg-sec-h2">What's happening&nbsp;<em>right now</em></h2><p class="sg-sec-p" style="margin-bottom:0;">Live sponsorship activity and industry trends pulled directly from our database.</p></div><div class="sg-live-grid"><!-- Activity feed--><div class="sg-feed-card"><div class="sg-feed-head"><div class="sg-feed-title"><span class="sg-live-dot"></span>Live activity</div><span class="sg-feed-sub">Updated continuously</span></div><div class="sg-feed-list" id="sg-feed-list"></div><div class="sg-feed-foot"><span style="font-size:11px; font-family:var(--sg-mono); color:var(--sg-light);">Recent sponsorship deals</span></div></div><!-- Industry bar chart--><div class="sg-chart-card"><div class="sg-chart-head"><span style="font-size:12px; font-weight:600; color:var(--sg-text);">Top industries</span><span style="font-family:var(--sg-mono); font-size:10px; color:var(--sg-light);">Last 30 days</span></div><div class="sg-chart-body"><div class="sg-bar-row"><div class="sg-bar-label"><span class="sg-bar-name">Software &amp; SaaS</span><span class="sg-bar-count">↑ high</span></div><div class="sg-bar-track"><div class="sg-bar-fill" data-pct="82" style="width:0%;"></div></div></div><div class="sg-bar-row"><div class="sg-bar-label"><span class="sg-bar-name">Finance &amp; Fintech</span><span class="sg-bar-count">↑ rising</span></div><div class="sg-bar-track"><div class="sg-bar-fill green" data-pct="71" style="width:0%;"></div></div></div><div class="sg-bar-row"><div class="sg-bar-label"><span class="sg-bar-name">Marketing Tools</span><span class="sg-bar-count">stable</span></div><div class="sg-bar-track"><div class="sg-bar-fill" data-pct="58" style="width:0%;"></div></div></div><div class="sg-bar-row"><div class="sg-bar-label"><span class="sg-bar-name">Developer Tools</span><span class="sg-bar-count">↑ rising</span></div><div class="sg-bar-track"><div class="sg-bar-fill violet" data-pct="49" style="width:0%;"></div></div></div><div class="sg-bar-row"><div class="sg-bar-label"><span class="sg-bar-name">Health &amp; Wellness</span><span class="sg-bar-count">stable</span></div><div class="sg-bar-track"><div class="sg-bar-fill green" data-pct="38" style="width:0%;"></div></div></div><div class="sg-bar-row"><div class="sg-bar-label"><span class="sg-bar-name">E-commerce</span><span class="sg-bar-count">stable</span></div><div class="sg-bar-track"><div class="sg-bar-fill orange" data-pct="31" style="width:0%;"></div></div></div></div></div><!-- Trending leaderboard--><div class="sg-rank-card"><div class="sg-rank-head"><span style="font-size:12px; font-weight:600; color:var(--sg-text); display:flex; align-items:center; gap:7px;"><span class="sg-live-dot"></span>Top sponsors now</span><span style="font-family:var(--sg-mono); font-size:10px; color:var(--sg-light);">Most active</span></div><div class="sg-rank-row"><span class="sg-rank-num">1</span><div class="sg-rank-logo"><img src="https://img.logo.dev/wisprflow.ai?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Wispr" onerror="this.style.display='none';this.nextSibling.style.display='flex';"><span style="display:none; position:absolute; inset:0; align-items:center; justify-content:center; font-size:10px; font-weight:700; color:var(--sg-light);">W</span></div><div class="sg-rank-info"><div class="sg-rank-name">Wispr</div><div class="sg-rank-niche">Software</div></div><span class="sg-rank-aud">100k reach</span></div><div class="sg-rank-row"><span class="sg-rank-num">2</span><div class="sg-rank-logo"><img src="https://img.logo.dev/bedrockdata.ai?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Bedrock Data" onerror="this.style.display='none';this.nextSibling.style.display='flex';"><span style="display:none; position:absolute; inset:0; align-items:center; justify-content:center; font-size:10px; font-weight:700; color:var(--sg-light);">B</span></div><div class="sg-rank-info"><div class="sg-rank-name">Bedrock Data</div><div class="sg-rank-niche">Software</div></div><span class="sg-rank-aud">100k reach</span></div><div class="sg-rank-row"><span class="sg-rank-num">3</span><div class="sg-rank-logo"><img src="https://img.logo.dev/catchagent.ai?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Catch" onerror="this.style.display='none';this.nextSibling.style.display='flex';"><span style="display:none; position:absolute; inset:0; align-items:center; justify-content:center; font-size:10px; font-weight:700; color:var(--sg-light);">C</span></div><div class="sg-rank-info"><div class="sg-rank-name">Catch</div><div class="sg-rank-niche">Software</div></div><span class="sg-rank-aud">100k reach</span></div><div class="sg-rank-row"><span class="sg-rank-num">4</span><div class="sg-rank-logo"><img src="https://img.logo.dev/usehatch.com?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Hatch" onerror="this.style.display='none';this.nextSibling.style.display='flex';"><span style="display:none; position:absolute; inset:0; align-items:center; justify-content:center; font-size:10px; font-weight:700; color:var(--sg-light);">H</span></div><div class="sg-rank-info"><div class="sg-rank-name">Hatch</div><div class="sg-rank-niche">Software</div></div><span class="sg-rank-aud">50k reach</span></div><div class="sg-rank-row"><span class="sg-rank-num">5</span><div class="sg-rank-logo"><img src="https://img.logo.dev/galaxy.com?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Galaxy One Trade" onerror="this.style.display='none';this.nextSibling.style.display='flex';"><span style="display:none; position:absolute; inset:0; align-items:center; justify-content:center; font-size:10px; font-weight:700; color:var(--sg-light);">G</span></div><div class="sg-rank-info"><div class="sg-rank-name">Galaxy One Trade</div><div class="sg-rank-niche">Technology</div></div><span class="sg-rank-aud">100k reach</span></div><div class="sg-rank-row"><span class="sg-rank-num">6</span><div class="sg-rank-logo"><img src="https://img.logo.dev/zenity.io?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Zenity" onerror="this.style.display='none';this.nextSibling.style.display='flex';"><span style="display:none; position:absolute; inset:0; align-items:center; justify-content:center; font-size:10px; font-weight:700; color:var(--sg-light);">Z</span></div><div class="sg-rank-info"><div class="sg-rank-name">Zenity</div><div class="sg-rank-niche">Software</div></div><span class="sg-rank-aud">1.3M reach</span></div><div class="sg-rank-foot"><span style="font-size:11px; font-family:var(--sg-mono); color:var(--sg-light);">Refreshed hourly</span></div></div></div></div><div class="sg"><!-- ── SECTION: INTELLIGENCE GAP ────────────────────────────────────────────--><div class="sg-section"><p class="sg-sec-label">The intelligence gap</p><h2 class="sg-sec-h2">Brands are spending. Most creators&nbsp;<em>never find out.</em></h2><p class="sg-sec-p">Every week, brands allocate newsletter sponsorship budgets. Without intelligence you're guessing who to pitch. With SponsorGap you see spend trends, ad frequency, and verified contacts — in real time.</p><div class="sg-ig"><div class="sg-ic"><div class="sg-ic-tag">Active this week</div><div class="sg-ic-name"><img class="sg-ic-logo" src="https://img.logo.dev/wisprflow.ai?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Wispr" onerror="this.style.display='none'">Wispr</div><div class="sg-ic-det">Software · sponsors AI Agents News</div><div class="sg-badge-g">↑ Currently spending</div></div><div class="sg-ic"><div class="sg-ic-tag">New entrant</div><div class="sg-ic-name"><img class="sg-ic-logo" src="https://img.logo.dev/bedrockdata.ai?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Bedrock Data" onerror="this.style.display='none'">Bedrock Data</div><div class="sg-ic-det">Software · sponsors AI Agents News</div><div class="sg-badge-i">Fresh budget</div></div><div class="sg-ic"><div class="sg-ic-tag">Your competitor</div><div class="sg-ic-name"><img class="sg-ic-logo" src="https://img.logo.dev/catchagent.ai?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Catch" onerror="this.style.display='none'">Catch</div><div class="sg-ic-det">Software · sponsors AI Agents News</div><div class="sg-badge-g">↑ Gap opportunity</div></div><div class="sg-ic"><div class="sg-ic-tag">Verified contact</div><div class="sg-ic-name"><img class="sg-ic-logo" src="https://img.logo.dev/usehatch.com?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Hatch" onerror="this.style.display='none'">Hatch</div><div class="sg-ic-det">Software · sponsors Indie Hackers</div><div class="sg-badge-g">↑ Decision-maker found</div></div></div></div><!-- ── LIVE PREVIEW FORM ─────────────────────────────────────────────────────--><div class="sg-section" id="try-live"><p class="sg-sec-label">Try it live</p><h2 class="sg-sec-h2">Search any brand or&nbsp;<em>niche live</em></h2><p class="sg-sec-p" style="margin-bottom:0;">Search by niche, industry, or company name — instantly see brands actively buying newsletter sponsorships. No sign-up needed.</p><div class="sg-try-wrap" data-main-app-url="https://app.sponsorgap.com"><!-- Input row--><div class="sg-pf-row" style="display:flex; gap:8px; align-items:stretch;"><div style="position:relative; flex:1;"><svg style="position:absolute;left:12px;top:50%;transform:translateY(-50%);width:15px;height:15px;color:#9ca3af;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg><input class="sg-pf-input" id="pf-query" type="text" placeholder="Niche or company — e.g. Stripe, fintech, AI tools..." autocomplete="off"></div><button id="pf-btn" onclick="runPreview()" style="padding:12px 24px;background:var(--sg-indigo);color:#fff;border:none;border-radius:9px;font-family:var(--sg-font);font-size:14px;font-weight:600;cursor:pointer;white-space:nowrap;transition:background 0.15s;flex-shrink:0;" onmouseover="this.style.background='var(--sg-indigo-dk)'" onmouseout="this.style.background='var(--sg-indigo)'">Search →</button></div><!-- Quick-pick chips — mix of niches and known companies--><div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;align-items:center;"><span style="font-size:11px;font-family:var(--sg-mono);color:var(--sg-light);margin-right:2px;">Try:</span><button class="sg-search-chip" onclick="quickNiche('Fintech')">Fintech</button><button class="sg-search-chip" onclick="quickNiche('SaaS')">SaaS</button><button class="sg-search-chip" onclick="quickNiche('AI tools')">AI tools</button><button class="sg-search-chip" onclick="quickNiche('Notion')">Notion</button><button class="sg-search-chip" onclick="quickNiche('Health')">Health</button><button class="sg-search-chip" onclick="quickNiche('Stripe')">Stripe</button><button class="sg-search-chip" onclick="quickNiche('Marketing')">Marketing</button><button class="sg-search-chip" onclick="quickNiche('Developer tools')">Developer tools</button></div><!-- Results area--><div id="pf-results" style="margin-top:16px;"></div></div><div style="margin-top:10px; display:flex; align-items:center; justify-content:space-between;"><p style="font-size:11px; color:var(--sg-light); font-family:var(--sg-mono);"><span class="sg-live-dot" style="margin-right:5px;"></span>Live data · first 3 results free</p><a class="sg-btn-p" href="https://app.sponsorgap.com/register" style="font-size:13px; padding:8px 18px;">Unlock full database →</a></div></div><!-- ── SECTION: FEATURES TABLE ───────────────────────────────────────────────--><div class="sg-section"><p class="sg-sec-label" id="feat-label">For creators</p><h2 class="sg-sec-h2">Everything you need to&nbsp;<em>land the deal</em></h2><div class="sg-features" id="features-list"><div class="sg-feat-row"><div class="sg-feat-label"><div class="sg-feat-num">01</div><div class="sg-feat-name">Sponsor discovery</div></div><div class="sg-feat-body"><p>Tell us your niche and audience size. Our engine surfaces brands actively sponsoring similar newsletters — ranked by spend trajectory and fit score.</p><span class="sg-pill">GPT-powered matching</span><span class="sg-pill">Niche filters</span></div></div><div class="sg-feat-row"><div class="sg-feat-label"><div class="sg-feat-num">02</div><div class="sg-feat-name">Competitor monitoring</div></div><div class="sg-feat-body"><p>Track which brands sponsor your direct competitors. Get notified when a new one appears — so you reach out while the budget is fresh.</p><span class="sg-pill">Real-time alerts</span><span class="sg-pill">Spend trends</span></div></div><div class="sg-feat-row"><div class="sg-feat-label"><div class="sg-feat-num">03</div><div class="sg-feat-name">Verified contacts</div></div><div class="sg-feat-body"><p>Skip generic inboxes. Reach the growth or partnership manager who controls the budget — with verified email and LinkedIn included.</p><span class="sg-pill">Decision-maker data</span><span class="sg-pill">Email + LinkedIn</span></div></div><div class="sg-feat-row"><div class="sg-feat-label"><div class="sg-feat-num">04</div><div class="sg-feat-name">Funding radar</div></div><div class="sg-feat-body"><p>Companies that just raised have fresh marketing budgets. We surface them the day they announce — before anyone else pitches them.</p><span class="sg-pill">VC-raise alerts</span><span class="sg-pill">First-mover edge</span></div></div></div></div><!-- ── TESTIMONIAL ───────────────────────────────────────────────────────────--><div class="sg-testi"><q id="testi-q">SponsorGap has helped us find multiple newsletter partners over the last couple months. The platform is intuitive and the data is incredibly valuable.</q><div class="sg-testi-attr"><strong id="testi-name">Max</strong>&nbsp;·&nbsp;<span id="testi-role">Chief of Staff at Houck's Newsletter</span></div></div><!-- ── FULL PLATFORM ────────────────────────────────────────────────────────--><div class="sg-section"><p class="sg-sec-label">Everything included</p><h2 class="sg-sec-h2">One platform.&nbsp;<em>Every tool you need.</em></h2><p class="sg-sec-p">The full intelligence stack — from discovering who's spending to closing the deal and tracking results.</p><div class="sg-platform-cats"><!-- Column 1 – Intelligence & Data--><div class="sg-platform-cat"><div class="sg-platform-cat-icon"><svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg></div><div class="sg-platform-cat-title">Intelligence & Data</div><div class="sg-platform-feat"><div class="sg-platform-feat-dot"></div><div class="sg-platform-feat-text"><strong>Sponsor database</strong><span>25k+ brands with ad history, spend signals & contacts</span></div></div><div class="sg-platform-feat"><div class="sg-platform-feat-dot"></div><div class="sg-platform-feat-text"><strong>Trend insights</strong><span>Trending brands, topics & industries by week</span></div></div><div class="sg-platform-feat"><div class="sg-platform-feat-dot"></div><div class="sg-platform-feat-text"><strong>Brand profiles</strong><span>Full spend history, newsletters sponsored, ad frequency</span></div></div><div class="sg-platform-feat"><div class="sg-platform-feat-dot"></div><div class="sg-platform-feat-text"><strong>Funding radar</strong><span>Companies that just raised — ready to spend on marketing</span></div></div><div class="sg-platform-feat"><div class="sg-platform-feat-dot"></div><div class="sg-platform-feat-text"><strong>Industry heatmaps</strong><span>See which niches have the most sponsor activity</span></div></div></div><!-- Column 2 – Tracking & Monitoring--><div class="sg-platform-cat"><div class="sg-platform-cat-icon"><svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg></div><div class="sg-platform-cat-title">Tracking & Monitoring</div><div class="sg-platform-feat"><div class="sg-platform-feat-dot"></div><div class="sg-platform-feat-text"><strong>Newsletter timeline</strong><span>Track any newsletter's full sponsorship history on a visual timeline</span></div></div><div class="sg-platform-feat"><div class="sg-platform-feat-dot"></div><div class="sg-platform-feat-text"><strong>Competitor monitoring</strong><span>Get alerted when a brand sponsors a competing newsletter</span></div></div><div class="sg-platform-feat"><div class="sg-platform-feat-dot"></div><div class="sg-platform-feat-text"><strong>Spend trend graphs</strong><span>See if a brand's ad spend is growing, stable or declining</span></div></div><div class="sg-platform-feat"><div class="sg-platform-feat-dot"></div><div class="sg-platform-feat-text"><strong>Real-time alerts</strong><span>Instant notifications for new sponsorships in your niche</span></div></div><div class="sg-platform-feat"><div class="sg-platform-feat-dot"></div><div class="sg-platform-feat-text"><strong>Watchlist</strong><span>Save brands to track and get notified when they become active</span></div></div></div><!-- Column 3 – Outreach & Marketplace--><div class="sg-platform-cat"><div class="sg-platform-cat-icon"><svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div><div class="sg-platform-cat-title">Outreach & Marketplace</div><div class="sg-platform-feat"><div class="sg-platform-feat-dot"></div><div class="sg-platform-feat-text"><strong>Verified contacts</strong><span>Direct email & LinkedIn of the person who controls the budget</span></div></div><div class="sg-platform-feat"><div class="sg-platform-feat-dot"></div><div class="sg-platform-feat-text"><strong>Outreach pipeline</strong><span>Track your pitches — contacted, replied, negotiating, closed</span></div></div><div class="sg-platform-feat"><div class="sg-platform-feat-dot"></div><div class="sg-platform-feat-text"><strong>Ad marketplace</strong><span>List your open ad slots and get inbound inquiries from brands</span></div></div><div class="sg-platform-feat"><div class="sg-platform-feat-dot"></div><div class="sg-platform-feat-text"><strong>Ad copy library</strong><span>Browse real ads from newsletters in your niche for inspiration</span></div></div><div class="sg-platform-feat"><div class="sg-platform-feat-dot"></div><div class="sg-platform-feat-text"><strong>Sponsor calendar</strong><span>See upcoming ad slot availability across the ecosystem</span></div></div></div><!-- Column 4 – Reports, API & Team--><div class="sg-platform-cat"><div class="sg-platform-cat-icon"><svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg></div><div class="sg-platform-cat-title">Reports, API & Team</div><div class="sg-platform-feat"><div class="sg-platform-feat-dot"></div><div class="sg-platform-feat-text"><strong>Custom reports</strong><span>Build and export sponsor reports by niche, period or competitor</span></div></div><div class="sg-platform-feat"><div class="sg-platform-feat-dot"></div><div class="sg-platform-feat-text"><strong>CSV & bulk export</strong><span>Download full sponsor lists filtered by any criteria</span></div></div><div class="sg-platform-feat"><div class="sg-platform-feat-dot"></div><div class="sg-platform-feat-text"><strong>Full API access</strong><span>Integrate sponsor data directly into your own tools & workflows</span></div></div><div class="sg-platform-feat"><div class="sg-platform-feat-dot"></div><div class="sg-platform-feat-text"><strong>Invite team members</strong><span>Collaborate with your sales team or VA inside your account</span></div></div><div class="sg-platform-feat"><div class="sg-platform-feat-dot"></div><div class="sg-platform-feat-text"><strong>Weekly digest</strong><span>Automatic weekly email with new sponsors in your saved niches</span></div></div></div></div></div><!-- ── SECTION: CLAUDE AI / MCP ─────────────────────────────────────────────--><div class="sg-section"><p class="sg-sec-label">Claude AI integration</p><h2 class="sg-sec-h2">Research sponsors inside&nbsp;<em>Claude</em></h2><p class="sg-sec-p">Connect SponsorGap to Claude as an MCP server. Ask plain-English questions about brands, niches, and budgets — without leaving your AI workflow.</p><div class="sg-mcp-wrap"><div class="sg-mcp-grid"><div class="sg-mcp-left"><div class="sg-mcp-step"><div class="sg-mcp-step-num">1</div><div><div class="sg-mcp-step-title">Generate your API key</div><div class="sg-mcp-step-body">Go to <strong>Settings → API Keys</strong> in your SponsorGap account and create a key.</div></div></div><div class="sg-mcp-step"><div class="sg-mcp-step-num">2</div><div><div class="sg-mcp-step-title">Add the MCP server in Claude</div><div class="sg-mcp-step-body">Open Claude <strong>Settings → Integrations</strong> and add a new MCP server:</div><div class="sg-mcp-code">https://sponsorgap-mcp-cc7ac08f6c89.herokuapp.com/mcp</div></div></div><div class="sg-mcp-step"><div class="sg-mcp-step-num">3</div><div><div class="sg-mcp-step-title">Authenticate with your key</div><div class="sg-mcp-step-body">Claude will redirect you to enter your SponsorGap API key. Paste it in and connect.</div></div></div><div class="sg-mcp-step"><div class="sg-mcp-step-num">4</div><div><div class="sg-mcp-step-title">Ask anything about sponsors</div><div class="sg-mcp-step-body">Start a conversation in Claude and ask about brands, niches, or competitors naturally.</div></div></div><div class="sg-mcp-plans"><span class="sg-mcp-plan-badge">Pro plan</span><span class="sg-mcp-plan-badge">Business plan</span></div><a href="/mcp" style="display:inline-block;margin-top:1.25rem;font-size:13px;font-weight:600;color:var(--sg-indigo);text-decoration:none;">Read the full setup guide →</a></div><div class="sg-mcp-right"><div class="sg-mcp-prompts-label">Example prompts</div><div class="sg-mcp-prompt">Which SaaS brands are actively sponsoring fintech newsletters?</div><div class="sg-mcp-prompt">Find sponsors in the AI tools niche with a growing budget</div><div class="sg-mcp-prompt">What brands recently raised funding and are buying newsletter ads?</div><div class="sg-mcp-prompt">Show me sponsors similar to Notion or Linear</div><div class="sg-mcp-prompt">Which newsletters does Stripe sponsor most frequently?</div></div></div></div></div><!-- ── BRAND LOGOS ──────────────────────────────────────────────────────────--><div class="sg-section" style="margin-bottom:0;"><p class="sg-sec-label">Brands in the database</p><div class="sg-brand-grid"><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/wisprflow.ai?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Wispr" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">W</div><span class="sg-brand-name">Wispr</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/bedrockdata.ai?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Bedrock Data" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">B</div><span class="sg-brand-name">Bedrock Data</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/catchagent.ai?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Catch" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">C</div><span class="sg-brand-name">Catch</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/usehatch.com?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Hatch" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">H</div><span class="sg-brand-name">Hatch</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/galaxy.com?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Galaxy One Trade" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">G</div><span class="sg-brand-name">Galaxy One Trade</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/zenity.io?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Zenity" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">Z</div><span class="sg-brand-name">Zenity</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/thepointsguy.com?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="The Points Guy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">T</div><span class="sg-brand-name">The Points Guy</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/attio.com?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Attio" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">A</div><span class="sg-brand-name">Attio</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/hostinger.com?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Hostinger" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">H</div><span class="sg-brand-name">Hostinger</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/hyperagent.io?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Hyperagent" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">H</div><span class="sg-brand-name">Hyperagent</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/canva.com?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Canva" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">C</div><span class="sg-brand-name">Canva</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/costarastrology.com?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Co-Star" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">C</div><span class="sg-brand-name">Co-Star</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/oasis.security?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Oasis Security" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">O</div><span class="sg-brand-name">Oasis Security</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/threatlocker.com?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="ThreatLocker" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">T</div><span class="sg-brand-name">ThreatLocker</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/spurintelligence.com?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Spur Intelligence" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">S</div><span class="sg-brand-name">Spur Intelligence</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/antares.com?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Antares" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">A</div><span class="sg-brand-name">Antares</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/wispr.ai?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Wispr" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">W</div><span class="sg-brand-name">Wispr</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/mostlymetrics.com?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Mostly Metrics" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">M</div><span class="sg-brand-name">Mostly Metrics</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/harmonic.ai?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Harmonic" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">H</div><span class="sg-brand-name">Harmonic</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/bookshop.org?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Bookshop.org" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">B</div><span class="sg-brand-name">Bookshop.org</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/hoganassessments.com?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Hogan Assessments" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">H</div><span class="sg-brand-name">Hogan Assessments</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/safespace.hateitheres.co?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="SafeSpace" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">S</div><span class="sg-brand-name">SafeSpace</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/shapes.co?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Shapes" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">S</div><span class="sg-brand-name">Shapes</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/sixfifty.com?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="SixFifty" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">S</div><span class="sg-brand-name">SixFifty</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/hateithere.co?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="I Hate It Here" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">I</div><span class="sg-brand-name">I Hate It Here</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/storeclaw.ai?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="StoreClaw" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">S</div><span class="sg-brand-name">StoreClaw</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/wispr.ai?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Wispr" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">W</div><span class="sg-brand-name">Wispr</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/meta.com?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Meta" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">M</div><span class="sg-brand-name">Meta</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/indeed.com?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Indeed" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">I</div><span class="sg-brand-name">Indeed</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/lhh.com?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="LHH" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">L</div><span class="sg-brand-name">LHH</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/radar.global?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Radar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">R</div><span class="sg-brand-name">Radar</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/whalar.com?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Whalar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">W</div><span class="sg-brand-name">Whalar</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/time.com?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="TIME" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">T</div><span class="sg-brand-name">TIME</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/surveymonkey.com?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="SurveyMonkey" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">S</div><span class="sg-brand-name">SurveyMonkey</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/catchagent.ai?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Catch" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">C</div><span class="sg-brand-name">Catch</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/insense.pro?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Insense" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">I</div><span class="sg-brand-name">Insense</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/lennar.com?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Lennar Investor Marketplace" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">L</div><span class="sg-brand-name">Lennar Investor Marketplace</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/realpropertycaptive.com?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Real Property Captive" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">R</div><span class="sg-brand-name">Real Property Captive</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/kolena.com?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Kolena" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">K</div><span class="sg-brand-name">Kolena</span></div><div class="sg-brand-card"><img class="sg-brand-logo" src="https://img.logo.dev/beingsuperhuman.ai?token=pk_QLr4GnguRNG7PyS6pGsmrA" alt="Superhuman AI" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"><div class="sg-brand-fallback" style="display:none;">S</div><span class="sg-brand-name">Superhuman AI</span></div><span class="sg-brand-more">+ 55k more</span></div></div><hr class="sg-hr"><!-- ── PRICING ───────────────────────────────────────────────────────────────--><div class="sg-section" style="margin-top:0;"><p class="sg-sec-label">Pricing</p><h2 class="sg-sec-h2">Straightforward. No surprises.</h2><div class="sg-pricing"><div class="sg-plan"><div class="sg-plan-name">Starter</div><div class="sg-plan-price">$39<span> / month</span></div><p class="sg-plan-desc">For creators who want to start finding and pitching sponsors.</p><div class="sg-plan-feat">Full sponsor database</div><div class="sg-plan-feat">Niche & industry filters</div><div class="sg-plan-feat">Sponsor activity feed</div><div class="sg-plan-feat">Ad slot scanner</div><div class="sg-plan-feat">Basic search & sort</div><div class="sg-plan-feat">7-day free trial</div></div><div class="sg-plan featured"><span class="sg-plan-badge">Most popular</span><div class="sg-plan-name">Growth</div><div class="sg-plan-price">$89<span> / month</span></div><p class="sg-plan-desc">For active creators building a reliable sponsor pipeline.</p><div class="sg-plan-feat">Everything in Starter</div><div class="sg-plan-feat">Verified contact info</div><div class="sg-plan-feat">Competitor monitoring</div><div class="sg-plan-feat">Spend trend graphs</div><div class="sg-plan-feat">Export to CSV</div><div class="sg-plan-feat">Invite 1 team member</div><div class="sg-plan-feat">Custom reports</div><div class="sg-plan-feat"><span>Claude AI integration&nbsp;<span style="font-size:11px;font-family:monospace;color:#4f46e5;background:#eef2ff;padding:1px 6px;border-radius:4px;">MCP</span></span></div></div><div class="sg-plan"><div class="sg-plan-name">Enterprise</div><div class="sg-plan-price">$199<span> / month</span></div><p class="sg-plan-desc">For teams and publishers scaling their sponsorship revenue.</p><div class="sg-plan-feat">Everything in Growth</div><div class="sg-plan-feat">Full API access</div><div class="sg-plan-feat">Up to 5 team members</div><div class="sg-plan-feat">Bulk exports</div><div class="sg-plan-feat">Outreach pipeline</div><div class="sg-plan-feat">Managed campaign tools</div><div class="sg-plan-feat">Priority support</div><div class="sg-plan-feat"><span>Claude AI integration&nbsp;<span style="font-size:11px;font-family:monospace;color:#4f46e5;background:#eef2ff;padding:1px 6px;border-radius:4px;">MCP</span></span></div></div></div></div><!-- ── FINAL CTA ─────────────────────────────────────────────────────────────--><div class="sg-final"><h2>Stop guessing. Start&nbsp;<em>closing.</em></h2><p>Join 3265 newsletter creators who found their next sponsor with SponsorGap.</p><a class="sg-btn-p" href="https://app.sponsorgap.com/register" style="font-size:16px; padding:14px 34px;">Start for free — no card needed</a></div></div><footer class="bg-gray-50 border-t border-gray-200"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="py-12"><div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 lg:gap-10"><!-- Discover Section--><div class="lg:col-span-1"><h3 class="text-sm font-semibold text-gray-900 tracking-wider uppercase mb-4">Discover</h3><div class="space-y-3"><a class="block text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/find-sponsors">Find Sponsors</a><a class="block text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/find-creators">Find Creators</a><a class="block text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/find-youtube-sponsors">YouTube Sponsors</a><a class="block text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/find-podcast-sponsors">Podcast Sponsors</a><a class="block text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/getting-started">Getting Started</a><a class="block text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/help">Help & FAQ</a><a class="block text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/mcp">Claude AI · MCP</a></div></div><!-- Creators by Industry Section--><div class="lg:col-span-1"><h3 class="text-sm font-semibold text-gray-900 tracking-wider uppercase mb-4">Creators by Niche</h3><div class="space-y-2"><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/find-creators?category=Finance">Finance Creators</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/find-creators?category=Technology">Technology Creators</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/find-creators?category=Marketing">Marketing Creators</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/find-creators?category=Business">Business Creators</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/find-creators?category=Crypto">Crypto Creators</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/find-creators?category=AI">AI Creators</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/find-creators?category=Health">Health Creators</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/find-creators?category=Sports">Sports Creators</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/find-creators?category=Investing">Investing Creators</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/find-creators?category=Startup">Startup Creators</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/find-creators?category=Productivity">Productivity Creators</a></div></div><!-- Tools Section--><div class="lg:col-span-1"><h3 class="text-sm font-semibold text-gray-900 tracking-wider uppercase mb-4">Tools</h3><div class="space-y-3"><a class="block text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed break-words" href="/sponsorship-search-engine">Sponsorship Search Engine</a><a class="block text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed break-words" href="/newsletter-ad-copy">Ad Copy Library</a><a class="block text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed break-words" href="/sponsor-calendar">Sponsor Calendar</a><a class="block text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed break-words" href="/compare">Compare Sponsors</a><a class="block text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed break-words" href="/sponsorship-rate-calculator">Rate Calculator</a><a class="block text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed break-words" href="/sponsor-directory">Sponsor Directory</a><a class="block text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed break-words" href="https://sponsormynewsletter.com/?ref=Sponsorgap" target="_blank">SponsorMyNewsletter</a><a class="block text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed break-words" href="https://newsletterscan.com/?ref=Sponsorgap" target="_blank">Newsletterscan</a><a class="block text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed break-words" href="https://sportstechjobs.com" target="_blank">Sportstechjobs</a></div></div><!-- Industries Section--><div class="lg:col-span-1"><h3 class="text-sm font-semibold text-gray-900 tracking-wider uppercase mb-4">Industry Datasets</h3><div class="space-y-2"><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed break-words" href="/software-sponsors-dataset">Software Sponsors</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed break-words" href="/finance-sponsors-dataset">Finance Sponsors</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed break-words" href="/ecommerce-sponsors-dataset">Ecommerce Sponsors</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed break-words" href="/crypto-sponsors-dataset">Crypto Sponsors</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed break-words" href="/marketing-sponsors-dataset">Marketing Sponsors</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed break-words" href="/health-sponsors-dataset">Health Sponsors</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed break-words" href="/business-sponsors-dataset">Business Sponsors</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed break-words" href="/gaming-sponsors-dataset">Gaming Sponsors</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed break-words" href="/travel-sponsors-dataset">Travel Sponsors</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed break-words" href="/food-sponsors-dataset">Food & Beverage</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed break-words" href="/fashion-sponsors-dataset">Fashion Sponsors</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed break-words" href="/automotive-sponsors-dataset">Automotive Sponsors</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed break-words" href="/real-estate-sponsors-dataset">Real Estate Sponsors</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed break-words" href="/education-sponsors-dataset">Education Sponsors</a></div></div><!-- Sponsor Trends Section--><div class="lg:col-span-1"><h3 class="text-sm font-semibold text-gray-900 tracking-wider uppercase mb-4">Sponsor Trends</h3><div class="space-y-2"><a class="block text-sm font-semibold text-indigo-600 hover:text-indigo-800 transition-colors duration-200 leading-relaxed mb-1" href="/trends/">All Trends →</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/sponsor-trends/software">Software Trends</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/sponsor-trends/finance">Finance Trends</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/sponsor-trends/ai">AI Trends</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/sponsor-trends/crypto">Crypto Trends</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/sponsor-trends/marketing">Marketing Trends</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/sponsor-trends/health">Health Trends</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/sponsor-trends/ecommerce">Ecommerce Trends</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/sponsor-trends/startup">Startup Trends</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/sponsor-trends/investing">Investing Trends</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/sponsor-trends/productivity">Productivity Trends</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/sponsor-trends/cybersecurity">Cybersecurity Trends</a><a class="block text-xs text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/sponsor-trends/gaming">Gaming Trends</a></div></div><!-- Contact Section--><div class="lg:col-span-1"><h3 class="text-sm font-semibold text-gray-900 tracking-wider uppercase mb-4">Get in Touch</h3><div class="space-y-3"><a class="block text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="mailto:hi@sponsorgap.com">Contact</a><a class="block text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/privacy">Privacy</a><a class="block text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200 leading-relaxed" href="/terms">Terms</a></div></div></div><!-- Bottom Section--><div class="mt-8 pt-8 border-t border-gray-200"><div class="flex flex-col md:flex-row justify-between items-center"><p class="text-sm text-gray-500">© <span id="current-year"> </span> SponsorGap. All rights reserved.</p><div class="mt-4 md:mt-0 flex space-x-6"><a class="text-gray-400 hover:text-gray-500 transition-colors duration-200" href="https://twitter.com/sponsorgap" target="_blank"><span class="sr-only">Twitter</span><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg></a><a class="text-gray-400 hover:text-gray-500 transition-colors duration-200" href="https://linkedin.com/company/sponsorgap" target="_blank"><span class="sr-only">LinkedIn</span><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></a></div></div></div></div></div></footer><script>// Set current year in footer
+document.addEventListener('DOMContentLoaded', function() {
+    const yearElement = document.getElementById('current-year');
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+});</script><script>// ── Audience toggle content ──────────────────────────────────────────────
+const sgContent = {
+  creator: {
+    eyebrow: 'Sponsorship intelligence',
+    h1: 'Find the brands already spending in <em>your niche</em>',
+    sub: 'Stop cold-pitching strangers. SponsorGap shows you which brands are actively sponsoring <span id="rotating-word">newsletters</span> like yours — and connects you to the decision-makers.',
+    cta1: 'Start for free',
+    featLabel: 'For creators',
+    testiQ: 'SponsorGap has helped us find multiple newsletter partners over the last couple months. The platform is intuitive and the data is incredibly valuable.',
+    testiName: 'Max',
+    testiRole: "Chief of Staff at Houck's Newsletter",
+    features: [
+      {num:'01', name:'Sponsor discovery',    body:'Tell us your niche and audience size. Our engine surfaces brands actively sponsoring similar newsletters — ranked by spend trajectory and fit score.', pills:['GPT-powered matching','Niche filters']},
+      {num:'02', name:'Competitor monitoring', body:'Track which brands sponsor your direct competitors. Get notified when a new one appears — so you reach out while the budget is fresh.',          pills:['Real-time alerts','Spend trends']},
+      {num:'03', name:'Verified contacts',     body:'Skip generic inboxes. Reach the growth or partnership manager who controls the budget — with verified email and LinkedIn included.',              pills:['Decision-maker data','Email + LinkedIn']},
+      {num:'04', name:'Funding radar',         body:'Companies that just raised have fresh marketing budgets. We surface them the day they announce — before anyone else pitches them.',               pills:['VC-raise alerts','First-mover edge']}
+    ]
+  },
+  brand: {
+    eyebrow: 'Newsletter ad intelligence',
+    h1: 'Reach <em>your exact audience</em> through trusted newsletters',
+    sub: 'Find the newsletters your target buyers already read. SponsorGap maps the newsletter landscape by category, audience size, and sponsor history — so you invest where it works.',
+    cta1: 'Explore newsletters',
+    featLabel: 'For brands',
+    testiQ: 'We found 12 newsletters in our exact ICP — software engineers at Series B companies. Better ROI than any other channel we tested.',
+    testiName: 'Jonas M.',
+    testiRole: 'Head of Growth · B2B SaaS',
+    features: [
+      {num:'01', name:'Audience targeting',   body:'Filter newsletters by niche, geography, subscriber count, and engagement rate. Find publications where your ideal buyer already pays attention.', pills:['Category filters','Audience data']},
+      {num:'02', name:'Competitor tracking',  body:'See exactly which newsletters your competitors sponsor — and at what frequency. Identify gaps before they do.',                                   pills:['Competitor spend map','Category heatmap']},
+      {num:'03', name:'Managed marketplace',  body:'Browse open ad slots, negotiate directly with creators, and manage all your campaigns in one place. No agency middleman.',                       pills:['Direct booking','Campaign dashboard']},
+      {num:'04', name:'Ad copy library',      body:'Browse real ads that ran in newsletters across your industry. See what hooks, offers, and CTAs your competitors are testing.',                   pills:['Swipe file','Format analysis']}
+    ]
+  }
+};
+
+function renderFeatures(f) {
+  return f.map(r => `<div class="sg-feat-row"><div class="sg-feat-label"><div class="sg-feat-num">${r.num}</div><div class="sg-feat-name">${r.name}</div></div><div class="sg-feat-body"><p>${r.body}</p>${r.pills.map(p=>`<span class="sg-pill">${p}</span>`).join('')}</div></div>`).join('');
+}
+
+function setAudience(type) {
+  const c = sgContent[type];
+  document.getElementById('btn-creator').className = 'sg-toggle-btn' + (type==='creator'?' active':'');
+  document.getElementById('btn-brand').className   = 'sg-toggle-btn' + (type==='brand'  ?' active':'');
+  document.getElementById('hero-eyebrow').textContent = c.eyebrow;
+  document.getElementById('hero-h1').innerHTML        = c.h1;
+  document.getElementById('hero-sub').innerHTML        = c.sub;
+  document.getElementById('hero-cta1').textContent    = c.cta1;
+  document.getElementById('feat-label').textContent   = c.featLabel;
+  document.getElementById('testi-q').textContent      = c.testiQ;
+  document.getElementById('testi-name').textContent   = c.testiName;
+  document.getElementById('testi-role').textContent   = c.testiRole;
+  document.getElementById('features-list').innerHTML  = renderFeatures(c.features);
+  initRotatingWord();
+}
+setAudience('creator');
+
+// ── Animated count-up ────────────────────────────────────────────────────
+function countUp(el, target, suffix) {
+  if (!el) return;
+  const num = parseInt(String(target).replace(/[^0-9]/g,'')) || 0;
+  const dur = 1400;
+  const steps = 40;
+  const inc = num / steps;
+  let cur = 0, step = 0;
+  const t = setInterval(() => {
+    step++;
+    cur = Math.min(Math.round(inc * step), num);
+    const display = num >= 1000 ? Math.round(cur/1000*10)/10 + 'k+' : cur + '+';
+    el.textContent = display;
+    if (step >= steps) { el.textContent = suffix || display; clearInterval(t); }
+  }, dur / steps);
+}
+countUp(document.getElementById('cnt-sponsors'), 55015, "55k+");
+countUp(document.getElementById('cnt-weekly'),   1084,  "1084+");
+countUp(document.getElementById('cnt-users'),    3265,  "3265+");
+
+// ── Live activity feed ───────────────────────────────────────────────────
+const feedData = [{"name":"Wispr","sponsorof":"AI Agents News","domain":"wisprflow.ai","logoUrl":"https://img.logo.dev/wisprflow.ai?token=pk_QLr4GnguRNG7PyS6pGsmrA","industryfield":"Software","audience":"100k"},{"name":"Bedrock Data","sponsorof":"AI Agents News","domain":"bedrockdata.ai","logoUrl":"https://img.logo.dev/bedrockdata.ai?token=pk_QLr4GnguRNG7PyS6pGsmrA","industryfield":"Software","audience":"100k"},{"name":"Catch","sponsorof":"AI Agents News","domain":"catchagent.ai","logoUrl":"https://img.logo.dev/catchagent.ai?token=pk_QLr4GnguRNG7PyS6pGsmrA","industryfield":"Software","audience":"100k"},{"name":"Hatch","sponsorof":"Indie Hackers","domain":"usehatch.com","logoUrl":"https://img.logo.dev/usehatch.com?token=pk_QLr4GnguRNG7PyS6pGsmrA","industryfield":"Software","audience":"50k"},{"name":"Galaxy One Trade","sponsorof":"The Daily Rip by Stocktwits","domain":"galaxy.com","logoUrl":"https://img.logo.dev/galaxy.com?token=pk_QLr4GnguRNG7PyS6pGsmrA","industryfield":"Technology","audience":"100k"},{"name":"Zenity","sponsorof":"TLDR AI","domain":"zenity.io","logoUrl":"https://img.logo.dev/zenity.io?token=pk_QLr4GnguRNG7PyS6pGsmrA","industryfield":"Software","audience":"1.3M"},{"name":"The Points Guy","sponsorof":"The Points Guy","domain":"thepointsguy.com","logoUrl":"https://img.logo.dev/thepointsguy.com?token=pk_QLr4GnguRNG7PyS6pGsmrA","industryfield":"Travel","audience":"50k"},{"name":"Attio","sponsorof":"NEW ECONOMIES","domain":"attio.com","logoUrl":"https://img.logo.dev/attio.com?token=pk_QLr4GnguRNG7PyS6pGsmrA","industryfield":"Software","audience":"50k"},{"name":"Hostinger","sponsorof":"NEW ECONOMIES","domain":"hostinger.com","logoUrl":"https://img.logo.dev/hostinger.com?token=pk_QLr4GnguRNG7PyS6pGsmrA","industryfield":"Web Hosting","audience":"50k"},{"name":"Hyperagent","sponsorof":"NEW ECONOMIES","domain":"hyperagent.io","logoUrl":"https://img.logo.dev/hyperagent.io?token=pk_QLr4GnguRNG7PyS6pGsmrA","industryfield":"Software","audience":"50k"},{"name":"Canva","sponsorof":"NEW ECONOMIES","domain":"canva.com","logoUrl":"https://img.logo.dev/canva.com?token=pk_QLr4GnguRNG7PyS6pGsmrA","industryfield":"Software","audience":"50k"},{"name":"Co-Star","sponsorof":"NEW ECONOMIES","domain":"costarastrology.com","logoUrl":"https://img.logo.dev/costarastrology.com?token=pk_QLr4GnguRNG7PyS6pGsmrA","industryfield":"Technology","audience":"50k"}];
+const feedEl   = document.getElementById('sg-feed-list');
+const timeLabels = ['just now','1 min ago','2 min ago','3 min ago','5 min ago','8 min ago','11 min ago','15 min ago'];
+let feedIdx = 0;
+
+function buildFeedItem(s, timeLabel) {
+  const initials = (s.name||'?')[0].toUpperCase();
+  const logoHtml = s.logoUrl ? `<img src="${s.logoUrl}" onerror="this.style.display='none'">` : '';
+  return `<div class="sg-feed-item">
+    <div class="sg-feed-logo">${logoHtml}${initials}</div>
+    <div class="sg-feed-info">
+      <div class="sg-feed-name">${s.name}</div>
+      <div class="sg-feed-news">→ ${s.sponsorof || s.industryfield || 'Newsletter'}</div>
+    </div>
+    <div class="sg-feed-time">${timeLabel}</div>
+  </div>`;
+}
+
+function initFeed() {
+  if (!feedEl || !feedData.length) return;
+  const initial = feedData.slice(0, 5).map((s, i) => buildFeedItem(s, timeLabels[i] || (i*2+' min ago'))).join('');
+  feedEl.innerHTML = initial;
+  feedIdx = 5;
+  setInterval(() => {
+    if (!feedData.length) return;
+    const s = feedData[feedIdx % feedData.length];
+    feedIdx++;
+    const newItem = document.createElement('div');
+    newItem.innerHTML = buildFeedItem(s, 'just now');
+    const item = newItem.firstElementChild;
+    const existing = feedEl.querySelectorAll('.sg-feed-item');
+    existing.forEach((el, i) => {
+      const t = el.querySelector('.sg-feed-time');
+      if (t) t.textContent = timeLabels[i+1] || ((i+1)*3+' min ago');
+    });
+    feedEl.insertBefore(item, feedEl.firstChild);
+    if (feedEl.children.length > 5) feedEl.removeChild(feedEl.lastChild);
+  }, 3000);
+}
+initFeed();
+
+// ── Industry bars animation ──────────────────────────────────────────────
+function animateBars() {
+  document.querySelectorAll('.sg-bar-fill').forEach(bar => {
+    const pct = bar.dataset.pct;
+    if (pct) setTimeout(() => { bar.style.width = pct + '%'; }, 200);
+  });
+}
+const barSection = document.querySelector('.sg-chart-card');
+if (barSection && 'IntersectionObserver' in window) {
+  new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting) { animateBars(); }
+  }, {threshold: 0.3}).observe(barSection);
+} else {
+  animateBars();
+}
+
+// ── Preview form ─────────────────────────────────────────────────────────
+const pfWrap    = document.querySelector('[data-main-app-url]');
+const pfAppUrl  = pfWrap ? pfWrap.dataset.mainAppUrl : 'https://app.sponsorgap.com';
+const pfQuery   = document.getElementById('pf-query');
+const pfResults = document.getElementById('pf-results');
+let activeChip  = null;
+
+if (pfQuery) pfQuery.addEventListener('keydown', e => { if (e.key === 'Enter') runPreview(); });
+
+function quickNiche(n, el) {
+  if (pfQuery) pfQuery.value = n;
+  document.querySelectorAll('.sg-search-chip').forEach(c => c.classList.remove('active'));
+  if (el) el.classList.add('active');
+  runPreview();
+}
+
+// Auto-run on load with a default query
+window.addEventListener('load', () => { quickNiche('Fintech'); });
+
+function runPreview() {
+  const q = pfQuery ? pfQuery.value.trim() : '';
+  if (!q) { if (pfQuery) pfQuery.focus(); return; }
+  pfResults.innerHTML = `<div style="display:flex;align-items:center;gap:10px;padding:20px 0;color:#9ca3af;font-size:14px;font-family:var(--sg-font);"><div class="sg-spinner"></div>Finding sponsors for <strong style="color:#374151;">${q}</strong>…</div>`;
+
+  fetch('/api/unified-search?q=' + encodeURIComponent(q) + '&limit=6')
+    .then(r => r.json())
+    .then(data => {
+      const list = (data.results && data.results.sponsors) || [];
+      if (!list.length) {
+        pfResults.innerHTML = `<div class="sg-search-empty"><p style="font-weight:600;color:#374151;margin-bottom:4px;">No results for "${q}"</p><p>Try "Stripe", "fintech", or "SaaS"</p></div>`;
+        return;
+      }
+      const total = (data.results && data.results.totalSponsors) || list.length;
+      let html = `<div style="border:1px solid var(--sg-border);border-radius:12px;overflow:hidden;background:#fff;">`;
+      html += `<div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:var(--sg-bg);border-bottom:1px solid var(--sg-border);">
+        <span style="font-family:var(--sg-mono);font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:var(--sg-light);">Sponsors matching "${q}"</span>
+        <span style="font-family:var(--sg-mono);font-size:11px;color:var(--sg-indigo);font-weight:600;">${total.toLocaleString()} total</span>
+      </div>`;
+
+      const visible = list.slice(0, 3);
+      const locked  = list.slice(3);
+
+      visible.forEach(s => {
+        const logoHtml = s.logoUrl ? `<img src="${s.logoUrl}" onerror="this.style.display='none'">` : '';
+        const audFmt = s.audience ? (s.audience >= 1000000 ? (s.audience/1000000).toFixed(1)+'M' : s.audience >= 1000 ? Math.round(s.audience/1000)+'k' : s.audience) : '';
+        html += `<a class="sg-result-row" href="${pfAppUrl}/register" style="border-bottom:1px solid var(--sg-border);">
+          <div class="sg-result-logo">${logoHtml}${(s.name||'?')[0]}</div>
+          <div style="flex:1;min-width:0;">
+            <p class="sg-result-name">${s.name}</p>
+            <p class="sg-result-sub">${s.sponsorOf ? 'Sponsors ' + s.sponsorOf : (s.industry||'')}</p>
+          </div>
+          <div class="sg-result-right">
+            <span class="sg-result-tag">${s.industry||''}</span>
+            ${audFmt ? `<span class="sg-result-aud">${audFmt} reach</span>` : ''}
+          </div>
+        </a>`;
+      });
+
+      if (locked.length) {
+        const names = locked.map(s => s.name).join(', ');
+        html += `<div class="sg-result-locked">
+          <svg style="width:14px;height:14px;flex-shrink:0;color:var(--sg-indigo);" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+          <span><strong style="color:var(--sg-text);">${locked.length} more sponsor${locked.length>1?'s':''} found</strong> — sign up free to unlock ${names.substring(0,60)}${names.length>60?'…':''}</span>
+        </div>`;
+      }
+
+      html += `<a href="${pfAppUrl}/register" class="sg-result-more">See all ${total.toLocaleString()} sponsors matching "${q}" &nbsp;<svg style="width:13px;height:13px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg></a>`;
+      html += `</div>`;
+      pfResults.innerHTML = html;
+    })
+    .catch(() => {
+      pfResults.innerHTML = `<div class="sg-search-empty">Could not load results — <a href="${pfAppUrl}/register" style="color:var(--sg-indigo);font-weight:600;">sign up for full access</a></div>`;
+    });
+}
+
+// ── Rotating word in hero subtitle ──────────────────────────────────────
+var _rotatingTimer = null;
+var _rotatingIdx = 0;
+var _rotatingWords = ['newsletters', 'podcasts', 'YouTube channels'];
+
+function initRotatingWord() {
+  if (_rotatingTimer) { clearInterval(_rotatingTimer); _rotatingTimer = null; }
+  var el = document.getElementById('rotating-word');
+  if (!el) return;
+  el.style.cssText = 'display:inline-block;transition:opacity 0.3s ease,transform 0.3s ease;color:var(--sg-indigo);font-weight:600;';
+  _rotatingTimer = setInterval(function() {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(-6px)';
+    setTimeout(function() {
+      _rotatingIdx = (_rotatingIdx + 1) % _rotatingWords.length;
+      el.textContent = _rotatingWords[_rotatingIdx];
+      el.style.transition = 'none';
+      el.style.transform = 'translateY(6px)';
+      requestAnimationFrame(function() {
+        requestAnimationFrame(function() {
+          el.style.transition = 'opacity 0.3s ease,transform 0.3s ease';
+          el.style.opacity = '1';
+          el.style.transform = 'translateY(0)';
+        });
+      });
+    }, 320);
+  }, 2800);
+}</script><div id="sg-capture-bar" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1e1b4b;padding:12px 20px;box-shadow:0 -2px 12px rgba(0,0,0,.15);"><div style="max-width:800px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;"><span id="sg-capture-label" style="color:#c7d2fe;font-size:14px;font-weight:500;white-space:nowrap;">Get weekly sponsor intel — free</span><form id="sg-capture-form" style="display:flex;gap:8px;align-items:center;" onsubmit="return sgSubscribe(event)"><input id="sg-capture-email" type="email" placeholder="you@newsletter.com" required style="padding:8px 14px;border-radius:7px;border:1px solid #4338ca;background:#312e81;color:#fff;font-size:14px;width:220px;outline:none;" autocomplete="email"><button id="sg-capture-btn" type="submit" style="padding:8px 18px;border-radius:7px;background:#4f46e5;color:#fff;font-size:14px;font-weight:600;border:none;cursor:pointer;white-space:nowrap;">Subscribe Free</button></form><button id="sg-capture-close" type="button" style="background:none;border:none;color:#818cf8;cursor:pointer;font-size:18px;padding:4px 8px;line-height:1;" aria-label="Close">&times;</button></div></div><script>function sgSubscribe(e){
+  e.preventDefault();
+  var email=document.getElementById('sg-capture-email').value.trim();
+  if(!email)return false;
+  var btn=document.getElementById('sg-capture-btn');
+  var label=document.getElementById('sg-capture-label');
+  btn.disabled=true;btn.textContent='Subscribing...';
+  fetch('/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:email})})
+    .then(function(r){return r.json()})
+    .then(function(d){
+      if(d.success){
+        label.textContent='Subscribed! Redirecting to create your account...';
+        label.style.color='#a5f3fc';
+        document.getElementById('sg-capture-form').style.display='none';
+        setTimeout(function(){
+          window.location.href=(document.querySelector('[data-main-app-url]')||{dataset:{}}).dataset.mainAppUrl
+            ?((document.querySelector('[data-main-app-url]')||{dataset:{}}).dataset.mainAppUrl+'/register?email='+encodeURIComponent(email))
+            :('https://app.sponsorgap.com/register?email='+encodeURIComponent(email));
+        },1500);
+      } else {
+        btn.disabled=false;btn.textContent='Subscribe Free';
+        label.textContent=d.error||'Something went wrong. Try again.';
+        label.style.color='#fca5a5';
+      }
+    })
+    .catch(function(){
+      btn.disabled=false;btn.textContent='Subscribe Free';
+      label.textContent='Network error. Please try again.';
+      label.style.color='#fca5a5';
+    });
+  return false;
+}
+(function(){
+  var bar=document.getElementById('sg-capture-bar');
+  if(!bar||sessionStorage.getItem('sg-cap-closed'))return;
+  var shown=false;
+  window.addEventListener('scroll',function(){
+    if(shown)return;
+    var pct=window.scrollY/(document.body.scrollHeight-window.innerHeight);
+    if(pct>0.5){shown=true;bar.style.display='block';}
+  });
+  document.getElementById('sg-capture-close').addEventListener('click',function(){
+    bar.style.display='none';sessionStorage.setItem('sg-cap-closed','1');
+  });
+})();
+</script><!-- Small Chat widget with right positioning--><style>/* Move Small Chat widget to the right */
+#small-chat-widget {
+  right: 20px !important;
+  left: auto !important;
+}
+/* Target the Small Chat iframe or container */
+iframe[src*="small.chat"] {
+  right: 20px !important;
+  left: auto !important;
+}
+/* Alternative selector for Small Chat container */
+[id*="small"], [class*="small-chat"] {
+  right: 20px !important;
+  left: auto !important;
+}</style><script src="https://embed.small.chat/T0BMKKFJRG50TFGKSR.js" async></script></body></html>

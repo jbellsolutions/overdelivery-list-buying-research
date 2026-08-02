@@ -1,0 +1,13 @@
+- **Completed:** Researched buyer due diligence and compliance for list rentals, solo ads, and affiliate email media buys using FTC, ICO, EUR-Lex/GDPR, California AG, Google, Yahoo, Mailchimp, and FTC endorsement guidance.
+- **Key findings:**
+  - Seller “opt-in” representations are insufficient; require cohort-level consent evidence, exact signup wording, source, timestamp, channel, frequency, advertiser/partner identity, and suppression history.
+  - Under CAN-SPAM, both the promoted business and sending company may be liable; outsourcing delivery does not transfer responsibility. Commercial email requires truthful headers/subjects, postal address, clear opt-out, and opt-out handling within 10 business days.
+  - UK PECR requires clear, specific, affirmative consent where applicable; pre-ticked boxes and generic third-party consent are inadequate. The instigator and contractor may both be responsible.
+  - GDPR Article 7 requires demonstrable consent and easy withdrawal; Article 21 creates an unconditional direct-marketing objection right. CCPA/CPRA adds sale/share opt-outs and GPC handling, separate from email unsubscribe.
+  - Google recommends spam rates below **0.10%** and avoiding **0.30%+**; Yahoo requires bulk senders to remain below **0.3%** and honor unsubscribes within **2 days**. There is no universal legal bounce threshold, so contracts should define source-level hard-bounce limits and pause/remediation rules.
+  - Google and Yahoo specifically caution against purchased lists, unsolicited recipients, and affiliate spam. Mailchimp prohibits rented/purchased/third-party/co-registration/partner lists and requires consent evidence.
+- **Artifact created:** `/Users/home/list-buy-due-diligence.md`
+  - Contains a practical pre-buy checklist covering seller diligence, consent, jurisdiction mapping, suppression, unsubscribe handling, tracking, authentication, campaign stop rules, metrics, and contract clauses.
+  - Includes exact source URLs and jurisdiction/platform caveats.
+- **Verification:** All seven cited primary URLs returned HTTP 200.
+- **Issue encountered:** The browser scraping service became unavailable during the second retrieval batch; I switched to direct HTTP retrieval and verified the source pages independently.

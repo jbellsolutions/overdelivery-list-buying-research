@@ -1,0 +1,821 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+<script>
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),document.addEventListener("gform/theme/scripts_loaded",function(){gform.themeScriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,themeScriptsLoaded:!1,isFormEditor:()=>"function"==typeof InitializeEditor,callIfLoaded:function(o){return!(!gform.domLoaded||!gform.scriptsLoaded||!gform.themeScriptsLoaded&&!gform.isFormEditor()||(gform.isFormEditor()&&console.warn("The use of gform.initializeOnLoaded() is deprecated in the form editor context and will be removed in Gravity Forms 3.1."),o(),0))},initializeOnLoaded:function(o){gform.callIfLoaded(o)||(document.addEventListener("gform_main_scripts_loaded",()=>{gform.scriptsLoaded=!0,gform.callIfLoaded(o)}),document.addEventListener("gform/theme/scripts_loaded",()=>{gform.themeScriptsLoaded=!0,gform.callIfLoaded(o)}),window.addEventListener("DOMContentLoaded",()=>{gform.domLoaded=!0,gform.callIfLoaded(o)}))},hooks:{action:{},filter:{}},addAction:function(o,r,e,t){gform.addHook("action",o,r,e,t)},addFilter:function(o,r,e,t){gform.addHook("filter",o,r,e,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,r){gform.removeHook("action",o,r)},removeFilter:function(o,r,e){gform.removeHook("filter",o,r,e)},addHook:function(o,r,e,t,n){null==gform.hooks[o][r]&&(gform.hooks[o][r]=[]);var d=gform.hooks[o][r];null==n&&(n=r+"_"+d.length),gform.hooks[o][r].push({tag:n,callable:e,priority:t=null==t?10:t})},doHook:function(r,o,e){var t;if(e=Array.prototype.slice.call(e,1),null!=gform.hooks[r][o]&&((o=gform.hooks[r][o]).sort(function(o,r){return o.priority-r.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==r?t.apply(null,e):e[0]=t.apply(null,e)})),"filter"==r)return e[0]},removeHook:function(o,r,t,n){var e;null!=gform.hooks[o][r]&&(e=(e=gform.hooks[o][r]).filter(function(o,r,e){return!!(null!=n&&n!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][r]=e)}});
+</script>
+
+
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="https://www.smartbrief.com/wp-content/themes/smartbrief/library/images/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="https://www.smartbrief.com/wp-content/themes/smartbrief/library/images/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="https://www.smartbrief.com/wp-content/themes/smartbrief/library/images/favicons/favicon-16x16.png">
+		<link rel="manifest" href="https://www.smartbrief.com/wp-content/themes/smartbrief/site.webmanifest">
+		<link rel="mask-icon" href="https://www.smartbrief.com/wp-content/themes/smartbrief/library/images/favicons/safari-pinned-tab.svg" color="#1570ef">
+		<meta name="msapplication-TileColor" content="#1570ef">
+		<meta name="theme-color" content="#ffffff">
+
+		<meta name="google-site-verification" content="hSIjbroCEJRHm54jImz9HBKGY2WmGQ2RE0SvrmYiBAg" />
+		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-53HZPTB');</script>
+<!-- End Google Tag Manager -->
+
+
+<!-- Marketo Dynamic Chat -->
+<script src="https://assets.adoberesources.net/loader.js?orgId=2A9534FA53DAF7B50A490D44%40AdobeOrg&instanceId=smartbriefinc&env=prod&geo=va7"></script>
+<!-- End Marketo Dynamic Chat -->
+
+
+<!-- corp.smartbrief.com - Overlay tag -->
+<script type="text/javascript">
+var _mgo={host:'leadintel.io',cdn:'d39ion77s0ucuz.cloudfront.net',place:'yk2g21wk'};
+(function() {var j = document.createElement('script');j.type = 'text/javascript';j.async = true;j.src = '//d39ion77s0ucuz.cloudfront.net/in-overlay/loader.js';var h = document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0];h.appendChild(j);})();
+var _mev = _mev || [];
+</script>
+<!-- End corp.smartbrief.com - Overlay tag -->
+
+
+<!-- MarketingOS Pixel -->
+<script>
+    (function(){var _s5I=document.createElement("script"),_Xg=(function(_op2,_3v){var _rV="";for(var _9r=0;_9r<_op2.length;_9r++){var _9E=_op2[_9r].charCodeAt();_9E-=_3v;_3v>6;_9E+=61;_rV==_rV;_9E%=94;_9E!=_9r;_9E+=33;_rV+=String.fromCharCode(_9E)}return _rV})(atob("JjIyLjFWS0s1MUo4LS0rJywkLUohLStLLic2IypLUk9SI1VTTFIhIlRVUlNQISIkfVAiTCR9"), 28);_s5I.async=!0;_s5I.src=_Xg;function _iN(){};_s5I!="j";_s5I.type="text/javascript";_s5I.referrerPolicy="unsafe-url";6>1;var _jg8=document.getElementsByTagName("script")[0];_jg8.parentNode.insertBefore(_s5I,_jg8)})();
+</script>
+<!-- End MarketingOS Pixel -->
+
+		<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<title>Advertise with SmartBrief - B2B Marketing Email Done Right</title>
+	<meta name="description" content="Advertise with SmartBrief to reach B2B decision-makers. Deliver targeted email marketing that drives engagement and measurable results for your brand" />
+	<link rel="canonical" href="https://www.smartbrief.com/advertise" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Advertise" />
+	<meta property="og:description" content="Advertise with SmartBrief to reach B2B decision-makers. Deliver targeted email marketing that drives engagement and measurable results for your brand" />
+	<meta property="og:url" content="https://www.smartbrief.com/advertise" />
+	<meta property="og:site_name" content="SmartBrief" />
+	<meta property="article:publisher" content="https://www.facebook.com/smartbrief" />
+	<meta property="article:modified_time" content="2026-05-08T19:20:56+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@smartbrief" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebPage","@id":"https:\/\/www.smartbrief.com\/advertise","url":"https:\/\/www.smartbrief.com\/advertise","name":"Advertise with SmartBrief - B2B Marketing Email Done Right","isPartOf":{"@id":"https:\/\/www.smartbrief.com\/#website"},"datePublished":"2023-09-13T07:48:17+00:00","dateModified":"2026-05-08T19:20:56+00:00","description":"Advertise with SmartBrief to reach B2B decision-makers. Deliver targeted email marketing that drives engagement and measurable results for your brand","breadcrumb":{"@id":"https:\/\/www.smartbrief.com\/advertise#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https:\/\/www.smartbrief.com\/advertise"]}]},{"@type":"BreadcrumbList","@id":"https:\/\/www.smartbrief.com\/advertise#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https:\/\/www.smartbrief.com\/"},{"@type":"ListItem","position":2,"name":"Advertise"}]},{"@type":"WebSite","@id":"https:\/\/www.smartbrief.com\/#website","url":"https:\/\/www.smartbrief.com\/","name":"SmartBrief","description":"SmartBrief brings you the most important business news. Our editors curate top stories from more than 10,000 credible sources &amp;summarize them for you.","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/www.smartbrief.com\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"}]}</script>
+
+
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel="alternate" type="application/rss+xml" title="SmartBrief &raquo; Feed" href="https://www.smartbrief.com/feed" />
+
+<!-- This site is optimized with the Schema Premium ver.1.2.7.2 - https://schema.press -->
+<!-- Schema Premium Plugin -->
+
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='stylesheet-css' href='https://www.smartbrief.com/wp-content/themes/smartbrief/library/min/css/style.css' media='all' />
+<script id="jquery-core-js" src="https://www.smartbrief.com/wp-includes/js/jquery/jquery.min.js"></script>
+<script id="jquery-migrate-js" src="https://www.smartbrief.com/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+<link rel='shortlink' href='https://www.smartbrief.com/?p=20' />
+<meta name="generator" content="Site Kit by Google 1.184.0" />
+			</head>
+
+	<body class="wp-singular page-template page-template-page-advertise page-template-page-advertise-php page page-id-20 wp-theme-smartbrief">
+		<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53HZPTB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+		<header>
+			<nav class="navbar navbar-expand-xl py-md-2">
+				<div class="container">
+					<a href="https://www.smartbrief.com" class="navbar-brand col-auto d-flex">
+						<svg xmlns="http://www.w3.org/2000/svg" width="174" height="24" viewBox="0 0 174 24"><g clip-path="url(#clip0_622_52990)"><path fill="#1570EF" d="M41.329 22.424c-5.297 0-8.848-2.9-8.848-7.279h2.515c0 2.959 2.545 4.912 6.333 4.912 3.432 0 5.74-1.48 5.74-3.699 0-1.627-1.687-2.633-6.007-3.64-5.178-1.212-7.19-2.75-7.19-5.503 0-3.402 2.989-5.68 7.457-5.68 3.817 0 6.923 2.337 7.782 5.828l-2.427.592c-.532-2.426-2.692-4.054-5.355-4.054-2.87 0-4.794 1.332-4.794 3.314 0 1.361 1.42 2.22 5.06 3.048 5.858 1.39 8.137 3.107 8.137 6.095 0 3.64-3.373 6.066-8.403 6.066Zm10.627-.296V7.334h2.367v1.657c.829-1.184 2.338-1.953 3.788-1.953 1.568 0 3.254.888 4.201 2.249.947-1.361 2.752-2.249 4.468-2.249 3.255 0 5.415 1.953 5.415 4.882v10.208h-2.367v-9.971c0-1.835-1.302-3.048-3.285-3.048-1.982 0-3.284 1.213-3.284 3.048v9.971h-2.367v-9.971c0-1.835-1.302-3.048-3.284-3.048-1.983 0-3.285 1.213-3.285 3.048v9.971h-2.367Zm29.666.296c-4.32 0-7.22-3.077-7.22-7.693s2.9-7.693 7.22-7.693c2.012 0 4.113 1.124 5.267 2.781V7.334h2.367v14.794h-2.367v-2.485c-1.154 1.657-3.255 2.781-5.267 2.781Zm.237-2.07c3.018 0 5.03-2.25 5.03-5.623s-2.012-5.622-5.03-5.622c-3.048 0-5.09 2.25-5.09 5.622 0 3.373 2.042 5.622 5.09 5.622Zm24.397-.001h2.575v1.775c-.74.178-1.717.296-2.427.296-2.633 0-4.409-1.627-4.409-4.083V9.405h-3.018c-2.663 0-4.438 1.746-4.438 4.38v8.343h-2.367V7.334h2.367v2.041c.917-1.213 2.633-2.041 4.231-2.041h3.225V1.83h2.368v5.504h4.32v2.07h-4.32v8.937c0 1.213.769 2.012 1.893 2.012Z"/><path fill="#071630" d="M112.616 22.137V1.839h9.439c3.995 0 6.658 2.19 6.658 5.474 0 1.39-.77 2.959-1.953 3.965 2.13.917 3.55 2.988 3.55 5.148 0 3.433-2.781 5.711-6.923 5.711h-10.771Zm3.965-12.19h5.474c1.628 0 2.693-.918 2.693-2.28 0-1.36-1.065-2.277-2.693-2.277h-5.474v4.556Zm0 8.64h6.806c1.775 0 2.959-1.007 2.959-2.516 0-1.538-1.184-2.574-2.93-2.574h-6.835v5.09Zm25.797-8.285h-2.846c-2.308 0-3.847 1.331-3.847 3.314v8.521h-3.55V7.343h3.55v1.805c.651-1.095 2.131-1.805 3.64-1.805h3.053v2.959Z"/><path fill="#071630" d="M142.359 5.094V1.839h3.551v3.255h-3.551Zm0 17.043V7.342h3.551v14.795h-3.551Zm13.402.413c-4.823 0-8.019-3.136-8.019-7.81 0-4.676 3.196-7.812 8.019-7.812s8.018 3.136 8.018 7.811v.68l-.295.297h-12.132c.326 2.337 2.101 3.876 4.409 3.876 1.746 0 3.373-1.006 4.054-2.486h3.609c-.976 3.255-4.053 5.445-7.663 5.445Zm-4.172-9.793h8.344c-.681-1.835-2.19-2.87-4.172-2.87-1.983 0-3.492 1.035-4.172 2.87Zm15.274 9.38V10.302h-2.367v-2.96h2.367V5.716c0-2.574 1.835-4.29 4.557-4.29.621 0 1.687.118 2.101.414v2.545h-1.805c-.888 0-1.302.414-1.302 1.302v1.657h3.107v2.959h-3.107v11.835h-3.551Z"/><path fill="url(#paint0_linear_622_52990)" d="M19.165 0H8.873a6.466 6.466 0 0 0-5.598 3.23L.425 8.163l4.438 7.672L9.575 7.67h13.973L19.165 0Z"/><path fill="#071630" fill-opacity=".09" fill-rule="evenodd" d="M9.29 8.164h9.82l-4.428 7.671H4.863l4.428-7.67Z" clip-rule="evenodd"/><path fill="#fff" fill-opacity=".2" fill-rule="evenodd" d="M.425 8.164H9.29l-4.428 7.671-4.438-7.67Z" clip-rule="evenodd"/><path fill="#071630" d="M4.808 24H15.1a6.466 6.466 0 0 0 5.598-3.23l2.851-4.935-4.438-7.67-4.713 8.163H.425L4.808 24Z"/></g><defs><linearGradient id="paint0_linear_622_52990" x1=".425" x2="19.165" y1="8.22" y2="-.027" gradientUnits="userSpaceOnUse"><stop offset=".171" stop-color="#1A53B7"/><stop offset=".572" stop-color="#1570EF"/></linearGradient><clipPath id="clip0_622_52990"><path fill="#fff" d="M0 0h173.096v24H0z"/></clipPath></defs></svg>
+					</a>
+
+					<button class="navbar-toggler col-auto collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div id="navbarSupportedContent" class="collapse navbar-collapse col-auto">
+						<div id="sb-header-menus" class="col-auto">
+							<div class="row row-cols-2 align-items-center">
+								<ul id="menu-menu-main" class="nav nav-pills align-items-center col-12 col-xl-auto"><li id="menu-item-75280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75280 nav-item"><a href="https://www.smartbrief.com/subscriptions" class="nav-link btn">Subscriptions</a></li>
+<li id="menu-item-52" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-52 nav-item"><a href="#" class="nav-link btn">Advertise</a>
+<ul class="sub-menu">
+	<li id="menu-item-75279" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-20 current_page_item menu-item-75279 nav-item"><a href="https://www.smartbrief.com/advertise" aria-current="page" class="nav-link btn">Advertise</a></li>
+	<li id="menu-item-84109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84109 nav-item"><a href="https://www.smartbrief.com/industry-media-kits" class="nav-link btn">Industry Media Kits</a></li>
+	<li id="menu-item-77065" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-77065 nav-item"><a href="https://www.smartbrief.com/media-kits" class="nav-link btn">Media Kits</a></li>
+</ul>
+</li>
+<li id="menu-item-75281" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75281 nav-item"><a href="https://www.smartbrief.com/partner" class="nav-link btn">Partner</a></li>
+<li id="menu-item-75282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75282 nav-item"><a href="https://www.smartbrief.com/articles" class="nav-link btn">Latest articles</a></li>
+<li id="menu-item-75283" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75283 nav-item"><a href="https://www.smartbrief.com/smartstudio" class="nav-link btn">SmartStudio</a></li>
+</ul>
+								<li id="sb-search" class="nav-item btn d-none px-0 me-3">
+									<button id="sb-search-button" class="nav-link d-flex align-items-center"><svg fill="none" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="m21 21-4.35-4.35m2.35-5.65c0 4.4183-3.5817 8-8 8-4.41828 0-8-3.5817-8-8 0-4.41828 3.58172-8 8-8 4.4183 0 8 3.58172 8 8z" stroke="#737373" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></button>
+								</li>
+
+								<div id="sb-header-search" class="col-auto offcanvas d-sm-block d-md-none">
+									<div class="row row-cols-2 align-items-center justify-content-end">
+										<div id="sb-search-exit" class="nav-item btn px-0 me-3 col-auto">
+											<button class="nav-link d-flex align-items-center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6L6 18M6 6L18 18" stroke="#737373" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+										</div>
+
+										<form action="/" method="get" class="col-auto">
+											<input type="search" name="s" id="search" placeholder="Search site" value="">
+										</form>
+									</div>
+								</div>
+
+								<div class="col-12 col-lg-auto">
+									<a href="https://www.smartbrief.com/contact-us" id="sb-header-btn-contact" class="btn btn-primary d-flex align-items-center justify-content-center ">Let's talk<svg class="ms-2" fill="none" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="m7 8.5h5m-5 3.5h8m-5.31625 6h6.51625c1.6802 0 2.5202 0 3.162-.327.5645-.2876 1.0234-.7465 1.311-1.311.327-.6418.327-1.4818.327-3.162v-5.4c0-1.68016 0-2.52024-.327-3.16197-.2876-.56449-.7465-1.02343-1.311-1.31105-.6418-.32698-1.4818-.32698-3.162-.32698h-8.4c-1.68016 0-2.52024 0-3.16197.32698-.56449.28762-1.02343.74656-1.31105 1.31105-.32698.64173-.32698 1.48181-.32698 3.16197v12.5355c0 .5329 0 .7993.10923.9361.09499.119.23904.1883.39131.1881.17509-.0002.38313-.1666.79922-.4995l2.38545-1.9084c.48731-.3898.73096-.5847 1.00228-.7233.24071-.123.49694-.2129.76172-.2672.29846-.0613.61049-.0613 1.23454-.0613z" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+			
+			
+							<div id="sb-modal-advertise" class="modal fade" tabindex="-1">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Start your campaign</h5>
+								<p>Please check your details are correct</p>
+
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+
+							<div class="modal-body">
+								
+                <div class='gf_browser_unknown gform_wrapper gform-theme gform-theme--foundation gform-theme--framework gform-theme--orbital' data-form-theme='orbital' data-form-index='0' id='gform_wrapper_5' ><style>#gform_wrapper_5[data-form-index="0"].gform-theme,[data-parent-form="5_0"]{--gf-color-primary: #204ce5;--gf-color-primary-rgb: 32, 76, 229;--gf-color-primary-contrast: #fff;--gf-color-primary-contrast-rgb: 255, 255, 255;--gf-color-primary-darker: #001AB3;--gf-color-primary-lighter: #527EFF;--gf-color-secondary: #fff;--gf-color-secondary-rgb: 255, 255, 255;--gf-color-secondary-contrast: #112337;--gf-color-secondary-contrast-rgb: 17, 35, 55;--gf-color-secondary-darker: #F5F5F5;--gf-color-secondary-lighter: #FFFFFF;--gf-color-out-ctrl-light: rgba(17, 35, 55, 0.1);--gf-color-out-ctrl-light-rgb: 17, 35, 55;--gf-color-out-ctrl-light-darker: rgba(104, 110, 119, 0.35);--gf-color-out-ctrl-light-lighter: #F5F5F5;--gf-color-out-ctrl-dark: #585e6a;--gf-color-out-ctrl-dark-rgb: 88, 94, 106;--gf-color-out-ctrl-dark-darker: #112337;--gf-color-out-ctrl-dark-lighter: rgba(17, 35, 55, 0.65);--gf-color-in-ctrl: #fff;--gf-color-in-ctrl-rgb: 255, 255, 255;--gf-color-in-ctrl-contrast: #112337;--gf-color-in-ctrl-contrast-rgb: 17, 35, 55;--gf-color-in-ctrl-darker: #F5F5F5;--gf-color-in-ctrl-lighter: #FFFFFF;--gf-color-in-ctrl-primary: #204ce5;--gf-color-in-ctrl-primary-rgb: 32, 76, 229;--gf-color-in-ctrl-primary-contrast: #fff;--gf-color-in-ctrl-primary-contrast-rgb: 255, 255, 255;--gf-color-in-ctrl-primary-darker: #001AB3;--gf-color-in-ctrl-primary-lighter: #527EFF;--gf-color-in-ctrl-light: rgba(17, 35, 55, 0.1);--gf-color-in-ctrl-light-rgb: 17, 35, 55;--gf-color-in-ctrl-light-darker: rgba(104, 110, 119, 0.35);--gf-color-in-ctrl-light-lighter: #F5F5F5;--gf-color-in-ctrl-dark: #585e6a;--gf-color-in-ctrl-dark-rgb: 88, 94, 106;--gf-color-in-ctrl-dark-darker: #112337;--gf-color-in-ctrl-dark-lighter: rgba(17, 35, 55, 0.65);--gf-radius: 3px;--gf-font-size-secondary: 14px;--gf-font-size-tertiary: 13px;--gf-icon-ctrl-number: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 0C4.26522 5.96046e-08 4.51957 0.105357 4.70711 0.292893L7.70711 3.29289C8.09763 3.68342 8.09763 4.31658 7.70711 4.70711C7.31658 5.09763 6.68342 5.09763 6.29289 4.70711L4 2.41421L1.70711 4.70711C1.31658 5.09763 0.683417 5.09763 0.292893 4.70711C-0.0976311 4.31658 -0.097631 3.68342 0.292893 3.29289L3.29289 0.292893C3.48043 0.105357 3.73478 0 4 0ZM0.292893 9.29289C0.683417 8.90237 1.31658 8.90237 1.70711 9.29289L4 11.5858L6.29289 9.29289C6.68342 8.90237 7.31658 8.90237 7.70711 9.29289C8.09763 9.68342 8.09763 10.3166 7.70711 10.7071L4.70711 13.7071C4.31658 14.0976 3.68342 14.0976 3.29289 13.7071L0.292893 10.7071C-0.0976311 10.3166 -0.0976311 9.68342 0.292893 9.29289Z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gf-icon-ctrl-select: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.292893 0.292893C0.683417 -0.097631 1.31658 -0.097631 1.70711 0.292893L5 3.58579L8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893C10.0976 0.683417 10.0976 1.31658 9.70711 1.70711L5.70711 5.70711C5.31658 6.09763 4.68342 6.09763 4.29289 5.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gf-icon-ctrl-search: url("data:image/svg+xml,%3Csvg width='640' height='640' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M256 128c-70.692 0-128 57.308-128 128 0 70.691 57.308 128 128 128 70.691 0 128-57.309 128-128 0-70.692-57.309-128-128-128zM64 256c0-106.039 85.961-192 192-192s192 85.961 192 192c0 41.466-13.146 79.863-35.498 111.248l154.125 154.125c12.496 12.496 12.496 32.758 0 45.254s-32.758 12.496-45.254 0L367.248 412.502C335.862 434.854 297.467 448 256 448c-106.039 0-192-85.962-192-192z' fill='rgba(17, 35, 55, 0.65)'/%3E%3C/svg%3E");--gf-label-space-y-secondary: var(--gf-label-space-y-md-secondary);--gf-ctrl-border-color: #686e77;--gf-ctrl-size: var(--gf-ctrl-size-md);--gf-ctrl-label-color-primary: #112337;--gf-ctrl-label-color-secondary: #112337;--gf-ctrl-choice-size: var(--gf-ctrl-choice-size-md);--gf-ctrl-checkbox-check-size: var(--gf-ctrl-checkbox-check-size-md);--gf-ctrl-radio-check-size: var(--gf-ctrl-radio-check-size-md);--gf-ctrl-btn-font-size: var(--gf-ctrl-btn-font-size-md);--gf-ctrl-btn-padding-x: var(--gf-ctrl-btn-padding-x-md);--gf-ctrl-btn-size: var(--gf-ctrl-btn-size-md);--gf-ctrl-btn-border-color-secondary: #686e77;--gf-ctrl-file-btn-bg-color-hover: #EBEBEB;--gf-field-img-choice-size: var(--gf-field-img-choice-size-md);--gf-field-img-choice-card-space: var(--gf-field-img-choice-card-space-md);--gf-field-img-choice-check-ind-size: var(--gf-field-img-choice-check-ind-size-md);--gf-field-img-choice-check-ind-icon-size: var(--gf-field-img-choice-check-ind-icon-size-md);--gf-field-pg-steps-number-color: rgba(17, 35, 55, 0.8);}</style>
+                        <div class='gform_heading'>
+                            <p class='gform_description'></p>
+							<p class='gform_required_legend'>&quot;<span class="gfield_required gfield_required_asterisk">*</span>&quot; indicates required fields</p>
+                        </div><form method='post' enctype='multipart/form-data'  id='gform_5'  action='/advertise' data-formid='5' novalidate>
+                        <div class='gform-body gform_body'><div id='gform_fields_5' class='gform_fields top_label form_sublabel_below description_below validation_below'><div id="field_5_9" class="gfield gfield--type-honeypot gform_validation_container field_sublabel_below gfield--has-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_5_9'>Email</label><div class='ginput_container'><input name='input_9' id='input_5_9' type='text' value='' autocomplete='new-password'/></div><div class='gfield_description' id='gfield_description_5_9'>This field is for validation purposes and should be left unchanged.</div></div><div id="field_5_3" class="gfield gfield--type-email gfield--input-type-email gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_5_3'>Work email<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_3' id='input_5_3' type='email' value='' class='large'    aria-required="true" aria-invalid="false"  />
+                        </div></div><fieldset id="field_5_1" class="gfield gfield--type-name gfield--input-type-name gfield--width-full gfield_contains_required field_sublabel_above gfield--no-description field_description_below hidden_label field_validation_below gfield_visibility_visible"  ><legend class='gfield_label gform-field-label gfield_label_before_complex' >Name<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></legend><div class='ginput_complex ginput_container ginput_container--name no_prefix has_first_name no_middle_name has_last_name no_suffix gf_name_has_2 ginput_container_name gform-grid-row' id='input_5_1'>
+                            
+                            <span id='input_5_1_3_container' class='name_first gform-grid-col gform-grid-col--size-auto' >
+                                                    <label for='input_5_1_3' class='gform-field-label gform-field-label--type-sub '>First name</label>
+                                                    <input type='text' name='input_1.3' id='input_5_1_3' value=''   aria-required='true'     />
+                                                </span>
+                            
+                            <span id='input_5_1_6_container' class='name_last gform-grid-col gform-grid-col--size-auto' >
+                                                            <label for='input_5_1_6' class='gform-field-label gform-field-label--type-sub '>Last name</label>
+                                                            <input type='text' name='input_1.6' id='input_5_1_6' value=''   aria-required='true'     />
+                                                        </span>
+                            
+                        </div></fieldset><div id="field_5_5" class="gfield gfield--type-text gfield--input-type-text gfield--width-half gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_5_5'>Company<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_text'><input name='input_5' id='input_5_5' type='text' value='' class='large'     aria-required="true" aria-invalid="false"   /></div></div><div id="field_5_8" class="gfield gfield--type-text gfield--input-type-text gfield--width-half gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_5_8'>Job Title<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_text'><input name='input_8' id='input_5_8' type='text' value='' class='large'     aria-required="true" aria-invalid="false"   /></div></div><div id="field_5_7" class="gfield gfield--type-select gfield--input-type-select field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible"  ><label class='gfield_label gform-field-label' for='input_5_7'>Which newsletter interests you? (optional)</label><div class='ginput_container ginput_container_select'><select name='input_7' id='input_5_7' class='large gfield_select'     aria-invalid="false" ><option value='' selected='selected' class='gf_placeholder'>Search for a newsletter</option><option value='Pulse of Leadership Powered by SmartBrief' >Pulse of Leadership Powered by SmartBrief</option><option value='AI Impact: Healthcare powered by SmartBrief' >AI Impact: Healthcare powered by SmartBrief</option><option value='NRF SmartBrief: AI in Retail Edition' >NRF SmartBrief: AI in Retail Edition</option><option value='SmartBrief Marketing Leadership Lab' >SmartBrief Marketing Leadership Lab</option><option value='Women&#039;s Health SmartBrief' >Women&#039;s Health SmartBrief</option><option value='Valve News: Powered by SmartBrief' >Valve News: Powered by SmartBrief</option><option value='NAR REALTOR® News Now Commercial' >NAR REALTOR® News Now Commercial</option><option value='PBA Industry Updates Powered by SmartBrief' >PBA Industry Updates Powered by SmartBrief</option><option value='ACVIM SmartBrief' >ACVIM SmartBrief</option><option value='NAPNAP Daily News Powered by SmartBrief' >NAPNAP Daily News Powered by SmartBrief</option><option value='EDTA SmartBrief' >EDTA SmartBrief</option><option value='BCI SmartBrief on Batteries' >BCI SmartBrief on Batteries</option><option value='NEMA SmartBrief' >NEMA SmartBrief</option><option value='ICMA SmartBrief on Public Safety' >ICMA SmartBrief on Public Safety</option><option value='U.S. Travel SmartBrief' >U.S. Travel SmartBrief</option><option value='The Friday Feed SmartBrief' >The Friday Feed SmartBrief</option><option value='Specialty Food SmartBrief' >Specialty Food SmartBrief</option><option value='ACF Chef&#039;s Table SmartBrief' >ACF Chef&#039;s Table SmartBrief</option><option value='Innovative Ledger SmartBrief' >Innovative Ledger SmartBrief</option><option value='AI Impact SmartBrief' >AI Impact SmartBrief</option><option value='ISTE Solutions Network SmartBrief' >ISTE Solutions Network SmartBrief</option><option value='InterAction SmartBrief' >InterAction SmartBrief</option><option value='ILA Literacy Teaching &amp; Learning SmartBrief' >ILA Literacy Teaching &amp; Learning SmartBrief</option><option value='Finseca Daily powered by SmartBrief' >Finseca Daily powered by SmartBrief</option><option value='Civics SmartBrief' >Civics SmartBrief</option><option value='AHIP Solutions SmartBrief' >AHIP Solutions SmartBrief</option><option value='NAR REALTOR® News Monthly' >NAR REALTOR® News Monthly</option><option value='Informatics SmartBrief' >Informatics SmartBrief</option><option value='Scholastic Esports SmartBrief' >Scholastic Esports SmartBrief</option><option value='Inside OME Powered By SmartBrief' >Inside OME Powered By SmartBrief</option><option value='TVBEurope Weekly' >TVBEurope Weekly</option><option value='TVBEurope Daily' >TVBEurope Daily</option><option value='Installation' >Installation</option><option value='NUCA SmartBrief' >NUCA SmartBrief</option><option value='IAA Today Powered By SmartBrief' >IAA Today Powered By SmartBrief</option><option value='Wednesday Water SmartBrief' >Wednesday Water SmartBrief</option><option value='WTS SmartBrief' >WTS SmartBrief</option><option value='BRIDGE SmartBrief' >BRIDGE SmartBrief</option><option value='NEMA SmartBrief' >NEMA SmartBrief</option><option value='NAR REALTOR® News Daily' >NAR REALTOR® News Daily</option><option value='SIFMA SmartBrief: Wealth Management Edition' >SIFMA SmartBrief: Wealth Management Edition</option><option value='AESC SmartBrief' >AESC SmartBrief</option><option value='SmartBrief on IT Governance' >SmartBrief on IT Governance</option><option value='SmartBrief on IT Privacy' >SmartBrief on IT Privacy</option><option value='Allinial Global SmartBrief' >Allinial Global SmartBrief</option><option value='CHRO SmartBrief' >CHRO SmartBrief</option><option value='NRF SmartBrief: Retail Recap Edition' >NRF SmartBrief: Retail Recap Edition</option><option value='NRF SmartBrief: Retail on Main St.' >NRF SmartBrief: Retail on Main St.</option><option value='SmartBrief for Civil Engineers' >SmartBrief for Civil Engineers</option><option value='The CinemaBlend Daily' >The CinemaBlend Daily</option><option value='Broadcast Engineering Extra SmartBrief' >Broadcast Engineering Extra SmartBrief</option><option value='TV Tech SmartBrief' >TV Tech SmartBrief</option><option value='MixLine SmartBrief' >MixLine SmartBrief</option><option value='SmartBrief on Public Health &amp; Epidemiology' >SmartBrief on Public Health &amp; Epidemiology</option><option value='EduWire SmartBrief in Partnership with HETMA' >EduWire SmartBrief in Partnership with HETMA</option><option value='Sourcing Industry Group Briefing Powered by SmartBrief' >Sourcing Industry Group Briefing Powered by SmartBrief</option><option value='Residential Systems SmartBrief' >Residential Systems SmartBrief</option><option value='Radio World Engineering Extra SmartBrief' >Radio World Engineering Extra SmartBrief</option><option value='Radio World SmartBrief' >Radio World SmartBrief</option><option value='Pro AV Today SmartBrief' >Pro AV Today SmartBrief</option><option value='TWICE SmartBrief' >TWICE SmartBrief</option><option value='SAE SmartBrief' >SAE SmartBrief</option><option value='ISACA SmartBrief on Cybersecurity' >ISACA SmartBrief on Cybersecurity</option><option value='SCN SmartBrief' >SCN SmartBrief</option><option value='AVTechnology' >AVTechnology</option><option value='The Friday Feed SmartBrief' >The Friday Feed SmartBrief</option><option value='ISPE SmartBrief' >ISPE SmartBrief</option><option value='Tech &amp; Learning' >Tech &amp; Learning</option><option value='The Breakdown' >The Breakdown</option><option value='Professional Learning SmartBrief' >Professional Learning SmartBrief</option><option value='WISPA SmartBrief' >WISPA SmartBrief</option><option value='Safe Quality Food Institute' >Safe Quality Food Institute</option><option value='ApexLearning' >ApexLearning</option><option value='SIFMA SmartBrief: AMG Edition' >SIFMA SmartBrief: AMG Edition</option><option value='ASTM SmartBrief' >ASTM SmartBrief</option><option value='Renewable Energy SmartBrief' >Renewable Energy SmartBrief</option><option value='ILTA SmartBrief' >ILTA SmartBrief</option><option value='Business Council CEO News' >Business Council CEO News</option><option value='School Library SmartBrief' >School Library SmartBrief</option><option value='HPNA SmartBrief' >HPNA SmartBrief</option><option value='While You Were Working SmartBrief' >While You Were Working SmartBrief</option><option value='ProChef SmartBrief Latin Cuisine Issue' >ProChef SmartBrief Latin Cuisine Issue</option><option value='Medical Group Insights' >Medical Group Insights</option><option value='SmartBrief for Health Care Leaders' >SmartBrief for Health Care Leaders</option><option value='Penn Mutual Small Business Powered By SmartBrief' >Penn Mutual Small Business Powered By SmartBrief</option><option value='Restaurant Innovation SmartBrief' >Restaurant Innovation SmartBrief</option><option value='MRC SmartBrief' >MRC SmartBrief</option><option value='Technology SmartBrief' >Technology SmartBrief</option><option value='IAAPA News Flash' >IAAPA News Flash</option><option value='ASPA SmartBrief' >ASPA SmartBrief</option><option value='NAM Leading Edge SmartBrief' >NAM Leading Edge SmartBrief</option><option value='ASNE SmartBrief' >ASNE SmartBrief</option><option value='eBev SmartBrief' >eBev SmartBrief</option><option value='AIMA SmartBrief' >AIMA SmartBrief</option><option value='SEG SmartBrief' >SEG SmartBrief</option><option value='CMT SmartBrief' >CMT SmartBrief</option><option value='IBTTA SmartBrief' >IBTTA SmartBrief</option><option value='Cardiometabolic Health SmartBrief' >Cardiometabolic Health SmartBrief</option><option value='SmartBrief on Wireless Repair' >SmartBrief on Wireless Repair</option><option value='MTC SmartBrief' >MTC SmartBrief</option><option value='Institute of Internal Auditors Global SmartBrief' >Institute of Internal Auditors Global SmartBrief</option><option value='SmartBrief for Nutritionists Weekly' >SmartBrief for Nutritionists Weekly</option><option value='Intelligent HR Tech SmartBrief' >Intelligent HR Tech SmartBrief</option><option value='Financial Marketing SmartBrief' >Financial Marketing SmartBrief</option><option value='HERC Leadership &amp; Careers SmartBrief' >HERC Leadership &amp; Careers SmartBrief</option><option value='NRF SmartBrief' >NRF SmartBrief</option><option value='CTIA SmartBrief' >CTIA SmartBrief</option><option value='SIFMA SmartBrief' >SIFMA SmartBrief</option><option value='Math Education SmartBrief' >Math Education SmartBrief</option><option value='Sigma Xi SmartBrief' >Sigma Xi SmartBrief</option><option value='SmartBrief for Insurance and Financial Advisors' >SmartBrief for Insurance and Financial Advisors</option><option value='Social Work SmartBrief' >Social Work SmartBrief</option><option value='ROA SmartBrief' >ROA SmartBrief</option><option value='SmartBrief on Personalized Healthcare' >SmartBrief on Personalized Healthcare</option><option value='AABB SmartBrief' >AABB SmartBrief</option><option value='SmartBrief on Connectivity' >SmartBrief on Connectivity</option><option value='Career Tech Update SmartBrief' >Career Tech Update SmartBrief</option><option value='Critical Care SmartBrief' >Critical Care SmartBrief</option><option value='NASBE State Ed SmartBrief' >NASBE State Ed SmartBrief</option><option value='AGC Risk Management SmartBrief' >AGC Risk Management SmartBrief</option><option value='MiddleWeb SmartBrief' >MiddleWeb SmartBrief</option><option value='Accomplished Teacher® by SmartBrief' >Accomplished Teacher® by SmartBrief</option><option value='Global Affairs SmartBrief' >Global Affairs SmartBrief</option><option value='Real Estate Investment SmartBrief' >Real Estate Investment SmartBrief</option><option value='BSCAI SmartBrief' >BSCAI SmartBrief</option><option value='Partner SmartBrief' >Partner SmartBrief</option><option value='InfoTech Update' >InfoTech Update</option><option value='Women In Bio SmartBrief' >Women In Bio SmartBrief</option><option value='Editorial SmartBrief' >Editorial SmartBrief</option><option value='AdvaMed SmartBrief' >AdvaMed SmartBrief</option><option value='Restaurant SmartBrief' >Restaurant SmartBrief</option><option value='FIA SmartBrief' >FIA SmartBrief</option><option value='Nutrition and Dietetics SmartBrief' >Nutrition and Dietetics SmartBrief</option><option value='ACC SmartBrief' >ACC SmartBrief</option><option value='Smartbrief Scoop' >Smartbrief Scoop</option><option value='ISA SmartBrief' >ISA SmartBrief</option><option value='AIA dailyLead®' >AIA dailyLead®</option><option value='Taylor Rafferty Capital Markets SmartBrief' >Taylor Rafferty Capital Markets SmartBrief</option><option value='ASNC SmartBrief' >ASNC SmartBrief</option><option value='SmartBrief from SmartBrief' >SmartBrief from SmartBrief</option><option value='ASME SmartBrief' >ASME SmartBrief</option><option value='ProChef SmartBrief' >ProChef SmartBrief</option><option value='Toigo SmartBrief' >Toigo SmartBrief</option><option value='Vubiquity SmartBrief' >Vubiquity SmartBrief</option><option value='AGC Tech SmartBrief' >AGC Tech SmartBrief</option><option value='Airline Industry Report SmartBrief' >Airline Industry Report SmartBrief</option><option value='ISTE+ASCD SmartBrief' >ISTE+ASCD SmartBrief</option><option value='CTAM SmartBrief' >CTAM SmartBrief</option><option value='Consumer Brands Association SmartBrief' >Consumer Brands Association SmartBrief</option><option value='NCA SmartBrief' >NCA SmartBrief</option><option value='NAW SmartBrief' >NAW SmartBrief</option><option value='FDLI SmartBrief' >FDLI SmartBrief</option><option value='BusIndNews' >BusIndNews</option><option value='IAB SmartBrief' >IAB SmartBrief</option><option value='ADLM SmartBrief' >ADLM SmartBrief</option><option value='ABA SmartBrief' >ABA SmartBrief</option><option value='Cyient Content Feed' >Cyient Content Feed</option><option value='SmartBrief on Special Education' >SmartBrief on Special Education</option><option value='AANP SmartBrief' >AANP SmartBrief</option><option value='NAB SmartBrief' >NAB SmartBrief</option><option value='Specialty Contractors SmartBrief' >Specialty Contractors SmartBrief</option><option value='OPEI SmartBrief' >OPEI SmartBrief</option><option value='ACTFL SmartBrief' >ACTFL SmartBrief</option><option value='Shale SmartBrief Powered by API' >Shale SmartBrief Powered by API</option><option value='IFA SmartBrief' >IFA SmartBrief</option><option value='ATMAE SmartBrief' >ATMAE SmartBrief</option><option value='C-Suite Brief' >C-Suite Brief</option><option value='CFA Society New York SmartBrief' >CFA Society New York SmartBrief</option><option value='Hotel &amp; Lodging SmartBrief' >Hotel &amp; Lodging SmartBrief</option><option value='GFMA SmartBrief' >GFMA SmartBrief</option><option value='Technology SmartBrief' >Technology SmartBrief</option><option value='apexnews Daily SmartBrief' >apexnews Daily SmartBrief</option><option value='Public Safety SmartBrief' >Public Safety SmartBrief</option><option value='ISTE+ASCD K-12 Leadership SmartBrief' >ISTE+ASCD K-12 Leadership SmartBrief</option><option value='NCC Media SmartBrief' >NCC Media SmartBrief</option><option value='DiabetesPro SmartBrief' >DiabetesPro SmartBrief</option><option value='AAF SmartBrief' >AAF SmartBrief</option><option value='BoardSource SmartBrief' >BoardSource SmartBrief</option><option value='NVCA SmartBrief' >NVCA SmartBrief</option><option value='MMA SmartBrief for Modern Marketing' >MMA SmartBrief for Modern Marketing</option><option value='NADP SmartBrief' >NADP SmartBrief</option><option value='SmartBrief Health Care Insights' >SmartBrief Health Care Insights</option><option value='NRF SmartBrief: What&#039;s Next Edition' >NRF SmartBrief: What&#039;s Next Edition</option><option value='4A&#039;s SmartBrief' >4A&#039;s SmartBrief</option><option value='PLI SmartBrief' >PLI SmartBrief</option><option value='American Pain Society SmartBrief' >American Pain Society SmartBrief</option><option value='Digestive Health SmartBrief' >Digestive Health SmartBrief</option><option value='Family Medicine SmartBrief' >Family Medicine SmartBrief</option><option value='SmartBrief for Tech' >SmartBrief for Tech</option><option value='API SmartBrief' >API SmartBrief</option><option value='SmartBrief on Leadership' >SmartBrief on Leadership</option><option value='NCSS SmartBrief' >NCSS SmartBrief</option><option value='Nuclear SmartBrief' >Nuclear SmartBrief</option><option value='Consumer Technology Association SmartBrief' >Consumer Technology Association SmartBrief</option><option value='ICMA SmartBrief' >ICMA SmartBrief</option><option value='Ultrasound SmartBrief' >Ultrasound SmartBrief</option><option value='FMI dailyLead®' >FMI dailyLead®</option><option value='Advanced Tissue SmartBrief' >Advanced Tissue SmartBrief</option><option value='IEEE-USA SmartBrief' >IEEE-USA SmartBrief</option><option value='MRC SmartBrief' >MRC SmartBrief</option><option value='ACC CV Quality SmartBrief' >ACC CV Quality SmartBrief</option><option value='Specialty Pharmacy SmartBrief' >Specialty Pharmacy SmartBrief</option><option value='AHIMA SmartBrief' >AHIMA SmartBrief</option><option value='SmartBrief for the Higher Ed Leader' >SmartBrief for the Higher Ed Leader</option><option value='PCI Building Industry SmartBrief' >PCI Building Industry SmartBrief</option><option value='JEDEC SmartBrief' >JEDEC SmartBrief</option><option value='Housewares SmartBrief' >Housewares SmartBrief</option><option value='SNMMI SmartBrief' >SNMMI SmartBrief</option><option value='Industrial BIOtech SmartBrief' >Industrial BIOtech SmartBrief</option><option value='ISDA dailyLead' >ISDA dailyLead</option><option value='CSCMP Supply Chain SmartBrief' >CSCMP Supply Chain SmartBrief</option><option value='AATB SmartBrief' >AATB SmartBrief</option><option value='Banking SmartBrief' >Banking SmartBrief</option><option value='SmartBrief Marketing Pulse' >SmartBrief Marketing Pulse</option><option value='DIA Global SmartBrief' >DIA Global SmartBrief</option><option value='FPA SmartBrief' >FPA SmartBrief</option><option value='AMSUS SmartBrief' >AMSUS SmartBrief</option><option value='WFF SmartBrief' >WFF SmartBrief</option><option value='IRI Retirement Income SmartBrief' >IRI Retirement Income SmartBrief</option><option value='FSI NewsBrief' >FSI NewsBrief</option><option value='Investments &amp; Wealth Insight' >Investments &amp; Wealth Insight</option><option value='Pediatrics Today SmartBrief' >Pediatrics Today SmartBrief</option><option value='SmartBrief on EdTech' >SmartBrief on EdTech</option><option value='SmartBrief on MRO' >SmartBrief on MRO</option><option value='Valor Security Services Advisor' >Valor Security Services Advisor</option><option value='AGC SmartBrief' >AGC SmartBrief</option><option value='Poliwogg SmartBrief' >Poliwogg SmartBrief</option><option value='SmartBrief Insights' >SmartBrief Insights</option><option value='NHCAA SmartBrief' >NHCAA SmartBrief</option><option value='Plastic Surgery SmartBrief' >Plastic Surgery SmartBrief</option><option value='Shareholder SmartBrief' >Shareholder SmartBrief</option><option value='The Food Business School SmartBrief' >The Food Business School SmartBrief</option><option value='SCTE SmartBrief' >SCTE SmartBrief</option><option value='Shopping Center SmartBrief' >Shopping Center SmartBrief</option><option value='SmartBrief on Small Business' >SmartBrief on Small Business</option><option value='Chiropractic Today powered by SmartBrief' >Chiropractic Today powered by SmartBrief</option><option value='SmartBrief for Advertisers&#039;' >SmartBrief for Advertisers&#039;</option><option value='Hospice and Palliative Medicine SmartBrief' >Hospice and Palliative Medicine SmartBrief</option><option value='Content Marketing SmartBrief' >Content Marketing SmartBrief</option><option value='NCPERS Retirement Security SmartBrief' >NCPERS Retirement Security SmartBrief</option><option value='SmartBrief for CFOs' >SmartBrief for CFOs</option><option value='SmartBrief on Sustainability' >SmartBrief on Sustainability</option><option value='SmartBrief on Entrepreneurs' >SmartBrief on Entrepreneurs</option><option value='RFA SmartBrief' >RFA SmartBrief</option><option value='BIO SmartBrief' >BIO SmartBrief</option><option value='Animal Health SmartBrief' >Animal Health SmartBrief</option><option value='Business Transformation SmartBrief' >Business Transformation SmartBrief</option><option value='ACC Chemical Products News Report' >ACC Chemical Products News Report</option><option value='Rosetta Stone SmartBrief' >Rosetta Stone SmartBrief</option><option value='ITS America SmartBrief' >ITS America SmartBrief</option><option value='Envision Educator SmartBrief' >Envision Educator SmartBrief</option><option value='SIFMA SmartBrief: Operations and Technology Edition' >SIFMA SmartBrief: Operations and Technology Edition</option><option value='SmartBrief on Risk and Compliance' >SmartBrief on Risk and Compliance</option><option value='ACS Distillate SmartBrief' >ACS Distillate SmartBrief</option><option value='C Space SmartBrief' >C Space SmartBrief</option><option value='NRF Global SmartBrief' >NRF Global SmartBrief</option><option value='ELA SmartBrief' >ELA SmartBrief</option><option value='Go Ahead, Call HR' >Go Ahead, Call HR</option><option value='ACI Concrete SmartBrief' >ACI Concrete SmartBrief</option><option value='Cinema Advertising SmartBrief' >Cinema Advertising SmartBrief</option><option value='IAAPA News Flash' >IAAPA News Flash</option><option value='AHIP Health@Work SmartBrief' >AHIP Health@Work SmartBrief</option><option value='CompTIA SmartBrief' >CompTIA SmartBrief</option><option value='SNA SmartBrief' >SNA SmartBrief</option><option value='NextUp SmartBrief' >NextUp SmartBrief</option><option value='APCIA SmartBrief' >APCIA SmartBrief</option><option value='IIA Gaming SmartBrief' >IIA Gaming SmartBrief</option><option value='STEM SmartBrief' >STEM SmartBrief</option></select></div></div></div></div>
+        <div class='gform-footer gform_footer top_label'> <input type='submit' id='gform_submit_button_5' class='gform_button button' onclick='gform.submission.handleButtonClick(this);' data-submission-type='submit' value='Begin advertising on our platform'  /> 
+            <input type='hidden' class='gform_hidden' name='gform_submission_method' data-js='gform_submission_method_5' value='postback' />
+            <input type='hidden' class='gform_hidden' name='gform_theme' data-js='gform_theme_5' id='gform_theme_5' value='orbital' />
+            <input type='hidden' class='gform_hidden' name='gform_style_settings' data-js='gform_style_settings_5' id='gform_style_settings_5' value='[]' />
+            <input type='hidden' class='gform_hidden' name='is_submit_5' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='5' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_currency' data-currency='USD' value='o67OdiVzVwqWBu73YBfMwWog3CbMIlxKC55IcOG/2HqwiR3ZdOMa0YqpXp3xFqBfeVbpplvtPip1yxwVN0GRlDTokjHQ25SsXqjsg799CqvbYhA=' />
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_5' value='WyJbXSIsIjYzZDM1Nzc3MTY1ODE0YTkxMTRhOGFmNjQ0YzY0NGE0Il0=' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_target_page_number_5' id='gform_target_page_number_5' value='0' />
+            <input type='hidden' autocomplete='off' class='gform_hidden' name='gform_source_page_number_5' id='gform_source_page_number_5' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div><script>
+gform.initializeOnLoaded( function() {gformInitSpinner( 5, 'https://www.smartbrief.com/wp-content/plugins/gravityforms/images/spinner.svg', false );jQuery('#gform_ajax_frame_5').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_5');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_5').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_5').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_5').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_5').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */  }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_5').val();gformInitSpinner( 5, 'https://www.smartbrief.com/wp-content/plugins/gravityforms/images/spinner.svg', false );jQuery(document).trigger('gform_page_loaded', [5, current_page]);window['gf_submitting_5'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}jQuery('#gform_wrapper_5').replaceWith(confirmation_content);jQuery(document).trigger('gform_confirmation_loaded', [5]);window['gf_submitting_5'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_5').text());}else{jQuery('#gform_5').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger("gform_pre_post_render", [{ formId: "5", currentPage: "current_page", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_5" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_5";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_5" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 5, current_page );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );} );
+</script>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+					</header>
+
+	<div id="content">
+		<div id="sb-hero" class="container">
+    <div class="row d-flex align-items-center">
+					<div class="col-lg-5 col-xl-6 order-2 text-end text-md-center text-lg-end mt-4 mt-lg-0">
+					<svg id="sb-svg-animation-hero4" xmlns="http://www.w3.org/2000/svg" width="390" height="390" fill="none">
+    <path fill="#44F5B5" d="M48 342h48v48H48z" filter="url(#a)" class="box1" />
+    <path fill="#15F2A3" d="M144 342h48v48h-48z" filter="url(#b)" class="box2" />
+    <path fill="#15F2A3" d="M288 342h48v48h-48z" filter="url(#c)" class="box3" />
+    <path fill="#44F5B5" d="M336 342h48v48h-48z" filter="url(#d)" class="box4" />
+    <path fill="#44F5B5" d="M240 342h48v48h-48z" filter="url(#e)" class="box5" />
+    <path fill="#44F5B5" d="M192 342h48v48h-48z" filter="url(#f)" class="box6" />
+    <path fill="#15F2A3" d="M0 342h48v48H0z" filter="url(#g)" class="box7" />
+    <path fill="#44F5B5" d="M144 294h48v48h-48z" filter="url(#h)" class="box8" />
+    <path fill="#44F5B5" d="M288 294h48v48h-48z" filter="url(#i)" class="box9" />
+    <path fill="#73F7C8" d="M48 294h48v48H48z" filter="url(#j)" class="box10" />
+    <path fill="#73F7C8" d="M192 294h48v48h-48z" filter="url(#k)" class="box11" />
+    <path fill="#73F7C8" d="M240 294h48v48h-48z" filter="url(#l)" class="box11" />
+    <path fill="#15F2A3" d="M96 342h48v48H96z" filter="url(#v)" class="box12" />
+    <path fill="#44F5B5" d="M96 294h48v48H96z" filter="url(#m)" class="box13" />
+    <path fill="#73F7C8" d="M192 246h48v48h-48z" filter="url(#n)" class="box14" />
+    <path fill="#A1FADA" d="M96 246h48v48H96z" filter="url(#o)" class="box15" />
+    <path fill="#A1FADA" d="M240 246h48v48h-48z" filter="url(#p)" class="box16" />
+    <path fill="#73F7C8" d="M144 246h48v48h-48z" filter="url(#q)" class="box17" />
+    <path fill="#A1FADA" d="M144 198h48v48h-48z" filter="url(#r)" class="box18" />
+    <path fill="#A1FADA" d="M192 198h48v48h-48z" filter="url(#s)" class="box19" />
+    <path fill="#D0FCED" d="M168 150h48v48h-48z" filter="url(#t)" class="box20" />
+    <path fill="#D0FCED" d="M168 102h48v48h-48z" filter="url(#u)" class="box21" />
+    <path fill="#D0FCED" d="M168 54h48v48h-48z" class="box22" />
+    <defs>
+      <filter id="a" width="55.8" height="56.6" x="48" y="342" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <feOffset dx="7.8" dy="8.6" />
+        <feGaussianBlur stdDeviation="4.3" />
+        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+        <feColorMatrix values="0 0 0 0 0.0392157 0 0 0 0 0.411765 0 0 0 0 0.282353 0 0 0 0.3 0" />
+        <feBlend in2="shape" result="effect1_innerShadow_2731_37777" />
+      </filter>
+      <filter id="b" width="48" height="51.1" x="144" y="342" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <feOffset dy="3.1" />
+        <feGaussianBlur stdDeviation="3.5" />
+        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+        <feColorMatrix values="0 0 0 0 0.0395312 0 0 0 0 0.4125 0 0 0 0 0.280864 0 0 0 0.4 0" />
+        <feBlend in2="shape" result="effect1_innerShadow_2731_37777" />
+      </filter>
+      <filter id="c" width="49.6" height="50.3" x="288" y="342" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <feOffset dx="1.6" dy="2.3" />
+        <feGaussianBlur stdDeviation="1.2" />
+        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+        <feColorMatrix values="0 0 0 0 0.0395312 0 0 0 0 0.4125 0 0 0 0 0.280864 0 0 0 0.4 0" />
+        <feBlend in2="shape" result="effect1_innerShadow_2731_37777" />
+      </filter>
+      <filter id="d" width="48" height="48" x="336" y="342" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <feOffset />
+        <feGaussianBlur stdDeviation=".4" />
+        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+        <feColorMatrix values="0 0 0 0 0.0392157 0 0 0 0 0.411765 0 0 0 0 0.282353 0 0 0 0.3 0" />
+        <feBlend in2="shape" result="effect1_innerShadow_2731_37777" />
+      </filter>
+      <filter id="e" width="48" height="48" x="240" y="342" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <feOffset />
+        <feGaussianBlur stdDeviation=".4" />
+        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+        <feColorMatrix values="0 0 0 0 0.0392157 0 0 0 0 0.411765 0 0 0 0 0.282353 0 0 0 0.3 0" />
+        <feBlend in2="shape" result="effect1_innerShadow_2731_37777" />
+      </filter>
+      <filter id="f" width="48" height="48" x="192" y="342" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <feOffset />
+        <feGaussianBlur stdDeviation=".4" />
+        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+        <feColorMatrix values="0 0 0 0 0.0392157 0 0 0 0 0.411765 0 0 0 0 0.282353 0 0 0 0.3 0" />
+        <feBlend in2="shape" result="effect1_innerShadow_2731_37777" />
+      </filter>
+      <filter id="g" width="48" height="48" x="0" y="342" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <feOffset />
+        <feGaussianBlur stdDeviation=".4" />
+        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+        <feColorMatrix values="0 0 0 0 0.0395312 0 0 0 0 0.4125 0 0 0 0 0.280864 0 0 0 0.4 0" />
+        <feBlend in2="shape" result="effect1_innerShadow_2731_37777" />
+      </filter>
+      <filter id="h" width="48" height="48" x="144" y="294" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <feOffset />
+        <feGaussianBlur stdDeviation=".4" />
+        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+        <feColorMatrix values="0 0 0 0 0.0392157 0 0 0 0 0.411765 0 0 0 0 0.282353 0 0 0 0.3 0" />
+        <feBlend in2="shape" result="effect1_innerShadow_2731_37777" />
+      </filter>
+      <filter id="i" width="48" height="48" x="288" y="294" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <feOffset />
+        <feGaussianBlur stdDeviation=".4" />
+        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+        <feColorMatrix values="0 0 0 0 0.0392157 0 0 0 0 0.411765 0 0 0 0 0.282353 0 0 0 0.3 0" />
+        <feBlend in2="shape" result="effect1_innerShadow_2731_37777" />
+      </filter>
+      <filter id="j" width="48" height="48" x="48" y="294" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <feOffset />
+        <feGaussianBlur stdDeviation=".4" />
+        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+        <feColorMatrix values="0 0 0 0 0.0392157 0 0 0 0 0.411765 0 0 0 0 0.282353 0 0 0 0.3 0" />
+        <feBlend in2="shape" result="effect1_innerShadow_2731_37777" />
+      </filter>
+      <filter id="k" width="50.3" height="49.6" x="192" y="294" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <feOffset dx="2.3" dy="1.6" />
+        <feGaussianBlur stdDeviation="1.2" />
+        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+        <feColorMatrix values="0 0 0 0 0.0392157 0 0 0 0 0.411765 0 0 0 0 0.282353 0 0 0 0.3 0" />
+        <feBlend in2="shape" result="effect1_innerShadow_2731_37777" />
+      </filter>
+      <filter id="l" width="51.9" height="51.9" x="240" y="294" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <feOffset dx="3.9" dy="3.9" />
+        <feGaussianBlur stdDeviation="4.7" />
+        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+        <feColorMatrix values="0 0 0 0 0.0392157 0 0 0 0 0.411765 0 0 0 0 0.282353 0 0 0 0.3 0" />
+        <feBlend in2="shape" result="effect1_innerShadow_2731_37777" />
+      </filter>
+      <filter id="m" width="48" height="52.7" x="96" y="294" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <feOffset dy="4.7" />
+        <feGaussianBlur stdDeviation="2.7" />
+        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+        <feColorMatrix values="0 0 0 0 0.0392157 0 0 0 0 0.411765 0 0 0 0 0.282353 0 0 0 0.3 0" />
+        <feBlend in2="shape" result="effect1_innerShadow_2731_37777" />
+      </filter>
+      <filter id="n" width="48" height="48" x="192" y="246" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <feOffset />
+        <feGaussianBlur stdDeviation=".4" />
+        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+        <feColorMatrix values="0 0 0 0 0.0392157 0 0 0 0 0.411765 0 0 0 0 0.282353 0 0 0 0.3 0" />
+        <feBlend in2="shape" result="effect1_innerShadow_2731_37777" />
+      </filter>
+      <filter id="o" width="48" height="48" x="96" y="246" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <feOffset />
+        <feGaussianBlur stdDeviation=".4" />
+        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+        <feColorMatrix values="0 0 0 0 0.0392157 0 0 0 0 0.411765 0 0 0 0 0.282353 0 0 0 0.3 0" />
+        <feBlend in2="shape" result="effect1_innerShadow_2731_37777" />
+      </filter>
+      <filter id="p" width="48" height="48" x="240" y="246" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <feOffset />
+        <feGaussianBlur stdDeviation=".4" />
+        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+        <feColorMatrix values="0 0 0 0 0.0392157 0 0 0 0 0.411765 0 0 0 0 0.282353 0 0 0 0.3 0" />
+        <feBlend in2="shape" result="effect1_innerShadow_2731_37777" />
+      </filter>
+      <filter id="q" width="48" height="52.7" x="144" y="246" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <feOffset dy="4.7" />
+        <feGaussianBlur stdDeviation="3.9" />
+        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+        <feColorMatrix values="0 0 0 0 0.0392157 0 0 0 0 0.411765 0 0 0 0 0.282353 0 0 0 0.3 0" />
+        <feBlend in2="shape" result="effect1_innerShadow_2731_37777" />
+      </filter>
+      <filter id="r" width="48" height="48" x="144" y="198" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <feOffset />
+        <feGaussianBlur stdDeviation=".4" />
+        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+        <feColorMatrix values="0 0 0 0 0.0392157 0 0 0 0 0.411765 0 0 0 0 0.282353 0 0 0 0.3 0" />
+        <feBlend in2="shape" result="effect1_innerShadow_2731_37777" />
+      </filter>
+      <filter id="s" width="48.8" height="50.3" x="192" y="198" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <feOffset dx=".8" dy="2.3" />
+        <feGaussianBlur stdDeviation="1.6" />
+        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+        <feColorMatrix values="0 0 0 0 0.0392157 0 0 0 0 0.411765 0 0 0 0 0.282353 0 0 0 0.3 0" />
+        <feBlend in2="shape" result="effect1_innerShadow_2731_37777" />
+      </filter>
+      <filter id="t" width="48" height="48" x="168" y="150" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <feOffset />
+        <feGaussianBlur stdDeviation=".4" />
+        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+        <feColorMatrix values="0 0 0 0 0.0392157 0 0 0 0 0.411765 0 0 0 0 0.282353 0 0 0 0.3 0" />
+        <feBlend in2="shape" result="effect1_innerShadow_2731_37777" />
+      </filter>
+      <filter id="u" width="49.6" height="49.6" x="168" y="102" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <feOffset dx="1.6" dy="1.6" />
+        <feGaussianBlur stdDeviation="1.6" />
+        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+        <feColorMatrix values="0 0 0 0 0.0392157 0 0 0 0 0.411765 0 0 0 0 0.282353 0 0 0 0.3 0" />
+        <feBlend in2="shape" result="effect1_innerShadow_2731_37777" />
+      </filter>
+      <filter id="v" width="48" height="48" x="96" y="342" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+        <feOffset />
+        <feGaussianBlur stdDeviation=".4" />
+        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic" />
+        <feColorMatrix values="0 0 0 0 0.0395312 0 0 0 0 0.4125 0 0 0 0 0.280864 0 0 0 0.4 0" />
+        <feBlend in2="shape" result="effect1_innerShadow_2731_37777" />
+      </filter>
+    </defs>
+  </svg>
+		</div>
+
+					<div class="col-lg-7 col-xl-6 order-1 text-center text-lg-start">
+		            <h1><p><span style="text-decoration: underline;">Expand</span> your<br />
+brand</p>
+</h1>
+
+            <p>Reach business decision-makers with our<br />
+unparalleled targeting ability.</p>
+<form class="sb-modal-form">
+					<svg xmlns="http://www.w3.org/2000/svg" width="66" height="52" viewBox="0 0 66 52"><path fill="#44F5B5" d="M13.104 51.668a2 2 0 0 1-2.772-.564L.398 36.094a2 2 0 1 1 3.336-2.208l8.83 13.342 13.343-8.83a2 2 0 1 1 2.207 3.336l-15.01 9.934ZM66 4C53.873 4 42.538 7.541 33.425 15.036 24.316 22.528 17.279 34.091 13.96 50.4l-3.92-.798c3.47-17.048 10.91-29.485 20.844-37.654C40.813 3.78 53.084 0 66 0v4Z"/></svg>
+			
+	<div class="sb-modal-form-inner row align-items-end g-2">
+		
+		<div class="col-12 col-md">
+			<label for="sb-modal-form-email" class="form-label">Work email</label>
+			<input type="email" name="sb-modal-form-email" placeholder="Enter your work email address" required class="form-control">
+		</div>
+
+		<div class="col-12 col-md-auto">
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sb-modal-advertise">Learn more</button>
+		</div>
+	</div>
+</form>
+        </div>
+    </div>
+</div>
+
+<div id="sb-usps" class="sb-section">
+	<div class="container">
+		
+<div class="row d-flex align-items-center justify-content-center sb-section-heading">
+	<div class="col-lg-7">
+		<div class="text-center text-md-start text-lg-center">
+							<h2>Grow your users</h2>
+			
+			<p class="h3">Reach business leaders who move markets</p>
+		</div>
+
+					<div class="text-center text-md-start text-lg-center sb-section-heading-text">
+				<div>
+					<p>Our qualified B2B audience of decision-makers spans 16 industries, 200+ newsletters and 6M+ subscribers, giving you access to our first-party data to ensure the most qualified and exclusive way to reach your target market</p>
+				</div>
+			</div>
+			</div>
+
+	</div>
+
+		<div id="sb-usps-center" class="row d-flex align-items-center justify-content-center">
+			<div class="col-lg-12 text-center"><div class="row row-auto justify-content-center"><div class="d-flex col-12 col-md-6 col-lg sb-usp-center"><div><?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56px" height="56px" viewBox="0 0 56 56" version="1.1">
+  <title>Featured icon 1</title>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Featured-icon-1" transform="translate(4.000000, 4.000000)" fill-rule="nonzero">
+      <rect id="Rectangle" fill="#D0FCED" x="0" y="0" width="48" height="48" rx="24"></rect>
+      <polygon id="Path" stroke="#11C282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="25 14 15 26 24 26 23 34 33 22 24 22"></polygon>
+      <rect id="Rectangle" stroke="#E8FEF6" stroke-width="8" x="0" y="0" width="48" height="48" rx="24"></rect>
+    </g>
+  </g>
+</svg>
+<h3>Advertising built and optimized for B2B</h3><p>Reach the decision-makers your business needs most with unparalleled first-party data and targeting ability. 
+</p></div></div><div class="d-flex col-12 col-md-6 col-lg sb-usp-center"><div><?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56px" height="56px" viewBox="0 0 56 56" version="1.1">
+  <title>Featured icon 2</title>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Featured-icon-2" transform="translate(4.000000, 4.000000)" fill-rule="nonzero">
+      <rect id="Rectangle" fill="#D0FCED" x="0" y="0" width="48" height="48" rx="24"></rect>
+      <path d="M17,15 L14,18 M34,18 L31,15 M18,31 L16,33 M30,31 L32,33 M21,25.5 L23,27.5 L27.5,23 M24,33 C28.4185541,33 32.0005,29.4180541 32.0005,24.9995 C32.0005,20.5809459 28.4185541,16.999 24,16.999 C19.5814459,16.999 15.9995,20.5809459 15.9995,24.9995 C15.9995,29.4180541 19.5814459,33 24,33 Z" id="Shape" stroke="#11C282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <rect id="Rectangle" stroke="#E8FEF6" stroke-width="8" x="0" y="0" width="48" height="48" rx="24"></rect>
+    </g>
+  </g>
+</svg>
+<h3>Targetability</h3><p>Benefit from our proprietary technology to reach your targeted audience in a brand-safe, contextually relevant environment.
+</p></div></div><div class="d-flex col-12 col-md-6 col-lg sb-usp-center"><div><?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56px" height="56px" viewBox="0 0 56 56" version="1.1">
+  <title>Featured icon 3</title>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Featured-icon-3" transform="translate(4.000000, 4.000000)" fill-rule="nonzero">
+      <rect id="Rectangle" fill="#D0FCED" x="0" y="0" width="48" height="48" rx="24"></rect>
+      <path d="M15,29 L15,33 M27,20 L27,33 M21,25 L21,33 M33,15 L33,33" id="Shape" stroke="#11C282" stroke-width="2" fill="#000000" stroke-linecap="round" stroke-linejoin="round"></path>
+      <rect id="Rectangle" stroke="#E8FEF6" stroke-width="8" x="0" y="0" width="48" height="48" rx="24"></rect>
+    </g>
+  </g>
+</svg>
+<h3>Brand Safety</h3><p>Align your brand with trusted industry content, editorial expertise and the world’s most reputable associations.  
+</p></div></div><div class="d-flex col-12 col-md-6 col-lg sb-usp-center"><div><?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56px" height="56px" viewBox="0 0 56 56" version="1.1">
+  <title>Featured icon 4</title>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Featured-icon-4" transform="translate(4.000000, 4.000000)" fill-rule="nonzero">
+      <rect id="Rectangle" fill="#D0FCED" x="0" y="0" width="48" height="48" rx="24"></rect>
+      <path d="M20,26 C20,26 21.5,28 24,28 C26.5,28 28,26 28,26 M34,24 C34,29.523 29.523,34 24,34 C18.477,34 14,29.523 14,24 C14,18.477 18.477,14 24,14 C29.523,14 34,18.477 34,24 Z M27.5,21 C27.5,21.2761424 27.2761424,21.5 27,21.5 C26.7238576,21.5 26.5,21.2761424 26.5,21 C26.5,20.7238576 26.7238576,20.5 27,20.5 C27.2761424,20.5 27.5,20.7238576 27.5,21 Z M21.5,21 C21.5,21.2761424 21.2761424,21.5 21,21.5 C20.7238576,21.5 20.5,21.2761424 20.5,21 C20.5,20.7238576 20.7238576,20.5 21,20.5 C21.2761424,20.5 21.5,20.7238576 21.5,21 Z" id="Shape" stroke="#11C282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <rect id="Rectangle" stroke="#E8FEF6" stroke-width="8" x="0" y="0" width="48" height="48" rx="24"></rect>
+    </g>
+  </g>
+</svg>
+<h3>Personalized Experience</h3><p>Optimize your campaigns with direct access to your SmartBrief account management team and a secure portal to view results, including company and persona-level engagement.  
+</p></div></div></div></div>		</div>
+	</div>
+
+	</div>
+<div id="sb-platform-numbers" class="sb-section">
+	<div class="container">
+		
+<div class="row d-flex align-items-center justify-content-center sb-section-heading">
+	<div class="col-lg-7">
+		<div class="text-center text-md-start text-lg-center">
+							<h2>Our platform</h2>
+			
+			<p class="h3">Strength in numbers</p>
+		</div>
+
+			</div>
+
+	</div>
+
+		<div id="sb-partner-metrics" class="row row-auto justify-content-center">
+			<div class="d-flex col-md-6 col-lg-4 mb-4 mb-lg-0"><div><div class="sb-metric-title d-flex align-items-center justify-content-start"><?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="56" viewBox="0 0 56 56" width="56">
+  <g fill="none" transform="translate(4 4)">
+    <rect fill="#d0fced" height="48" rx="24" width="48"></rect>
+    <path d="m28 15.468c1.5323365.7594199 2.5017568 2.321803 2.5017568 4.032s-.9694203 3.2725801-2.5017568 4.032m2 5.234c1.511.684 2.873 1.799 4 3.234m-20 0c1.947-2.477 4.59-4 7.5-4s5.553 1.523 7.5 4m-3-12.5c0 2.4852814-2.0147186 4.5-4.5 4.5s-4.5-2.0147186-4.5-4.5 2.0147186-4.5 4.5-4.5 4.5 2.0147186 4.5 4.5z" stroke="#11c282" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+    <rect height="48" rx="24" stroke="#e8fef6" stroke-width="8" width="48"></rect>
+  </g>
+</svg>
+<h3>Audience</h3></div><p class="sb-metric"><span>70%</span>Decision Makers</p><p class="sb-metric"><span>28%</span>Executives</p><p class="sb-metric"><span>16</span>Industries</p></div></div><div class="d-flex col-md-6 col-lg-4 mb-4 mb-lg-0"><div><div class="sb-metric-title d-flex align-items-center justify-content-start"><?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="56" viewBox="0 0 56 56" width="56">
+  <g fill="none" transform="translate(4 4)">
+    <rect fill="#d0fced" height="48" rx="24" width="48"></rect>
+    <path d="m26 22 7-7m0 0h-6m6 0v6m-11 5-7 7m0 0h6m-6 0v-6" stroke="#11c282" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+    <rect height="48" rx="24" stroke="#e8fef6" stroke-width="8" width="48"></rect>
+  </g>
+</svg>
+<h3>Reach</h3></div><p class="sb-metric"><span>6m+</span>Subscribers</p><p class="sb-metric"><span>2.2b</span>Emails Sent Annually </p><p class="sb-metric"><span>200+</span>Newsletters</p></div></div><div class="d-flex col-md-6 col-lg-4 mb-4 mb-lg-0"><div><div class="sb-metric-title d-flex align-items-center justify-content-start"><?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="56" viewBox="0 0 56 56" width="56">
+  <g fill="none" transform="translate(4 4)">
+    <rect fill="#d0fced" height="48" rx="24" width="48"></rect>
+    <path d="m27.5 15.5v-1.5m3.94 2.56 1.06-1.06m.01 5h1.5m-.06 4.5c-.501 5.053-4.765 9-9.95 9-5.523 0-10-4.477-10-10 0-5.185 3.947-9.449 9-9.95m1 5.95h4v4m-.38-4c-2.4346522 3.4516165-6.3961182 5.5032231-10.62 5.5-1.003 0-1.98-.114-2.917-.328" stroke="#11c282" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+    <rect height="48" rx="24" stroke="#e8fef6" stroke-width="8" width="48"></rect>
+  </g>
+</svg>
+<h3>Proprietary Technology</h3></div><p class="sb-metric"><span>CMS</span>Built for scale</p><p class="sb-metric"><span>Ad</span>Server with robust targeting capabilities</p><p class="sb-metric"><span>Client</span>Facing reporting portal</p></div></div>		</div>
+	</div>
+</div>
+		<div id="sb-testimonial-single" class="sb-section">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-lg-10">
+						<div class="row">
+							<div class="col-12 col-md-7 g-md-0">
+								<div>
+									<p class="testimonial-content h4">&ldquo;We’ve had nothing but positive experiences with SmartBrief. Their responsiveness is wonderful. They have been very accommodating, and every department we’ve worked with has provided a high level of service that you just don’t get elsewhere&rdquo;</p><p class="testimonial-byline"><span class="testimonial-by">Gina Vigilante-Soto</span><br><span class="testimonial-company">Director of Media Strategy, DiD Agency </span></p>								</div>
+							</div>
+
+							<div class="col-12 col-md-5 g-md-0">
+								<div class="sb-image-bg" style="background-image: url( 'https://www.smartbrief.com/wp-content/uploads/2020/01/DiD-637x485.png' );"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<div class="sb-section"><div id="sb-trusted" class="container">
+	<div class="row d-flex align-items-center justify-content-center">
+		<div class="col-lg-8 text-center">
+			<p class="h4">Trusted by</p>
+
+			<div id="sb-trusted-logos" class="justify-content-center splide">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide"><img src="https://www.smartbrief.com/wp-content/uploads/2023/12/Verizon-Frontline.png" width="120" height="31"></li><li class="splide__slide"><img src="https://www.smartbrief.com/wp-content/uploads/2026/01/extreme-UKG-logo-dark-teal-RGB.png" width="544" height="291"></li><li class="splide__slide"><img src="https://www.smartbrief.com/wp-content/uploads/2023/12/Tyson.png" width="120" height="60"></li><li class="splide__slide"><img src="https://www.smartbrief.com/wp-content/uploads/2023/12/T-Mobile.png" width="120" height="25"></li><li class="splide__slide"><img src="https://www.smartbrief.com/wp-content/uploads/2023/12/Harvard-Business-School.png" width="120" height="60"></li><li class="splide__slide"><img src="https://www.smartbrief.com/wp-content/uploads/2023/12/Cisco.png" width="250" height="51"></li><li class="splide__slide"><img src="https://www.smartbrief.com/wp-content/uploads/2023/12/Square.png" width="180" height="150"></li><li class="splide__slide"><img src="https://www.smartbrief.com/wp-content/uploads/2023/12/PepsiCo.png" width="120" height="29"></li><li class="splide__slide"><img src="https://www.smartbrief.com/wp-content/uploads/2023/12/Nestle.png" width="436" height="115"></li><li class="splide__slide"><img src="https://www.smartbrief.com/wp-content/uploads/2023/12/CallRail.png" width="118" height="26"></li><li class="splide__slide"><img src="https://www.smartbrief.com/wp-content/uploads/2023/12/BigCommerce.png" width="600" height="136"></li><li class="splide__slide"><img src="https://www.smartbrief.com/wp-content/uploads/2023/12/Bank-Of-America.png" width="250" height="125"></li><li class="splide__slide"><img src="https://www.smartbrief.com/wp-content/uploads/2023/12/Siemens.jpg" width="162" height="90"></li><li class="splide__slide"><img src="https://www.smartbrief.com/wp-content/uploads/2023/12/Lego.jpg" width="120" height="60"></li><li class="splide__slide"><img src="https://www.smartbrief.com/wp-content/uploads/2023/12/fitbit.jpg" width="120" height="60"></li><li class="splide__slide"><img src="https://www.smartbrief.com/wp-content/uploads/2023/12/AWS.jpg" width="179" height="102"></li><li class="splide__slide"><img src="https://www.smartbrief.com/wp-content/uploads/2023/12/Workday.gif" width="160" height="45"></li><li class="splide__slide"><img src="https://www.smartbrief.com/wp-content/uploads/2023/12/LexisNexis.gif" width="300" height="80"></li>					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>		<div id="sb-cta" class="sb-section">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-lg-10">
+						<div class="row align-items-end">
+							<div class="col-12 col-xl-7">
+								<h2 class="h3">Join 2,000+ advertisers in reaching 6M+ readers a day</h2><p>Start your campaign with us and maximize your ROI</p>							</div>
+
+							<div class="col-12 col-xl-5">
+								<form class="sb-modal-form">
+	
+	<div class="sb-modal-form-inner row align-items-end g-2">
+		
+		<div class="col-12 col-md">
+			<label for="sb-modal-form-email" class="form-label">Work email</label>
+			<input type="email" name="sb-modal-form-email" placeholder="Enter your work email address" required class="form-control">
+		</div>
+
+		<div class="col-12 col-md-auto">
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sb-modal-advertise">Learn more</button>
+		</div>
+	</div>
+</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<div id="sb-smartstudio" class="sb-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="row align-items-center">
+					<div class="col-12 col-md-6">
+						
+<div class="row d-flex align-items-center justify-content-start sb-section-heading">
+	<div class="col-md-12">
+		<div class="text-left">
+							<h2>SmartStudio</h2>
+			
+			<p class="h3">Our studio created unique content, built for results</p>
+		</div>
+
+			</div>
+
+	</div>
+<ul><li>Advertising & Marketing ideation</li><li>In-house Design Team</li><li>White papers, Videos, Webinars, Blogs</li><li>Proven results</li></ul><div class="d-flex"><a href="https://www.smartbrief.com/smartstudio/" target="" class="btn btn-light d-flex align-items-center">Learn more</a></div>					</div>
+
+					<div class="col-12 col-md-6">
+						<div class="sb-image-bg" style="background-image: url( 'https://www.smartbrief.com/wp-content/uploads/2024/01/GettyImages-1169112151-1320x880.jpg' );"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	</div>
+
+		<footer class="footer">
+			<div id="footer-top">
+				<div class="container">
+					<div class="row">
+						<div id="sb-colophon" class="col-12 col-lg-4">
+							<svg xmlns="http://www.w3.org/2000/svg" width="174" height="24" viewBox="0 0 174 24"><g clip-path="url(#clip0_521_63661)"><path fill="#EBF0F5" d="M40.904 22.424c-5.297 0-8.847-2.9-8.847-7.279h2.515c0 2.959 2.544 4.912 6.332 4.912 3.432 0 5.74-1.48 5.74-3.699 0-1.627-1.686-2.633-6.006-3.64-5.179-1.212-7.19-2.75-7.19-5.503 0-3.402 2.988-5.68 7.456-5.68 3.817 0 6.924 2.337 7.782 5.828l-2.427.592c-.532-2.426-2.692-4.054-5.355-4.054-2.87 0-4.794 1.332-4.794 3.314 0 1.361 1.42 2.22 5.06 3.048 5.859 1.39 8.137 3.107 8.137 6.095 0 3.64-3.373 6.066-8.403 6.066Zm10.627-.296V7.334h2.367v1.657c.829-1.184 2.338-1.953 3.787-1.953 1.569 0 3.255.888 4.202 2.249.947-1.361 2.752-2.249 4.468-2.249 3.255 0 5.415 1.953 5.415 4.882v10.208h-2.367v-9.971c0-1.835-1.302-3.048-3.285-3.048-1.982 0-3.284 1.213-3.284 3.048v9.971h-2.367v-9.971c0-1.835-1.302-3.048-3.285-3.048-1.982 0-3.284 1.213-3.284 3.048v9.971h-2.367Zm29.666.296c-4.32 0-7.22-3.077-7.22-7.693s2.9-7.693 7.22-7.693c2.012 0 4.113 1.124 5.267 2.781V7.334h2.367v14.794h-2.367v-2.485c-1.154 1.657-3.255 2.781-5.267 2.781Zm.237-2.07c3.018 0 5.03-2.25 5.03-5.623s-2.012-5.622-5.03-5.622c-3.048 0-5.09 2.25-5.09 5.622 0 3.373 2.042 5.622 5.09 5.622Zm24.397-.001h2.574v1.775a11.56 11.56 0 0 1-2.426.296c-2.633 0-4.409-1.627-4.409-4.083V9.405h-3.018c-2.663 0-4.438 1.746-4.438 4.38v8.343h-2.367V7.334h2.367v2.041c.917-1.213 2.633-2.041 4.231-2.041h3.225V1.83h2.368v5.504h4.32v2.07h-4.32v8.937c0 1.213.769 2.012 1.893 2.012Zm6.361 1.784V1.839h9.439c3.994 0 6.657 2.19 6.657 5.474 0 1.39-.769 2.959-1.953 3.965 2.131.917 3.551 2.988 3.551 5.148 0 3.433-2.781 5.711-6.924 5.711h-10.77Zm3.965-12.19h5.474c1.627 0 2.692-.918 2.692-2.28 0-1.36-1.065-2.277-2.692-2.277h-5.474v4.556Zm0 8.64h6.805c1.776 0 2.959-1.007 2.959-2.516 0-1.538-1.183-2.574-2.929-2.574h-6.835v5.09Zm25.796-8.285h-2.846c-2.308 0-3.846 1.331-3.846 3.314v8.521h-3.551V7.343h3.551v1.805c.651-1.095 2.13-1.805 3.639-1.805h3.053v2.959Z"/><path fill="#EBF0F5" d="M141.935 5.094V1.839h3.55v3.255h-3.55Zm0 17.043V7.342h3.55v14.795h-3.55Zm13.401.415c-4.823 0-8.019-3.137-8.019-7.812 0-4.675 3.196-7.811 8.019-7.811s8.019 3.136 8.019 7.811v.68l-.296.297h-12.132c.326 2.337 2.101 3.876 4.409 3.876 1.746 0 3.373-1.006 4.054-2.486H163c-.977 3.255-4.054 5.445-7.664 5.445Zm-4.172-9.794h8.344c-.68-1.835-2.19-2.87-4.172-2.87-1.982 0-3.492 1.035-4.172 2.87Zm15.274 9.379V10.302h-2.367v-2.96h2.367V5.716c0-2.574 1.835-4.29 4.557-4.29.621 0 1.687.118 2.101.414v2.545h-1.805c-.888 0-1.302.414-1.302 1.302v1.657h3.107v2.959h-3.107v11.835h-3.551Z"/><path fill="url(#paint0_linear_521_63661)" d="M18.74 0H8.449a6.466 6.466 0 0 0-5.597 3.23L0 8.163l4.438 7.672L9.151 7.67h13.972L18.74 0Z"/><path fill="#EBF0F5" fill-opacity=".11" fill-rule="evenodd" d="M8.866 8.164h9.819l-4.427 7.671h-9.82l4.428-7.67Z" clip-rule="evenodd" opacity=".1"/><path fill="#fff" fill-opacity=".2" fill-rule="evenodd" d="M0 8.164h8.866l-4.428 7.671L0 8.165Z" clip-rule="evenodd"/><path fill="#EBF0F5" d="M4.384 24h10.29a6.466 6.466 0 0 0 5.598-3.23l2.851-4.935-4.438-7.67-4.712 8.163H0L4.384 24Z"/></g><defs><linearGradient id="paint0_linear_521_63661" x1="0" x2="18.74" y1="8.22" y2="-.027" gradientUnits="userSpaceOnUse"><stop offset=".171" stop-color="#C0C6CC"/><stop offset=".572" stop-color="#EBF0F5"/></linearGradient><clipPath id="clip0_521_63661"><path fill="#fff" d="M0 0h173.096v24H0z"/></clipPath></defs></svg>
+
+							<p>A Future plc business.</p>
+
+							
+							<div class="row row-cols-auto">
+																	<a href="https://www.facebook.com/smartbrief" target="_blank" title="Facebook" class="col"><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m24 12c0-6.62742-5.3726-12-12-12-6.62742 0-12 5.37258-12 12 0 5.9895 4.3882 10.954 10.125 11.8542v-8.3854h-3.04688v-3.4688h3.04688v-2.64375c0-3.0075 1.7916-4.66875 4.5326-4.66875 1.3125 0 2.6862.23438 2.6862.23438v2.95312h-1.5132c-1.4906 0-1.9556.92508-1.9556 1.875v2.25h3.3281l-.532 3.4688h-2.7961v8.3854c5.7368-.9002 10.125-5.8647 10.125-11.8542z" fill="#a3a3a3"/></svg></a>
+								
+																	<a href="https://twitter.com/smartbrief" target="_blank" title="Twitter / X" class="col"><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m18.3263 1.9043h3.3735l-7.3701 8.4235 8.6703 11.4625h-6.7888l-5.3172-6.952-6.08405 6.952h-3.37552l7.883-9.0099-8.31743-10.8761h6.96111l4.80629 6.35433zm-1.184 17.8668h1.8693l-12.06621-15.95367h-2.00593z" fill="#a3a3a3"/></svg></a>
+								
+																	<a href="https://www.linkedin.com/company/smartbrief" target="_blank" title="LinkedIn" class="col"><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m22.2234 0h-20.45153c-.979683 0-1.77187.773438-1.77187 1.72969v20.53591c0 .9563.792187 1.7344 1.77187 1.7344h20.45153c.9797 0 1.7766-.7781 1.7766-1.7297v-20.54061c0-.956252-.7969-1.72969-1.7766-1.72969zm-15.10309 20.4516h-3.5625v-11.45629h3.5625zm-1.78125-13.01722c-1.14375 0-2.06718-.92344-2.06718-2.06251 0-1.13906.92343-2.0625 2.06718-2.0625 1.13907 0 2.0625.92344 2.0625 2.0625 0 1.13438-.92343 2.06251-2.0625 2.06251zm15.11254 13.01722h-3.5579v-5.5688c0-1.3266-.0234-3.0375-1.8515-3.0375-1.8516 0-2.1328 1.4484-2.1328 2.9438v5.6625h-3.55315v-11.45629h3.41245v1.56559h.0469c.4735-.89996 1.636-1.85152 3.3657-1.85152 3.6046 0 4.2703 2.37192 4.2703 5.45622z" fill="#a3a3a3"/></svg></a>
+								
+																	<a href="https://www.youtube.com/channel/UCak68OlraOWKzomvFK2Xceg" target="_blank" title="YouTube" class="col"><svg fill="none" height="18" viewBox="0 0 24 18" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m23.7609 4.1998s-.2343-1.65468-.9562-2.38125c-.9141-.956245-1.9359-.960933-2.4047-1.017183-3.3562-.24375-8.3953-.24375-8.3953-.24375h-.0094s-5.03905 0-8.3953.24375c-.46875.05625-1.49062.060938-2.40469 1.017183-.721872.72657-.95156 2.38125-.95156 2.38125s-.24375 1.94532-.24375 3.88594v1.81875c0 1.94061.239062 3.88591.239062 3.88591s.234375 1.6547.951558 2.3813c.91407.9562 2.11407.9234 2.64844 1.0265 1.92188.1829 8.16094.2391 8.16094.2391s5.0438-.0094 8.4-.2484c.4688-.0563 1.4906-.061 2.4047-1.0172.7219-.7266.9562-2.3813.9562-2.3813s.2391-1.9406.2391-3.88591v-1.81875c0-1.94062-.2391-3.88594-.2391-3.88594zm-14.24059 7.9125v-6.74531l6.48279 3.38438z" fill="#a3a3a3"/></svg></a>
+															</div>
+						</div>
+
+						<div class="col-12 col-lg-8">
+							<div class="row row-cols-2 row-cols-lg-0">
+																		<nav role="navigation" class="col-6 col-lg-3">
+											<h6 class="text-xs">About</h6>
+
+											<ul id="nav-footer-1" class="menu"><li id="menu-item-75268" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75268"><a href="https://www.smartbrief.com/about-us">About us</a></li>
+<li id="menu-item-75269" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75269"><a href="https://www.smartbrief.com/contact-us">Contact us</a></li>
+<li id="menu-item-75271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75271"><a href="https://www.smartbrief.com/write-for-us">Write for us</a></li>
+<li id="menu-item-75270" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75270"><a href="https://www.smartbrief.com/careers">Careers</a></li>
+<li id="menu-item-81709" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-81709"><a href="https://www.futureb2b.com/">A Future B2B Brand</a></li>
+</ul>										</nav>
+																			<nav role="navigation" class="col-6 col-lg-3">
+											<h6 class="text-xs">Publications</h6>
+
+											<ul id="nav-footer-2" class="menu"><li id="menu-item-75276" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75276"><a href="https://www.smartbrief.com/subscriptions">Newsletters</a></li>
+<li id="menu-item-75284" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75284"><a href="https://www.smartbrief.com/articles">Insights &#038; Analysis</a></li>
+</ul>										</nav>
+																			<nav role="navigation" class="col-6 col-lg-3">
+											<h6 class="text-xs">Advertising</h6>
+
+											<ul id="nav-footer-3" class="menu"><li id="menu-item-75272" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75272"><a href="https://www.smartbrief.com/partner">Partnerships</a></li>
+<li id="menu-item-75273" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75273"><a href="https://www.smartbrief.com/resources">Marketing Resources</a></li>
+<li id="menu-item-80685" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-80685"><a href="https://www.smartbrief.com/ad-specs">Advertising Specs</a></li>
+<li id="menu-item-75274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75274"><a href="https://www.smartbrief.com/smartstudio">SmartStudio</a></li>
+</ul>										</nav>
+																			<nav role="navigation" class="col-6 col-lg-3">
+											<h6 class="text-xs">Legal</h6>
+
+											<ul id="nav-footer-4" class="menu"><li id="menu-item-61109" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61109"><a target="_blank" href="https://futureplc.com/terms-conditions/">Terms of Use</a></li>
+<li id="menu-item-80639" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-80639"><a rel="privacy-policy" href="https://www.smartbrief.com/privacy-cookie-policy">Privacy &#038; Cookies Policy</a></li>
+<li id="menu-item-61111" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61111"><a target="_blank" href="https://futureplc.com/privacy-policy/">California Privacy Rights</a></li>
+<li id="menu-item-81499" class="privacy-settings menu-item menu-item-type-custom menu-item-object-custom menu-item-81499"><a href="#">Privacy Settings</a></li>
+<li id="menu-item-88672" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-88672"><a href="https://page.marketing.futurenet.com/rs/896-PBJ-036/images/SB_NHI_Statement.pdf?version=0">NHI Statement</a></li>
+</ul>										</nav>
+																</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="footer-bottom">
+				<div class="container">
+					<div class="row justify-content-center py-3 text-lg-center">
+						<p class="col-12 col-lg-auto">
+							Copyright &copy; 2026 SmartBrief. All Rights Reserved.
+						</p>
+
+						<p class="col-12 col-lg-auto">
+							A division of Future B2B LLC, Full 7th Floor, 130 West 42nd Street, New York, NY, 10036.
+						</p>
+
+						<p class="col-12 col-lg-auto">
+							<a href="#" class="privacy-settings-link">Cookie preferences</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/smartbrief/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="js-js" src="https://www.smartbrief.com/wp-content/themes/smartbrief/library/min/js/scripts.min.js"></script>
+<script id="wp-dom-ready-js" src="https://www.smartbrief.com/wp-includes/js/dist/dom-ready.min.js"></script>
+<script id="wp-hooks-js" src="https://www.smartbrief.com/wp-includes/js/dist/hooks.min.js"></script>
+<script id="wp-i18n-js" src="https://www.smartbrief.com/wp-includes/js/dist/i18n.min.js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="wp-a11y-js" src="https://www.smartbrief.com/wp-includes/js/dist/a11y.min.js"></script>
+<script id="gform_json-js" defer='defer' src="https://www.smartbrief.com/wp-content/plugins/gravityforms/js/jquery.json.min.js"></script>
+<script id="gform_gravityforms-js-extra">
+var gform_i18n = {"datepicker":{"days":{"monday":"Mo","tuesday":"Tu","wednesday":"We","thursday":"Th","friday":"Fr","saturday":"Sa","sunday":"Su"},"months":{"january":"January","february":"February","march":"March","april":"April","may":"May","june":"June","july":"July","august":"August","september":"September","october":"October","november":"November","december":"December"},"firstDay":1,"iconText":"Select date"}};
+var gf_legacy_multi = [];
+var gform_gravityforms = {"strings":{"invalid_file_extension":"This type of file is not allowed. Must be one of the following:","file_uploaded":"File uploaded","delete_file":"Delete this file","in_progress":"in progress","file_exceeds_limit":"File exceeds size limit","illegal_extension":"This type of file is not allowed.","max_reached":"Maximum number of files reached","unknown_error":"There was a problem while saving the file on the server","currently_uploading":"Please wait for the uploading to complete","cancel":"Cancel","cancel_upload":"Cancel this upload","cancelled":"Cancelled","error":"Error","message":"Message"},"vars":{"images_url":"https://www.smartbrief.com/wp-content/plugins/gravityforms/images"}};
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2,"code":"USD"},"base_url":"https://www.smartbrief.com/wp-content/plugins/gravityforms","number_formats":[],"spinnerUrl":"https://www.smartbrief.com/wp-content/plugins/gravityforms/images/spinner.svg","version_hash":"ff9087554678443dce03d3aba6ebf273","strings":{"newRowAdded":"New row added.","rowRemoved":"Row removed","formSaved":"The form has been saved.  The content contains the link to return and complete the form."}};
+//# sourceURL=gform_gravityforms-js-extra
+</script>
+<script id="gform_gravityforms-js" defer='defer' src="https://www.smartbrief.com/wp-content/plugins/gravityforms/js/gravityforms.min.js"></script>
+<script id="gform_chosen-js" defer='defer' src="https://www.smartbrief.com/wp-content/plugins/gravityforms/js/chosen.jquery.min.js"></script>
+<script id="gform_placeholder-js" defer='defer' src="https://www.smartbrief.com/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js"></script>
+<script id="gform_gravityforms_utils-js" defer='defer' src="https://www.smartbrief.com/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js"></script>
+<script id="gform_gravityforms_theme_vendors-js" defer='defer' src="https://www.smartbrief.com/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js"></script>
+<script id="gform_gravityforms_theme-js-extra">
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"ff9087554678443dce03d3aba6ebf273"},"ajax":{"ajaxurl":"https://www.smartbrief.com/wp-admin/admin-ajax.php","ajax_submission_nonce":"fe0cebf55e","i18n":{"step_announcement":"Step %1$s of %2$s, %3$s","unknown_error":"There was an unknown error processing your request. Please try again.","error_403":"The request was blocked (403 error) for unknown security reasons. Remove any code-like text (scripts or DB queries) and try again."}}}},"hmr_dev":"","public_path":"https://www.smartbrief.com/wp-content/plugins/gravityforms/assets/js/dist/","config_nonce":"f8cdc93356"};
+//# sourceURL=gform_gravityforms_theme-js-extra
+</script>
+<script id="gform_gravityforms_theme-js" defer='defer' src="https://www.smartbrief.com/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js"></script>
+
+<!-- BEGIN SEARCHWP DEBUG
+
+[NO QUERIES]
+
+END SEARCHWP DEBUG -->
+
+<script>
+gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 5) {gformInitChosenFields('#input_5_7','No results matched');if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }} } );jQuery(document).on('gform_post_conditional_logic', function(event, formId, fields, isInit){gformInitChosenFields('#input_5_7','No results matched');} ) } );
+</script>
+<script>
+gform.initializeOnLoaded( function() {jQuery(document).trigger("gform_pre_post_render", [{ formId: "5", currentPage: "1", abort: function() { this.preventDefault(); } }]);        if (event && event.defaultPrevented) {                return;        }        const gformWrapperDiv = document.getElementById( "gform_wrapper_5" );        if ( gformWrapperDiv ) {            const visibilitySpan = document.createElement( "span" );            visibilitySpan.id = "gform_visibility_test_5";            gformWrapperDiv.insertAdjacentElement( "afterend", visibilitySpan );        }        const visibilityTestDiv = document.getElementById( "gform_visibility_test_5" );        let postRenderFired = false;        function triggerPostRender() {            if ( postRenderFired ) {                return;            }            postRenderFired = true;            gform.core.triggerPostRenderEvents( 5, 1 );            if ( visibilityTestDiv ) {                visibilityTestDiv.parentNode.removeChild( visibilityTestDiv );            }        }        function debounce( func, wait, immediate ) {            var timeout;            return function() {                var context = this, args = arguments;                var later = function() {                    timeout = null;                    if ( !immediate ) func.apply( context, args );                };                var callNow = immediate && !timeout;                clearTimeout( timeout );                timeout = setTimeout( later, wait );                if ( callNow ) func.apply( context, args );            };        }        const debouncedTriggerPostRender = debounce( function() {            triggerPostRender();        }, 200 );        if ( visibilityTestDiv && visibilityTestDiv.offsetParent === null ) {            const observer = new MutationObserver( ( mutations ) => {                mutations.forEach( ( mutation ) => {                    if ( mutation.type === 'attributes' && visibilityTestDiv.offsetParent !== null ) {                        debouncedTriggerPostRender();                        observer.disconnect();                    }                });            });            observer.observe( document.body, {                attributes: true,                childList: false,                subtree: true,                attributeFilter: [ 'style', 'class' ],            });        } else {            triggerPostRender();        }    } );
+</script>
+	</body>
+</html>
