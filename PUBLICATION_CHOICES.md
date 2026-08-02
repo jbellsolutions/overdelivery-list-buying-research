@@ -4,10 +4,11 @@
 
 This repository is being published as a public, source-grounded research repository under the name **Over Delivery List-Buying Research**.
 
-- **GitHub repository name:** `overdelivery-list-buying-research`
+- **GitHub repository:** https://github.com/jbellsolutions/overdelivery-list-buying-research
 - **Visibility:** Public
 - **Default branch:** `main`
 - **Repository entry point:** `index.html`
+- **Business-process entry point:** `BUSINESS_PROCESS.md`
 - **Web snapshot:** This same directory is published as a static here.now site so the report can be read without cloning the repository.
 
 ## Why these choices

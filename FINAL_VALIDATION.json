@@ -13,8 +13,8 @@
     "malformed_ledger_rows": 0,
     "duplicate_vendor_names": 0,
     "duplicate_vendor_urls": 0,
-    "published_file_count": 162,
-    "content_file_count": 160,
+    "published_file_count": 163,
+    "content_file_count": 161,
     "public_capture_redaction_placeholders": 16,
     "integrity_pass": true,
     "secret_scan": "no unredacted credential-pattern matches"
@@ -134,14 +134,19 @@
       "sha256": "ac7cf44af596f16fc07ab0a82c09e8814fd3a2b4e586f94cb437a8eeac757608"
     },
     {
+      "path": "BUSINESS_PROCESS.md",
+      "bytes": 12936,
+      "sha256": "67879e6e2998bbf9940df2136d6e71ed4335a11e380de3ffeec4579cc882abab"
+    },
+    {
       "path": "BUYER_DUE_DILIGENCE.md",
       "bytes": 5159,
       "sha256": "3558f8c01ffd330a395ebf5d77eb03d992e27cb24ff51f7384a9c727bae55fe8"
     },
     {
       "path": "FINAL_REPORT.md",
-      "bytes": 7599,
-      "sha256": "37f2c0e615ce54ca065dcce89d06e21a04eb52b08a0bfd1c59e44c7ef7001870"
+      "bytes": 10853,
+      "sha256": "73d4f4489bd799d9752d641fb0903e8b2941cf1aa52eebfdeeeeea36cd726e12"
     },
     {
       "path": "HISTORICAL_LIST_OPERATORS.md",
@@ -160,8 +165,8 @@
     },
     {
       "path": "PUBLICATION_CHOICES.md",
-      "bytes": 3668,
-      "sha256": "8d46db9a1e66e580f12cb6a4f9f7794226fe574de3afc0128076079ed54463bf"
+      "bytes": 3753,
+      "sha256": "50579cf2c5f8a23d76c9b0d5d02abf34d9ba6dbbb1b059eaceecc69ee14beda1"
     },
     {
       "path": "RAW_OFFICIAL_FETCHES/10dollar_solo_ads.html",
@@ -785,8 +790,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4401,
-      "sha256": "9cab56608b25df7a73f7451fb088805bc961ddd4a75cfcbfda773d1407f59317"
+      "bytes": 3945,
+      "sha256": "3d3e482868ca10cd4ffeeaca104cda340c7ac34029e1daf0b4233dbf9826fddb"
     },
     {
       "path": "RESEARCH_COVERAGE_STATUS.md",
@@ -820,8 +825,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 8576,
-      "sha256": "5cfcd73ddf6e961b78fb4544e2514da85df3666a18e858b2da369023640a5712"
+      "bytes": 9865,
+      "sha256": "119decd7010504753969043990f20defc021c67198eb686e5862deb9562499a2"
     }
   ],
   "metadata_files_excluded_from_manifest": [

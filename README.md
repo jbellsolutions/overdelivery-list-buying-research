@@ -1,16 +1,27 @@
 # Over Delivery List-Buying Repository
 
-Research repository for building direct-response list intelligence and buying media in the Brian Kurtz / *Over Delivery* tradition.
+An evidence-backed operating system for finding, evaluating, testing, and scaling audience access in the Brian Kurtz / *Over Delivery* tradition.
 
-## What this repository contains
+## Start here
 
-- `ULTIMATE_GUIDE.md` — operating framework, channel map, buying process, and recommended starting lanes.
-- `VENDOR_DIRECTORY.csv` — normalized vendor/provider records with provenance and confidence.
-- `SOURCE_LEDGER.csv` — source URLs, evidence type, retrieval/verification notes, and coverage.
-- `BUYER_DUE_DILIGENCE.md` — questions and controls before paying for a list, solo, or email placement.
-- `AGENT_RESEARCH/` — raw/near-raw research returned by the 10 independent research agents.
-- `LOCAL_ARCHIVE_SOURCE_MAP.md` — what the attached Brian Kurtz / Over Delivery archive contributes, including file paths and historical caveats.
-- `PUBLICATION_CHOICES.md` — the publication decisions, safety redactions, live-link verification contract, and scope limits.
+1. [`FINAL_REPORT.md`](FINAL_REPORT.md) — executive report, category map, priorities, diligence, and decision rules.
+2. [`BUSINESS_PROCESS.md`](BUSINESS_PROCESS.md) — the usable business process: stages, gates, scorecard, test card, launch checklist, stop rules, and management cadence.
+3. [`ULTIMATE_GUIDE.md`](ULTIMATE_GUIDE.md) — full market map and operating guide.
+4. [`VENDOR_DIRECTORY.csv`](VENDOR_DIRECTORY.csv) — 98 normalized vendor/provider/discovery records.
+5. [`SOURCE_LEDGER.csv`](SOURCE_LEDGER.csv) — 112 source URLs with evidence and verification notes.
+6. [`BUYER_DUE_DILIGENCE.md`](BUYER_DUE_DILIGENCE.md) — pre-purchase and contract controls.
+
+## Process categories
+
+| Category | Business job | Primary repository path |
+|---|---|---|
+| Publisher / newsletter media | Buy trusted placement and audience access | `VENDOR_DIRECTORY.csv`, `RAW_OFFICIAL_FETCHES/` |
+| Solo ads / dedicated sends | Run a controlled direct-response test | `BUSINESS_PROCESS.md`, `BUYER_DUE_DILIGENCE.md` |
+| Affiliate / performance partnerships | Buy measurable partner distribution | `AGENT_RESEARCH/05_affiliate_network_research.md` |
+| Postal / direct mail | Reach buyer/subscriber audiences offline | `ULTIMATE_GUIDE.md`, vendor directory |
+| Data / modeling / hygiene | Support lawful records, modeling, append, and deployment | `AGENT_RESEARCH/02_list_brokerage_market_map.md` |
+| Discovery / associations | Find current owners, publishers, brokers, and contacts | `SOURCE_LEDGER.csv`, `AGENT_RESEARCH/` |
+| Tracking / compliance | Preserve attribution, suppression, evidence, and control | `BUYER_DUE_DILIGENCE.md`, compliance research |
 
 ## Core distinction
 
@@ -21,34 +32,25 @@ This is not a list of “email tools.” It separates:
 3. **Solo-ad providers / email-media brokers** — sell a dedicated send or email placement.
 4. **Newsletter sponsorship marketplaces** — broker sponsored placements across publishers.
 5. **Affiliate networks / management firms** — connect offers and publishers, but are not automatically media inventory.
-6. **Tracking / compliance infrastructure** — measurement and permission controls, not audience access.
+6. **Data and audience vendors** — provide records, modeling, enrichment, hygiene, or deployment.
+7. **Discovery and relationship channels** — help locate current owners and contacts.
+8. **Tracking / compliance infrastructure** — measurement and permission controls, not audience access.
 
-## Evidence standard
+## Operating standard
 
-A provider is not “reputable” because a directory or sales page says so. A high-confidence record should have:
+> Buy access, not databases. Test placements, not promises. Capture the response. Build the house file.
 
-- a current official page or media kit;
-- a clear description of what is actually sold;
-- evidence of audience ownership, publisher representation, or network role;
-- current buying mechanics and contact path;
-- permission/terms language where available;
-- corroboration or a clearly labeled uncertainty when claims are not independently verifiable.
+Every campaign should define the offer, audience, margin, success event, category, source, consent/provenance, suppression, tracking, stop rules, results, and next decision. A large database, “opt-in” claim, network logo, or click count is not a substitute for evidence.
 
-Historical names from the archive are preserved as **historical context**, not silently promoted to current providers.
+## Evidence and publication
 
-## Kurtz decision lens
+- 98 normalized provider/discovery records.
+- 112 source-ledger records.
+- 92 official URLs returned HTTP 200; 6 Industry Dive pages remain marked for manual/browser recheck after HTTP 403 responses.
+- 163 tracked files in the public corpus.
+- Raw official captures, agent reports, URL verification, validation files, and the publication record are retained.
+- Public GitHub source: https://github.com/jbellsolutions/overdelivery-list-buying-research
 
-The guide uses these archive-derived tests:
+The public web entry point is [`index.html`](index.html). The publication and redaction decisions are recorded in [`PUBLICATION_CHOICES.md`](PUBLICATION_CHOICES.md).
 
-- Does the audience have demonstrated buyer/subscriber behavior, not merely reach?
-- Is the offer congruent with the audience and the publisher’s relationship?
-- What did the source actually test, and what did it learn?
-- What happens to complaints, unsubscribes, refunds, and partner trust?
-- Is the provider selling a real audience relationship, or only traffic claims?
-
-## Execution and provider readiness
-
-The required five-round council classified this as broad, authenticated/current web research with a structured synthesis deliverable. It compared hosted browser, search/discovery, raw HTTP, and local/file lanes; selected hosted browser orchestration for discovery and verification; and required URL provenance, deduplication, and source-level confidence as the verification contract. Hosted cloud providers were not ready in this run; the council/readiness gate selected local Super Browser Playwright for the bounded six-page manual recheck. The fallback was narrow official-page HTTP verification plus browser evidence and the local archive, not silent invention.
-
-
-The Super Browser council completed five review rounds before execution. Hosted cloud alternatives remained unavailable or unverified, while local Playwright passed the readiness gate for this bounded public-page check. The live-source pass contains **112 source-ledger records and 98 normalized provider/discovery records**. The original direct HTTP pass returned **92 HTTP 200 results and 6 HTTP 403 results**; the six 403 pages now have separate high-confidence browser captures and remain transparently marked as direct-HTTP 403 in `URL_VERIFICATION.json`. The public-release decisions and safety redactions are recorded in `PUBLICATION_CHOICES.md`. Raw captures, browser evidence, agent reports, and URL verification results are retained under `RAW_OFFICIAL_FETCHES/`, `AGENT_RESEARCH/`, and `URL_VERIFICATION.json`. Both ten-agent research batches returned usable outputs. Exact publisher formats, pricing, consent/provenance, and list-transfer rights still require current media-kit and terms review.
+This is an operating guide and research repository, not legal advice. Confirm current terms, consent basis, sender responsibility, suppression, offer clearance, and applicable law before deployment.
