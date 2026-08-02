@@ -10,6 +10,7 @@ This repository is being published as a public, source-grounded research reposit
 - **Repository entry point:** `index.html`
 - **Business-process entry point:** `BUSINESS_PROCESS.md`
 - **Web snapshot:** This same directory is published as a static here.now site so the report can be read without cloning the repository.
+- **Live here.now site:** https://arctic-signal-9v2e.here.now/
 
 ## Why these choices
 
