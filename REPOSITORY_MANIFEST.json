@@ -14,18 +14,23 @@
       "malformed_ledger_rows": 0,
       "duplicate_vendor_names": 0,
       "duplicate_vendor_urls": 0,
-      "published_file_count": 163,
-      "content_file_count": 161,
-      "public_capture_redaction_placeholders": 16
+      "published_file_count": 165,
+      "content_file_count": 163,
+      "public_capture_redaction_placeholders": 16,
+      "integrity_pass": true,
+      "secret_scan": "no unredacted credential-pattern matches"
     },
     "missing_raw_artifacts": [],
-    "malformed_rows": []
+    "malformed_rows": {
+      "vendor": [],
+      "source_ledger": []
+    }
   },
-  "file_count": 163,
-  "content_file_count": 161,
+  "file_count": 165,
+  "content_file_count": 163,
   "metadata_files_excluded_from_hash_map": [
-    "REPOSITORY_MANIFEST.json",
-    "FINAL_VALIDATION.json"
+    "FINAL_VALIDATION.json",
+    "REPOSITORY_MANIFEST.json"
   ],
   "sha256": {
     ".gitignore": "1cd708f400cb417f8b35debfc87449edd9a276947520ebd7bf8122435a50fdc6",
@@ -50,13 +55,13 @@
     "AGENT_RESEARCH/B2_08_compliance_full_summary.txt": "bb4ffa61f59f1ac369daf56f2683ac0c1c2044de9db5e5cdc481e73ce72e6abe",
     "AGENT_RESEARCH/B2_08_email_list_compliance_checklist.md": "c02011333485fd78cf8b1eb4fc6c822cb7d949b1c759e642c0daa690ecd68adf",
     "AGENT_RESEARCH/B2_09_discovery_channels_full_summary.txt": "ac7cf44af596f16fc07ab0a82c09e8814fd3a2b4e586f94cb437a8eeac757608",
-    "BUSINESS_PROCESS.md": "67879e6e2998bbf9940df2136d6e71ed4335a11e380de3ffeec4579cc882abab",
+    "BUSINESS_PROCESS.md": "367d3a6df8431fee41859846624ee9f09107c291b0e5f20d8daa27e10a057fd5",
     "BUYER_DUE_DILIGENCE.md": "3558f8c01ffd330a395ebf5d77eb03d992e27cb24ff51f7384a9c727bae55fe8",
-    "FINAL_REPORT.md": "73d4f4489bd799d9752d641fb0903e8b2941cf1aa52eebfdeeeeea36cd726e12",
+    "FINAL_REPORT.md": "98886aeb686157eea1061bf013b6c7d44dc31a3f7a7ae1978388ed300280ca31",
     "HISTORICAL_LIST_OPERATORS.md": "cee00e8a8bbf6dc2b545b0cd564b43747d3f7d9054496294413512658e91baa0",
     "LOCAL_ARCHIVE_SOURCE_MAP.md": "496421833b091ad5343da7c1e8329227a68ceb81374a159dcf5b58973ea81f47",
     "PROVIDER_SCORING_RUBRIC.md": "750ce84b8caa6f7d5e4f9b0426cc62046c3edb01c23f920deae82799f52527c0",
-    "PUBLICATION_CHOICES.md": "cc5fff9ab2bd2e8a8f438073de3c4ddad46bfef751493e6e89a5228f2dbd8c0a",
+    "PUBLICATION_CHOICES.md": "01c3f76ac462ba327b42c78b8c15ff6988caf4e9fbc2b15348ac61a9e5b9545a",
     "RAW_OFFICIAL_FETCHES/10dollar_solo_ads.html": "10dab8cdaa6fdf39a63958f51b4bf03c8bb77ca1a32577404a293ea8f2b9f552",
     "RAW_OFFICIAL_FETCHES/acceleration_partners.html": "6c46ae4f6f80bddf4f73e8c684d5014beb019880676bbca8d0e970df2d8afbf4",
     "RAW_OFFICIAL_FETCHES/acxiom.html": "aa1bd23188e38026d3ff8a78e0836a6681b0e74f72fbe230885e6164737d9a21",
@@ -181,13 +186,15 @@
     "RAW_OFFICIAL_FETCHES/wiland.html": "0b76cd10f533943191d494fbf864cc8ff43a05b0747d14490f129542f4e635db",
     "RAW_OFFICIAL_FETCHES/worldata.html": "77be7a092e88daae90e31c7589c495dd1402461283da6aa6aa7e863df730d0f4",
     "RAW_OFFICIAL_FETCHES/ws_ponton.html": "006c4d6b8b6e47215bbbeec5a01349331d6567e03eaa03104f506c1f13053d71",
-    "README.md": "3d3e482868ca10cd4ffeeaca104cda340c7ac34029e1daf0b4233dbf9826fddb",
+    "README.md": "d4a4cd1c1d09a3ff786720534c1aa6eb33d5e99b35a5a3d1d086fcdfde8ff245",
     "RESEARCH_COVERAGE_STATUS.md": "af8853a564bfc0632e007ae5c5b5032fee224c75b41e2d938aced3c6945f6e8e",
     "RESEARCH_GAPS.md": "e345945c844e586993544e17bb05fd14390cf96bc445127a4e54cd1c276283d0",
     "SOURCE_LEDGER.csv": "19f34bd7b0a522b36af187d165f87ea0008a272979bffbaf37edef198e7a19d2",
-    "ULTIMATE_GUIDE.md": "eb10cb4911bea6c609edc25d3660985701289961cfe040e022f7342145fa1587",
+    "ULTIMATE_GUIDE.md": "97cbfb692bef7df85c384e83da1fd5852f083ab6f0322a3b1abf2b1bce890d3f",
     "URL_VERIFICATION.json": "11afb03c1202359f75622d7d29140bf3be711892153d3d1087a5fc9023a1c4fc",
     "VENDOR_DIRECTORY.csv": "95ec43a202f1fdf40ff98c9e60cd237263937fc0dffc0e116c88e4b75471ce0a",
-    "index.html": "119decd7010504753969043990f20defc021c67198eb686e5862deb9562499a2"
+    "build_site.py": "7c513c5a434319e5605da7b82bff9e75c9770dec929c1360c895ea0d84ca0263",
+    "index.html": "ad8e473fb5fd309dd5768367347b21dca3a63ce528d952b957137db130eda359",
+    "validate_repository.py": "4113ce0bb348418ffe7ea769e6dd9992f45b64bcc0033a1e1a7cd39e39174293"
   }
 }

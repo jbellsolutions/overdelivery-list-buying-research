@@ -1,6 +1,6 @@
-# Over Delivery List-Buying Repository
+# Overdeliver
 
-An evidence-backed operating system for finding, evaluating, testing, and scaling audience access in the Brian Kurtz / *Over Delivery* tradition.
+An evidence-backed operating system for finding, evaluating, testing, and scaling audience access in the Brian Kurtz / *Over Delivery* tradition. The public site renders all 98 provider records and all 112 source-ledger records directly—downloads are optional.
 
 ## Start here
 

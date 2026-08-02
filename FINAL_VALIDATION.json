@@ -13,8 +13,8 @@
     "malformed_ledger_rows": 0,
     "duplicate_vendor_names": 0,
     "duplicate_vendor_urls": 0,
-    "published_file_count": 163,
-    "content_file_count": 161,
+    "published_file_count": 165,
+    "content_file_count": 163,
     "public_capture_redaction_placeholders": 16,
     "integrity_pass": true,
     "secret_scan": "no unredacted credential-pattern matches"
@@ -135,8 +135,8 @@
     },
     {
       "path": "BUSINESS_PROCESS.md",
-      "bytes": 12936,
-      "sha256": "67879e6e2998bbf9940df2136d6e71ed4335a11e380de3ffeec4579cc882abab"
+      "bytes": 12918,
+      "sha256": "367d3a6df8431fee41859846624ee9f09107c291b0e5f20d8daa27e10a057fd5"
     },
     {
       "path": "BUYER_DUE_DILIGENCE.md",
@@ -145,8 +145,8 @@
     },
     {
       "path": "FINAL_REPORT.md",
-      "bytes": 10853,
-      "sha256": "73d4f4489bd799d9752d641fb0903e8b2941cf1aa52eebfdeeeeea36cd726e12"
+      "bytes": 10830,
+      "sha256": "98886aeb686157eea1061bf013b6c7d44dc31a3f7a7ae1978388ed300280ca31"
     },
     {
       "path": "HISTORICAL_LIST_OPERATORS.md",
@@ -165,8 +165,8 @@
     },
     {
       "path": "PUBLICATION_CHOICES.md",
-      "bytes": 3816,
-      "sha256": "cc5fff9ab2bd2e8a8f438073de3c4ddad46bfef751493e6e89a5228f2dbd8c0a"
+      "bytes": 3966,
+      "sha256": "01c3f76ac462ba327b42c78b8c15ff6988caf4e9fbc2b15348ac61a9e5b9545a"
     },
     {
       "path": "RAW_OFFICIAL_FETCHES/10dollar_solo_ads.html",
@@ -790,8 +790,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3945,
-      "sha256": "3d3e482868ca10cd4ffeeaca104cda340c7ac34029e1daf0b4233dbf9826fddb"
+      "bytes": 4037,
+      "sha256": "d4a4cd1c1d09a3ff786720534c1aa6eb33d5e99b35a5a3d1d086fcdfde8ff245"
     },
     {
       "path": "RESEARCH_COVERAGE_STATUS.md",
@@ -810,8 +810,8 @@
     },
     {
       "path": "ULTIMATE_GUIDE.md",
-      "bytes": 22722,
-      "sha256": "eb10cb4911bea6c609edc25d3660985701289961cfe040e022f7342145fa1587"
+      "bytes": 22717,
+      "sha256": "97cbfb692bef7df85c384e83da1fd5852f083ab6f0322a3b1abf2b1bce890d3f"
     },
     {
       "path": "URL_VERIFICATION.json",
@@ -824,13 +824,23 @@
       "sha256": "95ec43a202f1fdf40ff98c9e60cd237263937fc0dffc0e116c88e4b75471ce0a"
     },
     {
+      "path": "build_site.py",
+      "bytes": 29824,
+      "sha256": "7c513c5a434319e5605da7b82bff9e75c9770dec929c1360c895ea0d84ca0263"
+    },
+    {
       "path": "index.html",
-      "bytes": 9865,
-      "sha256": "119decd7010504753969043990f20defc021c67198eb686e5862deb9562499a2"
+      "bytes": 137144,
+      "sha256": "ad8e473fb5fd309dd5768367347b21dca3a63ce528d952b957137db130eda359"
+    },
+    {
+      "path": "validate_repository.py",
+      "bytes": 6280,
+      "sha256": "4113ce0bb348418ffe7ea769e6dd9992f45b64bcc0033a1e1a7cd39e39174293"
     }
   ],
   "metadata_files_excluded_from_manifest": [
-    "REPOSITORY_MANIFEST.json",
-    "FINAL_VALIDATION.json"
+    "FINAL_VALIDATION.json",
+    "REPOSITORY_MANIFEST.json"
   ]
 }

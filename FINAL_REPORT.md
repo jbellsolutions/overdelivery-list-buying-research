@@ -1,4 +1,4 @@
-# Final Report — Over Delivery List-Buying Research
+# Overdeliver — Final Report
 
 **Prepared:** August 1, 2026  
 **Framework:** Brian Kurtz / *Over Delivery* direct-response discipline
